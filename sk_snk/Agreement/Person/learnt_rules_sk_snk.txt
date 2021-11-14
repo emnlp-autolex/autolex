@@ -1,0 +1,10 @@
+rel,head-pos,child-pos	tree-label	gold-label
+conj,VERB,VERB	NA	req-agree
+conj,AUX,VERB	NA	req-agree
+comp:obj,VERB,VERB	NA	req-agree
+comp:obj,VERB,PRON	NA	NA
+parataxis,VERB,VERB	NA	req-agree
+conj,VERB,AUX	NA	req-agree
+conj,AUX,AUX	NA	req-agree
+subj,AUX,PRON	NA	req-agree
+comp:obl,VERB,PRON	NA	NA

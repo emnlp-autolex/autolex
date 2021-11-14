@@ -1,0 +1,4 @@
+booster[0]:
+0:leaf=-0.0200000014,cover=34
+booster[1]:
+0:leaf=0.031343285,cover=32.5

@@ -1,0 +1,15 @@
+rel,head-pos,child-pos	tree-label	gold-label
+mod,PRON,PRON	NA	req-agree
+udep@prep,VERB,ADP	NA	NA
+comp:obj,VERB,PRON	NA	NA
+conj,VERB,VERB	NA	req-agree
+conj,ADP,ADP	NA	NA
+comp:obl@x,PRON,ADP	NA	req-agree
+flat,VERB,PRON	NA	NA
+udep@prep,ADP,ADP	NA	req-agree
+conj,PRON,PRON	NA	req-agree
+subj,VERB,PRON	NA	req-agree
+udep,X,ADP	NA	req-agree
+comp:obj,VERB,VERB	NA	req-agree
+comp:obl@x,VERB,ADP	NA	NA
+discourse,VERB,PRON	NA	NA

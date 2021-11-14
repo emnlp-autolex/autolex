@@ -1,0 +1,17 @@
+rel,head-pos,child-pos	tree-label	gold-label
+conj,NOUN,NOUN	req-agree	NA
+appos,NOUN,PROPN	NA	NA
+mod,NOUN,NOUN	NA	NA
+unk@fixed,NOUN,NOUN	NA	NA
+appos,NOUN,NOUN	req-agree	NA
+conj,PROPN,NOUN	NA	req-agree
+conj,PROPN,PROPN	req-agree	NA
+mod,NOUN,PROPN	NA	NA
+appos,PROPN,NOUN	NA	NA
+mod,PROPN,NOUN	NA	NA
+conj,NOUN,PROPN	req-agree	NA
+flat,NOUN,PROPN	NA	NA
+udep,NOUN,NOUN	NA	NA
+mod,PROPN,PROPN	NA	req-agree
+parataxis,PROPN,NOUN	NA	req-agree
+flat,PROPN,NOUN	NA	req-agree

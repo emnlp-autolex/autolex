@@ -1,0 +1,52 @@
+booster[0]:
+0:[f9<0.5] yes=1,no=2,missing=1,gain=1547.79395,cover=19161
+	1:[f31<0.5] yes=3,no=4,missing=3,gain=66.965332,cover=9890
+		3:[f45<0.5] yes=7,no=8,missing=7,gain=52.4355469,cover=9736.5
+			7:[f29<0.5] yes=13,no=14,missing=13,gain=52.0849609,cover=9565
+				13:leaf=-0.0868885517,cover=7931
+				14:leaf=-0.0671559647,cover=1634
+			8:[f23<0.5] yes=15,no=16,missing=15,gain=1.42516804,cover=171.5
+				15:leaf=-0.0311036799,cover=148.5
+				16:leaf=-0.00416666688,cover=23
+		4:[f8<0.5] yes=9,no=10,missing=9,gain=2.40174961,cover=153.5
+			9:[f26<0.5] yes=17,no=18,missing=17,gain=0.975402236,cover=88.5
+				17:leaf=0.00153846154,cover=64
+				18:leaf=-0.021568628,cover=24.5
+			10:[f29<0.5] yes=19,no=20,missing=19,gain=0.589121819,cover=65
+				19:leaf=-0.0413793139,cover=28
+				20:leaf=-0.0210526325,cover=37
+	2:[f41<0.5] yes=5,no=6,missing=5,gain=113.21991,cover=9271
+		5:[f73<0.5] yes=11,no=12,missing=11,gain=105.30722,cover=8989
+			11:[f11<0.5] yes=21,no=22,missing=21,gain=72.5245056,cover=8756
+				21:leaf=-0.0172157269,cover=7527
+				22:leaf=-0.0434146337,cover=1229
+			12:[f18<0.5] yes=23,no=24,missing=23,gain=5.52607727,cover=233
+				23:leaf=-0.0946601927,cover=205
+				24:leaf=-0.0448275879,cover=28
+		6:leaf=-0.0869257972,cover=282
+booster[1]:
+0:[f9<0.5] yes=1,no=2,missing=1,gain=1491.51514,cover=19161.5
+	1:[f29<0.5] yes=3,no=4,missing=3,gain=59.3408203,cover=9869
+		3:[f4<0.5] yes=7,no=8,missing=7,gain=55.5146484,cover=8143
+			7:[f45<0.5] yes=13,no=14,missing=13,gain=15.6137695,cover=6984
+				13:leaf=0.0888393521,cover=6952
+				14:leaf=0.0181818195,cover=32
+			8:[f41<0.5] yes=15,no=16,missing=15,gain=116.199036,cover=1159
+				15:leaf=0.0346938781,cover=611.5
+				16:leaf=0.0981768519,cover=547.5
+		4:[f1<0.5] yes=9,no=10,missing=9,gain=82.7602539,cover=1726
+			9:[f34<0.5] yes=17,no=18,missing=17,gain=18.7983093,cover=1120
+				17:leaf=0.0503416844,cover=1096.5
+				18:leaf=-0.0387755111,cover=23.5
+			10:[f72<0.5] yes=19,no=20,missing=19,gain=1.12597656,cover=606
+				19:leaf=0.0867841467,cover=226
+				20:leaf=0.0986876711,cover=380
+	2:[f41<0.5] yes=5,no=6,missing=5,gain=102.297119,cover=9292.5
+		5:[f73<0.5] yes=11,no=12,missing=11,gain=94.3636475,cover=9014
+			11:[f11<0.5] yes=21,no=22,missing=21,gain=70.8544006,cover=8793
+				21:leaf=0.0186393671,cover=7569
+				22:leaf=0.0445714295,cover=1224
+			12:[f18<0.5] yes=23,no=24,missing=23,gain=6.97555542,cover=221
+				23:leaf=0.0948849097,cover=194.5
+				24:leaf=0.038181819,cover=26.5
+		6:leaf=0.0853309482,cover=278.5
