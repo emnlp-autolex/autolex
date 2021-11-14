@@ -7,4 +7,4 @@ The website is hosted [[here]](https://emnlp-autolex.github.io/autolex/index.htm
 The code can be found under the `code/` dir.
 
 ### Annotation Guidelines
-The `data/` folder contains the annotation guidelines shown to the language expert before they begin evaluation.
+The `data/` folder contains the annotation guidelines shown to the language expert to assist with the rule evaluation.
