@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,116 +137,512 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_pud </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <h5> No examples found </h5><h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Doss	_	_	_	_	0	_	_	_
-2	’s	_	_	_	_	0	_	_	_
-3	story	_	_	_	_	0	_	_	_
-4	also	_	_	_	_	0	_	_	_
-5	has	_	_	_	_	0	_	_	_
-6	an	_	_	_	_	0	_	_	_
-7	unlikely	_	_	_	_	0	_	_	_
-8	quality	_	_	_	_	0	_	_	_
-9	to	_	_	_	_	0	_	_	_
-10	it	_	_	_	_	0	_	_	_
-11	that	_	_	_	_	0	_	_	_
-12	makes	make	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-13	***it***	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	12	comp:obj	_	_
-14	all	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><input type="hidden" id="rules_text" name="rules_text" value="Active: Not Active:dependent's head is a= PRON;in the neighborhood of the dependent= other;dependent is the= compound;dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	While	_	_	_	_	0	_	_	_
+3	much	_	_	_	_	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	digital	_	_	_	_	0	_	_	_
+7	transition	_	_	_	_	0	_	_	_
+8	is	_	_	_	_	0	_	_	_
+9	unprecedented	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	United	_	_	_	_	0	_	_	_
+13	States	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
 15	the	_	_	_	_	0	_	_	_
-16	more	_	_	_	_	0	_	_	_
-17	appealing	_	_	_	_	0	_	_	_
+16	peaceful	_	_	_	_	0	_	_	_
+17	***transition***	transition	NOUN	NN	Number=Sing	20	subj	_	_
+18	of	_	_	_	_	0	_	_	_
+19	power	_	_	_	_	0	_	_	_
+20	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	”	_	_	_	_	0	_	_	_
+24	Obama	_	_	_	_	0	_	_	_
+25	special	_	_	_	_	0	_	_	_
+26	assistant	_	_	_	_	0	_	_	_
+27	Kori	_	_	_	_	0	_	_	_
+28	Schulman	_	_	_	_	0	_	_	_
+29	wrote	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	blog	_	_	_	_	0	_	_	_
+33	post	_	_	_	_	0	_	_	_
+34	Monday	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	So	_	_	_	_	0	_	_	_
+3	I	_	_	_	_	0	_	_	_
+4	hate	_	_	_	_	0	_	_	_
+5	to	_	_	_	_	0	_	_	_
+6	put	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	little	_	_	_	_	0	_	_	_
+9	pressure	_	_	_	_	0	_	_	_
+10	on	_	_	_	_	0	_	_	_
+11	you	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	but	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	***fate***	fate	NOUN	NN	Number=Sing	19	subj	_	_
+16	of	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	republic	_	_	_	_	0	_	_	_
+19	rests	rest	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+20	on	_	_	_	_	0	_	_	_
+21	your	_	_	_	_	0	_	_	_
+22	shoulders	_	_	_	_	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	”	_	_	_	_	0	_	_	_
+25	he	_	_	_	_	0	_	_	_
+26	told	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	crowd	_	_	_	_	0	_	_	_
+29	gathered	_	_	_	_	0	_	_	_
+30	on	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	sports	_	_	_	_	0	_	_	_
+33	field	_	_	_	_	0	_	_	_
+34	at	_	_	_	_	0	_	_	_
+35	the	_	_	_	_	0	_	_	_
+36	University	_	_	_	_	0	_	_	_
+37	of	_	_	_	_	0	_	_	_
+38	North	_	_	_	_	0	_	_	_
+39	Carolina	_	_	_	_	0	_	_	_
+40	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	new	_	_	_	_	0	_	_	_
+3	***spending***	spending	NOUN	NN	Number=Sing	4	subj@pass	_	_
+4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	fueled	_	_	_	_	0	_	_	_
+6	by	_	_	_	_	0	_	_	_
+7	Clinton	_	_	_	_	0	_	_	_
+8	’s	_	_	_	_	0	_	_	_
+9	large	_	_	_	_	0	_	_	_
+10	bank	_	_	_	_	0	_	_	_
+11	account	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***She***	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	84	_	_	_	_	0	_	_	_
+4	years	_	_	_	_	0	_	_	_
+5	old	_	_	_	_	0	_	_	_
+6	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	she	_	_	_	_	0	_	_	_
+3	’s	_	_	_	_	0	_	_	_
+4	saying	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	what	_	_	_	_	0	_	_	_
+7	***she***	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	subj	_	SpaceAfter=No
+8	’s	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	doing	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	it	_	_	_	_	0	_	_	_
+12	—	_	_	_	_	0	_	_	_
+13	actually	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	it	_	_	_	_	0	_	_	_
+16	’s	_	_	_	_	0	_	_	_
+17	unbelievable	_	_	_	_	0	_	_	_
 18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
+1	However	_	_	_	_	0	_	_	_
+2	this	_	_	_	_	0	_	_	_
+3	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+4	reversed	_	_	_	_	0	_	_	_
+5	when	_	_	_	_	0	_	_	_
+6	Julian	_	_	_	_	0	_	_	_
+7	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	mod	_	_
+8	killed	_	_	_	_	0	_	_	_
+9	in	_	_	_	_	0	_	_	_
+10	battle	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	363	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
 1	It	_	_	_	_	0	_	_	_
-2	resulted	_	_	_	_	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	however	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	in	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	abandonment	_	_	_	_	0	_	_	_
-9	of	_	_	_	_	0	_	_	_
-10	important	_	_	_	_	0	_	_	_
-11	pieces	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	heavy	_	_	_	_	0	_	_	_
-14	artillery	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	and	_	_	_	_	0	_	_	_
-17	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	18	unk@expl	_	_
-18	remains	remain	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-19	a	_	_	_	_	0	_	_	_
-20	matter	_	_	_	_	0	_	_	_
-21	of	_	_	_	_	0	_	_	_
-22	historical	_	_	_	_	0	_	_	_
-23	debate	_	_	_	_	0	_	_	_
-24	why	_	_	_	_	0	_	_	_
-25	the	_	_	_	_	0	_	_	_
-26	railway	_	_	_	_	0	_	_	_
-27	to	_	_	_	_	0	_	_	_
-28	Flensburg	_	_	_	_	0	_	_	_
-29	was	_	_	_	_	0	_	_	_
-30	never	_	_	_	_	0	_	_	_
-31	properly	_	_	_	_	0	_	_	_
-32	used	_	_	_	_	0	_	_	_
-33	for	_	_	_	_	0	_	_	_
-34	the	_	_	_	_	0	_	_	_
-35	evacuation	_	_	_	_	0	_	_	_
-36	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	unk@expl	_	_
-2	was	be	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	here	_	_	_	_	0	_	_	_
-4	they	_	_	_	_	0	_	_	_
-5	stole	_	_	_	_	0	_	_	_
+2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	most	_	_	_	_	0	_	_	_
+4	obvious	_	_	_	_	0	_	_	_
+5	when	_	_	_	_	0	_	_	_
 6	a	_	_	_	_	0	_	_	_
-7	small	_	_	_	_	0	_	_	_
-8	canoe	_	_	_	_	0	_	_	_
-9	left	_	_	_	_	0	_	_	_
-10	by	_	_	_	_	0	_	_	_
-11	the	_	_	_	_	0	_	_	_
-12	Australian	_	_	_	_	0	_	_	_
-13	Aborigines	_	_	_	_	0	_	_	_
-14	of	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	region	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
+7	celebrity	_	_	_	_	0	_	_	_
+8	's	_	_	_	_	0	_	_	_
+9	name	_	_	_	_	0	_	_	_
+10	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	mod	_	_
+11	initially	_	_	_	_	0	_	_	_
+12	quite	_	_	_	_	0	_	_	_
+13	rare	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Tradition	_	_	_	_	0	_	_	_
-2	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	unk@expl	_	_
-4	that	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	theme	_	_	_	_	0	_	_	_
-7	was	_	_	_	_	0	_	_	_
-8	selected	_	_	_	_	0	_	_	_
-9	intentionally	_	_	_	_	0	_	_	_
-10	because	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	great	_	_	_	_	0	_	_	_
-14	number	_	_	_	_	0	_	_	_
-15	of	_	_	_	_	0	_	_	_
-16	converted	_	_	_	_	0	_	_	_
-17	Jews	_	_	_	_	0	_	_	_
-18	who	_	_	_	_	0	_	_	_
-19	lived	_	_	_	_	0	_	_	_
-20	in	_	_	_	_	0	_	_	_
-21	Palma	_	_	_	_	0	_	_	_
-22	.	_	_	_	_	0	_	_	_
+1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj	_	SpaceAfter=No
+2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	like	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	super	_	_	_	_	0	_	_	_
+6	power	_	_	_	_	0	_	_	_
+7	sometimes	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj@pass	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	declared	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	wildlife	_	_	_	_	0	_	_	_
+6	sanctuary	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	1975	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	early	_	_	_	_	0	_	_	_
+3	October	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	transition	_	_	_	_	0	_	_	_
+7	team	_	_	_	_	0	_	_	_
+8	used	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	same	_	_	_	_	0	_	_	_
+11	venue	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	meet	_	_	_	_	0	_	_	_
+14	with	_	_	_	_	0	_	_	_
+15	technology	_	_	_	_	0	_	_	_
+16	lobbyists	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	inviting	_	_	_	_	0	_	_	_
+19	representatives	_	_	_	_	0	_	_	_
+20	from	_	_	_	_	0	_	_	_
+21	Uber	Uber	PROPN	NNP	Number=Sing	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Motion	_	_	_	_	0	_	_	_
+25	Picture	_	_	_	_	0	_	_	_
+26	***Association***	association	NOUN	NN	Number=Sing	21	conj	_	_
+27	of	_	_	_	_	0	_	_	_
+28	America	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Consumer	_	_	_	_	0	_	_	_
+32	Technology	_	_	_	_	0	_	_	_
+33	Association	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	other	_	_	_	_	0	_	_	_
+36	groups	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	***results***	result	NOUN	NNS	Number=Plur	6	subj	_	_
+3	from	_	_	_	_	0	_	_	_
+4	this	_	_	_	_	0	_	_	_
+5	experiment	_	_	_	_	0	_	_	_
+6	provides	provide	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	further	_	_	_	_	0	_	_	_
+8	support	_	_	_	_	0	_	_	_
+9	that	_	_	_	_	0	_	_	_
+10	rocket	_	_	_	_	0	_	_	_
+11	seeds	_	_	_	_	0	_	_	_
+12	can	_	_	_	_	0	_	_	_
+13	be	_	_	_	_	0	_	_	_
+14	flown	_	_	_	_	0	_	_	_
+15	and	_	_	_	_	0	_	_	_
+16	stored	_	_	_	_	0	_	_	_
+17	on	_	_	_	_	0	_	_	_
+18	the	_	_	_	_	0	_	_	_
+19	International	_	_	_	_	0	_	_	_
+20	Space	_	_	_	_	0	_	_	_
+21	Station	_	_	_	_	0	_	_	_
+22	for	_	_	_	_	0	_	_	_
+23	six	_	_	_	_	0	_	_	_
+24	months	_	_	_	_	0	_	_	_
+25	without	_	_	_	_	0	_	_	_
+26	having	_	_	_	_	0	_	_	_
+27	any	_	_	_	_	0	_	_	_
+28	significant	_	_	_	_	0	_	_	_
+29	impacts	_	_	_	_	0	_	_	_
+30	on	_	_	_	_	0	_	_	_
+31	their	_	_	_	_	0	_	_	_
+32	ability	_	_	_	_	0	_	_	_
+33	to	_	_	_	_	0	_	_	_
+34	germinate	_	_	_	_	0	_	_	_
+35	and	_	_	_	_	0	_	_	_
+36	grow	_	_	_	_	0	_	_	_
+37	on	_	_	_	_	0	_	_	_
+38	Earth	_	_	_	_	0	_	_	_
+39	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Clinton	Clinton	PROPN	NNP	Number=Sing	0	_	_	_
+2	and	_	_	_	_	0	_	_	_
+3	***allies***	ally	NOUN	NNS	Number=Plur	1	conj	_	SpaceAfter=No
+4	,	_	_	_	_	0	_	_	_
+5	meanwhile	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	are	_	_	_	_	0	_	_	_
+8	seeking	_	_	_	_	0	_	_	_
+9	to	_	_	_	_	0	_	_	_
+10	keep	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	spotlight	_	_	_	_	0	_	_	_
+13	on	_	_	_	_	0	_	_	_
+14	Trump	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	charging	_	_	_	_	0	_	_	_
+17	that	_	_	_	_	0	_	_	_
+18	his	_	_	_	_	0	_	_	_
+19	disparaging	_	_	_	_	0	_	_	_
+20	comments	_	_	_	_	0	_	_	_
+21	about	_	_	_	_	0	_	_	_
+22	women	_	_	_	_	0	_	_	_
+23	and	_	_	_	_	0	_	_	_
+24	minorities	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	and	_	_	_	_	0	_	_	_
+27	his	_	_	_	_	0	_	_	_
+28	temperament	_	_	_	_	0	_	_	_
+29	make	_	_	_	_	0	_	_	_
+30	him	_	_	_	_	0	_	_	_
+31	unfit	_	_	_	_	0	_	_	_
+32	for	_	_	_	_	0	_	_	_
+33	office	_	_	_	_	0	_	_	_
+34	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	That	_	_	_	_	0	_	_	_
+2	's	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	not	_	_	_	_	0	_	_	_
+4	what	_	_	_	_	0	_	_	_
+5	we	_	_	_	_	0	_	_	_
+6	need	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	our	_	_	_	_	0	_	_	_
+9	country	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	***folks***	folk	NOUN	NNS	Number=Plur	2	vocative	_	SpaceAfter=No
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	federal	_	_	_	_	0	_	_	_
+3	government	_	_	_	_	0	_	_	_
+4	proactively	_	_	_	_	0	_	_	_
+5	reports	_	_	_	_	0	_	_	_
+6	on	_	_	_	_	0	_	_	_
+7	aggregate	_	_	_	_	0	_	_	_
+8	performance	_	_	_	_	0	_	_	_
+9	pay	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	bonus	_	_	_	_	0	_	_	_
+12	levels	_	_	_	_	0	_	_	_
+13	for	_	_	_	_	0	_	_	_
+14	each	_	_	_	_	0	_	_	_
+15	department	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	but	_	_	_	_	0	_	_	_
+18	the	_	_	_	_	0	_	_	_
+19	latest	_	_	_	_	0	_	_	_
+20	web	_	_	_	_	0	_	_	_
+21	posting	_	_	_	_	0	_	_	_
+22	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+23	for	_	_	_	_	0	_	_	_
+24	2013	_	_	_	_	0	_	_	_
+25	-	_	_	_	_	0	_	_	_
+26	2014	_	_	_	_	0	_	_	_
+27	—	_	_	_	_	0	_	_	_
+28	or	_	_	_	_	0	_	_	_
+29	two	_	_	_	_	0	_	_	_
+30	***years***	year	NOUN	NNS	Number=Plur	22	conj	_	_
+31	out	_	_	_	_	0	_	_	_
+32	of	_	_	_	_	0	_	_	_
+33	date	_	_	_	_	0	_	_	_
+34	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	current	_	_	_	_	0	_	_	_
+3	waiting	_	_	_	_	0	_	_	_
+4	period	_	_	_	_	0	_	_	_
+5	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	eight	_	_	_	_	0	_	_	_
+7	***weeks***	week	NOUN	NNS	Number=Plur	5	comp:pred	_	SpaceAfter=No
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	It	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	possible	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	have	_	_	_	_	0	_	_	_
+6	normal	_	_	_	_	0	_	_	_
+7	hemoglobin	_	_	_	_	0	_	_	_
+8	levels	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	but	_	_	_	_	0	_	_	_
+11	to	_	_	_	_	0	_	_	_
+12	have	_	_	_	_	0	_	_	_
+13	low	_	_	_	_	0	_	_	_
+14	iron	_	_	_	_	0	_	_	_
+15	stores	_	_	_	_	0	_	_	_
+16	overall	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	says	_	_	_	_	0	_	_	_
+19	***Canadian***	Canadian	ADJ	NNP	Number=Sing	21	mod	_	_
+20	Blood	_	_	_	_	0	_	_	_
+21	Services	Services	PROPN	NNPS	Number=Plur	0	_	_	_
+22	(	_	_	_	_	0	_	_	_
+23	CBS	_	_	_	_	0	_	_	_
+24	)	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	It	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	possible	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	have	_	_	_	_	0	_	_	_
+6	normal	_	_	_	_	0	_	_	_
+7	hemoglobin	_	_	_	_	0	_	_	_
+8	levels	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	but	_	_	_	_	0	_	_	_
+11	to	_	_	_	_	0	_	_	_
+12	have	_	_	_	_	0	_	_	_
+13	low	_	_	_	_	0	_	_	_
+14	iron	_	_	_	_	0	_	_	_
+15	stores	_	_	_	_	0	_	_	_
+16	overall	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+19	Canadian	_	_	_	_	0	_	_	_
+20	Blood	_	_	_	_	0	_	_	_
+21	***Services***	Services	PROPN	NNPS	Number=Plur	18	subj	_	_
+22	(	_	_	_	_	0	_	_	_
+23	CBS	_	_	_	_	0	_	_	_
+24	)	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	It	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	possible	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	have	_	_	_	_	0	_	_	_
+6	normal	_	_	_	_	0	_	_	_
+7	hemoglobin	_	_	_	_	0	_	_	_
+8	levels	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	but	_	_	_	_	0	_	_	_
+11	to	_	_	_	_	0	_	_	_
+12	have	_	_	_	_	0	_	_	_
+13	low	_	_	_	_	0	_	_	_
+14	iron	_	_	_	_	0	_	_	_
+15	stores	_	_	_	_	0	_	_	_
+16	overall	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	says	_	_	_	_	0	_	_	_
+19	Canadian	_	_	_	_	0	_	_	_
+20	Blood	_	_	_	_	0	_	_	_
+21	Services	Services	PROPN	NNPS	Number=Plur	0	_	_	_
+22	(	_	_	_	_	0	_	_	_
+23	***CBS***	CBS	PROPN	NNP	Number=Sing	21	appos	_	SpaceAfter=No
+24	)	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	annual	_	_	_	_	0	_	_	_
+3	survey	_	_	_	_	0	_	_	_
+4	also	_	_	_	_	0	_	_	_
+5	revealed	_	_	_	_	0	_	_	_
+6	that	_	_	_	_	0	_	_	_
+7	***worries***	worry	NOUN	NNS	Number=Plur	14	subj	_	_
+8	about	_	_	_	_	0	_	_	_
+9	taking	_	_	_	_	0	_	_	_
+10	on	_	_	_	_	0	_	_	_
+11	fresh	_	_	_	_	0	_	_	_
+12	financial	_	_	_	_	0	_	_	_
+13	burdens	_	_	_	_	0	_	_	_
+14	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+15	rocketed	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	result	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	then	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	hardly	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	cat	_	_	_	_	0	_	_	_
+10	's	_	_	_	_	0	_	_	_
+11	***pyjamas***	pyjamas	NOUN	NNS	Number=Plur	6	comp:pred	_	SpaceAfter=No
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

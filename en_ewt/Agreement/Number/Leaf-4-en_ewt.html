@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,96 +137,616 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_ewt </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	Which	_	_	_	_	0	_	_	_
-2	wonderful	_	_	_	_	0	_	_	_
-3	contact	_	_	_	_	0	_	_	_
-4	of	_	_	_	_	0	_	_	_
-5	mine	_	_	_	_	0	_	_	_
-6	is	_	_	_	_	0	_	_	_
-7	thumbs	_	_	_	_	0	_	_	_
-8	upping	_	_	_	_	0	_	_	_
-9	all	all	DET	PDT	_	12	det@predet	_	_
-10	***my***	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	mod@poss	_	_
-11	best	best	ADJ	JJS	Degree=Sup	12	mod	_	_
-12	answers	answer	NOUN	NNS	Number=Plur	0	_	_	_
-13	^^	_	_	_	_	0	_	_	_
-14	?	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent's head is a= NOUN <br>
+</td><td style="text-align:center">dependent's lemma is= we <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent's head is a= NOUN; Not Active:dependent's lemma is= we;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	if	_	_	_	_	0	_	_	_
+3	Google	_	_	_	_	0	_	_	_
+4	expanded	_	_	_	_	0	_	_	_
+5	on	_	_	_	_	0	_	_	_
+6	***its***	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	mod@poss	_	_
+7	search	_	_	_	_	0	_	_	_
+8	-	_	_	_	_	0	_	_	_
+9	engine	_	_	_	_	0	_	_	_
+10	(	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	now	_	_	_	_	0	_	_	_
+13	e-mail	_	_	_	_	0	_	_	_
+14	)	_	_	_	_	0	_	_	_
+15	wares	wares	NOUN	NNS	Number=Plur	0	_	_	_
+16	into	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	full	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	fledged	_	_	_	_	0	_	_	_
+21	operating	_	_	_	_	0	_	_	_
+22	system	_	_	_	_	0	_	_	_
+23	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	If	_	_	_	_	0	_	_	_
-2	you	_	_	_	_	0	_	_	_
-3	want	_	_	_	_	0	_	_	_
-4	to	_	_	_	_	0	_	_	_
-5	eat	_	_	_	_	0	_	_	_
-6	cheaply	_	_	_	_	0	_	_	_
-7	without	_	_	_	_	0	_	_	_
-8	worrying	_	_	_	_	0	_	_	_
-9	about	_	_	_	_	0	_	_	_
-10	all	all	DET	PDT	_	14	det@predet	_	_
-11	those	those	DET	DT	Number=Plur|PronType=Dem	14	det	_	_
-12	daily	_	_	_	_	0	_	_	_
-13	***deal***	deal	NOUN	NN	Number=Sing	14	compound	_	_
-14	emails	email	NOUN	NNS	Number=Plur	0	_	_	_
-15	every	_	_	_	_	0	_	_	_
-16	day	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	ZebraKlub	_	_	_	_	0	_	_	_
-19	should	_	_	_	_	0	_	_	_
-20	be	_	_	_	_	0	_	_	_
-21	perfect	_	_	_	_	0	_	_	_
-22	for	_	_	_	_	0	_	_	_
-23	you	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
+1	What	_	_	_	_	0	_	_	_
+2	if	_	_	_	_	0	_	_	_
+3	Google	_	_	_	_	0	_	_	_
+4	expanded	_	_	_	_	0	_	_	_
+5	on	_	_	_	_	0	_	_	_
+6	its	_	_	_	_	0	_	_	_
+7	search	_	_	_	_	0	_	_	_
+8	-	_	_	_	_	0	_	_	_
+9	***engine***	engine	NOUN	NN	Number=Sing	15	compound	_	_
+10	(	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	now	_	_	_	_	0	_	_	_
+13	e-mail	_	_	_	_	0	_	_	_
+14	)	_	_	_	_	0	_	_	_
+15	wares	wares	NOUN	NNS	Number=Plur	0	_	_	_
+16	into	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	full	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	fledged	_	_	_	_	0	_	_	_
+21	operating	_	_	_	_	0	_	_	_
+22	system	_	_	_	_	0	_	_	_
+23	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	hard	_	_	_	_	0	_	_	_
-2	to	_	_	_	_	0	_	_	_
-3	forgive	_	_	_	_	0	_	_	_
-4	such	such	DET	PDT	_	7	det@predet	_	_
-5	an	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	_
-6	awful	awful	ADJ	JJ	Degree=Pos	7	mod	_	_
-7	margarita	margarita	NOUN	NN	Number=Sing	0	_	_	_
-8	and	_	_	_	_	0	_	_	_
-9	steep	_	_	_	_	0	_	_	_
-10	***prices***	price	NOUN	NNS	Number=Plur	7	conj	_	_
-11	but	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	food	_	_	_	_	0	_	_	_
-14	can	_	_	_	_	0	_	_	_
-15	be	_	_	_	_	0	_	_	_
-16	good	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	'm	_	_	_	_	0	_	_	_
-3	considering	_	_	_	_	0	_	_	_
-4	taking	_	_	_	_	0	_	_	_
-5	a	_	_	_	_	0	_	_	_
-6	job	_	_	_	_	0	_	_	_
-7	with	_	_	_	_	0	_	_	_
-8	Steiner	_	_	_	_	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	noticed	_	_	_	_	0	_	_	_
-11	I	_	_	_	_	0	_	_	_
-12	have	_	_	_	_	0	_	_	_
-13	to	_	_	_	_	0	_	_	_
-14	pay	_	_	_	_	0	_	_	_
+1	(	_	_	_	_	0	_	_	_
+2	And	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	by	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	way	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	is	_	_	_	_	0	_	_	_
+9	anybody	_	_	_	_	0	_	_	_
+10	else	_	_	_	_	0	_	_	_
+11	just	_	_	_	_	0	_	_	_
+12	a	_	_	_	_	0	_	_	_
+13	little	_	_	_	_	0	_	_	_
+14	nostalgic	_	_	_	_	0	_	_	_
 15	for	_	_	_	_	0	_	_	_
-16	all	all	DET	PDT	_	18	det@predet	_	_
-17	***my***	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	18	mod@poss	_	_
-18	travel	travel	NOUN	NN	Number=Sing	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	days	day	NOUN	NNS	Number=Plur	0	_	_	_
+18	when	_	_	_	_	0	_	_	_
+19	that	_	_	_	_	0	_	_	_
+20	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	mod@relcl	_	_
+21	a	_	_	_	_	0	_	_	_
+22	good	_	_	_	_	0	_	_	_
+23	thing	_	_	_	_	0	_	_	_
+24	?	_	_	_	_	0	_	_	_
+25	)	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	On	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	next	_	_	_	_	0	_	_	_
+4	two	_	_	_	_	0	_	_	_
+5	pictures	_	_	_	_	0	_	_	_
+6	he	_	_	_	_	0	_	_	_
+7	took	_	_	_	_	0	_	_	_
+8	screenshots	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	two	_	_	_	_	0	_	_	_
+11	***beheading***	beheading	NOUN	NN	Number=Sing	12	compound	_	_
+12	video's	video'	NOUN	NNS	Number=Plur	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	(	_	_	_	_	0	_	_	_
+2	You	_	_	_	_	0	_	_	_
+3	do	_	_	_	_	0	_	_	_
+4	n't	_	_	_	_	0	_	_	_
+5	need	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	use	_	_	_	_	0	_	_	_
+8	***their***	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	mod@poss	_	_
+9	site	site	NOUN	NN	Number=Sing	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	you	_	_	_	_	0	_	_	_
+12	can	_	_	_	_	0	_	_	_
+13	opt	_	_	_	_	0	_	_	_
+14	-	_	_	_	_	0	_	_	_
+15	out	_	_	_	_	0	_	_	_
+16	of	_	_	_	_	0	_	_	_
+17	sharing	_	_	_	_	0	_	_	_
+18	your	_	_	_	_	0	_	_	_
+19	information	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	you	_	_	_	_	0	_	_	_
+22	do	_	_	_	_	0	_	_	_
+23	n't	_	_	_	_	0	_	_	_
+24	need	_	_	_	_	0	_	_	_
+25	to	_	_	_	_	0	_	_	_
+26	send	_	_	_	_	0	_	_	_
+27	stuff	_	_	_	_	0	_	_	_
+28	to	_	_	_	_	0	_	_	_
+29	anyone	_	_	_	_	0	_	_	_
+30	with	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	Gmail	_	_	_	_	0	_	_	_
+33	account	_	_	_	_	0	_	_	_
+34	,	_	_	_	_	0	_	_	_
+35	and	_	_	_	_	0	_	_	_
+36	if	_	_	_	_	0	_	_	_
+37	--	_	_	_	_	0	_	_	_
+38	wonder	_	_	_	_	0	_	_	_
+39	of	_	_	_	_	0	_	_	_
+40	wonders	_	_	_	_	0	_	_	_
+41	--	_	_	_	_	0	_	_	_
+42	you	_	_	_	_	0	_	_	_
+43	're	_	_	_	_	0	_	_	_
+44	worried	_	_	_	_	0	_	_	_
+45	that	_	_	_	_	0	_	_	_
+46	you	_	_	_	_	0	_	_	_
+47	might	_	_	_	_	0	_	_	_
+48	send	_	_	_	_	0	_	_	_
+49	something	_	_	_	_	0	_	_	_
+50	to	_	_	_	_	0	_	_	_
+51	someone	_	_	_	_	0	_	_	_
+52	who	_	_	_	_	0	_	_	_
+53	would	_	_	_	_	0	_	_	_
+54	forward	_	_	_	_	0	_	_	_
+55	an	_	_	_	_	0	_	_	_
+56	excerpt	_	_	_	_	0	_	_	_
+57	to	_	_	_	_	0	_	_	_
+58	someone	_	_	_	_	0	_	_	_
+59	who	_	_	_	_	0	_	_	_
+60	would	_	_	_	_	0	_	_	_
+61	then	_	_	_	_	0	_	_	_
+62	store	_	_	_	_	0	_	_	_
+63	it	_	_	_	_	0	_	_	_
+64	on	_	_	_	_	0	_	_	_
+65	a	_	_	_	_	0	_	_	_
+66	Gmail	_	_	_	_	0	_	_	_
+67	account	_	_	_	_	0	_	_	_
+68	...	_	_	_	_	0	_	_	_
+69	you	_	_	_	_	0	_	_	_
+70	have	_	_	_	_	0	_	_	_
+71	far	_	_	_	_	0	_	_	_
+72	,	_	_	_	_	0	_	_	_
+73	far	_	_	_	_	0	_	_	_
+74	too	_	_	_	_	0	_	_	_
+75	much	_	_	_	_	0	_	_	_
+76	time	_	_	_	_	0	_	_	_
+77	on	_	_	_	_	0	_	_	_
+78	your	_	_	_	_	0	_	_	_
+79	hands	_	_	_	_	0	_	_	_
+80	)	_	_	_	_	0	_	_	_
+81	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Angry	_	_	_	_	0	_	_	_
+2	crowds	_	_	_	_	0	_	_	_
+3	chanted	_	_	_	_	0	_	_	_
+4	anti-American	_	_	_	_	0	_	_	_
+5	slogans	_	_	_	_	0	_	_	_
+6	in	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	western	_	_	_	_	0	_	_	_
+9	city	_	_	_	_	0	_	_	_
+10	of	_	_	_	_	0	_	_	_
+11	Falluja	_	_	_	_	0	_	_	_
+12	(	_	_	_	_	0	_	_	_
+13	pop.	_	_	_	_	0	_	_	_
+14	256,000	_	_	_	_	0	_	_	_
+15	)	_	_	_	_	0	_	_	_
+16	as	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	***security***	security	NOUN	NN	Number=Sing	19	compound	_	_
+19	police	police	NOUN	NNS	Number=Plur	0	_	_	_
+20	killed	_	_	_	_	0	_	_	_
+21	in	_	_	_	_	0	_	_	_
+22	a	_	_	_	_	0	_	_	_
+23	friendly	_	_	_	_	0	_	_	_
+24	fire	_	_	_	_	0	_	_	_
+25	incident	_	_	_	_	0	_	_	_
+26	by	_	_	_	_	0	_	_	_
+27	US	_	_	_	_	0	_	_	_
+28	troops	_	_	_	_	0	_	_	_
+29	were	_	_	_	_	0	_	_	_
+30	buried	_	_	_	_	0	_	_	_
+31	on	_	_	_	_	0	_	_	_
+32	Saturday	_	_	_	_	0	_	_	_
+33	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Angry	_	_	_	_	0	_	_	_
+2	crowds	_	_	_	_	0	_	_	_
+3	chanted	_	_	_	_	0	_	_	_
+4	anti-American	_	_	_	_	0	_	_	_
+5	slogans	_	_	_	_	0	_	_	_
+6	in	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	western	_	_	_	_	0	_	_	_
+9	city	_	_	_	_	0	_	_	_
+10	of	_	_	_	_	0	_	_	_
+11	Falluja	_	_	_	_	0	_	_	_
+12	(	_	_	_	_	0	_	_	_
+13	pop.	_	_	_	_	0	_	_	_
+14	256,000	_	_	_	_	0	_	_	_
+15	)	_	_	_	_	0	_	_	_
+16	as	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	security	_	_	_	_	0	_	_	_
+19	police	_	_	_	_	0	_	_	_
+20	killed	_	_	_	_	0	_	_	_
+21	in	_	_	_	_	0	_	_	_
+22	a	_	_	_	_	0	_	_	_
+23	friendly	_	_	_	_	0	_	_	_
+24	fire	_	_	_	_	0	_	_	_
+25	incident	_	_	_	_	0	_	_	_
+26	by	_	_	_	_	0	_	_	_
+27	***US***	US	PROPN	NNP	Number=Sing	28	compound	_	_
+28	troops	troops	NOUN	NNS	Number=Plur	0	_	_	_
+29	were	_	_	_	_	0	_	_	_
+30	buried	_	_	_	_	0	_	_	_
+31	on	_	_	_	_	0	_	_	_
+32	Saturday	_	_	_	_	0	_	_	_
+33	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Reuters	_	_	_	_	0	_	_	_
+2	reported	_	_	_	_	0	_	_	_
+3	that	_	_	_	_	0	_	_	_
+4	"	_	_	_	_	0	_	_	_
+5	Sunni	_	_	_	_	0	_	_	_
+6	clerics	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	town	_	_	_	_	0	_	_	_
+10	issued	_	_	_	_	0	_	_	_
+11	a	_	_	_	_	0	_	_	_
+12	'	_	_	_	_	0	_	_	_
+13	Declaration	_	_	_	_	0	_	_	_
+14	by	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	people	_	_	_	_	0	_	_	_
+17	of	_	_	_	_	0	_	_	_
+18	Fallujah	_	_	_	_	0	_	_	_
+19	'	_	_	_	_	0	_	_	_
+20	condemning	_	_	_	_	0	_	_	_
+21	the	_	_	_	_	0	_	_	_
+22	deaths	_	_	_	_	0	_	_	_
+23	of	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	***security***	security	NOUN	NN	Number=Sing	26	compound	_	_
+26	guards	guard	NOUN	NNS	Number=Plur	0	_	_	_
+27	and	_	_	_	_	0	_	_	_
+28	police	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	announcing	_	_	_	_	0	_	_	_
+31	three	_	_	_	_	0	_	_	_
+32	days	_	_	_	_	0	_	_	_
+33	of	_	_	_	_	0	_	_	_
+34	mourning	_	_	_	_	0	_	_	_
+35	,	_	_	_	_	0	_	_	_
+36	and	_	_	_	_	0	_	_	_
+37	calling	_	_	_	_	0	_	_	_
+38	for	_	_	_	_	0	_	_	_
+39	a	_	_	_	_	0	_	_	_
+40	general	_	_	_	_	0	_	_	_
+41	strike	_	_	_	_	0	_	_	_
+42	today	_	_	_	_	0	_	_	_
+43	.	_	_	_	_	0	_	_	_
+44	"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	clerics	_	_	_	_	0	_	_	_
+3	demanded	_	_	_	_	0	_	_	_
+4	talks	_	_	_	_	0	_	_	_
+5	with	_	_	_	_	0	_	_	_
+6	local	_	_	_	_	0	_	_	_
+7	***US***	US	PROPN	NNP	Number=Sing	8	compound	_	_
+8	commanders	commander	NOUN	NNS	Number=Plur	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Falluja	_	_	_	_	0	_	_	_
+2	has	_	_	_	_	0	_	_	_
+3	long	_	_	_	_	0	_	_	_
+4	been	_	_	_	_	0	_	_	_
+5	roiled	_	_	_	_	0	_	_	_
+6	by	_	_	_	_	0	_	_	_
+7	tense	_	_	_	_	0	_	_	_
+8	relations	_	_	_	_	0	_	_	_
+9	with	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	***US***	US	PROPN	NNP	Number=Sing	12	compound	_	_
+12	soldiers	soldier	NOUN	NNS	Number=Plur	0	_	_	_
+13	there	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	since	_	_	_	_	0	_	_	_
+16	local	_	_	_	_	0	_	_	_
+17	Sunnis	_	_	_	_	0	_	_	_
+18	either	_	_	_	_	0	_	_	_
+19	remain	_	_	_	_	0	_	_	_
+20	committed	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	Arab	_	_	_	_	0	_	_	_
+23	nationalism	_	_	_	_	0	_	_	_
+24	or	_	_	_	_	0	_	_	_
+25	have	_	_	_	_	0	_	_	_
+26	become	_	_	_	_	0	_	_	_
+27	Sunni	_	_	_	_	0	_	_	_
+28	fundamentalists	_	_	_	_	0	_	_	_
+29	or	_	_	_	_	0	_	_	_
+30	even	_	_	_	_	0	_	_	_
+31	radicals	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Google	_	_	_	_	0	_	_	_
+2	is	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	nice	_	_	_	_	0	_	_	_
+5	***search***	search	NOUN	NN	Number=Sing	6	compound	_	_
+6	engine	engine	NOUN	NN	Number=Sing	0	_	_	_
+7	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	if	_	_	_	_	0	_	_	_
+3	Google	_	_	_	_	0	_	_	_
+4	expanded	_	_	_	_	0	_	_	_
+5	on	_	_	_	_	0	_	_	_
+6	its	_	_	_	_	0	_	_	_
+7	***search***	search	NOUN	NN	Number=Sing	9	compound	_	SpaceAfter=No
+8	-	_	_	_	_	0	_	_	_
+9	engine	engine	NOUN	NN	Number=Sing	0	_	_	_
+10	(	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	now	_	_	_	_	0	_	_	_
+13	e-mail	_	_	_	_	0	_	_	_
+14	)	_	_	_	_	0	_	_	_
+15	wares	_	_	_	_	0	_	_	_
+16	into	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	full	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	fledged	_	_	_	_	0	_	_	_
+21	operating	_	_	_	_	0	_	_	_
+22	system	_	_	_	_	0	_	_	_
+23	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	if	_	_	_	_	0	_	_	_
+3	Google	_	_	_	_	0	_	_	_
+4	expanded	_	_	_	_	0	_	_	_
+5	on	_	_	_	_	0	_	_	_
+6	its	_	_	_	_	0	_	_	_
+7	search	_	_	_	_	0	_	_	_
+8	-	_	_	_	_	0	_	_	_
+9	engine	engine	NOUN	NN	Number=Sing	0	_	_	_
+10	(	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	now	_	_	_	_	0	_	_	_
+13	***e-mail***	e-mail	NOUN	NN	Number=Sing	9	conj	_	SpaceAfter=No
+14	)	_	_	_	_	0	_	_	_
+15	wares	_	_	_	_	0	_	_	_
+16	into	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	full	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	fledged	_	_	_	_	0	_	_	_
+21	operating	_	_	_	_	0	_	_	_
+22	system	_	_	_	_	0	_	_	_
+23	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	if	_	_	_	_	0	_	_	_
+3	Google	_	_	_	_	0	_	_	_
+4	expanded	_	_	_	_	0	_	_	_
+5	on	_	_	_	_	0	_	_	_
+6	its	_	_	_	_	0	_	_	_
+7	search	_	_	_	_	0	_	_	_
+8	-	_	_	_	_	0	_	_	_
+9	engine	_	_	_	_	0	_	_	_
+10	(	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	now	_	_	_	_	0	_	_	_
+13	e-mail	_	_	_	_	0	_	_	_
+14	)	_	_	_	_	0	_	_	_
+15	wares	_	_	_	_	0	_	_	_
+16	into	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	full	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	fledged	_	_	_	_	0	_	_	_
+21	***operating***	operating	NOUN	NN	Number=Sing	22	compound	_	_
+22	system	system	NOUN	NN	Number=Sing	0	_	_	_
+23	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	BuzzMachine	_	_	_	_	0	_	_	_
+3	post	_	_	_	_	0	_	_	_
+4	argues	_	_	_	_	0	_	_	_
+5	that	_	_	_	_	0	_	_	_
+6	Google	_	_	_	_	0	_	_	_
+7	's	_	_	_	_	0	_	_	_
+8	rush	_	_	_	_	0	_	_	_
+9	toward	_	_	_	_	0	_	_	_
+10	ubiquity	_	_	_	_	0	_	_	_
+11	might	_	_	_	_	0	_	_	_
+12	backfire	_	_	_	_	0	_	_	_
+13	--	_	_	_	_	0	_	_	_
+14	which	_	_	_	_	0	_	_	_
+15	we	_	_	_	_	0	_	_	_
+16	've	_	_	_	_	0	_	_	_
+17	all	_	_	_	_	0	_	_	_
+18	heard	_	_	_	_	0	_	_	_
+19	before	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	but	_	_	_	_	0	_	_	_
+22	it	_	_	_	_	0	_	_	_
+23	's	_	_	_	_	0	_	_	_
+24	particularly	_	_	_	_	0	_	_	_
+25	well	_	_	_	_	0	_	_	_
+26	-	_	_	_	_	0	_	_	_
+27	put	_	_	_	_	0	_	_	_
+28	in	_	_	_	_	0	_	_	_
+29	***this***	this	DET	DT	Number=Sing|PronType=Dem	30	det	_	_
+30	post	post	NOUN	NN	Number=Sing	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	***BuzzMachine***	BuzzMachine	PROPN	NNP	Number=Sing	3	compound	_	_
+3	post	post	NOUN	NN	Number=Sing	0	_	_	_
+4	argues	_	_	_	_	0	_	_	_
+5	that	_	_	_	_	0	_	_	_
+6	Google	_	_	_	_	0	_	_	_
+7	's	_	_	_	_	0	_	_	_
+8	rush	_	_	_	_	0	_	_	_
+9	toward	_	_	_	_	0	_	_	_
+10	ubiquity	_	_	_	_	0	_	_	_
+11	might	_	_	_	_	0	_	_	_
+12	backfire	_	_	_	_	0	_	_	_
+13	--	_	_	_	_	0	_	_	_
+14	which	_	_	_	_	0	_	_	_
+15	we	_	_	_	_	0	_	_	_
+16	've	_	_	_	_	0	_	_	_
+17	all	_	_	_	_	0	_	_	_
+18	heard	_	_	_	_	0	_	_	_
+19	before	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	but	_	_	_	_	0	_	_	_
+22	it	_	_	_	_	0	_	_	_
+23	's	_	_	_	_	0	_	_	_
+24	particularly	_	_	_	_	0	_	_	_
+25	well	_	_	_	_	0	_	_	_
+26	-	_	_	_	_	0	_	_	_
+27	put	_	_	_	_	0	_	_	_
+28	in	_	_	_	_	0	_	_	_
+29	this	_	_	_	_	0	_	_	_
+30	post	_	_	_	_	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Is	_	_	_	_	0	_	_	_
+2	that	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	***money***	money	NOUN	NN	Number=Sing	5	compound	_	_
+5	maker	maker	NOUN	NN	Number=Sing	0	_	_	_
+6	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	I	_	_	_	_	0	_	_	_
+2	doubt	_	_	_	_	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	very	_	_	_	_	0	_	_	_
+5	few	_	_	_	_	0	_	_	_
+6	who	_	_	_	_	0	_	_	_
+7	actually	_	_	_	_	0	_	_	_
+8	read	_	_	_	_	0	_	_	_
+9	***my***	my	PRON	PRP$	Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	mod@poss	_	_
+10	blog	blog	NOUN	NN	Number=Sing	0	_	_	_
+11	have	_	_	_	_	0	_	_	_
+12	not	_	_	_	_	0	_	_	_
+13	come	_	_	_	_	0	_	_	_
+14	across	_	_	_	_	0	_	_	_
+15	this	_	_	_	_	0	_	_	_
+16	yet	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	but	_	_	_	_	0	_	_	_
+19	I	_	_	_	_	0	_	_	_
+20	figured	_	_	_	_	0	_	_	_
+21	I	_	_	_	_	0	_	_	_
+22	would	_	_	_	_	0	_	_	_
+23	put	_	_	_	_	0	_	_	_
+24	it	_	_	_	_	0	_	_	_
+25	out	_	_	_	_	0	_	_	_
+26	there	_	_	_	_	0	_	_	_
+27	anyways	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	John	_	_	_	_	0	_	_	_
+2	Donovan	_	_	_	_	0	_	_	_
+3	from	_	_	_	_	0	_	_	_
+4	Argghhh!	_	_	_	_	0	_	_	_
+5	has	_	_	_	_	0	_	_	_
+6	put	_	_	_	_	0	_	_	_
+7	out	_	_	_	_	0	_	_	_
+8	a	_	_	_	_	0	_	_	_
+9	excellent	_	_	_	_	0	_	_	_
+10	***slide***	slide	NOUN	NN	Number=Sing	11	compound	_	_
+11	show	show	NOUN	NN	Number=Sing	0	_	_	_
+12	on	_	_	_	_	0	_	_	_
+13	what	_	_	_	_	0	_	_	_
+14	was	_	_	_	_	0	_	_	_
+15	actually	_	_	_	_	0	_	_	_
+16	found	_	_	_	_	0	_	_	_
+17	and	_	_	_	_	0	_	_	_
+18	fought	_	_	_	_	0	_	_	_
+19	for	_	_	_	_	0	_	_	_
+20	in	_	_	_	_	0	_	_	_
+21	Fallujah	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	One	_	_	_	_	0	_	_	_
+2	of	_	_	_	_	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	pictures	_	_	_	_	0	_	_	_
+5	shows	_	_	_	_	0	_	_	_
+6	a	_	_	_	_	0	_	_	_
+7	flag	flag	NOUN	NN	Number=Sing	0	_	_	_
+8	that	_	_	_	_	0	_	_	_
+9	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	mod@relcl	_	_
+10	found	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	Fallujah	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

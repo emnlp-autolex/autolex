@@ -137,701 +137,407 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> Agreement in <b>Number</b>, dependent is denoted by *** </h3><h4> Rules ACTIVE for this Leaf: </h4><ul><li> dependent is the= modifer of relative clause </li><li> the  is also the head of= DET </li><li> dependent's head is a= NOUN </li></ul><h4> Rules NOT ACTIVE for this Leaf: </h4><ul><li> dependent' head is not the= predicative complements </li><li> the  is not also the head of= determiner </li><li> dependent is not a= DET </li></ul><h4> Examples </h4><pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	prestigious	_	_	_	_	0	_	_	_
-3	IAEA	_	_	_	_	0	_	_	_
-4	(	_	_	_	_	0	_	_	_
-5	International	_	_	_	_	0	_	_	_
-6	Atomic	_	_	_	_	0	_	_	_
-7	Energy	_	_	_	_	0	_	_	_
-8	Agency	_	_	_	_	0	_	_	_
-9	)	_	_	_	_	0	_	_	_
-10	published	_	_	_	_	0	_	_	_
-11	an	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
-12	early	early	ADJ	JJ	Degree=Pos	13	mod	_	_
-13	report	report	NOUN	NN	Number=Sing	0	_	_	_
-14	on	on	ADP	IN	_	13	udep	_	_
-15	Chernobyl	_	_	_	_	0	_	_	_
-16	which	_	_	_	_	0	_	_	_
-17	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	mod@relcl	_	_
-18	based	_	_	_	_	0	_	_	_
-19	on	_	_	_	_	0	_	_	_
-20	information	_	_	_	_	0	_	_	_
-21	from	_	_	_	_	0	_	_	_
-22	Russian	_	_	_	_	0	_	_	_
-23	sources	_	_	_	_	0	_	_	_
-24	and	_	_	_	_	0	_	_	_
-25	stated	_	_	_	_	0	_	_	_
-26	that	_	_	_	_	0	_	_	_
-27	there	_	_	_	_	0	_	_	_
-28	was	_	_	_	_	0	_	_	_
-29	no	_	_	_	_	0	_	_	_
-30	significant	_	_	_	_	0	_	_	_
-31	health	_	_	_	_	0	_	_	_
-32	effects	_	_	_	_	0	_	_	_
-33	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">the head of the dependent has semantic class= creative work <br>
+the head agrees with its head on= Number <br>
+dependent is the= compound <br>
+</td><td style="text-align:center">dependent is the= object <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:the head of the dependent has semantic class= creative work;the head agrees with its head on= Number;dependent is the= compound; Not Active:dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Laurie	Laurie	PROPN	NNP	Number=Sing	0	_	_	_
+2	Ellis	_	_	_	_	0	_	_	_
+3	Enron	_	_	_	_	0	_	_	_
+4	Net	_	_	_	_	0	_	_	_
+5	***Works***	Works	PROPN	NNPS	Number=Plur	6	compound	_	_
+6	LLC	LLC	PROPN	NNP	Number=Sing	1	list	_	_
+7	Client	_	_	_	_	0	_	_	_
+8	Services	_	_	_	_	0	_	_	_
+9	Phone	_	_	_	_	0	_	_	_
+10	:	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	713	_	_	_	_	0	_	_	_
+13	)	_	_	_	_	0	_	_	_
+14	345-9945	_	_	_	_	0	_	_	_
+15	Fax	_	_	_	_	0	_	_	_
+16	:	_	_	_	_	0	_	_	_
+17	(	_	_	_	_	0	_	_	_
+18	713	_	_	_	_	0	_	_	_
+19	)	_	_	_	_	0	_	_	_
+20	646-8420	_	_	_	_	0	_	_	_
+21	Email	_	_	_	_	0	_	_	_
+22	:	_	_	_	_	0	_	_	_
+23	laurie.ellis@enron.com	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	S.	_	_	_	_	0	_	_	_
-2	and	_	_	_	_	0	_	_	_
-3	I	_	_	_	_	0	_	_	_
-4	have	_	_	_	_	0	_	_	_
-5	an	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	_
-6	acquaintance	acquaintance	NOUN	NN	Number=Sing	0	_	_	_
-7	who	_	_	_	_	0	_	_	_
-8	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	mod@relcl	_	_
-9	hosted	_	_	_	_	0	_	_	_
-10	several	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	these	_	_	_	_	0	_	_	_
-13	children	_	_	_	_	0	_	_	_
-14	for	_	_	_	_	0	_	_	_
-15	many	_	_	_	_	0	_	_	_
-16	years	_	_	_	_	0	_	_	_
-17	;	_	_	_	_	0	_	_	_
-18	to	_	_	_	_	0	_	_	_
-19	see	_	_	_	_	0	_	_	_
-20	these	_	_	_	_	0	_	_	_
-21	little	_	_	_	_	0	_	_	_
-22	ones	_	_	_	_	0	_	_	_
-23	breaks	_	_	_	_	0	_	_	_
+1	Laurie	Laurie	PROPN	NNP	Number=Sing	0	_	_	_
+2	Ellis	_	_	_	_	0	_	_	_
+3	Enron	_	_	_	_	0	_	_	_
+4	Net	_	_	_	_	0	_	_	_
+5	***Works***	Works	PROPN	NNPS	Number=Plur	6	compound	_	_
+6	LLC	LLC	PROPN	NNP	Number=Sing	1	list	_	_
+7	Client	_	_	_	_	0	_	_	_
+8	Services	_	_	_	_	0	_	_	_
+9	Phone	_	_	_	_	0	_	_	_
+10	:	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	713	_	_	_	_	0	_	_	_
+13	)	_	_	_	_	0	_	_	_
+14	345-9945	_	_	_	_	0	_	_	_
+15	Fax	_	_	_	_	0	_	_	_
+16	:	_	_	_	_	0	_	_	_
+17	(	_	_	_	_	0	_	_	_
+18	713	_	_	_	_	0	_	_	_
+19	)	_	_	_	_	0	_	_	_
+20	646-8420	_	_	_	_	0	_	_	_
+21	Email	_	_	_	_	0	_	_	_
+22	:	_	_	_	_	0	_	_	_
+23	laurie.ellis@enron.com	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	amendment	_	_	_	_	0	_	_	_
+3	adds	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	British	_	_	_	_	0	_	_	_
+6	Columbia	_	_	_	_	0	_	_	_
+7	***Securities***	Securities	PROPN	NNPS	Number=Plur	8	compound	_	_
+8	Act	Act	PROPN	NNP	Number=Sing	9	compound	_	_
+9	representation	representation	NOUN	NN	Number=Sing	0	_	_	_
+10	to	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	master	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Yes	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	we	_	_	_	_	0	_	_	_
+4	should	_	_	_	_	0	_	_	_
+5	add	_	_	_	_	0	_	_	_
+6	compliance	_	_	_	_	0	_	_	_
+7	with	_	_	_	_	0	_	_	_
+8	OTC	_	_	_	_	0	_	_	_
+9	Derivatives	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	/	_	_	_	_	0	_	_	_
+12	or	_	_	_	_	0	_	_	_
+13	Commodity	_	_	_	_	0	_	_	_
+14	Contracts	_	_	_	_	0	_	_	_
+15	and	_	_	_	_	0	_	_	_
+16	Qualified	_	_	_	_	0	_	_	_
+17	Party	_	_	_	_	0	_	_	_
+18	requirements	_	_	_	_	0	_	_	_
+19	of	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	Securities	_	_	_	_	0	_	_	_
+22	Act	_	_	_	_	0	_	_	_
+23	(	_	_	_	_	0	_	_	_
+24	Alberta	_	_	_	_	0	_	_	_
+25	)	_	_	_	_	0	_	_	_
+26	,	_	_	_	_	0	_	_	_
+27	Securities	_	_	_	_	0	_	_	_
+28	Act	Act	PROPN	NNP	Number=Sing	0	_	_	_
+29	(	_	_	_	_	0	_	_	_
+30	British	_	_	_	_	0	_	_	_
+31	Columbia	_	_	_	_	0	_	_	_
+32	)	_	_	_	_	0	_	_	_
+33	and	_	_	_	_	0	_	_	_
+34	***Securities***	Securities	PROPN	NNPS	Number=Plur	35	compound	_	_
+35	Act	Act	PROPN	NNP	Number=Sing	28	conj	_	_
+36	(	_	_	_	_	0	_	_	_
+37	Ontario	_	_	_	_	0	_	_	_
+38	)	_	_	_	_	0	_	_	_
+39	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	One	_	_	_	_	0	_	_	_
+2	of	_	_	_	_	0	_	_	_
+3	them	_	_	_	_	0	_	_	_
+4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	***Rest***	Rest	PROPN	NNP	Number=Sing	9	compound	_	_
+7	and	_	_	_	_	0	_	_	_
+8	Recuperation	_	_	_	_	0	_	_	_
+9	Program	Program	PROPN	NNP	Number=Sing	4	comp:pred	_	SpaceAfter=No
+10	,	_	_	_	_	0	_	_	_
+11	wherein	_	_	_	_	0	_	_	_
+12	a	_	_	_	_	0	_	_	_
+13	child	_	_	_	_	0	_	_	_
+14	can	_	_	_	_	0	_	_	_
+15	come	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	US	_	_	_	_	0	_	_	_
+19	for	_	_	_	_	0	_	_	_
+20	a	_	_	_	_	0	_	_	_
+21	few	_	_	_	_	0	_	_	_
+22	weeks	_	_	_	_	0	_	_	_
+23	in	_	_	_	_	0	_	_	_
 24	the	_	_	_	_	0	_	_	_
-25	heart	_	_	_	_	0	_	_	_
+25	summer	_	_	_	_	0	_	_	_
 26	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	They	_	_	_	_	0	_	_	_
-2	would	_	_	_	_	0	_	_	_
-3	thereby	_	_	_	_	0	_	_	_
-4	gain	_	_	_	_	0	_	_	_
-5	control	_	_	_	_	0	_	_	_
-6	of	_	_	_	_	0	_	_	_
-7	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
-8	major	major	ADJ	JJ	Degree=Pos	9	mod	_	_
-9	base	base	NOUN	NN	Number=Sing	0	_	_	_
-10	for	for	ADP	IN	_	9	udep	_	_
-11	terrorist	_	_	_	_	0	_	_	_
-12	operations	_	_	_	_	0	_	_	_
-13	,	,	PUNCT	,	_	9	punct	_	_
-14	which	_	_	_	_	0	_	_	_
-15	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	mod@relcl	_	_
-16	also	_	_	_	_	0	_	_	_
-17	a	_	_	_	_	0	_	_	_
-18	nuclear	_	_	_	_	0	_	_	_
-19	power	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	"	_	_	_	_	0	_	_	_
-2	Can	_	_	_	_	0	_	_	_
-3	you	_	_	_	_	0	_	_	_
-4	name	_	_	_	_	0	_	_	_
-5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
-6	general	general	NOUN	NN	Number=Sing	0	_	_	_
-7	who	_	_	_	_	0	_	_	_
-8	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	mod@relcl	_	_
-9	in	_	_	_	_	0	_	_	_
-10	charge	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	Pakistan	_	_	_	_	0	_	_	_
-13	?	_	_	_	_	0	_	_	_
-14	"	_	_	_	_	0	_	_	_
+2	Further	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	I	_	_	_	_	0	_	_	_
+5	find	_	_	_	_	0	_	_	_
+6	it	_	_	_	_	0	_	_	_
+7	even	_	_	_	_	0	_	_	_
+8	more	_	_	_	_	0	_	_	_
+9	disturbing	_	_	_	_	0	_	_	_
+10	that	_	_	_	_	0	_	_	_
+11	he	_	_	_	_	0	_	_	_
+12	made	_	_	_	_	0	_	_	_
+13	these	_	_	_	_	0	_	_	_
+14	comments	_	_	_	_	0	_	_	_
+15	about	_	_	_	_	0	_	_	_
+16	a	_	_	_	_	0	_	_	_
+17	nation	_	_	_	_	0	_	_	_
+18	that	_	_	_	_	0	_	_	_
+19	just	_	_	_	_	0	_	_	_
+20	last	_	_	_	_	0	_	_	_
+21	year	_	_	_	_	0	_	_	_
+22	tested	_	_	_	_	0	_	_	_
+23	nuclear	_	_	_	_	0	_	_	_
+24	weapons	_	_	_	_	0	_	_	_
+25	--	_	_	_	_	0	_	_	_
+26	shortly	_	_	_	_	0	_	_	_
+27	after	_	_	_	_	0	_	_	_
+28	voicing	_	_	_	_	0	_	_	_
+29	his	_	_	_	_	0	_	_	_
+30	public	_	_	_	_	0	_	_	_
+31	opposition	_	_	_	_	0	_	_	_
+32	to	_	_	_	_	0	_	_	_
+33	the	_	_	_	_	0	_	_	_
+34	Comprehensive	_	_	_	_	0	_	_	_
+35	***Test***	Test	PROPN	NNP	Number=Sing	36	compound	_	_
+36	Ban	Ban	PROPN	NNP	Number=Sing	37	compound	_	_
+37	Treaty	Treaty	PROPN	NNP	Number=Sing	0	_	_	_
+38	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	The	the	DET	DT	Definite=Def|PronType=Art	3	det	_	_
-2	biggest	biggest	ADJ	JJS	Degree=Sup	3	mod	_	_
-3	threat	threat	NOUN	NN	Number=Sing	0	_	_	_
-4	Israel	_	_	_	_	0	_	_	_
-5	***faces***	face	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	mod@relcl	_	_
-6	is	_	_	_	_	0	_	_	_
-7	not	_	_	_	_	0	_	_	_
-8	from	_	_	_	_	0	_	_	_
-9	conventional	_	_	_	_	0	_	_	_
-10	armies	_	_	_	_	0	_	_	_
-11	but	_	_	_	_	0	_	_	_
-12	from	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	asymmetrical	_	_	_	_	0	_	_	_
-15	tactics	_	_	_	_	0	_	_	_
-16	of	_	_	_	_	0	_	_	_
-17	Palestinian	_	_	_	_	0	_	_	_
-18	national	_	_	_	_	0	_	_	_
-19	liberation	_	_	_	_	0	_	_	_
-20	movements	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
+1	THE	_	_	_	_	0	_	_	_
+2	***DAILY***	DAILY	PROPN	NNP	Number=Sing	3	compound	_	_
+3	STAR	STAR	PROPN	NNP	Number=Sing	4	subj	_	_
+4	publishes	publish	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	this	_	_	_	_	0	_	_	_
+6	commentary	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	agreement	_	_	_	_	0	_	_	_
+9	with	_	_	_	_	0	_	_	_
+10	Agence	_	_	_	_	0	_	_	_
+11	Global	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Iraqi	_	_	_	_	0	_	_	_
-2	cities	_	_	_	_	0	_	_	_
-3	such	_	_	_	_	0	_	_	_
-4	as	_	_	_	_	0	_	_	_
-5	Fallujah	_	_	_	_	0	_	_	_
-6	and	_	_	_	_	0	_	_	_
-7	Ramadi	_	_	_	_	0	_	_	_
-8	were	_	_	_	_	0	_	_	_
-9	on	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	truck	_	_	_	_	0	_	_	_
-12	route	_	_	_	_	0	_	_	_
-13	from	_	_	_	_	0	_	_	_
-14	Amman	_	_	_	_	0	_	_	_
-15	to	_	_	_	_	0	_	_	_
-16	Baghdad	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	and	_	_	_	_	0	_	_	_
-19	so	_	_	_	_	0	_	_	_
-20	came	_	_	_	_	0	_	_	_
-21	under	_	_	_	_	0	_	_	_
-22	the	_	_	_	_	0	_	_	_
-23	influence	_	_	_	_	0	_	_	_
-24	of	_	_	_	_	0	_	_	_
-25	the	the	DET	DT	Definite=Def|PronType=Art	27	det	_	_
-26	Salafi	Salafi	PROPN	NNP	Number=Sing	27	compound	_	_
-27	movement	movement	NOUN	NN	Number=Sing	0	_	_	_
-28	,	,	PUNCT	,	_	27	punct	_	_
-29	which	_	_	_	_	0	_	_	_
-30	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	27	mod@relcl	_	_
-31	popular	_	_	_	_	0	_	_	_
-32	in	_	_	_	_	0	_	_	_
-33	Jordan	_	_	_	_	0	_	_	_
-34	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Although	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	origins	_	_	_	_	0	_	_	_
-4	of	_	_	_	_	0	_	_	_
-5	a	a	DET	DT	Definite=Ind|PronType=Art	6	det	_	_
-6	movement	movement	NOUN	NN	Number=Sing	0	_	_	_
-7	that	_	_	_	_	0	_	_	_
-8	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	mod@relcl	_	_
-9	confined	_	_	_	_	0	_	_	_
-10	largely	_	_	_	_	0	_	_	_
-11	to	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	literate	_	_	_	_	0	_	_	_
-14	culture	_	_	_	_	0	_	_	_
-15	of	_	_	_	_	0	_	_	_
-16	intellectual	_	_	_	_	0	_	_	_
-17	endeavor	_	_	_	_	0	_	_	_
-18	and	_	_	_	_	0	_	_	_
-19	patronage	_	_	_	_	0	_	_	_
-20	can	_	_	_	_	0	_	_	_
-21	be	_	_	_	_	0	_	_	_
-22	traced	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	the	_	_	_	_	0	_	_	_
-25	earlier	_	_	_	_	0	_	_	_
-26	part	_	_	_	_	0	_	_	_
-27	of	_	_	_	_	0	_	_	_
-28	the	_	_	_	_	0	_	_	_
-29	14th	_	_	_	_	0	_	_	_
-30	century	_	_	_	_	0	_	_	_
-31	,	_	_	_	_	0	_	_	_
-32	many	_	_	_	_	0	_	_	_
-33	aspects	_	_	_	_	0	_	_	_
-34	of	_	_	_	_	0	_	_	_
-35	Italian	_	_	_	_	0	_	_	_
-36	culture	_	_	_	_	0	_	_	_
-37	and	_	_	_	_	0	_	_	_
-38	society	_	_	_	_	0	_	_	_
-39	remained	_	_	_	_	0	_	_	_
-40	largely	_	_	_	_	0	_	_	_
-41	Medieval	_	_	_	_	0	_	_	_
-42	;	_	_	_	_	0	_	_	_
-43	the	_	_	_	_	0	_	_	_
-44	Renaissance	_	_	_	_	0	_	_	_
-45	did	_	_	_	_	0	_	_	_
-46	not	_	_	_	_	0	_	_	_
-47	come	_	_	_	_	0	_	_	_
-48	into	_	_	_	_	0	_	_	_
-49	full	_	_	_	_	0	_	_	_
-50	swing	_	_	_	_	0	_	_	_
-51	until	_	_	_	_	0	_	_	_
-52	the	_	_	_	_	0	_	_	_
-53	end	_	_	_	_	0	_	_	_
-54	of	_	_	_	_	0	_	_	_
-55	the	_	_	_	_	0	_	_	_
-56	century	_	_	_	_	0	_	_	_
-57	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	And	_	_	_	_	0	_	_	_
-2	that	_	_	_	_	0	_	_	_
-3	explains	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	delay	_	_	_	_	0	_	_	_
+1	But	_	_	_	_	0	_	_	_
+2	there	_	_	_	_	0	_	_	_
+3	are	_	_	_	_	0	_	_	_
+4	strong	_	_	_	_	0	_	_	_
+5	hints	_	_	_	_	0	_	_	_
 6	in	_	_	_	_	0	_	_	_
 7	the	_	_	_	_	0	_	_	_
-8	signing	_	_	_	_	0	_	_	_
-9	of	_	_	_	_	0	_	_	_
-10	a	a	DET	DT	Definite=Ind|PronType=Art	13	det	_	_
-11	formal	formal	ADJ	JJ	Degree=Pos	13	mod	_	_
-12	defense	defense	NOUN	NN	Number=Sing	13	compound	_	_
-13	agreement	agreement	NOUN	NN	Number=Sing	0	_	_	_
-14	that	_	_	_	_	0	_	_	_
-15	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	mod@relcl	_	_
-16	at	_	_	_	_	0	_	_	_
-17	the	_	_	_	_	0	_	_	_
-18	heart	_	_	_	_	0	_	_	_
-19	of	_	_	_	_	0	_	_	_
-20	Sri	_	_	_	_	0	_	_	_
-21	Lankan	_	_	_	_	0	_	_	_
-22	President	_	_	_	_	0	_	_	_
-23	Chandrika	_	_	_	_	0	_	_	_
-24	Kumaratunga	_	_	_	_	0	_	_	_
-25	's	_	_	_	_	0	_	_	_
-26	four	_	_	_	_	0	_	_	_
-27	-	_	_	_	_	0	_	_	_
-28	day	_	_	_	_	0	_	_	_
-29	visit	_	_	_	_	0	_	_	_
-30	to	_	_	_	_	0	_	_	_
-31	India	_	_	_	_	0	_	_	_
-32	recently	_	_	_	_	0	_	_	_
-33	.	_	_	_	_	0	_	_	_
+8	country	_	_	_	_	0	_	_	_
+9	that	_	_	_	_	0	_	_	_
+10	a	_	_	_	_	0	_	_	_
+11	new	_	_	_	_	0	_	_	_
+12	Indo	_	_	_	_	0	_	_	_
+13	-	_	_	_	_	0	_	_	_
+14	***Sri***	Sri	PROPN	NNP	Number=Sing	15	compound	_	_
+15	Lanka	Lanka	PROPN	NNP	Number=Sing	17	compound	_	_
+16	defense	_	_	_	_	0	_	_	_
+17	deal	deal	NOUN	NN	Number=Sing	0	_	_	_
+18	could	_	_	_	_	0	_	_	_
+19	be	_	_	_	_	0	_	_	_
+20	in	_	_	_	_	0	_	_	_
+21	the	_	_	_	_	0	_	_	_
+22	making	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Article	_	_	_	_	0	_	_	_
-2	6	_	_	_	_	0	_	_	_
-3	of	_	_	_	_	0	_	_	_
-4	the	the	DET	DT	Definite=Def|PronType=Art	8	det	_	_
-5	Gallup	Gallup	PROPN	NNP	Number=Sing	8	compound	_	_
-6	Compression	_	_	_	_	0	_	_	_
-7	Services	Services	PROPN	NNPS	Number=Plur	8	compound	_	_
-8	Agreement	agreement	NOUN	NN	Number=Sing	0	_	_	_
-9	(	(	PUNCT	-LRB-	_	8	punct	_	SpaceAfter=No
-10	which	_	_	_	_	0	_	_	_
-11	I	_	_	_	_	0	_	_	_
-12	***am***	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	8	mod@relcl	_	_
-13	sending	_	_	_	_	0	_	_	_
-14	to	_	_	_	_	0	_	_	_
-15	you	_	_	_	_	0	_	_	_
-16	separately	_	_	_	_	0	_	_	_
-17	)	)	PUNCT	-RRB-	_	8	punct	_	_
-18	with	with	ADP	IN	_	8	udep	_	_
-19	ECS	_	_	_	_	0	_	_	_
-20	obligates	_	_	_	_	0	_	_	_
-21	ECS	_	_	_	_	0	_	_	_
-22	to	_	_	_	_	0	_	_	_
-23	"	_	_	_	_	0	_	_	_
-24	work	_	_	_	_	0	_	_	_
-25	in	_	_	_	_	0	_	_	_
-26	good	_	_	_	_	0	_	_	_
-27	faith	_	_	_	_	0	_	_	_
-28	with	_	_	_	_	0	_	_	_
-29	CDEC	_	_	_	_	0	_	_	_
-30	"	_	_	_	_	0	_	_	_
-31	to	_	_	_	_	0	_	_	_
-32	establish	_	_	_	_	0	_	_	_
-33	an	_	_	_	_	0	_	_	_
-34	automated	_	_	_	_	0	_	_	_
-35	system	_	_	_	_	0	_	_	_
-36	that	_	_	_	_	0	_	_	_
-37	would	_	_	_	_	0	_	_	_
-38	automatically	_	_	_	_	0	_	_	_
-39	have	_	_	_	_	0	_	_	_
-40	alerted	_	_	_	_	0	_	_	_
-41	us	_	_	_	_	0	_	_	_
-42	to	_	_	_	_	0	_	_	_
-43	peak	_	_	_	_	0	_	_	_
-44	loading	_	_	_	_	0	_	_	_
-45	conditions	_	_	_	_	0	_	_	_
-46	on	_	_	_	_	0	_	_	_
-47	CDEC	_	_	_	_	0	_	_	_
-48	's	_	_	_	_	0	_	_	_
-49	system	_	_	_	_	0	_	_	_
-50	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Unreported	_	_	_	_	0	_	_	_
-2	by	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	international	_	_	_	_	0	_	_	_
-5	media	_	_	_	_	0	_	_	_
-6	,	_	_	_	_	0	_	_	_
+1	But	_	_	_	_	0	_	_	_
+2	there	_	_	_	_	0	_	_	_
+3	are	_	_	_	_	0	_	_	_
+4	strong	_	_	_	_	0	_	_	_
+5	hints	_	_	_	_	0	_	_	_
+6	in	_	_	_	_	0	_	_	_
 7	the	_	_	_	_	0	_	_	_
-8	Valley	_	_	_	_	0	_	_	_
-9	of	_	_	_	_	0	_	_	_
-10	Kashmir	_	_	_	_	0	_	_	_
-11	has	_	_	_	_	0	_	_	_
-12	seen	_	_	_	_	0	_	_	_
-13	an	a	DET	DT	Definite=Ind|PronType=Art	17	det	_	_
-14	ethnic	ethnic	ADJ	JJ	Degree=Pos	17	mod	_	_
-15	and	_	_	_	_	0	_	_	_
-16	cultural	_	_	_	_	0	_	_	_
-17	genocide	genocide	NOUN	NN	Number=Sing	0	_	_	_
-18	that	_	_	_	_	0	_	_	_
-19	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	mod@relcl	_	_
-20	resulted	_	_	_	_	0	_	_	_
-21	in	_	_	_	_	0	_	_	_
-22	the	_	_	_	_	0	_	_	_
-23	fleeing	_	_	_	_	0	_	_	_
-24	from	_	_	_	_	0	_	_	_
-25	the	_	_	_	_	0	_	_	_
-26	valley	_	_	_	_	0	_	_	_
-27	of	_	_	_	_	0	_	_	_
-28	almost	_	_	_	_	0	_	_	_
-29	all	_	_	_	_	0	_	_	_
-30	the	_	_	_	_	0	_	_	_
-31	Hindu	_	_	_	_	0	_	_	_
-32	families	_	_	_	_	0	_	_	_
-33	who	_	_	_	_	0	_	_	_
-34	have	_	_	_	_	0	_	_	_
-35	been	_	_	_	_	0	_	_	_
-36	living	_	_	_	_	0	_	_	_
-37	there	_	_	_	_	0	_	_	_
-38	since	_	_	_	_	0	_	_	_
-39	human	_	_	_	_	0	_	_	_
-40	habitation	_	_	_	_	0	_	_	_
-41	was	_	_	_	_	0	_	_	_
-42	first	_	_	_	_	0	_	_	_
-43	recorded	_	_	_	_	0	_	_	_
-44	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Remember	_	_	_	_	0	_	_	_
-2	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
-3	old	old	ADJ	JJ	Degree=Pos	6	mod	_	_
-4	shoe	shoe	NOUN	NN	Number=Sing	6	compound	_	_
-5	sizing	_	_	_	_	0	_	_	_
-6	machines	machine	NOUN	NNS	Number=Plur	0	_	_	_
-7	that	_	_	_	_	0	_	_	_
-8	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	mod@relcl	_	_
-9	a	_	_	_	_	0	_	_	_
-10	form	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	radiation	_	_	_	_	0	_	_	_
-13	xray	_	_	_	_	0	_	_	_
-14	?	_	_	_	_	0	_	_	_
+8	country	_	_	_	_	0	_	_	_
+9	that	_	_	_	_	0	_	_	_
+10	a	_	_	_	_	0	_	_	_
+11	new	_	_	_	_	0	_	_	_
+12	Indo	_	_	_	_	0	_	_	_
+13	-	_	_	_	_	0	_	_	_
+14	***Sri***	Sri	PROPN	NNP	Number=Sing	15	compound	_	_
+15	Lanka	Lanka	PROPN	NNP	Number=Sing	17	compound	_	_
+16	defense	_	_	_	_	0	_	_	_
+17	deal	deal	NOUN	NN	Number=Sing	0	_	_	_
+18	could	_	_	_	_	0	_	_	_
+19	be	_	_	_	_	0	_	_	_
+20	in	_	_	_	_	0	_	_	_
+21	the	_	_	_	_	0	_	_	_
+22	making	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Is	_	_	_	_	0	_	_	_
-2	this	_	_	_	_	0	_	_	_
-3	related	_	_	_	_	0	_	_	_
-4	to	_	_	_	_	0	_	_	_
-5	the	the	DET	DT	Definite=Def|PronType=Art	6	det	_	_
-6	problems	problem	NOUN	NNS	Number=Plur	0	_	_	_
-7	he	_	_	_	_	0	_	_	_
-8	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	mod@relcl	_	_
-9	having	_	_	_	_	0	_	_	_
-10	getting	_	_	_	_	0	_	_	_
-11	around	_	_	_	_	0	_	_	_
-12	(	_	_	_	_	0	_	_	_
-13	circulatory	_	_	_	_	0	_	_	_
-14	?	_	_	_	_	0	_	_	_
-15	)	_	_	_	_	0	_	_	_
-16	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	At	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	same	_	_	_	_	0	_	_	_
-4	time	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	US	_	_	_	_	0	_	_	_
-7	remains	_	_	_	_	0	_	_	_
-8	oblivious	_	_	_	_	0	_	_	_
-9	of	_	_	_	_	0	_	_	_
-10	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
-11	serious	serious	ADJ	JJ	Degree=Pos	12	mod	_	_
-12	problems	problem	NOUN	NNS	Number=Plur	0	_	_	_
-13	and	_	_	_	_	0	_	_	_
-14	political	_	_	_	_	0	_	_	_
-15	fallout	fallout	NOUN	NN	Number=Sing	12	conj	_	_
-16	which	_	_	_	_	0	_	_	_
-17	the	_	_	_	_	0	_	_	_
-18	army	_	_	_	_	0	_	_	_
-19	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	mod@relcl	_	_
-20	facing	_	_	_	_	0	_	_	_
-21	in	_	_	_	_	0	_	_	_
-22	its	_	_	_	_	0	_	_	_
-23	operations	_	_	_	_	0	_	_	_
-24	in	_	_	_	_	0	_	_	_
-25	Waziristan	_	_	_	_	0	_	_	_
-26	.	_	_	_	_	0	_	_	_
+1	***Asia***	Asia	PROPN	NNP	Number=Sing	2	compound	_	_
+2	Times	Times	PROPN	NNP	Number=Sing	3	compound	_	_
+3	Online	Online	PROPN	NNP	Number=Sing	0	_	_	_
+4	16/11/2004	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	A	_	_	_	_	0	_	_	_
-2	country	_	_	_	_	0	_	_	_
-3	deserves	_	_	_	_	0	_	_	_
-4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
-5	leaders	leader	NOUN	NNS	Number=Plur	0	_	_	_
-6	it	_	_	_	_	0	_	_	_
-7	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	mod@relcl	_	SpaceAfter=No
-8	,	_	_	_	_	0	_	_	_
-9	my	_	_	_	_	0	_	_	_
-10	friends	_	_	_	_	0	_	_	_
-11	...	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Most	_	_	_	_	0	_	_	_
-2	of	_	_	_	_	0	_	_	_
-3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
-4	girls	girl	NOUN	NNS	Number=Plur	0	_	_	_
-5	I	_	_	_	_	0	_	_	_
-6	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	4	mod@relcl	_	_
-7	meeting	_	_	_	_	0	_	_	_
-8	had	_	_	_	_	0	_	_	_
-9	grown	_	_	_	_	0	_	_	_
-10	up	_	_	_	_	0	_	_	_
-11	in	_	_	_	_	0	_	_	_
-12	Mujahedeen	_	_	_	_	0	_	_	_
-13	schools	_	_	_	_	0	_	_	_
-14	in	_	_	_	_	0	_	_	_
-15	Ashraf	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	where	_	_	_	_	0	_	_	_
-18	they	_	_	_	_	0	_	_	_
-19	lived	_	_	_	_	0	_	_	_
-20	separated	_	_	_	_	0	_	_	_
-21	from	_	_	_	_	0	_	_	_
-22	their	_	_	_	_	0	_	_	_
-23	parents	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	fact	_	_	_	_	0	_	_	_
-3	that	_	_	_	_	0	_	_	_
+2	suit	_	_	_	_	0	_	_	_
+3	against	_	_	_	_	0	_	_	_
 4	the	_	_	_	_	0	_	_	_
-5	US	_	_	_	_	0	_	_	_
-6	government	_	_	_	_	0	_	_	_
-7	and	_	_	_	_	0	_	_	_
-8	media	_	_	_	_	0	_	_	_
-9	are	_	_	_	_	0	_	_	_
-10	having	_	_	_	_	0	_	_	_
-11	a	_	_	_	_	0	_	_	_
-12	hissy	_	_	_	_	0	_	_	_
-13	fit	_	_	_	_	0	_	_	_
-14	over	_	_	_	_	0	_	_	_
-15	Venezuela	_	_	_	_	0	_	_	_
-16	wanting	_	_	_	_	0	_	_	_
-17	to	_	_	_	_	0	_	_	_
-18	buy	_	_	_	_	0	_	_	_
-19	guns	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	then	_	_	_	_	0	_	_	_
-23	200,000	_	_	_	_	0	_	_	_
-24	of	_	_	_	_	0	_	_	_
-25	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
-26	guns	gun	NOUN	NNS	Number=Plur	0	_	_	_
-27	Chavez	_	_	_	_	0	_	_	_
-28	***wants***	want	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	mod@relcl	_	_
-29	to	_	_	_	_	0	_	_	_
-30	buy	_	_	_	_	0	_	_	_
-31	go	_	_	_	_	0	_	_	_
-32	missing	_	_	_	_	0	_	_	_
-33	on	_	_	_	_	0	_	_	_
-34	their	_	_	_	_	0	_	_	_
-35	way	_	_	_	_	0	_	_	_
-36	to	_	_	_	_	0	_	_	_
-37	Iraq	_	_	_	_	0	_	_	_
-38	is	_	_	_	_	0	_	_	_
-39	definitely	_	_	_	_	0	_	_	_
-40	sus	_	_	_	_	0	_	_	_
-41	.	_	_	_	_	0	_	_	_
+5	***New***	New	PROPN	NNP	Number=Sing	6	compound	_	_
+6	York	York	PROPN	NNP	Number=Sing	7	compound	_	_
+7	Times	Times	PROPN	NNP	Number=Sing	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	columnist	_	_	_	_	0	_	_	_
+10	Nicholas	_	_	_	_	0	_	_	_
+11	Kristof	_	_	_	_	0	_	_	_
+12	was	_	_	_	_	0	_	_	_
+13	dismissed	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
+15	late	_	_	_	_	0	_	_	_
+16	November	_	_	_	_	0	_	_	_
+17	2004	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	According	_	_	_	_	0	_	_	_
-2	to	_	_	_	_	0	_	_	_
-3	Director	_	_	_	_	0	_	_	_
-4	of	_	_	_	_	0	_	_	_
-5	Central	_	_	_	_	0	_	_	_
-6	Intelligence	_	_	_	_	0	_	_	_
-7	George	_	_	_	_	0	_	_	_
-8	Tenet	_	_	_	_	0	_	_	_
-9	,	_	_	_	_	0	_	_	_
-10	al	_	_	_	_	0	_	_	_
-11	Qaeda	_	_	_	_	0	_	_	_
-12	’s	_	_	_	_	0	_	_	_
-13	ability	_	_	_	_	0	_	_	_
-14	to	_	_	_	_	0	_	_	_
-15	conduct	_	_	_	_	0	_	_	_
-16	an	_	_	_	_	0	_	_	_
-17	anthrax	_	_	_	_	0	_	_	_
-18	attack	_	_	_	_	0	_	_	_
-19	is	_	_	_	_	0	_	_	_
-20	one	_	_	_	_	0	_	_	_
-21	of	_	_	_	_	0	_	_	_
-22	the	the	DET	DT	Definite=Def|PronType=Art	25	det	_	_
-23	most	_	_	_	_	0	_	_	_
-24	immediate	immediate	ADJ	JJ	Degree=Pos	25	mod	_	_
-25	threats	threat	NOUN	NNS	Number=Plur	0	_	_	_
-26	the	_	_	_	_	0	_	_	_
-27	United	_	_	_	_	0	_	_	_
-28	States	_	_	_	_	0	_	_	_
-29	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	mod@relcl	_	_
-30	likely	_	_	_	_	0	_	_	_
-31	to	_	_	_	_	0	_	_	_
-32	face	_	_	_	_	0	_	_	_
-33	.	_	_	_	_	0	_	_	_
-34	"	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	have	_	_	_	_	0	_	_	_
-3	attempted	_	_	_	_	0	_	_	_
-4	to	_	_	_	_	0	_	_	_
-5	incorporate	_	_	_	_	0	_	_	_
-6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
-7	changes	change	NOUN	NNS	Number=Plur	0	_	_	_
-8	that	_	_	_	_	0	_	_	_
-9	Jim	_	_	_	_	0	_	_	_
-10	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	mod@relcl	_	_
-11	incorporated	_	_	_	_	0	_	_	_
-12	in	_	_	_	_	0	_	_	_
-13	our	_	_	_	_	0	_	_	_
-14	long	_	_	_	_	0	_	_	_
-15	form	_	_	_	_	0	_	_	_
-16	power	_	_	_	_	0	_	_	_
-17	agreement	_	_	_	_	0	_	_	_
-18	which	_	_	_	_	0	_	_	_
-19	ENA	_	_	_	_	0	_	_	_
-20	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	mod@relcl	_	_
-21	suggested	_	_	_	_	0	_	_	_
-22	to	_	_	_	_	0	_	_	_
-23	date	_	_	_	_	0	_	_	_
-24	into	_	_	_	_	0	_	_	_
-25	the	_	_	_	_	0	_	_	_
-26	short	_	_	_	_	0	_	_	_
-27	form	_	_	_	_	0	_	_	_
-28	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Justin	_	_	_	_	0	_	_	_
+1	Now	_	_	_	_	0	_	_	_
 2	,	_	_	_	_	0	_	_	_
-3	I	_	_	_	_	0	_	_	_
-4	have	_	_	_	_	0	_	_	_
-5	no	_	_	_	_	0	_	_	_
-6	knowledge	_	_	_	_	0	_	_	_
-7	of	_	_	_	_	0	_	_	_
-8	any	any	DET	DT	_	11	det	_	_
-9	bad	bad	ADJ	JJ	Degree=Pos	11	mod	_	_
-10	faith	faith	NOUN	NN	Number=Sing	11	compound	_	_
-11	actins	actin	NOUN	NNS	Number=Plur	0	_	_	_
-12	Enron	_	_	_	_	0	_	_	_
-13	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	mod@relcl	_	_
-14	pending	pend	VERB	VBG	VerbForm=Ger	11	mod	_	_
+3	it	_	_	_	_	0	_	_	_
+4	is	_	_	_	_	0	_	_	_
+5	only	_	_	_	_	0	_	_	_
+6	natural	_	_	_	_	0	_	_	_
+7	that	_	_	_	_	0	_	_	_
+8	news	_	_	_	_	0	_	_	_
+9	reports	_	_	_	_	0	_	_	_
+10	questioning	_	_	_	_	0	_	_	_
+11	Bush	_	_	_	_	0	_	_	_
+12	’s	_	_	_	_	0	_	_	_
+13	service	_	_	_	_	0	_	_	_
+14	—	_	_	_	_	0	_	_	_
 15	in	_	_	_	_	0	_	_	_
-16	Texas	_	_	_	_	0	_	_	_
-17	but	_	_	_	_	0	_	_	_
-18	I	_	_	_	_	0	_	_	_
-19	will	_	_	_	_	0	_	_	_
-20	call	_	_	_	_	0	_	_	_
-21	Richard	_	_	_	_	0	_	_	_
-22	Sanders	_	_	_	_	0	_	_	_
-23	who	_	_	_	_	0	_	_	_
-24	manages	_	_	_	_	0	_	_	_
-25	domestic	_	_	_	_	0	_	_	_
-26	litgation	_	_	_	_	0	_	_	_
-27	here	_	_	_	_	0	_	_	_
-28	.	_	_	_	_	0	_	_	_
+16	The	_	_	_	_	0	_	_	_
+17	Boston	_	_	_	_	0	_	_	_
+18	Globe	_	_	_	_	0	_	_	_
+19	and	_	_	_	_	0	_	_	_
+20	The	_	_	_	_	0	_	_	_
+21	***New***	New	PROPN	NNP	Number=Sing	22	compound	_	_
+22	York	York	PROPN	NNP	Number=Sing	23	compound	_	_
+23	Times	Times	PROPN	NNP	Number=Sing	0	_	_	_
+24	,	_	_	_	_	0	_	_	_
+25	on	_	_	_	_	0	_	_	_
+26	CBS	_	_	_	_	0	_	_	_
+27	and	_	_	_	_	0	_	_	_
+28	in	_	_	_	_	0	_	_	_
+29	other	_	_	_	_	0	_	_	_
+30	outlets	_	_	_	_	0	_	_	_
+31	—	_	_	_	_	0	_	_	_
+32	would	_	_	_	_	0	_	_	_
+33	come	_	_	_	_	0	_	_	_
+34	out	_	_	_	_	0	_	_	_
+35	now	_	_	_	_	0	_	_	_
+36	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Let	_	_	_	_	0	_	_	_
-2	me	_	_	_	_	0	_	_	_
-3	put	_	_	_	_	0	_	_	_
-4	it	_	_	_	_	0	_	_	_
-5	this	_	_	_	_	0	_	_	_
-6	way	_	_	_	_	0	_	_	_
-7	-	_	_	_	_	0	_	_	_
-8	If	_	_	_	_	0	_	_	_
-9	you	_	_	_	_	0	_	_	_
-10	have	_	_	_	_	0	_	_	_
-11	watched	_	_	_	_	0	_	_	_
-12	TV	_	_	_	_	0	_	_	_
-13	recently	_	_	_	_	0	_	_	_
-14	,	_	_	_	_	0	_	_	_
-15	crossed	_	_	_	_	0	_	_	_
-16	a	_	_	_	_	0	_	_	_
-17	modern	_	_	_	_	0	_	_	_
-18	bridge	_	_	_	_	0	_	_	_
-19	,	_	_	_	_	0	_	_	_
-20	flown	_	_	_	_	0	_	_	_
-21	in	_	_	_	_	0	_	_	_
-22	an	_	_	_	_	0	_	_	_
-23	airplane	_	_	_	_	0	_	_	_
+1	Now	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	it	_	_	_	_	0	_	_	_
+4	is	_	_	_	_	0	_	_	_
+5	only	_	_	_	_	0	_	_	_
+6	natural	_	_	_	_	0	_	_	_
+7	that	_	_	_	_	0	_	_	_
+8	news	_	_	_	_	0	_	_	_
+9	reports	_	_	_	_	0	_	_	_
+10	questioning	_	_	_	_	0	_	_	_
+11	Bush	_	_	_	_	0	_	_	_
+12	’s	_	_	_	_	0	_	_	_
+13	service	_	_	_	_	0	_	_	_
+14	—	_	_	_	_	0	_	_	_
+15	in	_	_	_	_	0	_	_	_
+16	The	_	_	_	_	0	_	_	_
+17	Boston	_	_	_	_	0	_	_	_
+18	Globe	Globe	PROPN	NNP	Number=Sing	0	_	_	_
+19	and	_	_	_	_	0	_	_	_
+20	The	_	_	_	_	0	_	_	_
+21	New	_	_	_	_	0	_	_	_
+22	***York***	York	PROPN	NNP	Number=Sing	23	compound	_	_
+23	Times	Times	PROPN	NNP	Number=Sing	18	conj	_	SpaceAfter=No
 24	,	_	_	_	_	0	_	_	_
-25	recieved	_	_	_	_	0	_	_	_
-26	any	_	_	_	_	0	_	_	_
-27	form	_	_	_	_	0	_	_	_
-28	of	_	_	_	_	0	_	_	_
-29	modern	_	_	_	_	0	_	_	_
-30	medicine	_	_	_	_	0	_	_	_
-31	,	_	_	_	_	0	_	_	_
-32	did	_	_	_	_	0	_	_	_
-33	any	_	_	_	_	0	_	_	_
-34	mathematics	_	_	_	_	0	_	_	_
-35	,	_	_	_	_	0	_	_	_
-36	drove	_	_	_	_	0	_	_	_
-37	a	_	_	_	_	0	_	_	_
-38	car	_	_	_	_	0	_	_	_
-39	,	_	_	_	_	0	_	_	_
-40	used	_	_	_	_	0	_	_	_
-41	a	_	_	_	_	0	_	_	_
-42	cellular	_	_	_	_	0	_	_	_
-43	phone	_	_	_	_	0	_	_	_
-44	,	_	_	_	_	0	_	_	_
-45	etc.	_	_	_	_	0	_	_	_
-46	then	_	_	_	_	0	_	_	_
-47	you	_	_	_	_	0	_	_	_
-48	have	_	_	_	_	0	_	_	_
-49	somehow	_	_	_	_	0	_	_	_
-50	directly	_	_	_	_	0	_	_	_
-51	reaped	_	_	_	_	0	_	_	_
-52	the	the	DET	DT	Definite=Def|PronType=Art	53	det	_	_
-53	rewards	reward	NOUN	NNS	Number=Plur	0	_	_	_
-54	which	_	_	_	_	0	_	_	_
-55	NASA	_	_	_	_	0	_	_	_
-56	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	53	mod@relcl	_	_
-57	returned	_	_	_	_	0	_	_	_
-58	to	_	_	_	_	0	_	_	_
-59	us	_	_	_	_	0	_	_	_
-60	.	_	_	_	_	0	_	_	_
+25	on	_	_	_	_	0	_	_	_
+26	CBS	_	_	_	_	0	_	_	_
+27	and	_	_	_	_	0	_	_	_
+28	in	_	_	_	_	0	_	_	_
+29	other	_	_	_	_	0	_	_	_
+30	outlets	_	_	_	_	0	_	_	_
+31	—	_	_	_	_	0	_	_	_
+32	would	_	_	_	_	0	_	_	_
+33	come	_	_	_	_	0	_	_	_
+34	out	_	_	_	_	0	_	_	_
+35	now	_	_	_	_	0	_	_	_
+36	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	Here	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	***Miami***	Miami	PROPN	NNP	Number=Sing	5	compound	_	_
+5	Herald	Herald	PROPN	NNP	Number=Sing	6	compound	_	_
+6	interview	interview	NOUN	NN	Number=Sing	0	_	_	_
+7	with	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	relaxed	_	_	_	_	0	_	_	_
+10	terrorist	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	former	_	_	_	_	0	_	_	_
+13	CIA	_	_	_	_	0	_	_	_
+14	operative	_	_	_	_	0	_	_	_
+15	in	_	_	_	_	0	_	_	_
+16	a	_	_	_	_	0	_	_	_
+17	luxury	_	_	_	_	0	_	_	_
+18	condo	_	_	_	_	0	_	_	_
+19	,	_	_	_	_	0	_	_	_
+20	published	_	_	_	_	0	_	_	_
+21	yesterday	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

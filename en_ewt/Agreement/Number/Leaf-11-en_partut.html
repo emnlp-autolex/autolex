@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,44 +137,411 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_partut </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	Any	_	_	_	_	0	_	_	_
-2	***use***	use	NOUN	S	Number=Sing	16	subj@pass	_	_
-3	of	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	work	_	_	_	_	0	_	_	_
-6	other	_	_	_	_	0	_	_	_
-7	than	_	_	_	_	0	_	_	_
-8	as	_	_	_	_	0	_	_	_
-9	authorized	_	_	_	_	0	_	_	_
-10	under	_	_	_	_	0	_	_	_
-11	this	_	_	_	_	0	_	_	_
-12	license	_	_	_	_	0	_	_	_
-13	or	_	_	_	_	0	_	_	_
-14	copyright	_	_	_	_	0	_	_	_
-15	law	_	_	_	_	0	_	_	_
-16	is	be	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-17	prohibited	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent is the= object <br>
+</td><td style="text-align:center">in the neighborhood of the dependent= be <br>
+in the neighborhood of the dependent= a <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent is the= object; Not Active:in the neighborhood of the dependent= be;in the neighborhood of the dependent= a;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	UNLESS	_	_	_	_	0	_	_	_
+2	OTHERWISE	_	_	_	_	0	_	_	_
+3	AGREED	_	_	_	_	0	_	_	_
+4	TO	_	_	_	_	0	_	_	_
+5	BY	_	_	_	_	0	_	_	_
+6	THE	_	_	_	_	0	_	_	_
+7	PARTIES	_	_	_	_	0	_	_	_
+8	IN	_	_	_	_	0	_	_	_
+9	WRITING	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	LICENSOR	_	_	_	_	0	_	_	_
+12	OFFERS	_	_	_	_	0	_	_	_
+13	THE	_	_	_	_	0	_	_	_
+14	WORK	_	_	_	_	0	_	_	_
+15	AS	_	_	_	_	0	_	_	_
+16	-	_	_	_	_	0	_	_	_
+17	IS	_	_	_	_	0	_	_	_
+18	AND	_	_	_	_	0	_	_	_
+19	MAKES	make	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+20	NO	_	_	_	_	0	_	_	_
+21	***REPRESENTATIONS***	representation	NOUN	S	Number=Plur	19	comp:obj	_	_
+22	OR	_	_	_	_	0	_	_	_
+23	WARRANTIES	_	_	_	_	0	_	_	_
+24	OF	_	_	_	_	0	_	_	_
+25	ANY	_	_	_	_	0	_	_	_
+26	KIND	_	_	_	_	0	_	_	_
+27	CONCERNING	_	_	_	_	0	_	_	_
+28	THE	_	_	_	_	0	_	_	_
+29	MATERIALS	_	_	_	_	0	_	_	_
+30	,	_	_	_	_	0	_	_	_
+31	EXPRESS	_	_	_	_	0	_	_	_
+32	,	_	_	_	_	0	_	_	_
+33	IMPLIED	_	_	_	_	0	_	_	_
+34	,	_	_	_	_	0	_	_	_
+35	STATUTORY	_	_	_	_	0	_	_	_
+36	OR	_	_	_	_	0	_	_	_
+37	OTHERWISE	_	_	_	_	0	_	_	_
+38	,	_	_	_	_	0	_	_	_
+39	INCLUDING	_	_	_	_	0	_	_	_
+40	,	_	_	_	_	0	_	_	_
+41	WITHOUT	_	_	_	_	0	_	_	_
+42	LIMITATION	_	_	_	_	0	_	_	_
+43	,	_	_	_	_	0	_	_	_
+44	WARRANTIES	_	_	_	_	0	_	_	_
+45	OF	_	_	_	_	0	_	_	_
+46	TITLE	_	_	_	_	0	_	_	_
+47	,	_	_	_	_	0	_	_	_
+48	MERCHANTIBILITY	_	_	_	_	0	_	_	_
+49	,	_	_	_	_	0	_	_	_
+50	FITNESS	_	_	_	_	0	_	_	_
+51	FOR	_	_	_	_	0	_	_	_
+52	A	_	_	_	_	0	_	_	_
+53	PARTICULAR	_	_	_	_	0	_	_	_
+54	PURPOSE	_	_	_	_	0	_	_	_
+55	,	_	_	_	_	0	_	_	_
+56	NONINFRINGEMENT	_	_	_	_	0	_	_	_
+57	,	_	_	_	_	0	_	_	_
+58	OR	_	_	_	_	0	_	_	_
+59	THE	_	_	_	_	0	_	_	_
+60	ABSENCE	_	_	_	_	0	_	_	_
+61	OF	_	_	_	_	0	_	_	_
+62	LATENT	_	_	_	_	0	_	_	_
+63	OR	_	_	_	_	0	_	_	_
+64	OTHER	_	_	_	_	0	_	_	_
+65	DEFECTS	_	_	_	_	0	_	_	_
+66	,	_	_	_	_	0	_	_	_
+67	ACCURACY	_	_	_	_	0	_	_	_
+68	,	_	_	_	_	0	_	_	_
+69	OR	_	_	_	_	0	_	_	_
+70	THE	_	_	_	_	0	_	_	_
+71	PRESENCE	_	_	_	_	0	_	_	_
+72	OF	_	_	_	_	0	_	_	_
+73	ABSENCE	_	_	_	_	0	_	_	_
+74	OF	_	_	_	_	0	_	_	_
+75	ERRORS	_	_	_	_	0	_	_	_
+76	,	_	_	_	_	0	_	_	_
+77	WHETHER	_	_	_	_	0	_	_	_
+78	OR	_	_	_	_	0	_	_	_
+79	not	_	_	_	_	0	_	_	_
+80	DISCOVERABLE	_	_	_	_	0	_	_	_
+81	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	UNLESS	_	_	_	_	0	_	_	_
+2	OTHERWISE	_	_	_	_	0	_	_	_
+3	AGREED	_	_	_	_	0	_	_	_
+4	TO	_	_	_	_	0	_	_	_
+5	BY	_	_	_	_	0	_	_	_
+6	THE	_	_	_	_	0	_	_	_
+7	PARTIES	_	_	_	_	0	_	_	_
+8	IN	_	_	_	_	0	_	_	_
+9	WRITING	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	LICENSOR	_	_	_	_	0	_	_	_
+12	OFFERS	_	_	_	_	0	_	_	_
+13	THE	_	_	_	_	0	_	_	_
+14	WORK	_	_	_	_	0	_	_	_
+15	AS	_	_	_	_	0	_	_	_
+16	-	_	_	_	_	0	_	_	_
+17	IS	_	_	_	_	0	_	_	_
+18	AND	_	_	_	_	0	_	_	_
+19	MAKES	_	_	_	_	0	_	_	_
+20	NO	_	_	_	_	0	_	_	_
+21	REPRESENTATIONS	_	_	_	_	0	_	_	_
+22	OR	_	_	_	_	0	_	_	_
+23	WARRANTIES	_	_	_	_	0	_	_	_
+24	OF	_	_	_	_	0	_	_	_
+25	ANY	_	_	_	_	0	_	_	_
+26	KIND	_	_	_	_	0	_	_	_
+27	CONCERNING	concern	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	_	_	_
+28	THE	_	_	_	_	0	_	_	_
+29	***MATERIALS***	material	NOUN	S	Number=Plur	27	comp:obj	_	SpaceAfter=No
+30	,	_	_	_	_	0	_	_	_
+31	EXPRESS	_	_	_	_	0	_	_	_
+32	,	_	_	_	_	0	_	_	_
+33	IMPLIED	_	_	_	_	0	_	_	_
+34	,	_	_	_	_	0	_	_	_
+35	STATUTORY	_	_	_	_	0	_	_	_
+36	OR	_	_	_	_	0	_	_	_
+37	OTHERWISE	_	_	_	_	0	_	_	_
+38	,	_	_	_	_	0	_	_	_
+39	INCLUDING	_	_	_	_	0	_	_	_
+40	,	_	_	_	_	0	_	_	_
+41	WITHOUT	_	_	_	_	0	_	_	_
+42	LIMITATION	_	_	_	_	0	_	_	_
+43	,	_	_	_	_	0	_	_	_
+44	WARRANTIES	_	_	_	_	0	_	_	_
+45	OF	_	_	_	_	0	_	_	_
+46	TITLE	_	_	_	_	0	_	_	_
+47	,	_	_	_	_	0	_	_	_
+48	MERCHANTIBILITY	_	_	_	_	0	_	_	_
+49	,	_	_	_	_	0	_	_	_
+50	FITNESS	_	_	_	_	0	_	_	_
+51	FOR	_	_	_	_	0	_	_	_
+52	A	_	_	_	_	0	_	_	_
+53	PARTICULAR	_	_	_	_	0	_	_	_
+54	PURPOSE	_	_	_	_	0	_	_	_
+55	,	_	_	_	_	0	_	_	_
+56	NONINFRINGEMENT	_	_	_	_	0	_	_	_
+57	,	_	_	_	_	0	_	_	_
+58	OR	_	_	_	_	0	_	_	_
+59	THE	_	_	_	_	0	_	_	_
+60	ABSENCE	_	_	_	_	0	_	_	_
+61	OF	_	_	_	_	0	_	_	_
+62	LATENT	_	_	_	_	0	_	_	_
+63	OR	_	_	_	_	0	_	_	_
+64	OTHER	_	_	_	_	0	_	_	_
+65	DEFECTS	_	_	_	_	0	_	_	_
+66	,	_	_	_	_	0	_	_	_
+67	ACCURACY	_	_	_	_	0	_	_	_
+68	,	_	_	_	_	0	_	_	_
+69	OR	_	_	_	_	0	_	_	_
+70	THE	_	_	_	_	0	_	_	_
+71	PRESENCE	_	_	_	_	0	_	_	_
+72	OF	_	_	_	_	0	_	_	_
+73	ABSENCE	_	_	_	_	0	_	_	_
+74	OF	_	_	_	_	0	_	_	_
+75	ERRORS	_	_	_	_	0	_	_	_
+76	,	_	_	_	_	0	_	_	_
+77	WHETHER	_	_	_	_	0	_	_	_
+78	OR	_	_	_	_	0	_	_	_
+79	not	_	_	_	_	0	_	_	_
+80	DISCOVERABLE	_	_	_	_	0	_	_	_
+81	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	If	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	do	_	_	_	_	0	_	_	_
+4	not	_	_	_	_	0	_	_	_
+5	see	see	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	***button***	button	NOUN	S	Number=Sing	5	comp:obj	_	SpaceAfter=No
+8	,	_	_	_	_	0	_	_	_
+9	you	_	_	_	_	0	_	_	_
+10	can	_	_	_	_	0	_	_	_
+11	not	_	_	_	_	0	_	_	_
+12	subscribe	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	(	_	_	_	_	0	_	_	_
+2	1	_	_	_	_	0	_	_	_
+3	)	_	_	_	_	0	_	_	_
+4	Men	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	women	_	_	_	_	0	_	_	_
+7	of	_	_	_	_	0	_	_	_
+8	full	_	_	_	_	0	_	_	_
+9	age	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	without	_	_	_	_	0	_	_	_
+12	any	_	_	_	_	0	_	_	_
+13	limitation	_	_	_	_	0	_	_	_
+14	due	_	_	_	_	0	_	_	_
+15	to	_	_	_	_	0	_	_	_
+16	race	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	nationality	_	_	_	_	0	_	_	_
+19	or	_	_	_	_	0	_	_	_
+20	religion	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	have	have	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	***right***	right	NOUN	S	Number=Sing	22	comp:obj	_	_
+25	to	_	_	_	_	0	_	_	_
+26	marry	_	_	_	_	0	_	_	_
+27	and	_	_	_	_	0	_	_	_
+28	to	_	_	_	_	0	_	_	_
+29	found	_	_	_	_	0	_	_	_
+30	a	_	_	_	_	0	_	_	_
+31	family	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Protocol	_	_	_	_	0	_	_	_
+2	Concerning	concern	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	***conditions***	condition	NOUN	S	Number=Plur	2	comp:obj	_	_
+5	and	_	_	_	_	0	_	_	_
+6	arrangements	_	_	_	_	0	_	_	_
+7	for	_	_	_	_	0	_	_	_
+8	admission	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	republic	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	Bulgaria	_	_	_	_	0	_	_	_
+14	and	_	_	_	_	0	_	_	_
+15	Romania	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	European	_	_	_	_	0	_	_	_
+19	Union	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Medicine	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	however	_	_	_	_	0	_	_	_
+4	affordable	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	is	_	_	_	_	0	_	_	_
+7	of	_	_	_	_	0	_	_	_
+8	no	_	_	_	_	0	_	_	_
+9	value	_	_	_	_	0	_	_	_
+10	if	_	_	_	_	0	_	_	_
+11	no	_	_	_	_	0	_	_	_
+12	one	_	_	_	_	0	_	_	_
+13	is	_	_	_	_	0	_	_	_
+14	available	_	_	_	_	0	_	_	_
+15	to	_	_	_	_	0	_	_	_
+16	prescribe	_	_	_	_	0	_	_	_
+17	or	_	_	_	_	0	_	_	_
+18	administer	administer	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
+19	***it***	it	PRON	PE	Number=Sing|Person=3|PronType=Prs	18	comp:obj	_	SpaceAfter=No
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	These	_	_	_	_	0	_	_	_
+2	countries	_	_	_	_	0	_	_	_
+3	'	_	_	_	_	0	_	_	_
+4	global	_	_	_	_	0	_	_	_
+5	economic	_	_	_	_	0	_	_	_
+6	and	_	_	_	_	0	_	_	_
+7	financial	_	_	_	_	0	_	_	_
+8	significance	_	_	_	_	0	_	_	_
+9	has	_	_	_	_	0	_	_	_
+10	grown	_	_	_	_	0	_	_	_
+11	rapidly	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	yet	_	_	_	_	0	_	_	_
+14	they	_	_	_	_	0	_	_	_
+15	have	have	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
+16	relatively	_	_	_	_	0	_	_	_
+17	little	_	_	_	_	0	_	_	_
+18	***representation***	representation	NOUN	S	Number=Sing	15	comp:obj	_	_
+19	at	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	Fund	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	UNLESS	_	_	_	_	0	_	_	_
+2	OTHERWISE	_	_	_	_	0	_	_	_
+3	AGREED	_	_	_	_	0	_	_	_
+4	TO	_	_	_	_	0	_	_	_
+5	BY	_	_	_	_	0	_	_	_
+6	THE	_	_	_	_	0	_	_	_
+7	PARTIES	_	_	_	_	0	_	_	_
+8	IN	_	_	_	_	0	_	_	_
+9	WRITING	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	LICENSOR	_	_	_	_	0	_	_	_
+12	OFFERS	offer	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+13	THE	_	_	_	_	0	_	_	_
+14	***WORK***	work	NOUN	S	Number=Sing	12	comp:obj	_	_
+15	AS	_	_	_	_	0	_	_	_
+16	-	_	_	_	_	0	_	_	_
+17	IS	_	_	_	_	0	_	_	_
+18	AND	_	_	_	_	0	_	_	_
+19	MAKES	_	_	_	_	0	_	_	_
+20	NO	_	_	_	_	0	_	_	_
+21	REPRESENTATIONS	_	_	_	_	0	_	_	_
+22	OR	_	_	_	_	0	_	_	_
+23	WARRANTIES	_	_	_	_	0	_	_	_
+24	OF	_	_	_	_	0	_	_	_
+25	ANY	_	_	_	_	0	_	_	_
+26	KIND	_	_	_	_	0	_	_	_
+27	CONCERNING	_	_	_	_	0	_	_	_
+28	THE	_	_	_	_	0	_	_	_
+29	MATERIALS	_	_	_	_	0	_	_	_
+30	,	_	_	_	_	0	_	_	_
+31	EXPRESS	_	_	_	_	0	_	_	_
+32	,	_	_	_	_	0	_	_	_
+33	IMPLIED	_	_	_	_	0	_	_	_
+34	,	_	_	_	_	0	_	_	_
+35	STATUTORY	_	_	_	_	0	_	_	_
+36	OR	_	_	_	_	0	_	_	_
+37	OTHERWISE	_	_	_	_	0	_	_	_
+38	,	_	_	_	_	0	_	_	_
+39	INCLUDING	_	_	_	_	0	_	_	_
+40	,	_	_	_	_	0	_	_	_
+41	WITHOUT	_	_	_	_	0	_	_	_
+42	LIMITATION	_	_	_	_	0	_	_	_
+43	,	_	_	_	_	0	_	_	_
+44	WARRANTIES	_	_	_	_	0	_	_	_
+45	OF	_	_	_	_	0	_	_	_
+46	TITLE	_	_	_	_	0	_	_	_
+47	,	_	_	_	_	0	_	_	_
+48	MERCHANTIBILITY	_	_	_	_	0	_	_	_
+49	,	_	_	_	_	0	_	_	_
+50	FITNESS	_	_	_	_	0	_	_	_
+51	FOR	_	_	_	_	0	_	_	_
+52	A	_	_	_	_	0	_	_	_
+53	PARTICULAR	_	_	_	_	0	_	_	_
+54	PURPOSE	_	_	_	_	0	_	_	_
+55	,	_	_	_	_	0	_	_	_
+56	NONINFRINGEMENT	_	_	_	_	0	_	_	_
+57	,	_	_	_	_	0	_	_	_
+58	OR	_	_	_	_	0	_	_	_
+59	THE	_	_	_	_	0	_	_	_
+60	ABSENCE	_	_	_	_	0	_	_	_
+61	OF	_	_	_	_	0	_	_	_
+62	LATENT	_	_	_	_	0	_	_	_
+63	OR	_	_	_	_	0	_	_	_
+64	OTHER	_	_	_	_	0	_	_	_
+65	DEFECTS	_	_	_	_	0	_	_	_
+66	,	_	_	_	_	0	_	_	_
+67	ACCURACY	_	_	_	_	0	_	_	_
+68	,	_	_	_	_	0	_	_	_
+69	OR	_	_	_	_	0	_	_	_
+70	THE	_	_	_	_	0	_	_	_
+71	PRESENCE	_	_	_	_	0	_	_	_
+72	OF	_	_	_	_	0	_	_	_
+73	ABSENCE	_	_	_	_	0	_	_	_
+74	OF	_	_	_	_	0	_	_	_
+75	ERRORS	_	_	_	_	0	_	_	_
+76	,	_	_	_	_	0	_	_	_
+77	WHETHER	_	_	_	_	0	_	_	_
+78	OR	_	_	_	_	0	_	_	_
+79	not	_	_	_	_	0	_	_	_
+80	DISCOVERABLE	_	_	_	_	0	_	_	_
+81	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	Creative	_	_	_	_	0	_	_	_
 2	Commons	_	_	_	_	0	_	_	_
-3	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	is	_	_	_	_	0	_	_	_
 4	not	_	_	_	_	0	_	_	_
 5	a	_	_	_	_	0	_	_	_
-6	***party***	party	NOUN	S	Number=Sing	3	comp:pred	_	_
+6	party	_	_	_	_	0	_	_	_
 7	to	_	_	_	_	0	_	_	_
 8	this	_	_	_	_	0	_	_	_
 9	License	_	_	_	_	0	_	_	_
 10	,	_	_	_	_	0	_	_	_
 11	and	_	_	_	_	0	_	_	_
-12	makes	_	_	_	_	0	_	_	_
+12	makes	make	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
 13	no	_	_	_	_	0	_	_	_
-14	warranty	_	_	_	_	0	_	_	_
+14	***warranty***	warranty	NOUN	S	Number=Sing	12	comp:obj	_	_
 15	whatsoever	_	_	_	_	0	_	_	_
 16	in	_	_	_	_	0	_	_	_
 17	connection	_	_	_	_	0	_	_	_
@@ -186,330 +553,241 @@ span.displaynone { display: none; }
 </code></pre>
 
 <pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	would	_	_	_	_	0	_	_	_
-3	ask	_	_	_	_	0	_	_	_
-4	that	_	_	_	_	0	_	_	_
-5	they	_	_	_	_	0	_	_	_
-6	reconsider	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	since	_	_	_	_	0	_	_	_
-9	this	_	_	_	_	0	_	_	_
-10	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	not	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	***case***	case	NOUN	S	Number=Sing	10	comp:pred	_	SpaceAfter=No
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	not	_	_	_	_	0	_	_	_
-4	just	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	***fault***	fault	NOUN	S	Number=Sing	2	comp:pred	_	_
-7	of	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	Commission	_	_	_	_	0	_	_	_
-10	,	_	_	_	_	0	_	_	_
-11	but	_	_	_	_	0	_	_	_
-12	I	_	_	_	_	0	_	_	_
-13	believe	_	_	_	_	0	_	_	_
-14	that	_	_	_	_	0	_	_	_
-15	we	_	_	_	_	0	_	_	_
-16	need	_	_	_	_	0	_	_	_
-17	to	_	_	_	_	0	_	_	_
-18	take	_	_	_	_	0	_	_	_
-19	action	_	_	_	_	0	_	_	_
-20	more	_	_	_	_	0	_	_	_
-21	quickly	_	_	_	_	0	_	_	_
-22	so	_	_	_	_	0	_	_	_
-23	as	_	_	_	_	0	_	_	_
-24	to	_	_	_	_	0	_	_	_
-25	achieve	_	_	_	_	0	_	_	_
-26	harmonisation	_	_	_	_	0	_	_	_
-27	in	_	_	_	_	0	_	_	_
-28	this	_	_	_	_	0	_	_	_
-29	area	_	_	_	_	0	_	_	_
-30	as	_	_	_	_	0	_	_	_
-31	well	_	_	_	_	0	_	_	_
-32	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	But	_	_	_	_	0	_	_	_
-2	I	_	_	_	_	0	_	_	_
-3	believe	_	_	_	_	0	_	_	_
-4	that	_	_	_	_	0	_	_	_
-5	we	_	_	_	_	0	_	_	_
-6	should	_	_	_	_	0	_	_	_
-7	do	_	_	_	_	0	_	_	_
-8	all	_	_	_	_	0	_	_	_
-9	we	_	_	_	_	0	_	_	_
-10	can	_	_	_	_	0	_	_	_
-11	to	_	_	_	_	0	_	_	_
-12	keep	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	transport	_	_	_	_	0	_	_	_
-15	of	_	_	_	_	0	_	_	_
-16	dangerous	_	_	_	_	0	_	_	_
-17	goods	_	_	_	_	0	_	_	_
-18	to	_	_	_	_	0	_	_	_
-19	a	_	_	_	_	0	_	_	_
-20	minimum	_	_	_	_	0	_	_	_
-21	,	_	_	_	_	0	_	_	_
-22	in	_	_	_	_	0	_	_	_
-23	all	_	_	_	_	0	_	_	_
-24	countries	_	_	_	_	0	_	_	_
-25	,	_	_	_	_	0	_	_	_
-26	whether	_	_	_	_	0	_	_	_
-27	they	_	_	_	_	0	_	_	_
-28	are	be	AUX	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
-29	transit	_	_	_	_	0	_	_	_
-30	***countries***	country	NOUN	S	Number=Plur	28	comp:pred	_	_
-31	or	_	_	_	_	0	_	_	_
-32	not	_	_	_	_	0	_	_	_
-33	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	***truth***	truth	NOUN	S	Number=Sing	7	comp:pred	_	_
-3	of	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	matter	_	_	_	_	0	_	_	_
-6	though	_	_	_	_	0	_	_	_
-7	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-8	that	_	_	_	_	0	_	_	_
-9	we	_	_	_	_	0	_	_	_
-10	believe	_	_	_	_	0	_	_	_
-11	-	_	_	_	_	0	_	_	_
-12	and	_	_	_	_	0	_	_	_
-13	this	_	_	_	_	0	_	_	_
-14	is	_	_	_	_	0	_	_	_
-15	also	_	_	_	_	0	_	_	_
-16	shown	_	_	_	_	0	_	_	_
-17	in	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	way	_	_	_	_	0	_	_	_
-20	the	_	_	_	_	0	_	_	_
-21	conclusions	_	_	_	_	0	_	_	_
-22	have	_	_	_	_	0	_	_	_
-23	been	_	_	_	_	0	_	_	_
-24	drafted	_	_	_	_	0	_	_	_
-25	-	_	_	_	_	0	_	_	_
-26	that	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	Commission	_	_	_	_	0	_	_	_
-29	must	_	_	_	_	0	_	_	_
-30	take	_	_	_	_	0	_	_	_
-31	account	_	_	_	_	0	_	_	_
-32	of	_	_	_	_	0	_	_	_
-33	what	_	_	_	_	0	_	_	_
-34	is	_	_	_	_	0	_	_	_
-35	adopted	_	_	_	_	0	_	_	_
-36	by	_	_	_	_	0	_	_	_
-37	this	_	_	_	_	0	_	_	_
-38	Parliament	_	_	_	_	0	_	_	_
-39	,	_	_	_	_	0	_	_	_
-40	particularly	_	_	_	_	0	_	_	_
-41	in	_	_	_	_	0	_	_	_
-42	the	_	_	_	_	0	_	_	_
-43	face	_	_	_	_	0	_	_	_
-44	of	_	_	_	_	0	_	_	_
-45	an	_	_	_	_	0	_	_	_
-46	interim	_	_	_	_	0	_	_	_
-47	revision	_	_	_	_	0	_	_	_
-48	of	_	_	_	_	0	_	_	_
-49	these	_	_	_	_	0	_	_	_
-50	Directives	_	_	_	_	0	_	_	_
-51	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	truth	_	_	_	_	0	_	_	_
-3	of	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	matter	_	_	_	_	0	_	_	_
-6	though	_	_	_	_	0	_	_	_
-7	is	_	_	_	_	0	_	_	_
-8	that	_	_	_	_	0	_	_	_
-9	we	_	_	_	_	0	_	_	_
-10	believe	_	_	_	_	0	_	_	_
-11	-	_	_	_	_	0	_	_	_
-12	and	_	_	_	_	0	_	_	_
-13	this	_	_	_	_	0	_	_	_
-14	is	_	_	_	_	0	_	_	_
-15	also	_	_	_	_	0	_	_	_
-16	shown	_	_	_	_	0	_	_	_
-17	in	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	way	_	_	_	_	0	_	_	_
-20	the	_	_	_	_	0	_	_	_
-21	***conclusions***	conclusion	NOUN	S	Number=Plur	22	subj@pass	_	_
-22	have	have	AUX	VA	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
-23	been	_	_	_	_	0	_	_	_
-24	drafted	_	_	_	_	0	_	_	_
-25	-	_	_	_	_	0	_	_	_
-26	that	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	Commission	_	_	_	_	0	_	_	_
-29	must	_	_	_	_	0	_	_	_
-30	take	_	_	_	_	0	_	_	_
-31	account	_	_	_	_	0	_	_	_
-32	of	_	_	_	_	0	_	_	_
-33	what	_	_	_	_	0	_	_	_
-34	is	_	_	_	_	0	_	_	_
-35	adopted	_	_	_	_	0	_	_	_
-36	by	_	_	_	_	0	_	_	_
-37	this	_	_	_	_	0	_	_	_
-38	Parliament	_	_	_	_	0	_	_	_
-39	,	_	_	_	_	0	_	_	_
-40	particularly	_	_	_	_	0	_	_	_
-41	in	_	_	_	_	0	_	_	_
-42	the	_	_	_	_	0	_	_	_
-43	face	_	_	_	_	0	_	_	_
-44	of	_	_	_	_	0	_	_	_
-45	an	_	_	_	_	0	_	_	_
-46	interim	_	_	_	_	0	_	_	_
-47	revision	_	_	_	_	0	_	_	_
-48	of	_	_	_	_	0	_	_	_
-49	these	_	_	_	_	0	_	_	_
-50	Directives	_	_	_	_	0	_	_	_
-51	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
+1	She	_	_	_	_	0	_	_	_
 2	has	_	_	_	_	0	_	_	_
-3	been	_	_	_	_	0	_	_	_
-4	an	_	_	_	_	0	_	_	_
-5	ongoing	_	_	_	_	0	_	_	_
-6	concern	_	_	_	_	0	_	_	_
-7	for	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	five	_	_	_	_	0	_	_	_
-10	years	_	_	_	_	0	_	_	_
-11	that	_	_	_	_	0	_	_	_
-12	I	_	_	_	_	0	_	_	_
-13	have	_	_	_	_	0	_	_	_
-14	been	_	_	_	_	0	_	_	_
-15	a	_	_	_	_	0	_	_	_
-16	Member	_	_	_	_	0	_	_	_
-17	of	_	_	_	_	0	_	_	_
-18	this	_	_	_	_	0	_	_	_
-19	Parliament	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	I	_	_	_	_	0	_	_	_
-23	have	have	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
-24	raised	_	_	_	_	0	_	_	_
-25	the	_	_	_	_	0	_	_	_
-26	issue	_	_	_	_	0	_	_	_
-27	***time***	time	NOUN	S	Number=Sing	23	udep	_	_
-28	and	_	_	_	_	0	_	_	_
-29	time	_	_	_	_	0	_	_	_
-30	again	_	_	_	_	0	_	_	_
-31	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	will	_	_	_	_	0	_	_	_
-3	conclude	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	Mr	_	_	_	_	0	_	_	_
-6	President	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	by	_	_	_	_	0	_	_	_
-9	saying	_	_	_	_	0	_	_	_
-10	that	_	_	_	_	0	_	_	_
-11	the	_	_	_	_	0	_	_	_
-12	failure	_	_	_	_	0	_	_	_
-13	of	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	Commission	_	_	_	_	0	_	_	_
-16	's	_	_	_	_	0	_	_	_
-17	communication	_	_	_	_	0	_	_	_
-18	to	_	_	_	_	0	_	_	_
-19	focus	_	_	_	_	0	_	_	_
-20	on	_	_	_	_	0	_	_	_
-21	territorial	_	_	_	_	0	_	_	_
-22	pacts	_	_	_	_	0	_	_	_
-23	and	_	_	_	_	0	_	_	_
-24	,	_	_	_	_	0	_	_	_
-25	especially	_	_	_	_	0	_	_	_
-26	,	_	_	_	_	0	_	_	_
-27	methods	_	_	_	_	0	_	_	_
-28	of	_	_	_	_	0	_	_	_
-29	combating	_	_	_	_	0	_	_	_
-30	unemployment	_	_	_	_	0	_	_	_
-31	among	_	_	_	_	0	_	_	_
-32	women	_	_	_	_	0	_	_	_
-33	and	_	_	_	_	0	_	_	_
-34	young	_	_	_	_	0	_	_	_
-35	people	_	_	_	_	0	_	_	_
-36	,	_	_	_	_	0	_	_	_
-37	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-38	***cause***	cause	NOUN	S	Number=Sing	37	comp:pred	_	_
-39	for	_	_	_	_	0	_	_	_
-40	serious	_	_	_	_	0	_	_	_
-41	concern	_	_	_	_	0	_	_	_
-42	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Now	_	_	_	_	0	_	_	_
-2	you	_	_	_	_	0	_	_	_
-3	can	_	_	_	_	0	_	_	_
-4	hear	_	_	_	_	0	_	_	_
-5	from	_	_	_	_	0	_	_	_
-6	people	_	_	_	_	0	_	_	_
-7	you	_	_	_	_	0	_	_	_
-8	're	_	_	_	_	0	_	_	_
-9	interested	_	_	_	_	0	_	_	_
-10	in	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	even	_	_	_	_	0	_	_	_
-13	if	_	_	_	_	0	_	_	_
-14	you	_	_	_	_	0	_	_	_
-15	're	be	AUX	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
-16	not	_	_	_	_	0	_	_	_
-17	***friends***	friend	NOUN	S	Number=Plur	15	comp:pred	_	SpaceAfter=No
-18	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Shakespeare	_	_	_	_	0	_	_	_
-2	was	be	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	buried	_	_	_	_	0	_	_	_
-4	in	_	_	_	_	0	_	_	_
+3	gone	_	_	_	_	0	_	_	_
+4	into	_	_	_	_	0	_	_	_
 5	the	_	_	_	_	0	_	_	_
-6	chancel	_	_	_	_	0	_	_	_
-7	of	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	Holy	_	_	_	_	0	_	_	_
-10	Trinity	_	_	_	_	0	_	_	_
-11	Church	_	_	_	_	0	_	_	_
-12	two	_	_	_	_	0	_	_	_
-13	***days***	day	NOUN	S	Number=Plur	2	udep	_	_
-14	after	_	_	_	_	0	_	_	_
+6	issue	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	some	_	_	_	_	0	_	_	_
+9	depth	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	committee	_	_	_	_	0	_	_	_
+14	debate	_	_	_	_	0	_	_	_
+15	she	_	_	_	_	0	_	_	_
+16	took	_	_	_	_	0	_	_	_
+17	account	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	many	_	_	_	_	0	_	_	_
+20	of	_	_	_	_	0	_	_	_
+21	the	_	_	_	_	0	_	_	_
+22	amendments	_	_	_	_	0	_	_	_
+23	that	_	_	_	_	0	_	_	_
+24	have	_	_	_	_	0	_	_	_
+25	been	_	_	_	_	0	_	_	_
+26	tabled	_	_	_	_	0	_	_	_
+27	regarding	regard	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	_	_	_
+28	this	_	_	_	_	0	_	_	_
+29	***report***	report	NOUN	S	Number=Sing	27	comp:obj	_	SpaceAfter=No
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Consequently	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	I	_	_	_	_	0	_	_	_
+4	feel	_	_	_	_	0	_	_	_
+5	we	_	_	_	_	0	_	_	_
+6	must	_	_	_	_	0	_	_	_
+7	look	_	_	_	_	0	_	_	_
+8	to	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	future	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	establish	establish	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
+13	***guidelines***	guideline	NOUN	S	Number=Plur	12	comp:obj	_	_
+14	for	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	mid	_	_	_	_	0	_	_	_
+17	-	_	_	_	_	0	_	_	_
+18	term	_	_	_	_	0	_	_	_
+19	review	_	_	_	_	0	_	_	_
+20	in	_	_	_	_	0	_	_	_
+21	2003	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	and	_	_	_	_	0	_	_	_
+24	thus	_	_	_	_	0	_	_	_
+25	have	_	_	_	_	0	_	_	_
+26	an	_	_	_	_	0	_	_	_
+27	influence	_	_	_	_	0	_	_	_
+28	on	_	_	_	_	0	_	_	_
+29	the	_	_	_	_	0	_	_	_
+30	second	_	_	_	_	0	_	_	_
+31	phase	_	_	_	_	0	_	_	_
+32	of	_	_	_	_	0	_	_	_
+33	programming	_	_	_	_	0	_	_	_
+34	set	_	_	_	_	0	_	_	_
+35	to	_	_	_	_	0	_	_	_
+36	follow	_	_	_	_	0	_	_	_
+37	2003	_	_	_	_	0	_	_	_
+38	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	(	_	_	_	_	0	_	_	_
+2	2	_	_	_	_	0	_	_	_
+3	)	_	_	_	_	0	_	_	_
+4	Everyone	_	_	_	_	0	_	_	_
+5	has	have	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	***right***	right	NOUN	S	Number=Sing	5	comp:obj	_	_
+8	of	_	_	_	_	0	_	_	_
+9	equal	_	_	_	_	0	_	_	_
+10	access	_	_	_	_	0	_	_	_
+11	to	_	_	_	_	0	_	_	_
+12	public	_	_	_	_	0	_	_	_
+13	service	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
 15	his	_	_	_	_	0	_	_	_
-16	death	_	_	_	_	0	_	_	_
+16	country	_	_	_	_	0	_	_	_
 17	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	(	_	_	_	_	0	_	_	_
+2	2	_	_	_	_	0	_	_	_
+3	)	_	_	_	_	0	_	_	_
+4	Everyone	_	_	_	_	0	_	_	_
+5	has	have	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	***right***	right	NOUN	S	Number=Sing	5	comp:obj	_	_
+8	to	_	_	_	_	0	_	_	_
+9	leave	_	_	_	_	0	_	_	_
+10	any	_	_	_	_	0	_	_	_
+11	country	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	including	_	_	_	_	0	_	_	_
+14	his	_	_	_	_	0	_	_	_
+15	own	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	and	_	_	_	_	0	_	_	_
+18	to	_	_	_	_	0	_	_	_
+19	return	_	_	_	_	0	_	_	_
+20	to	_	_	_	_	0	_	_	_
+21	his	_	_	_	_	0	_	_	_
+22	country	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	particular	_	_	_	_	0	_	_	_
+3	instruments	_	_	_	_	0	_	_	_
+4	mentioned	_	_	_	_	0	_	_	_
+5	in	_	_	_	_	0	_	_	_
+6	this	_	_	_	_	0	_	_	_
+7	Article	_	_	_	_	0	_	_	_
+8	include	include	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	***those***	that	PRON	PD	Number=Plur|PronType=Dem	8	comp:obj	_	_
+10	referred	_	_	_	_	0	_	_	_
+11	to	_	_	_	_	0	_	_	_
+12	in	_	_	_	_	0	_	_	_
+13	Article	_	_	_	_	0	_	_	_
+14	IV	_	_	_	_	0	_	_	_
+15	-	_	_	_	_	0	_	_	_
+16	438	_	_	_	_	0	_	_	_
+17	of	_	_	_	_	0	_	_	_
+18	the	_	_	_	_	0	_	_	_
+19	Constitution	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	last	_	_	_	_	0	_	_	_
+3	programming	_	_	_	_	0	_	_	_
+4	exercise	_	_	_	_	0	_	_	_
+5	for	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	pre	_	_	_	_	0	_	_	_
+8	-	_	_	_	_	0	_	_	_
+9	accession	_	_	_	_	0	_	_	_
+10	assistance	_	_	_	_	0	_	_	_
+11	referred	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	in	_	_	_	_	0	_	_	_
+14	paragraph	_	_	_	_	0	_	_	_
+15	1	_	_	_	_	0	_	_	_
+16	shall	_	_	_	_	0	_	_	_
+17	take	_	_	_	_	0	_	_	_
+18	place	_	_	_	_	0	_	_	_
+19	in	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	last	_	_	_	_	0	_	_	_
+22	year	_	_	_	_	0	_	_	_
+23	preceding	precede	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	_	_	_
+24	***accession***	accession	NOUN	S	Number=Sing	23	comp:obj	_	SpaceAfter=No
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	These	_	_	_	_	0	_	_	_
+2	measures	_	_	_	_	0	_	_	_
+3	shall	_	_	_	_	0	_	_	_
+4	be	_	_	_	_	0	_	_	_
+5	taken	_	_	_	_	0	_	_	_
+6	during	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	period	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	three	_	_	_	_	0	_	_	_
+11	years	_	_	_	_	0	_	_	_
+12	following	follow	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	***date***	date	NOUN	S	Number=Sing	12	comp:obj	_	_
+15	of	_	_	_	_	0	_	_	_
+16	accession	_	_	_	_	0	_	_	_
+17	and	_	_	_	_	0	_	_	_
+18	their	_	_	_	_	0	_	_	_
+19	application	_	_	_	_	0	_	_	_
+20	shall	_	_	_	_	0	_	_	_
+21	be	_	_	_	_	0	_	_	_
+22	limited	_	_	_	_	0	_	_	_
+23	to	_	_	_	_	0	_	_	_
+24	that	_	_	_	_	0	_	_	_
+25	period	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	measures	_	_	_	_	0	_	_	_
+3	shall	_	_	_	_	0	_	_	_
+4	be	_	_	_	_	0	_	_	_
+5	adopted	_	_	_	_	0	_	_	_
+6	according	_	_	_	_	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	voting	_	_	_	_	0	_	_	_
+10	rules	_	_	_	_	0	_	_	_
+11	governing	govern	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	***adoption***	adoption	NOUN	S	Number=Sing	11	comp:obj	_	_
+14	of	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	act	_	_	_	_	0	_	_	_
+17	from	_	_	_	_	0	_	_	_
+18	which	_	_	_	_	0	_	_	_
+19	a	_	_	_	_	0	_	_	_
+20	temporary	_	_	_	_	0	_	_	_
+21	derogation	_	_	_	_	0	_	_	_
+22	is	_	_	_	_	0	_	_	_
+23	sought	_	_	_	_	0	_	_	_
+24	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

@@ -137,439 +137,612 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> Agreement in <b>Number</b>, dependent is denoted by *** </h3><h4> Rules ACTIVE for this Leaf: </h4><ul><li> dependent's head is a= AUX </li></ul><h4> Rules NOT ACTIVE for this Leaf: </h4><ul><li> dependent is not a= NOUN </li><li> dependent is not the= flat multiword expression </li><li> dependent's head is not a= VERB </li><li> dependent is not the= subject </li><li> dependent's head is not a= NOUN </li></ul><h4> Examples </h4><pre><code class="language-conllu">
-1	Lynda	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	professional	_	_	_	_	0	_	_	_
-4	and	_	_	_	_	0	_	_	_
-5	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-6	great	_	_	_	_	0	_	_	_
-7	compassion	_	_	_	_	0	_	_	_
-8	for	_	_	_	_	0	_	_	_
-9	animals	_	_	_	_	0	_	_	_
-10	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	It	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	Oct.	_	_	_	_	0	_	_	_
-4	6	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	and	_	_	_	_	0	_	_	_
-7	not	_	_	_	_	0	_	_	_
-8	one	_	_	_	_	0	_	_	_
-9	family	_	_	_	_	0	_	_	_
-10	member	_	_	_	_	0	_	_	_
-11	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-12	been	_	_	_	_	0	_	_	_
-13	located	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">the head agrees with its head on= Number <br>
+dependent is the= compound <br>
+</td><td style="text-align:center">the head of the dependent has semantic class= creative work <br>
+dependent is the= object <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:the head agrees with its head on= Number;dependent is the= compound; Not Active:the head of the dependent has semantic class= creative work;dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	cells	_	_	_	_	0	_	_	_
+3	were	_	_	_	_	0	_	_	_
+4	operating	_	_	_	_	0	_	_	_
+5	in	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	Ghazaliyah	Ghazaliyah	PROPN	NNP	Number=Sing	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	***al***	al	PROPN	NNP	Number=Sing	11	compound	_	SpaceAfter=No
+10	-	_	_	_	_	0	_	_	_
+11	Jihad	Jihad	PROPN	NNP	Number=Sing	7	conj	_	_
+12	districts	_	_	_	_	0	_	_	_
+13	of	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	capital	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	In	_	_	_	_	0	_	_	_
-2	Baghdad	_	_	_	_	0	_	_	_
-3	***Kadhim***	Kadhim	PROPN	NNP	Number=Sing	18	subj@pass	_	_
-4	Talal	_	_	_	_	0	_	_	_
-5	Husain	_	_	_	_	0	_	_	_
+2	Suwayrah	Suwayrah	PROPN	NNP	Number=Sing	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	***Kut***	Kut	PROPN	NNP	Number=Sing	5	compound	_	_
+5	Province	Province	PROPN	NNP	Number=Sing	2	appos	_	SpaceAfter=No
 6	,	_	_	_	_	0	_	_	_
-7	assistant	_	_	_	_	0	_	_	_
-8	dean	_	_	_	_	0	_	_	_
-9	at	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	School	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	Education	_	_	_	_	0	_	_	_
-14	at	_	_	_	_	0	_	_	_
-15	Mustansiriyah	_	_	_	_	0	_	_	_
-16	University	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-19	assassinated	_	_	_	_	0	_	_	_
-20	with	_	_	_	_	0	_	_	_
-21	his	_	_	_	_	0	_	_	_
-22	driver	_	_	_	_	0	_	_	_
-23	in	_	_	_	_	0	_	_	_
-24	the	_	_	_	_	0	_	_	_
-25	Salikh	_	_	_	_	0	_	_	_
-26	district	_	_	_	_	0	_	_	_
-27	.	_	_	_	_	0	_	_	_
+7	two	_	_	_	_	0	_	_	_
+8	car	_	_	_	_	0	_	_	_
+9	bombs	_	_	_	_	0	_	_	_
+10	were	_	_	_	_	0	_	_	_
+11	discovered	_	_	_	_	0	_	_	_
+12	before	_	_	_	_	0	_	_	_
+13	they	_	_	_	_	0	_	_	_
+14	could	_	_	_	_	0	_	_	_
+15	be	_	_	_	_	0	_	_	_
+16	detonated	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	it	_	_	_	_	0	_	_	_
-2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	not	_	_	_	_	0	_	_	_
-4	me	_	_	_	_	0	_	_	_
-5	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
-6	it	_	_	_	_	0	_	_	_
-7	!?	_	_	_	_	0	_	_	_
+1	The	_	_	_	_	0	_	_	_
+2	Debaathification	_	_	_	_	0	_	_	_
+3	Commission	_	_	_	_	0	_	_	_
+4	had	_	_	_	_	0	_	_	_
+5	been	_	_	_	_	0	_	_	_
+6	pushed	_	_	_	_	0	_	_	_
+7	by	_	_	_	_	0	_	_	_
+8	Ahmad	Ahmad	PROPN	NNP	Number=Sing	0	_	_	_
+9	Chalabi	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	his	_	_	_	_	0	_	_	_
+12	***Iraqi***	Iraqi	PROPN	NNP	Number=Sing	14	compound	_	_
+13	National	_	_	_	_	0	_	_	_
+14	Congress	Congress	PROPN	NNP	Number=Sing	8	conj	_	_
+15	very	_	_	_	_	0	_	_	_
+16	hard	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	and	_	_	_	_	0	_	_	_
+19	had	_	_	_	_	0	_	_	_
+20	pushed	_	_	_	_	0	_	_	_
+21	many	_	_	_	_	0	_	_	_
+22	Sunni	_	_	_	_	0	_	_	_
+23	Arabs	_	_	_	_	0	_	_	_
+24	into	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	arms	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	guerrillas	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	Debaathification	_	_	_	_	0	_	_	_
+3	Commission	_	_	_	_	0	_	_	_
+4	had	_	_	_	_	0	_	_	_
+5	been	_	_	_	_	0	_	_	_
+6	pushed	_	_	_	_	0	_	_	_
+7	by	_	_	_	_	0	_	_	_
+8	Ahmad	Ahmad	PROPN	NNP	Number=Sing	0	_	_	_
+9	Chalabi	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	his	_	_	_	_	0	_	_	_
+12	Iraqi	_	_	_	_	0	_	_	_
+13	***National***	National	PROPN	NNP	Number=Sing	14	compound	_	_
+14	Congress	Congress	PROPN	NNP	Number=Sing	8	conj	_	_
+15	very	_	_	_	_	0	_	_	_
+16	hard	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	and	_	_	_	_	0	_	_	_
+19	had	_	_	_	_	0	_	_	_
+20	pushed	_	_	_	_	0	_	_	_
+21	many	_	_	_	_	0	_	_	_
+22	Sunni	_	_	_	_	0	_	_	_
+23	Arabs	_	_	_	_	0	_	_	_
+24	into	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	arms	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	guerrillas	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	He	_	_	_	_	0	_	_	_
+2	is	_	_	_	_	0	_	_	_
+3	no	_	_	_	_	0	_	_	_
+4	longer	_	_	_	_	0	_	_	_
+5	in	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	dominant	_	_	_	_	0	_	_	_
+8	Shiite	_	_	_	_	0	_	_	_
+9	list	list	NOUN	NN	Number=Sing	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	***United***	United	PROPN	NNP	Number=Sing	14	compound	_	_
+13	Iraqi	_	_	_	_	0	_	_	_
+14	Alliance	Alliance	PROPN	NNP	Number=Sing	9	appos	_	SpaceAfter=No
+15	,	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	wo	_	_	_	_	0	_	_	_
+18	n't	_	_	_	_	0	_	_	_
+19	have	_	_	_	_	0	_	_	_
+20	many	_	_	_	_	0	_	_	_
+21	seats	_	_	_	_	0	_	_	_
+22	in	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	new	_	_	_	_	0	_	_	_
+25	parliament	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	He	_	_	_	_	0	_	_	_
+2	is	_	_	_	_	0	_	_	_
+3	no	_	_	_	_	0	_	_	_
+4	longer	_	_	_	_	0	_	_	_
+5	in	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	dominant	_	_	_	_	0	_	_	_
+8	Shiite	_	_	_	_	0	_	_	_
+9	list	list	NOUN	NN	Number=Sing	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	United	_	_	_	_	0	_	_	_
+13	***Iraqi***	Iraqi	PROPN	NNP	Number=Sing	14	compound	_	_
+14	Alliance	Alliance	PROPN	NNP	Number=Sing	9	appos	_	SpaceAfter=No
+15	,	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	wo	_	_	_	_	0	_	_	_
+18	n't	_	_	_	_	0	_	_	_
+19	have	_	_	_	_	0	_	_	_
+20	many	_	_	_	_	0	_	_	_
+21	seats	_	_	_	_	0	_	_	_
+22	in	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	new	_	_	_	_	0	_	_	_
+25	parliament	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Now	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	***Electoral***	Electoral	PROPN	NNP	Number=Sing	4	compound	_	_
+4	Commission	Commission	PROPN	NNP	Number=Sing	5	subj	_	_
+5	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	refusing	_	_	_	_	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	punish	_	_	_	_	0	_	_	_
+9	people	_	_	_	_	0	_	_	_
+10	for	_	_	_	_	0	_	_	_
+11	mere	_	_	_	_	0	_	_	_
+12	past	_	_	_	_	0	_	_	_
+13	Baath	_	_	_	_	0	_	_	_
+14	Party	_	_	_	_	0	_	_	_
+15	membership	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Now	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	Electoral	_	_	_	_	0	_	_	_
+4	Commission	_	_	_	_	0	_	_	_
+5	is	_	_	_	_	0	_	_	_
+6	refusing	_	_	_	_	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	punish	_	_	_	_	0	_	_	_
+9	people	_	_	_	_	0	_	_	_
+10	for	_	_	_	_	0	_	_	_
+11	mere	_	_	_	_	0	_	_	_
+12	past	_	_	_	_	0	_	_	_
+13	***Baath***	Baath	PROPN	NNP	Number=Sing	14	compound	_	_
+14	Party	Party	PROPN	NNP	Number=Sing	15	compound	_	_
+15	membership	membership	NOUN	NN	Number=Sing	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	There	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	even	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	chapter	_	_	_	_	0	_	_	_
+6	titled	_	_	_	_	0	_	_	_
+7	"	_	_	_	_	0	_	_	_
+8	Poisonous	_	_	_	_	0	_	_	_
+9	Letter	_	_	_	_	0	_	_	_
+10	"	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	***Al***	Al	PROPN	NNP	Number=Sing	14	compound	_	_
+14	Qaeda	Qaeda	PROPN	NNP	Number=Sing	15	compound	_	_
+15	manual	manual	NOUN	NN	Number=Sing	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	There	_	_	_	_	0	_	_	_
+2	is	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	risk	_	_	_	_	0	_	_	_
+5	that	_	_	_	_	0	_	_	_
+6	observers	_	_	_	_	0	_	_	_
+7	underestimate	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	time	_	_	_	_	0	_	_	_
+10	that	_	_	_	_	0	_	_	_
+11	***Al***	Al	PROPN	NNP	Number=Sing	12	compound	_	_
+12	Qaeda	Qaeda	PROPN	NNP	Number=Sing	13	subj	_	_
+13	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+14	had	_	_	_	_	0	_	_	_
+15	to	_	_	_	_	0	_	_	_
+16	make	_	_	_	_	0	_	_	_
+17	progress	_	_	_	_	0	_	_	_
+18	in	_	_	_	_	0	_	_	_
+19	such	_	_	_	_	0	_	_	_
+20	recruitment	_	_	_	_	0	_	_	_
+21	and	_	_	_	_	0	_	_	_
+22	research	_	_	_	_	0	_	_	_
+23	and	_	_	_	_	0	_	_	_
+24	development	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	Senator	_	_	_	_	0	_	_	_
+2	Leahy	_	_	_	_	0	_	_	_
+3	was	_	_	_	_	0	_	_	_
+4	Chairman	_	_	_	_	0	_	_	_
+5	of	_	_	_	_	0	_	_	_
+6	both	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	Judiciary	_	_	_	_	0	_	_	_
+9	Committee	Committee	PROPN	NNP	Number=Sing	0	_	_	_
+10	overseeing	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	FBI	_	_	_	_	0	_	_	_
+13	and	_	_	_	_	0	_	_	_
+14	***Appropriations***	Appropriations	PROPN	NNPS	Number=Plur	15	compound	_	_
+15	Subcommittee	Subcommittee	PROPN	NNP	Number=Sing	9	conj	_	_
+16	in	_	_	_	_	0	_	_	_
+17	charge	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	foreign	_	_	_	_	0	_	_	_
+20	aid	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	these	_	_	_	_	0	_	_	_
+23	countries	_	_	_	_	0	_	_	_
+24	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	18T	18t	NOUN	NN	Number=Sing	0	_	_	_
+2	-	_	_	_	_	0	_	_	_
+3	EI	_	_	_	_	0	_	_	_
+4	Indonesia	_	_	_	_	0	_	_	_
+5	***Operations***	Operations	PROPN	NNPS	Number=Plur	6	compound	_	_
+6	LLC	LLC	PROPN	NNP	Number=Sing	1	appos	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	86M	86m	NOUN	NN	Number=Sing	0	_	_	_
+2	-	_	_	_	_	0	_	_	_
+3	Enron	_	_	_	_	0	_	_	_
+4	Net	_	_	_	_	0	_	_	_
+5	***Works***	Works	PROPN	NNPS	Number=Plur	6	compound	_	_
+6	LLC	LLC	PROPN	NNP	Number=Sing	1	appos	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Would	_	_	_	_	0	_	_	_
+2	a	_	_	_	_	0	_	_	_
+3	more	_	_	_	_	0	_	_	_
+4	appropriate	_	_	_	_	0	_	_	_
+5	time	_	_	_	_	0	_	_	_
+6	be	_	_	_	_	0	_	_	_
+7	after	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	Global	_	_	_	_	0	_	_	_
+10	***Operations***	Operations	PROPN	NNPS	Number=Plur	11	compound	_	_
+11	Controller	Controller	PROPN	NNP	Number=Sing	12	compound	_	_
+12	meeting	meeting	NOUN	NN	Number=Sing	0	_	_	_
+13	in	_	_	_	_	0	_	_	_
+14	October	_	_	_	_	0	_	_	_
+15	when	_	_	_	_	0	_	_	_
+16	we	_	_	_	_	0	_	_	_
+17	should	_	_	_	_	0	_	_	_
+18	have	_	_	_	_	0	_	_	_
+19	worldwide	_	_	_	_	0	_	_	_
+20	buy	_	_	_	_	0	_	_	_
+21	-	_	_	_	_	0	_	_	_
+22	in	_	_	_	_	0	_	_	_
+23	and	_	_	_	_	0	_	_	_
+24	commitment	_	_	_	_	0	_	_	_
+25	to	_	_	_	_	0	_	_	_
+26	these	_	_	_	_	0	_	_	_
+27	standards	_	_	_	_	0	_	_	_
+28	and	_	_	_	_	0	_	_	_
+29	(	_	_	_	_	0	_	_	_
+30	hopefully	_	_	_	_	0	_	_	_
+31	)	_	_	_	_	0	_	_	_
+32	our	_	_	_	_	0	_	_	_
+33	first	_	_	_	_	0	_	_	_
+34	draft	_	_	_	_	0	_	_	_
+35	of	_	_	_	_	0	_	_	_
+36	a	_	_	_	_	0	_	_	_
+37	meaningful	_	_	_	_	0	_	_	_
+38	exception	_	_	_	_	0	_	_	_
+39	report	_	_	_	_	0	_	_	_
+40	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	This	_	_	_	_	0	_	_	_
-2	store	_	_	_	_	0	_	_	_
-3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	what	_	_	_	_	0	_	_	_
-5	Colorado	_	_	_	_	0	_	_	_
-6	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
-7	all	_	_	_	_	0	_	_	_
-8	about	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***Chalabi***	Chalabi	PROPN	NNP	Number=Sing	2	subj@pass	_	_
-2	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	been	_	_	_	_	0	_	_	_
-4	increasingly	_	_	_	_	0	_	_	_
-5	marginalized	_	_	_	_	0	_	_	_
-6	within	_	_	_	_	0	_	_	_
-7	Iraq	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	however	_	_	_	_	0	_	_	_
+2	is	_	_	_	_	0	_	_	_
+3	to	_	_	_	_	0	_	_	_
+4	advise	_	_	_	_	0	_	_	_
+5	you	_	_	_	_	0	_	_	_
+6	that	_	_	_	_	0	_	_	_
+7	we	_	_	_	_	0	_	_	_
+8	have	_	_	_	_	0	_	_	_
+9	available	_	_	_	_	0	_	_	_
 10	,	_	_	_	_	0	_	_	_
-11	despite	_	_	_	_	0	_	_	_
-12	his	_	_	_	_	0	_	_	_
-13	ties	_	_	_	_	0	_	_	_
-14	of	_	_	_	_	0	_	_	_
-15	clientelage	_	_	_	_	0	_	_	_
-16	with	_	_	_	_	0	_	_	_
-17	Washington	_	_	_	_	0	_	_	_
-18	and	_	_	_	_	0	_	_	_
-19	Tehran	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
+11	for	_	_	_	_	0	_	_	_
+12	your	_	_	_	_	0	_	_	_
+13	business	_	_	_	_	0	_	_	_
+14	or	_	_	_	_	0	_	_	_
+15	personal	_	_	_	_	0	_	_	_
+16	use	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	Stan	_	_	_	_	0	_	_	_
+19	's	_	_	_	_	0	_	_	_
+20	four	_	_	_	_	0	_	_	_
+21	(	_	_	_	_	0	_	_	_
+22	4	_	_	_	_	0	_	_	_
+23	)	_	_	_	_	0	_	_	_
+24	***WNBA***	WNBA	PROPN	NNP	Number=Sing	25	compound	_	_
+25	Comets	Comets	PROPN	NNPS	Number=Plur	26	compound	_	_
+26	tickets	ticket	NOUN	NNS	Number=Plur	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	That	_	_	_	_	0	_	_	_
-2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	comp:pred	_	SpaceAfter=No
-4	.	_	_	_	_	0	_	_	_
+1	"	_	_	_	_	0	_	_	_
+2	National	_	_	_	_	0	_	_	_
+3	***Aeronautics***	Aeronautics	PROPN	NNPS	Number=Plur	6	compound	_	_
+4	and	_	_	_	_	0	_	_	_
+5	Space	_	_	_	_	0	_	_	_
+6	Administration	Administration	PROPN	NNP	Number=Sing	11	subj@pass	_	_
+7	(	_	_	_	_	0	_	_	_
+8	NASA	_	_	_	_	0	_	_	_
+9	)	_	_	_	_	0	_	_	_
+10	:	_	_	_	_	0	_	_	_
+11	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+12	funded	_	_	_	_	0	_	_	_
+13	at	_	_	_	_	0	_	_	_
+14	$	_	_	_	_	0	_	_	_
+15	16.379	_	_	_	_	0	_	_	_
+16	billion	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	an	_	_	_	_	0	_	_	_
+19	increase	_	_	_	_	0	_	_	_
+20	of	_	_	_	_	0	_	_	_
+21	$	_	_	_	_	0	_	_	_
+22	200	_	_	_	_	0	_	_	_
+23	million	_	_	_	_	0	_	_	_
+24	over	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	FY04	_	_	_	_	0	_	_	_
+27	enacted	_	_	_	_	0	_	_	_
+28	level	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	and	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	reduction	_	_	_	_	0	_	_	_
+33	of	_	_	_	_	0	_	_	_
+34	$	_	_	_	_	0	_	_	_
+35	665	_	_	_	_	0	_	_	_
+36	million	_	_	_	_	0	_	_	_
+37	from	_	_	_	_	0	_	_	_
+38	the	_	_	_	_	0	_	_	_
+39	budget	_	_	_	_	0	_	_	_
+40	request	_	_	_	_	0	_	_	_
+41	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	THAT	_	_	_	_	0	_	_	_
-2	'S	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***IT***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	comp:pred	_	SpaceAfter=No
-4	!!	_	_	_	_	0	_	_	_
+1	"	_	_	_	_	0	_	_	_
+2	Beijing	_	_	_	_	0	_	_	_
+3	may	_	_	_	_	0	_	_	_
+4	end	_	_	_	_	0	_	_	_
+5	up	_	_	_	_	0	_	_	_
+6	in	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	early	_	_	_	_	0	_	_	_
+9	***1990s***	1990	NOUN	NNS	Number=Plur	10	compound	_	_
+10	Japan	Japan	PROPN	NNP	Number=Sing	11	compound	_	_
+11	situation	situation	NOUN	NN	Number=Sing	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	where	_	_	_	_	0	_	_	_
+14	it	_	_	_	_	0	_	_	_
+15	is	_	_	_	_	0	_	_	_
+16	forced	_	_	_	_	0	_	_	_
+17	to	_	_	_	_	0	_	_	_
+18	sell	_	_	_	_	0	_	_	_
+19	recently	_	_	_	_	0	_	_	_
+20	purchased	_	_	_	_	0	_	_	_
+21	overseas	_	_	_	_	0	_	_	_
+22	assets	_	_	_	_	0	_	_	_
+23	for	_	_	_	_	0	_	_	_
+24	a	_	_	_	_	0	_	_	_
+25	fraction	_	_	_	_	0	_	_	_
+26	of	_	_	_	_	0	_	_	_
+27	what	_	_	_	_	0	_	_	_
+28	it	_	_	_	_	0	_	_	_
+29	paid	_	_	_	_	0	_	_	_
+30	for	_	_	_	_	0	_	_	_
+31	them	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
+33	"	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***This***	this	PRON	DT	Number=Sing|PronType=Dem	2	subj@pass	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	called	_	_	_	_	0	_	_	_
-4	ideation	_	_	_	_	0	_	_	_
-5	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	would	_	_	_	_	0	_	_	_
-3	NEVER	_	_	_	_	0	_	_	_
-4	recommend	_	_	_	_	0	_	_	_
-5	this	_	_	_	_	0	_	_	_
-6	gym	_	_	_	_	0	_	_	_
-7	to	_	_	_	_	0	_	_	_
-8	anyone	_	_	_	_	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	unfortunately	_	_	_	_	0	_	_	_
-11	***this***	this	PRON	DT	Number=Sing|PronType=Dem	12	subj@pass	_	_
-12	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-13	based	_	_	_	_	0	_	_	_
-14	solely	_	_	_	_	0	_	_	_
-15	on	_	_	_	_	0	_	_	_
+1	Scientists	_	_	_	_	0	_	_	_
+2	can	_	_	_	_	0	_	_	_
+3	argue	_	_	_	_	0	_	_	_
+4	all	_	_	_	_	0	_	_	_
+5	they	_	_	_	_	0	_	_	_
+6	want	_	_	_	_	0	_	_	_
+7	about	_	_	_	_	0	_	_	_
+8	how	_	_	_	_	0	_	_	_
+9	many	_	_	_	_	0	_	_	_
+10	***degrees***	degree	NOUN	NNS	Number=Plur	11	compound	_	_
+11	Celsius	Celsius	PROPN	NNP	Number=Sing	18	udep@npmod	_	_
+12	--	_	_	_	_	0	_	_	_
+13	or	_	_	_	_	0	_	_	_
+14	Fahrenheit	_	_	_	_	0	_	_	_
+15	--	_	_	_	_	0	_	_	_
 16	the	_	_	_	_	0	_	_	_
-17	owner	_	_	_	_	0	_	_	_
-18	's	_	_	_	_	0	_	_	_
-19	own	_	_	_	_	0	_	_	_
-20	unprofessionalism	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Are	_	_	_	_	0	_	_	_
-2	whole	_	_	_	_	0	_	_	_
-3	offices	_	_	_	_	0	_	_	_
-4	(	_	_	_	_	0	_	_	_
-5	eg	_	_	_	_	0	_	_	_
-6	Tokyo	_	_	_	_	0	_	_	_
-7	)	_	_	_	_	0	_	_	_
-8	unreachable	_	_	_	_	0	_	_	_
-9	or	_	_	_	_	0	_	_	_
-10	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	it	_	_	_	_	0	_	_	_
-12	only	_	_	_	_	0	_	_	_
-13	***those***	those	DET	DT	Number=Plur|PronType=Dem	10	comp:pred	_	_
-14	who	_	_	_	_	0	_	_	_
-15	have	_	_	_	_	0	_	_	_
-16	home	_	_	_	_	0	_	_	_
-17	offices	_	_	_	_	0	_	_	_
-18	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	the	_	_	_	_	0	_	_	_
-2	company	_	_	_	_	0	_	_	_
-3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	Arco	_	_	_	_	0	_	_	_
-5	***Products***	Products	PROPN	NNPS	Number=Plur	3	comp:pred	_	SpaceAfter=No
-6	,	_	_	_	_	0	_	_	_
-7	adn	_	_	_	_	0	_	_	_
-8	their	_	_	_	_	0	_	_	_
-9	comments	_	_	_	_	0	_	_	_
-10	are	_	_	_	_	0	_	_	_
-11	on	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	attached	_	_	_	_	0	_	_	_
-14	file	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
+17	planet	_	_	_	_	0	_	_	_
+18	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+19	warming	_	_	_	_	0	_	_	_
+20	and	_	_	_	_	0	_	_	_
+21	what	_	_	_	_	0	_	_	_
+22	the	_	_	_	_	0	_	_	_
+23	trend	_	_	_	_	0	_	_	_
+24	portends	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	but	_	_	_	_	0	_	_	_
+27	meanwhile	_	_	_	_	0	_	_	_
+28	Earth	_	_	_	_	0	_	_	_
+29	's	_	_	_	_	0	_	_	_
+30	plants	_	_	_	_	0	_	_	_
+31	,	_	_	_	_	0	_	_	_
+32	insects	_	_	_	_	0	_	_	_
+33	and	_	_	_	_	0	_	_	_
+34	animals	_	_	_	_	0	_	_	_
+35	are	_	_	_	_	0	_	_	_
+36	not	_	_	_	_	0	_	_	_
+37	waiting	_	_	_	_	0	_	_	_
+38	for	_	_	_	_	0	_	_	_
+39	the	_	_	_	_	0	_	_	_
+40	outcome	_	_	_	_	0	_	_	_
+41	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Feb	_	_	_	_	0	_	_	_
-2	2005	_	_	_	_	0	_	_	_
-3	is	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	projected	_	_	_	_	0	_	_	_
-6	release	_	_	_	_	0	_	_	_
-7	date	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	although	_	_	_	_	0	_	_	_
-10	Guild	_	_	_	_	0	_	_	_
-11	***Wars***	Wars	PROPN	NNPS	Number=Plur	12	subj@pass	_	_
-12	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-13	made	_	_	_	_	0	_	_	_
-14	by	_	_	_	_	0	_	_	_
-15	ex-members	_	_	_	_	0	_	_	_
-16	of	_	_	_	_	0	_	_	_
-17	Blizzard	_	_	_	_	0	_	_	_
-18	,	_	_	_	_	0	_	_	_
-19	so	_	_	_	_	0	_	_	_
-20	Feb	_	_	_	_	0	_	_	_
-21	2005	_	_	_	_	0	_	_	_
-22	could	_	_	_	_	0	_	_	_
-23	mean	_	_	_	_	0	_	_	_
-24	August	_	_	_	_	0	_	_	_
-25	2006	_	_	_	_	0	_	_	_
-26	...	_	_	_	_	0	_	_	_
+1	If	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	wonder	_	_	_	_	0	_	_	_
+4	why	_	_	_	_	0	_	_	_
+5	there	_	_	_	_	0	_	_	_
+6	is	_	_	_	_	0	_	_	_
+7	misery	_	_	_	_	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	curse	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	your	_	_	_	_	0	_	_	_
+12	house	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	it	_	_	_	_	0	_	_	_
+15	is	_	_	_	_	0	_	_	_
+16	because	_	_	_	_	0	_	_	_
+17	you	_	_	_	_	0	_	_	_
+18	own	_	_	_	_	0	_	_	_
+19	some	_	_	_	_	0	_	_	_
+20	L.P	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	CD	_	_	_	_	0	_	_	_
+23	or	_	_	_	_	0	_	_	_
+24	another	_	_	_	_	0	_	_	_
+25	article	_	_	_	_	0	_	_	_
+26	related	_	_	_	_	0	_	_	_
+27	to	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	CURSED	_	_	_	_	0	_	_	_
+30	BY	_	_	_	_	0	_	_	_
+31	GOD	_	_	_	_	0	_	_	_
+32	Beatles	Beatles	PROPN	NNPS	Number=Plur	0	_	_	_
+33	and	_	_	_	_	0	_	_	_
+34	***Rolling***	Rolling	PROPN	NNP	Number=Sing	35	compound	_	_
+35	Stones	Stones	PROPN	NNPS	Number=Plur	32	conj	_	SpaceAfter=No
+36	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Recall	_	_	_	_	0	_	_	_
-2	that	_	_	_	_	0	_	_	_
-3	it	_	_	_	_	0	_	_	_
-4	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-5	two	_	_	_	_	0	_	_	_
-6	***Exocets***	Exocets	PROPN	NNPS	Number=Plur	4	comp:pred	_	_
-7	that	_	_	_	_	0	_	_	_
-8	ripped	_	_	_	_	0	_	_	_
+1	The	_	_	_	_	0	_	_	_
+2	fact	_	_	_	_	0	_	_	_
+3	that	_	_	_	_	0	_	_	_
+4	bad	_	_	_	_	0	_	_	_
+5	apprentice	_	_	_	_	0	_	_	_
+6	musicians	_	_	_	_	0	_	_	_
+7	such	_	_	_	_	0	_	_	_
+8	as	_	_	_	_	0	_	_	_
 9	the	_	_	_	_	0	_	_	_
-10	USS	_	_	_	_	0	_	_	_
-11	Stark	_	_	_	_	0	_	_	_
-12	to	_	_	_	_	0	_	_	_
-13	shreds	_	_	_	_	0	_	_	_
-14	in	_	_	_	_	0	_	_	_
-15	1987	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	killing	_	_	_	_	0	_	_	_
-18	37	_	_	_	_	0	_	_	_
-19	sailors	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
+10	Beatles	Beatles	PROPN	NNPS	Number=Plur	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	***Rolling***	Rolling	PROPN	NNP	Number=Sing	14	compound	_	_
+14	Stones	Stones	PROPN	NNPS	Number=Plur	10	conj	_	_
+15	achieved	_	_	_	_	0	_	_	_
+16	such	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	giant	_	_	_	_	0	_	_	_
+19	fame	_	_	_	_	0	_	_	_
+20	that	_	_	_	_	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	even	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	real	_	_	_	_	0	_	_	_
+25	quality	_	_	_	_	0	_	_	_
+26	musicians	_	_	_	_	0	_	_	_
+27	could	_	_	_	_	0	_	_	_
+28	achieve	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	was	_	_	_	_	0	_	_	_
+31	because	_	_	_	_	0	_	_	_
+32	the	_	_	_	_	0	_	_	_
+33	forces	_	_	_	_	0	_	_	_
+34	of	_	_	_	_	0	_	_	_
+35	Satan	_	_	_	_	0	_	_	_
+36	were	_	_	_	_	0	_	_	_
+37	behind	_	_	_	_	0	_	_	_
+38	everything	_	_	_	_	0	_	_	_
+39	,	_	_	_	_	0	_	_	_
+40	supporting	_	_	_	_	0	_	_	_
+41	the	_	_	_	_	0	_	_	_
+42	process	_	_	_	_	0	_	_	_
+43	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	my	_	_	_	_	0	_	_	_
-2	name	_	_	_	_	0	_	_	_
-3	is	_	_	_	_	0	_	_	_
-4	Josalyn	_	_	_	_	0	_	_	_
-5	Leainne	_	_	_	_	0	_	_	_
-6	Creek	_	_	_	_	0	_	_	_
-7	and	_	_	_	_	0	_	_	_
-8	i	_	_	_	_	0	_	_	_
-9	'm	_	_	_	_	0	_	_	_
-10	19	_	_	_	_	0	_	_	_
-11	years	_	_	_	_	0	_	_	_
-12	old	_	_	_	_	0	_	_	_
-13	and	_	_	_	_	0	_	_	_
-14	i	_	_	_	_	0	_	_	_
-15	graduated	_	_	_	_	0	_	_	_
-16	from	_	_	_	_	0	_	_	_
-17	high	_	_	_	_	0	_	_	_
-18	in	_	_	_	_	0	_	_	_
-19	May	_	_	_	_	0	_	_	_
-20	adn	_	_	_	_	0	_	_	_
-21	of	_	_	_	_	0	_	_	_
-22	this	_	_	_	_	0	_	_	_
-23	year	_	_	_	_	0	_	_	_
-24	and	_	_	_	_	0	_	_	_
-25	i	_	_	_	_	0	_	_	_
-26	love	_	_	_	_	0	_	_	_
-27	animals	_	_	_	_	0	_	_	_
-28	and	_	_	_	_	0	_	_	_
-29	i	_	_	_	_	0	_	_	_
-30	'm	_	_	_	_	0	_	_	_
-31	great	_	_	_	_	0	_	_	_
-32	at	_	_	_	_	0	_	_	_
-33	working	_	_	_	_	0	_	_	_
-34	and	_	_	_	_	0	_	_	_
-35	i	_	_	_	_	0	_	_	_
-36	had	_	_	_	_	0	_	_	_
-37	drama	_	_	_	_	0	_	_	_
-38	in	_	_	_	_	0	_	_	_
-39	my	_	_	_	_	0	_	_	_
-40	last	_	_	_	_	0	_	_	_
-41	job	_	_	_	_	0	_	_	_
-42	which	_	_	_	_	0	_	_	_
-43	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-44	mcallister	_	_	_	_	0	_	_	_
-45	's	_	_	_	_	0	_	_	_
-46	***deli***	deli	PROPN	NNPS	Number=Plur	43	comp:pred	_	_
-47	and	_	_	_	_	0	_	_	_
-48	i	_	_	_	_	0	_	_	_
-49	',	_	_	_	_	0	_	_	_
-50	a	_	_	_	_	0	_	_	_
-51	mormon	_	_	_	_	0	_	_	_
-52	and	_	_	_	_	0	_	_	_
-53	i	_	_	_	_	0	_	_	_
-54	hvae	_	_	_	_	0	_	_	_
-55	changed	_	_	_	_	0	_	_	_
-56	to	_	_	_	_	0	_	_	_
-57	be	_	_	_	_	0	_	_	_
-58	a	_	_	_	_	0	_	_	_
-59	better	_	_	_	_	0	_	_	_
-60	person	_	_	_	_	0	_	_	_
-61	that	_	_	_	_	0	_	_	_
-62	pwople	_	_	_	_	0	_	_	_
-63	are	_	_	_	_	0	_	_	_
-64	wanting	_	_	_	_	0	_	_	_
-65	to	_	_	_	_	0	_	_	_
-66	hirier	_	_	_	_	0	_	_	_
-67	and	_	_	_	_	0	_	_	_
-68	i	_	_	_	_	0	_	_	_
-69	'm	_	_	_	_	0	_	_	_
-70	willing	_	_	_	_	0	_	_	_
-71	to	_	_	_	_	0	_	_	_
-72	work	_	_	_	_	0	_	_	_
-73	whenever	_	_	_	_	0	_	_	_
-74	you	_	_	_	_	0	_	_	_
-75	need	_	_	_	_	0	_	_	_
-76	me	_	_	_	_	0	_	_	_
-77	but	_	_	_	_	0	_	_	_
-78	i	_	_	_	_	0	_	_	_
-79	go	_	_	_	_	0	_	_	_
-80	to	_	_	_	_	0	_	_	_
-81	church	_	_	_	_	0	_	_	_
-82	on	_	_	_	_	0	_	_	_
-83	every	_	_	_	_	0	_	_	_
-84	sunday	_	_	_	_	0	_	_	_
-85	and	_	_	_	_	0	_	_	_
-86	i	_	_	_	_	0	_	_	_
-87	have	_	_	_	_	0	_	_	_
-88	a	_	_	_	_	0	_	_	_
-89	doctor	_	_	_	_	0	_	_	_
-90	's	_	_	_	_	0	_	_	_
-91	appointment	_	_	_	_	0	_	_	_
-92	this	_	_	_	_	0	_	_	_
-93	thursday	_	_	_	_	0	_	_	_
-94	at	_	_	_	_	0	_	_	_
-95	2;30	_	_	_	_	0	_	_	_
-96	and	_	_	_	_	0	_	_	_
-97	i	_	_	_	_	0	_	_	_
-98	hope	_	_	_	_	0	_	_	_
-99	you	_	_	_	_	0	_	_	_
-100	h=guys	_	_	_	_	0	_	_	_
-101	hirier	_	_	_	_	0	_	_	_
-102	me	_	_	_	_	0	_	_	_
-103	because	_	_	_	_	0	_	_	_
-104	i	_	_	_	_	0	_	_	_
-105	work	_	_	_	_	0	_	_	_
-106	very	_	_	_	_	0	_	_	_
-107	hard	_	_	_	_	0	_	_	_
-108	and	_	_	_	_	0	_	_	_
-109	i	_	_	_	_	0	_	_	_
-110	do	_	_	_	_	0	_	_	_
-111	nt	_	_	_	_	0	_	_	_
-112	care	_	_	_	_	0	_	_	_
-113	about	_	_	_	_	0	_	_	_
-114	how	_	_	_	_	0	_	_	_
-115	much	_	_	_	_	0	_	_	_
-116	you	_	_	_	_	0	_	_	_
-117	guys	_	_	_	_	0	_	_	_
-118	pay	_	_	_	_	0	_	_	_
-119	and	_	_	_	_	0	_	_	_
-120	i	_	_	_	_	0	_	_	_
-121	've	_	_	_	_	0	_	_	_
-122	been	_	_	_	_	0	_	_	_
-123	looking	_	_	_	_	0	_	_	_
-124	for	_	_	_	_	0	_	_	_
-125	a	_	_	_	_	0	_	_	_
-126	job	_	_	_	_	0	_	_	_
-127	ever	_	_	_	_	0	_	_	_
-128	since	_	_	_	_	0	_	_	_
-129	i	_	_	_	_	0	_	_	_
-130	have	_	_	_	_	0	_	_	_
-131	graduated	_	_	_	_	0	_	_	_
-132	and	_	_	_	_	0	_	_	_
-133	i	_	_	_	_	0	_	_	_
-134	hate	_	_	_	_	0	_	_	_
-135	drama	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Another	_	_	_	_	0	_	_	_
-2	unique	_	_	_	_	0	_	_	_
-3	custom	_	_	_	_	0	_	_	_
-4	(	_	_	_	_	0	_	_	_
-5	and	_	_	_	_	0	_	_	_
-6	a	_	_	_	_	0	_	_	_
-7	dying	_	_	_	_	0	_	_	_
-8	one	_	_	_	_	0	_	_	_
-9	at	_	_	_	_	0	_	_	_
-10	that	_	_	_	_	0	_	_	_
-11	)	_	_	_	_	0	_	_	_
-12	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	***Pioneers***	Pioneers	PROPN	NNPS	Number=Plur	12	comp:pred	_	SpaceAfter=No
-15	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Royal	_	_	_	_	0	_	_	_
-2	Caribbean	_	_	_	_	0	_	_	_
-3	is	_	_	_	_	0	_	_	_
-4	better	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	but	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	best	_	_	_	_	0	_	_	_
-9	cruiseline	_	_	_	_	0	_	_	_
-10	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	Regent	_	_	_	_	0	_	_	_
-12	Seven	_	_	_	_	0	_	_	_
-13	***Seas***	Seas	PROPN	NNPS	Number=Plur	10	comp:pred	_	SpaceAfter=No
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
+</div>
 </ul><br><br><br>
 
 

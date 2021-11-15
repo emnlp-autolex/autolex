@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,134 +137,58 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_gum </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	On	_	_	_	_	0	_	_	_
-2	his	_	_	_	_	0	_	_	_
-3	campaign	_	_	_	_	0	_	_	_
-4	website	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	Sarvis	_	_	_	_	0	_	_	_
-7	notes	note	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-8	he	_	_	_	_	0	_	_	_
-9	***favors***	favor	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	comp:obj	_	_
-10	parental	_	_	_	_	0	_	_	_
-11	school	_	_	_	_	0	_	_	_
-12	choice	_	_	_	_	0	_	_	_
-13	through	_	_	_	_	0	_	_	_
-14	student	_	_	_	_	0	_	_	_
-15	vouchers	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	simplification	_	_	_	_	0	_	_	_
-18	of	_	_	_	_	0	_	_	_
-19	Virginia	_	_	_	_	0	_	_	_
-20	's	_	_	_	_	0	_	_	_
-21	Tax	_	_	_	_	0	_	_	_
-22	Code	_	_	_	_	0	_	_	_
-23	,	_	_	_	_	0	_	_	_
-24	US	_	_	_	_	0	_	_	_
-25	Second	_	_	_	_	0	_	_	_
-26	Amendment	_	_	_	_	0	_	_	_
-27	-	_	_	_	_	0	_	_	_
-28	gun	_	_	_	_	0	_	_	_
-29	-	_	_	_	_	0	_	_	_
-30	rights	_	_	_	_	0	_	_	_
-31	,	_	_	_	_	0	_	_	_
-32	same-sex	_	_	_	_	0	_	_	_
-33	marriage	_	_	_	_	0	_	_	_
-34	,	_	_	_	_	0	_	_	_
-35	and	_	_	_	_	0	_	_	_
-36	reform	_	_	_	_	0	_	_	_
-37	of	_	_	_	_	0	_	_	_
-38	the	_	_	_	_	0	_	_	_
-39	state	_	_	_	_	0	_	_	_
-40	's	_	_	_	_	0	_	_	_
-41	drug	_	_	_	_	0	_	_	_
-42	laws	_	_	_	_	0	_	_	_
-43	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	We	_	_	_	_	0	_	_	_
-2	are	_	_	_	_	0	_	_	_
-3	only	_	_	_	_	0	_	_	_
-4	doing	_	_	_	_	0	_	_	_
-5	public	_	_	_	_	0	_	_	_
-6	domain	_	_	_	_	0	_	_	_
-7	works	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">head of ***-marked token is also the head of= complement for auxiliary <br>
+dependent's lemma is= i <br>
+</td><td style="text-align:center"> - </td>
+</tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:head of ***-marked token is also the head of= complement for auxiliary;dependent's lemma is= i; Not Active:"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Because	_	_	_	_	0	_	_	_
+2	of	_	_	_	_	0	_	_	_
+3	my	_	_	_	_	0	_	_	_
+4	academic	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	professional	_	_	_	_	0	_	_	_
+7	background	_	_	_	_	0	_	_	_
 8	,	_	_	_	_	0	_	_	_
-9	for	_	_	_	_	0	_	_	_
-10	a	_	_	_	_	0	_	_	_
-11	number	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	reasons	_	_	_	_	0	_	_	_
-14	,	_	_	_	_	0	_	_	_
-15	partly	_	_	_	_	0	_	_	_
-16	to	_	_	_	_	0	_	_	_
-17	keep	_	_	_	_	0	_	_	_
-18	simplicity	_	_	_	_	0	_	_	_
-19	in	_	_	_	_	0	_	_	_
-20	our	_	_	_	_	0	_	_	_
-21	copyright	_	_	_	_	0	_	_	_
-22	situation	_	_	_	_	0	_	_	_
-23	--	_	_	_	_	0	_	_	_
-24	public	_	_	_	_	0	_	_	_
-25	domain	_	_	_	_	0	_	_	_
-26	means	mean	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-27	it	_	_	_	_	0	_	_	_
-28	***s***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	comp:obj	_	Typo=Yes
-29	as	_	_	_	_	0	_	_	_
-30	simple	_	_	_	_	0	_	_	_
-31	as	_	_	_	_	0	_	_	_
-32	can	_	_	_	_	0	_	_	_
-33	be	_	_	_	_	0	_	_	_
-34	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	“	_	_	_	_	0	_	_	_
-2	It	_	_	_	_	0	_	_	_
-3	***’s***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	comp:obj	_	_
-4	not	_	_	_	_	0	_	_	_
-5	funny	_	_	_	_	0	_	_	_
-6	,	_	_	_	_	0	_	_	_
-7	”	_	_	_	_	0	_	_	_
-8	Derya	_	_	_	_	0	_	_	_
-9	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-10	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	However	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	when	_	_	_	_	0	_	_	_
-4	a	_	_	_	_	0	_	_	_
-5	government	_	_	_	_	0	_	_	_
-6	document	_	_	_	_	0	_	_	_
-7	has	_	_	_	_	0	_	_	_
-8	been	_	_	_	_	0	_	_	_
-9	found	_	_	_	_	0	_	_	_
-10	on	_	_	_	_	0	_	_	_
+9	I	_	_	_	_	0	_	_	_
+10	understand	_	_	_	_	0	_	_	_
 11	the	_	_	_	_	0	_	_	_
-12	streets	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	government	_	_	_	_	0	_	_	_
-16	then	_	_	_	_	0	_	_	_
-17	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-18	it	_	_	_	_	0	_	_	_
-19	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	17	comp:obj	_	SpaceAfter=No
-20	n't	_	_	_	_	0	_	_	_
-21	particularly	_	_	_	_	0	_	_	_
-22	sensitive	_	_	_	_	0	_	_	_
-23	.	_	_	_	_	0	_	_	_
+12	issues	_	_	_	_	0	_	_	_
+13	and	_	_	_	_	0	_	_	_
+14	challenges	_	_	_	_	0	_	_	_
+15	facing	_	_	_	_	0	_	_	_
+16	Virginia	_	_	_	_	0	_	_	_
+17	much	_	_	_	_	0	_	_	_
+18	better	_	_	_	_	0	_	_	_
+19	than	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	other	_	_	_	_	0	_	_	_
+22	candidates	_	_	_	_	0	_	_	_
+23	,	,	PUNCT	,	_	26	punct	_	_
+24	and	and	CCONJ	CC	_	26	cc	_	_
+25	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	26	subj	_	_
+26	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+27	offering	offer	VERB	VBG	Tense=Pres|VerbForm=Part	26	comp:aux	_	_
+28	real	_	_	_	_	0	_	_	_
+29	solutions	_	_	_	_	0	_	_	_
+30	that	_	_	_	_	0	_	_	_
+31	can	_	_	_	_	0	_	_	_
+32	be	_	_	_	_	0	_	_	_
+33	appreciated	_	_	_	_	0	_	_	_
+34	across	_	_	_	_	0	_	_	_
+35	the	_	_	_	_	0	_	_	_
+36	political	_	_	_	_	0	_	_	_
+37	spectrum	_	_	_	_	0	_	_	_
+38	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4><h5> No examples found </h5></ul><br><br><br>
+<h5> No examples found </h5>
+</div>
+</ul><br><br><br>
 
 
 <!-- support for embedded visualizations -->

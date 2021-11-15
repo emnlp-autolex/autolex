@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,144 +137,74 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_gum </b> </h3><h3>There is required-agreement between the syntactic head and its dependent when </h3> <div id="examples">
-<h4> Examples: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
-1	(	_	_	_	_	0	_	_	_
-2	A	_	_	_	_	0	_	_	_
-3	civic	_	_	_	_	0	_	_	_
-4	agent	_	_	_	_	0	_	_	_
-5	notices	notice	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-6	***you***	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	5	comp:obj	_	_
-7	noticing	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	attaches	_	_	_	_	0	_	_	_
-11	itself	_	_	_	_	0	_	_	_
-12	to	_	_	_	_	0	_	_	_
-13	your	_	_	_	_	0	_	_	_
-14	infospace	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	whispering	_	_	_	_	0	_	_	_
-17	statistics	_	_	_	_	0	_	_	_
-18	—	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	He	_	_	_	_	0	_	_	_
-2	gives	give	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***you***	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	2	comp:obj	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent's lemma is= i <br>
+</td><td style="text-align:center">dependent is the= passive nominal subject <br>
+head of ***-marked token is also the head of= complement for auxiliary <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent's lemma is= i; Not Active:dependent is the= passive nominal subject;head of ***-marked token is also the head of= complement for auxiliary;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	subj	_	_
+3	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
 4	a	_	_	_	_	0	_	_	_
-5	hooded	_	_	_	_	0	_	_	_
-6	look	_	_	_	_	0	_	_	_
-7	.	_	_	_	_	0	_	_	_
+5	young	_	_	_	_	0	_	_	_
+6	man	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	Air	_	_	_	_	0	_	_	_
+9	Force	_	_	_	_	0	_	_	_
+10	ROTC	_	_	_	_	0	_	_	_
+11	I	_	_	_	_	0	_	_	_
+12	was	_	_	_	_	0	_	_	_
+13	chosen	_	_	_	_	0	_	_	_
+14	to	_	_	_	_	0	_	_	_
+15	attend	_	_	_	_	0	_	_	_
+16	a	_	_	_	_	0	_	_	_
+17	unique	_	_	_	_	0	_	_	_
+18	Pilot	_	_	_	_	0	_	_	_
+19	Training	_	_	_	_	0	_	_	_
+20	Program	_	_	_	_	0	_	_	_
+21	called	_	_	_	_	0	_	_	_
+22	Euro-	_	_	_	_	0	_	_	_
+23	NATO	_	_	_	_	0	_	_	_
+24	Joint	_	_	_	_	0	_	_	_
+25	Jet	_	_	_	_	0	_	_	_
+26	Pilot	_	_	_	_	0	_	_	_
+27	Training	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4>
-<pre><code class="language-conllu">
-1	Mof-Ávvi	_	_	_	_	0	_	_	_
-2	is	_	_	_	_	0	_	_	_
-3	a	_	_	_	_	0	_	_	_
-4	peninsula	_	_	_	_	0	_	_	_
-5	bordered	_	_	_	_	0	_	_	_
-6	by	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	Casamance	_	_	_	_	0	_	_	_
-9	River	_	_	_	_	0	_	_	_
-10	to	_	_	_	_	0	_	_	_
-11	the	_	_	_	_	0	_	_	_
-12	north	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	which	_	_	_	_	0	_	_	_
-15	separates	separate	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-16	***it***	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	comp:obj	_	_
-17	from	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	Jóola	_	_	_	_	0	_	_	_
-20	Búluf	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	Jóola	_	_	_	_	0	_	_	_
-23	Fogny	_	_	_	_	0	_	_	_
-24	areas	_	_	_	_	0	_	_	_
-25	,	_	_	_	_	0	_	_	_
-26	and	_	_	_	_	0	_	_	_
-27	to	_	_	_	_	0	_	_	_
-28	the	_	_	_	_	0	_	_	_
-29	east	_	_	_	_	0	_	_	_
-30	by	_	_	_	_	0	_	_	_
-31	the	_	_	_	_	0	_	_	_
-32	villages	_	_	_	_	0	_	_	_
-33	Brin	_	_	_	_	0	_	_	_
-34	and	_	_	_	_	0	_	_	_
-35	Djibonker	_	_	_	_	0	_	_	_
-36	,	_	_	_	_	0	_	_	_
-37	where	_	_	_	_	0	_	_	_
-38	the	_	_	_	_	0	_	_	_
-39	speakers	_	_	_	_	0	_	_	_
-40	of	_	_	_	_	0	_	_	_
-41	Kujireray	_	_	_	_	0	_	_	_
-42	and	_	_	_	_	0	_	_	_
-43	Baïnounk	_	_	_	_	0	_	_	_
-44	Gubëeher	_	_	_	_	0	_	_	_
-45	live	_	_	_	_	0	_	_	_
-46	.	_	_	_	_	0	_	_	_
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Today	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	like	_	_	_	_	0	_	_	_
+4	many	_	_	_	_	0	_	_	_
+5	Americans	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	subj	_	_
+8	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	skeptical	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	(	_	_	_	_	0	_	_	_
-2	A	_	_	_	_	0	_	_	_
-3	civic	_	_	_	_	0	_	_	_
-4	agent	_	_	_	_	0	_	_	_
-5	notices	_	_	_	_	0	_	_	_
-6	you	_	_	_	_	0	_	_	_
-7	noticing	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	attaches	attach	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	***itself***	itself	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	10	comp:obj	_	_
-12	to	_	_	_	_	0	_	_	_
-13	your	_	_	_	_	0	_	_	_
-14	infospace	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	whispering	_	_	_	_	0	_	_	_
-17	statistics	_	_	_	_	0	_	_	_
-18	—	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Everyone	_	_	_	_	0	_	_	_
-2	tries	try	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***it***	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	comp:obj	_	_
-4	once	_	_	_	_	0	_	_	_
-5	—	_	_	_	_	0	_	_	_
-6	Except	_	_	_	_	0	_	_	_
-7	that	_	_	_	_	0	_	_	_
-8	there	_	_	_	_	0	_	_	_
-9	are	_	_	_	_	0	_	_	_
-10	n’t	_	_	_	_	0	_	_	_
-11	any	_	_	_	_	0	_	_	_
-12	mites	_	_	_	_	0	_	_	_
-13	around	_	_	_	_	0	_	_	_
-14	her	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	it	_	_	_	_	0	_	_	_
-2	lets	let	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***them***	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	comp:obj	_	_
-4	hack	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	city	_	_	_	_	0	_	_	_
-7	’s	_	_	_	_	0	_	_	_
-8	person-recognition	_	_	_	_	0	_	_	_
-9	systems	_	_	_	_	0	_	_	_
-10	.	_	_	_	_	0	_	_	_
+2	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	subj	_	_
+3	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	mixed-race	_	_	_	_	0	_	_	_
+5	(	_	_	_	_	0	_	_	_
+6	half-Chinese	_	_	_	_	0	_	_	_
+7	)	_	_	_	_	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	in	_	_	_	_	0	_	_	_
+10	an	_	_	_	_	0	_	_	_
+11	interracial	_	_	_	_	0	_	_	_
+12	marriage	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+14	)	_	_	_	_	0	_	_	_
 
 </code></pre>
 

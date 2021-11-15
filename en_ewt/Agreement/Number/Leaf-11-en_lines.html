@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,20 +137,43 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_lines </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	***type***	type	NOUN	SG-NOM	Number=Sing	6	subj@pass	_	_
-3	of	_	_	_	_	0	_	_	_
-4	drop	_	_	_	_	0	_	_	_
-5	area	_	_	_	_	0	_	_	_
-6	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-7	not	_	_	_	_	0	_	_	_
-8	displayed	_	_	_	_	0	_	_	_
-9	for	_	_	_	_	0	_	_	_
-10	single	_	_	_	_	0	_	_	_
-11	charts	_	_	_	_	0	_	_	_
-12	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent is the= object <br>
+</td><td style="text-align:center">in the neighborhood of the dependent= be <br>
+in the neighborhood of the dependent= a <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent is the= object; Not Active:in the neighborhood of the dependent= be;in the neighborhood of the dependent= a;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	following	_	_	_	_	0	_	_	_
+4	example	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	Salesperson	_	_	_	_	0	_	_	_
+8	field	_	_	_	_	0	_	_	_
+9	is	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	MultiChart	_	_	_	_	0	_	_	_
+13	area	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	but	_	_	_	_	0	_	_	_
+16	it	_	_	_	_	0	_	_	_
+17	's	_	_	_	_	0	_	_	_
+18	filtered	_	_	_	_	0	_	_	_
+19	so	_	_	_	_	0	_	_	_
+20	it	_	_	_	_	0	_	_	_
+21	displays	display	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+22	individual	_	_	_	_	0	_	_	_
+23	***charts***	chart	NOUN	PL-NOM	Number=Plur	21	comp:obj	_	_
+24	for	_	_	_	_	0	_	_	_
+25	Buchanan	_	_	_	_	0	_	_	_
+26	and	_	_	_	_	0	_	_	_
+27	Davolio	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
@@ -159,171 +182,313 @@ span.displaynone { display: none; }
 2	example	_	_	_	_	0	_	_	_
 3	,	_	_	_	_	0	_	_	_
 4	if	_	_	_	_	0	_	_	_
-5	you	_	_	_	_	0	_	_	_
-6	move	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	Salesperson	_	_	_	_	0	_	_	_
-9	field	_	_	_	_	0	_	_	_
-10	to	_	_	_	_	0	_	_	_
-11	the	_	_	_	_	0	_	_	_
-12	MultiChart	_	_	_	_	0	_	_	_
-13	area	_	_	_	_	0	_	_	_
-14	,	_	_	_	_	0	_	_	_
-15	a	_	_	_	_	0	_	_	_
-16	***chart***	chart	NOUN	SG-NOM	Number=Sing	17	subj@pass	_	_
-17	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-18	created	_	_	_	_	0	_	_	_
-19	based	_	_	_	_	0	_	_	_
-20	on	_	_	_	_	0	_	_	_
-21	data	_	_	_	_	0	_	_	_
-22	for	_	_	_	_	0	_	_	_
-23	each	_	_	_	_	0	_	_	_
-24	salesperson	_	_	_	_	0	_	_	_
-25	in	_	_	_	_	0	_	_	_
-26	that	_	_	_	_	0	_	_	_
-27	field	_	_	_	_	0	_	_	_
-28	.	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	chart	_	_	_	_	0	_	_	_
+7	summarizes	_	_	_	_	0	_	_	_
+8	sales	_	_	_	_	0	_	_	_
+9	revenue	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	source	_	_	_	_	0	_	_	_
+14	data	_	_	_	_	0	_	_	_
+15	also	_	_	_	_	0	_	_	_
+16	includes	include	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+17	sales	_	_	_	_	0	_	_	_
+18	***quantities***	quantity	NOUN	PL-NOM	Number=Plur	16	comp:obj	_	SpaceAfter=No
+19	,	_	_	_	_	0	_	_	_
+20	you	_	_	_	_	0	_	_	_
+21	might	_	_	_	_	0	_	_	_
+22	add	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Quantity	_	_	_	_	0	_	_	_
+25	field	_	_	_	_	0	_	_	_
+26	as	_	_	_	_	0	_	_	_
+27	a	_	_	_	_	0	_	_	_
+28	data	_	_	_	_	0	_	_	_
+29	field	_	_	_	_	0	_	_	_
+30	to	_	_	_	_	0	_	_	_
+31	summarize	_	_	_	_	0	_	_	_
+32	both	_	_	_	_	0	_	_	_
+33	revenue	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	quantity	_	_	_	_	0	_	_	_
+36	of	_	_	_	_	0	_	_	_
+37	products	_	_	_	_	0	_	_	_
+38	sold	_	_	_	_	0	_	_	_
+39	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Moving	_	_	_	_	0	_	_	_
-2	a	_	_	_	_	0	_	_	_
-3	field	_	_	_	_	0	_	_	_
-4	whose	_	_	_	_	0	_	_	_
-5	parent	_	_	_	_	0	_	_	_
-6	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	custom	_	_	_	_	0	_	_	_
-9	group	_	_	_	_	0	_	_	_
-10	***field***	field	NOUN	SG-NOM	Number=Sing	6	comp:pred	_	_
+1	It	_	_	_	_	0	_	_	_
+2	lists	list	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	record	_	_	_	_	0	_	_	_
+5	***sources***	source	NOUN	PL-NOM	Number=Plur	2	comp:obj	_	SpaceAfter=No
+6	,	_	_	_	_	0	_	_	_
+7	fields	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	and	_	_	_	_	0	_	_	_
+10	calculated	_	_	_	_	0	_	_	_
+11	controls	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	a	_	_	_	_	0	_	_	_
+14	page	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	inner	_	_	_	_	0	_	_	_
+3	group	_	_	_	_	0	_	_	_
+4	level	_	_	_	_	0	_	_	_
+5	contains	contain	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	***fields***	field	NOUN	PL-NOM	Number=Plur	5	comp:obj	_	_
+7	from	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	OrderDetails	_	_	_	_	0	_	_	_
+10	table	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	a	_	_	_	_	0	_	_	_
+13	calculated	_	_	_	_	0	_	_	_
+14	control	_	_	_	_	0	_	_	_
+15	named	_	_	_	_	0	_	_	_
+16	Value	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	In	_	_	_	_	0	_	_	_
 2	the	_	_	_	_	0	_	_	_
-3	following	_	_	_	_	0	_	_	_
-4	example	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	Year	_	_	_	_	0	_	_	_
-7	is	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	outer	_	_	_	_	0	_	_	_
-10	field	_	_	_	_	0	_	_	_
-11	and	_	_	_	_	0	_	_	_
-12	Salesperson	_	_	_	_	0	_	_	_
-13	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	inner	_	_	_	_	0	_	_	_
-16	***field***	field	NOUN	SG-NOM	Number=Sing	13	comp:pred	_	SpaceAfter=No
-17	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	When	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	Microsoft	_	_	_	_	0	_	_	_
-4	SQL	_	_	_	_	0	_	_	_
-5	Server	_	_	_	_	0	_	_	_
-6	2000	_	_	_	_	0	_	_	_
-7	Desktop	_	_	_	_	0	_	_	_
-8	***Engine***	engine	NOUN	SG-NOM	Number=Sing	19	subj@pass	_	_
-9	(	_	_	_	_	0	_	_	_
-10	formerly	_	_	_	_	0	_	_	_
-11	called	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	Microsoft	_	_	_	_	0	_	_	_
-14	Database	_	_	_	_	0	_	_	_
-15	Engine	_	_	_	_	0	_	_	_
-16	or	_	_	_	_	0	_	_	_
-17	MSDE	_	_	_	_	0	_	_	_
-18	)	_	_	_	_	0	_	_	_
-19	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-20	installed	_	_	_	_	0	_	_	_
-21	on	_	_	_	_	0	_	_	_
-22	Microsoft	_	_	_	_	0	_	_	_
-23	Windows	_	_	_	_	0	_	_	_
-24	NT	_	_	_	_	0	_	_	_
-25	computers	_	_	_	_	0	_	_	_
-26	,	_	_	_	_	0	_	_	_
-27	it	_	_	_	_	0	_	_	_
-28	is	_	_	_	_	0	_	_	_
-29	installed	_	_	_	_	0	_	_	_
-30	with	_	_	_	_	0	_	_	_
-31	Windows	_	_	_	_	0	_	_	_
-32	NT	_	_	_	_	0	_	_	_
-33	Authentication	_	_	_	_	0	_	_	_
-34	implemented	_	_	_	_	0	_	_	_
-35	(	_	_	_	_	0	_	_	_
-36	this	_	_	_	_	0	_	_	_
-37	feature	_	_	_	_	0	_	_	_
-38	is	_	_	_	_	0	_	_	_
-39	also	_	_	_	_	0	_	_	_
-40	known	_	_	_	_	0	_	_	_
-41	as	_	_	_	_	0	_	_	_
-42	integrated	_	_	_	_	0	_	_	_
-43	security	_	_	_	_	0	_	_	_
-44	)	_	_	_	_	0	_	_	_
-45	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	3	_	_	_	_	0	_	_	_
-2	The	_	_	_	_	0	_	_	_
-3	Other	_	_	_	_	0	_	_	_
+3	outer	_	_	_	_	0	_	_	_
 4	group	_	_	_	_	0	_	_	_
-5	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	***parent***	parent	NOUN	SG-NOM	Number=Sing	5	comp:pred	_	_
-8	of	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	items	_	_	_	_	0	_	_	_
-11	you	_	_	_	_	0	_	_	_
-12	did	_	_	_	_	0	_	_	_
-13	not	_	_	_	_	0	_	_	_
-14	assign	_	_	_	_	0	_	_	_
-15	to	_	_	_	_	0	_	_	_
-16	any	_	_	_	_	0	_	_	_
-17	specific	_	_	_	_	0	_	_	_
-18	custom	_	_	_	_	0	_	_	_
-19	group	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
+5	level	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	header	_	_	_	_	0	_	_	_
+9	section	_	_	_	_	0	_	_	_
+10	contains	contain	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+11	***fields***	field	NOUN	PL-NOM	Number=Plur	10	comp:obj	_	_
+12	from	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	Orders	_	_	_	_	0	_	_	_
+15	table	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	footer	_	_	_	_	0	_	_	_
+19	section	_	_	_	_	0	_	_	_
+20	contains	_	_	_	_	0	_	_	_
+21	a	_	_	_	_	0	_	_	_
+22	calculated	_	_	_	_	0	_	_	_
+23	total	_	_	_	_	0	_	_	_
+24	control	_	_	_	_	0	_	_	_
+25	named	_	_	_	_	0	_	_	_
+26	OrderValue	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	1	_	_	_	_	0	_	_	_
+2	The	_	_	_	_	0	_	_	_
+3	RecordsetDef	_	_	_	_	0	_	_	_
+4	object	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	which	_	_	_	_	0	_	_	_
+7	contains	contain	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	one	_	_	_	_	0	_	_	_
+9	or	_	_	_	_	0	_	_	_
+10	more	_	_	_	_	0	_	_	_
+11	record	_	_	_	_	0	_	_	_
+12	***sources***	source	NOUN	PL-NOM	Number=Plur	7	comp:obj	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Contains	contain	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+2	custom	_	_	_	_	0	_	_	_
+3	***groups***	group	NOUN	PL-NOM	Number=Plur	1	comp:obj	_	_
+4	as	_	_	_	_	0	_	_	_
+5	its	_	_	_	_	0	_	_	_
+6	items	_	_	_	_	0	_	_	_
+7	and	_	_	_	_	0	_	_	_
+8	appears	_	_	_	_	0	_	_	_
+9	as	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	parent	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	field	_	_	_	_	0	_	_	_
+15	whose	_	_	_	_	0	_	_	_
+16	items	_	_	_	_	0	_	_	_
+17	you	_	_	_	_	0	_	_	_
+18	grouped	_	_	_	_	0	_	_	_
+19	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	When	_	_	_	_	0	_	_	_
 2	you	_	_	_	_	0	_	_	_
-3	delete	_	_	_	_	0	_	_	_
+3	move	_	_	_	_	0	_	_	_
 4	a	_	_	_	_	0	_	_	_
-5	custom	_	_	_	_	0	_	_	_
-6	group	_	_	_	_	0	_	_	_
-7	that	_	_	_	_	0	_	_	_
-8	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-9	not	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	last	_	_	_	_	0	_	_	_
-12	custom	_	_	_	_	0	_	_	_
-13	***group***	group	NOUN	SG-NOM	Number=Sing	8	comp:pred	_	_
-14	in	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	field	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	deleted	_	_	_	_	0	_	_	_
-20	group	_	_	_	_	0	_	_	_
-21	's	_	_	_	_	0	_	_	_
-22	members	_	_	_	_	0	_	_	_
-23	automatically	_	_	_	_	0	_	_	_
-24	move	_	_	_	_	0	_	_	_
-25	to	_	_	_	_	0	_	_	_
-26	the	_	_	_	_	0	_	_	_
-27	Other	_	_	_	_	0	_	_	_
-28	group	_	_	_	_	0	_	_	_
-29	.	_	_	_	_	0	_	_	_
+5	field	_	_	_	_	0	_	_	_
+6	that	_	_	_	_	0	_	_	_
+7	has	have	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	custom	_	_	_	_	0	_	_	_
+9	***groups***	group	NOUN	PL-NOM	Number=Plur	7	comp:obj	_	_
+10	between	_	_	_	_	0	_	_	_
+11	row	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	column	_	_	_	_	0	_	_	_
+14	areas	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	custom	_	_	_	_	0	_	_	_
+18	group	_	_	_	_	0	_	_	_
+19	fields	_	_	_	_	0	_	_	_
+20	that	_	_	_	_	0	_	_	_
+21	are	_	_	_	_	0	_	_	_
+22	based	_	_	_	_	0	_	_	_
+23	on	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	field	_	_	_	_	0	_	_	_
+26	move	_	_	_	_	0	_	_	_
+27	with	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	field	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	First	_	_	_	_	0	_	_	_
+2	two	_	_	_	_	0	_	_	_
+3	times	_	_	_	_	0	_	_	_
+4	up	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	Kingsman	_	_	_	_	0	_	_	_
+7	hits	hit	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	solo	_	_	_	_	0	_	_	_
+9	***shots***	shot	NOUN	PL-NOM	Number=Plur	7	comp:obj	_	SpaceAfter=No
+10	,	_	_	_	_	0	_	_	_
+11	he	_	_	_	_	0	_	_	_
+12	said	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+14	Boom	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	boom	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
+18	Big	_	_	_	_	0	_	_	_
+19	mothers	_	_	_	_	0	_	_	_
+20	–	_	_	_	_	0	_	_	_
+21	all	_	_	_	_	0	_	_	_
+22	the	_	_	_	_	0	_	_	_
+23	way	_	_	_	_	0	_	_	_
+24	to	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	moon	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Pittsburgh	_	_	_	_	0	_	_	_
+2	gets	get	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	***men***	man	NOUN	PL-NOM	Number=Plur	2	comp:obj	_	_
+4	on	_	_	_	_	0	_	_	_
+5	second	_	_	_	_	0	_	_	_
+6	and	_	_	_	_	0	_	_	_
+7	third	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	one	_	_	_	_	0	_	_	_
+10	out	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	so	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	Mets	_	_	_	_	0	_	_	_
+15	go	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	bullpen	_	_	_	_	0	_	_	_
+19	for	_	_	_	_	0	_	_	_
+20	Allen	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	a	_	_	_	_	0	_	_	_
+3	chart	_	_	_	_	0	_	_	_
+4	contains	contain	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	multiple	_	_	_	_	0	_	_	_
+6	***series***	series	NOUN	PL-NOM	Number=Sing	4	comp:obj	_	_
+7	or	_	_	_	_	0	_	_	_
+8	category	_	_	_	_	0	_	_	_
+9	fields	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	fields	_	_	_	_	0	_	_	_
+13	that	_	_	_	_	0	_	_	_
+14	are	_	_	_	_	0	_	_	_
+15	closest	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	data	_	_	_	_	0	_	_	_
+19	are	_	_	_	_	0	_	_	_
+20	referred	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	as	_	_	_	_	0	_	_	_
+23	inner	_	_	_	_	0	_	_	_
+24	fields	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	For	_	_	_	_	0	_	_	_
+2	example	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	if	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	chart	_	_	_	_	0	_	_	_
+7	summarizes	summarize	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	sales	_	_	_	_	0	_	_	_
+9	***revenue***	revenue	NOUN	SG-NOM	Number=Sing	7	comp:obj	_	SpaceAfter=No
+10	,	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	source	_	_	_	_	0	_	_	_
+14	data	_	_	_	_	0	_	_	_
+15	also	_	_	_	_	0	_	_	_
+16	includes	_	_	_	_	0	_	_	_
+17	sales	_	_	_	_	0	_	_	_
+18	quantities	_	_	_	_	0	_	_	_
+19	,	_	_	_	_	0	_	_	_
+20	you	_	_	_	_	0	_	_	_
+21	might	_	_	_	_	0	_	_	_
+22	add	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Quantity	_	_	_	_	0	_	_	_
+25	field	_	_	_	_	0	_	_	_
+26	as	_	_	_	_	0	_	_	_
+27	a	_	_	_	_	0	_	_	_
+28	data	_	_	_	_	0	_	_	_
+29	field	_	_	_	_	0	_	_	_
+30	to	_	_	_	_	0	_	_	_
+31	summarize	_	_	_	_	0	_	_	_
+32	both	_	_	_	_	0	_	_	_
+33	revenue	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	quantity	_	_	_	_	0	_	_	_
+36	of	_	_	_	_	0	_	_	_
+37	products	_	_	_	_	0	_	_	_
+38	sold	_	_	_	_	0	_	_	_
+39	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
@@ -331,178 +496,147 @@ span.displaynone { display: none; }
 1	The	_	_	_	_	0	_	_	_
 2	following	_	_	_	_	0	_	_	_
 3	illustration	_	_	_	_	0	_	_	_
-4	shows	_	_	_	_	0	_	_	_
-5	what	_	_	_	_	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	data	_	_	_	_	0	_	_	_
-8	will	_	_	_	_	0	_	_	_
-9	look	_	_	_	_	0	_	_	_
-10	like	_	_	_	_	0	_	_	_
-11	after	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	Category	_	_	_	_	0	_	_	_
-14	***field***	field	NOUN	SG-NOM	Number=Sing	15	subj@pass	_	_
-15	has	have	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-16	been	_	_	_	_	0	_	_	_
-17	removed	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	During	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	seasons	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	it	_	_	_	_	0	_	_	_
-6	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
-7	always	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	most	_	_	_	_	0	_	_	_
-10	recent	_	_	_	_	0	_	_	_
-11	***game***	game	NOUN	SG-NOM	Number=Sing	6	comp:pred	_	SpaceAfter=No
+4	shows	show	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	Orders	_	_	_	_	0	_	_	_
+7	***page***	page	NOUN	SG-NOM	Number=Sing	4	comp:obj	_	_
+8	with	_	_	_	_	0	_	_	_
+9	two	_	_	_	_	0	_	_	_
+10	group	_	_	_	_	0	_	_	_
+11	levels	_	_	_	_	0	_	_	_
 12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Dave	_	_	_	_	0	_	_	_
-2	Kingman	_	_	_	_	0	_	_	_
-3	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	a	_	_	_	_	0	_	_	_
-5	***turd***	turd	NOUN	SG-NOM	Number=Sing	3	comp:pred	_	SpaceAfter=No
-6	,	_	_	_	_	0	_	_	_
-7	said	_	_	_	_	0	_	_	_
-8	Quinn	_	_	_	_	0	_	_	_
-9	,	_	_	_	_	0	_	_	_
-10	biting	_	_	_	_	0	_	_	_
-11	into	_	_	_	_	0	_	_	_
-12	his	_	_	_	_	0	_	_	_
-13	hamburger	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	When	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	Microsoft	_	_	_	_	0	_	_	_
-4	SQL	_	_	_	_	0	_	_	_
-5	Server	_	_	_	_	0	_	_	_
-6	2000	_	_	_	_	0	_	_	_
-7	Desktop	_	_	_	_	0	_	_	_
-8	Engine	_	_	_	_	0	_	_	_
-9	(	_	_	_	_	0	_	_	_
-10	formerly	_	_	_	_	0	_	_	_
-11	called	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	Microsoft	_	_	_	_	0	_	_	_
-14	Database	_	_	_	_	0	_	_	_
-15	Engine	_	_	_	_	0	_	_	_
-16	or	_	_	_	_	0	_	_	_
-17	MSDE	_	_	_	_	0	_	_	_
-18	)	_	_	_	_	0	_	_	_
-19	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-20	installed	_	_	_	_	0	_	_	_
-21	on	_	_	_	_	0	_	_	_
-22	Microsoft	_	_	_	_	0	_	_	_
-23	Windows	_	_	_	_	0	_	_	_
-24	NT	_	_	_	_	0	_	_	_
-25	***computers***	computer	NOUN	PL-NOM	Number=Plur	19	udep	_	SpaceAfter=No
-26	,	_	_	_	_	0	_	_	_
-27	it	_	_	_	_	0	_	_	_
-28	is	_	_	_	_	0	_	_	_
-29	installed	_	_	_	_	0	_	_	_
-30	with	_	_	_	_	0	_	_	_
-31	Windows	_	_	_	_	0	_	_	_
-32	NT	_	_	_	_	0	_	_	_
-33	Authentication	_	_	_	_	0	_	_	_
-34	implemented	_	_	_	_	0	_	_	_
-35	(	_	_	_	_	0	_	_	_
-36	this	_	_	_	_	0	_	_	_
-37	feature	_	_	_	_	0	_	_	_
-38	is	_	_	_	_	0	_	_	_
-39	also	_	_	_	_	0	_	_	_
-40	known	_	_	_	_	0	_	_	_
-41	as	_	_	_	_	0	_	_	_
-42	integrated	_	_	_	_	0	_	_	_
-43	security	_	_	_	_	0	_	_	_
-44	)	_	_	_	_	0	_	_	_
-45	.	_	_	_	_	0	_	_	_
+1	The	_	_	_	_	0	_	_	_
+2	following	_	_	_	_	0	_	_	_
+3	illustration	_	_	_	_	0	_	_	_
+4	shows	show	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	data	_	_	_	_	0	_	_	_
+7	***outline***	outline	NOUN	SG-NOM	Number=Sing	4	comp:obj	_	_
+8	for	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	Orders	_	_	_	_	0	_	_	_
+11	page	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	He	_	_	_	_	0	_	_	_
-2	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
-3	five	_	_	_	_	0	_	_	_
-4	***feet***	foot	NOUN	PL-NOM	Number=Plur	2	comp:pred	_	_
-5	six	_	_	_	_	0	_	_	_
-6	,	_	_	_	_	0	_	_	_
-7	I	_	_	_	_	0	_	_	_
-8	should	_	_	_	_	0	_	_	_
-9	judge	_	_	_	_	0	_	_	_
-10	,	_	_	_	_	0	_	_	_
-11	and	_	_	_	_	0	_	_	_
-12	had	_	_	_	_	0	_	_	_
-13	his	_	_	_	_	0	_	_	_
-14	grip	_	_	_	_	0	_	_	_
-15	on	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	handle-end	_	_	_	_	0	_	_	_
-18	of	_	_	_	_	0	_	_	_
-19	ever	_	_	_	_	0	_	_	_
-20	so	_	_	_	_	0	_	_	_
-21	many	_	_	_	_	0	_	_	_
-22	millions	_	_	_	_	0	_	_	_
-23	.	_	_	_	_	0	_	_	_
+2	walks	walk	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	next	_	_	_	_	0	_	_	_
+5	***guy***	guy	NOUN	SG-NOM	Number=Sing	2	comp:obj	_	_
+6	to	_	_	_	_	0	_	_	_
+7	load	_	_	_	_	0	_	_	_
+8	them	_	_	_	_	0	_	_	_
+9	up	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Mr	_	_	_	_	0	_	_	_
-2	President	_	_	_	_	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	***ladies***	lady	NOUN	PL-NOM	Number=Plur	10	vocative	_	_
-5	and	_	_	_	_	0	_	_	_
-6	gentlemen	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	Mr	_	_	_	_	0	_	_	_
-9	Needle	_	_	_	_	0	_	_	_
-10	has	have	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	gone	_	_	_	_	0	_	_	_
-12	to	_	_	_	_	0	_	_	_
-13	great	_	_	_	_	0	_	_	_
-14	trouble	_	_	_	_	0	_	_	_
-15	with	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	hearing	_	_	_	_	0	_	_	_
-18	in	_	_	_	_	0	_	_	_
-19	committee	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
+1	He	_	_	_	_	0	_	_	_
+2	hires	hire	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	***someone***	someone	PRON	IND-SG-NOM	Number=Sing	2	comp:obj	_	_
+4	to	_	_	_	_	0	_	_	_
+5	translate	_	_	_	_	0	_	_	_
+6	it	_	_	_	_	0	_	_	_
+7	for	_	_	_	_	0	_	_	_
+8	him	_	_	_	_	0	_	_	_
+9	into	_	_	_	_	0	_	_	_
+10	Spanish	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Mrs.	_	_	_	_	0	_	_	_
-2	Indira	_	_	_	_	0	_	_	_
-3	Gandhi	_	_	_	_	0	_	_	_
-4	arrives	_	_	_	_	0	_	_	_
-5	this	_	_	_	_	0	_	_	_
-6	afternoon	_	_	_	_	0	_	_	_
-7	and	_	_	_	_	0	_	_	_
-8	yesterday	_	_	_	_	0	_	_	_
-9	it	_	_	_	_	0	_	_	_
-10	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
-11	United	_	_	_	_	0	_	_	_
-12	***Nations***	nation	NOUN	PL-NOM	Number=Plur	10	comp:pred	_	_
-13	and	_	_	_	_	0	_	_	_
-14	Sekou	_	_	_	_	0	_	_	_
-15	Toure	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
+1	and	_	_	_	_	0	_	_	_
+2	thereafter	_	_	_	_	0	_	_	_
+3	he	_	_	_	_	0	_	_	_
+4	presents	present	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	***himself***	he	PRON	RFL-P3SG	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	comp:obj	_	_
+6	as	_	_	_	_	0	_	_	_
+7	no	_	_	_	_	0	_	_	_
+8	more	_	_	_	_	0	_	_	_
+9	than	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	editor	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	translation	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	But	_	_	_	_	0	_	_	_
+2	Cid	_	_	_	_	0	_	_	_
+3	Hamete	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	acknowledged	_	_	_	_	0	_	_	_
+7	author	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	never	_	_	_	_	0	_	_	_
+10	makes	make	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+11	an	_	_	_	_	0	_	_	_
+12	***appearance***	appearance	NOUN	SG-NOM	Number=Sing	10	comp:obj	_	SpaceAfter=No
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	There	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	no	_	_	_	_	0	_	_	_
+4	other	_	_	_	_	0	_	_	_
+5	candidate	_	_	_	_	0	_	_	_
+6	–	_	_	_	_	0	_	_	_
+7	since	_	_	_	_	0	_	_	_
+8	he	_	_	_	_	0	_	_	_
+9	is	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	only	_	_	_	_	0	_	_	_
+12	one	_	_	_	_	0	_	_	_
+13	who	_	_	_	_	0	_	_	_
+14	accompanies	accompany	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+15	***Don***	Don	PROPN	SG-NOM	Number=Sing	14	comp:obj	_	_
+16	Quixote	_	_	_	_	0	_	_	_
+17	on	_	_	_	_	0	_	_	_
+18	all	_	_	_	_	0	_	_	_
+19	his	_	_	_	_	0	_	_	_
+20	adventures	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Remember	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	at	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	beginning	_	_	_	_	0	_	_	_
+6	they	_	_	_	_	0	_	_	_
+7	burn	_	_	_	_	0	_	_	_
+8	his	_	_	_	_	0	_	_	_
+9	books	_	_	_	_	0	_	_	_
+10	of	_	_	_	_	0	_	_	_
+11	chivalry	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	but	_	_	_	_	0	_	_	_
+14	that	_	_	_	_	0	_	_	_
+15	has	have	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+16	no	_	_	_	_	0	_	_	_
+17	***effect***	effect	NOUN	SG-NOM	Number=Sing	15	comp:obj	_	SpaceAfter=No
+18	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

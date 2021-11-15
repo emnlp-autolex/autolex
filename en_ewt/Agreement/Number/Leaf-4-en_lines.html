@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,8 +137,448 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_lines </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <h5> No examples found </h5><h4> Counter Examples </h4><h5> No examples found </h5></ul><br><br><br>
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent's head is a= NOUN <br>
+</td><td style="text-align:center">dependent's lemma is= we <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent's head is a= NOUN; Not Active:dependent's lemma is= we;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	If	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	plot	_	_	_	_	0	_	_	_
+4	multiple	_	_	_	_	0	_	_	_
+5	charts	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	you	_	_	_	_	0	_	_	_
+8	will	_	_	_	_	0	_	_	_
+9	see	_	_	_	_	0	_	_	_
+10	a	_	_	_	_	0	_	_	_
+11	drop	_	_	_	_	0	_	_	_
+12	area	_	_	_	_	0	_	_	_
+13	for	_	_	_	_	0	_	_	_
+14	***multi-chart***	multichart	NOUN	SG-NOM	Number=Sing	15	compound	_	_
+15	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Moving	_	_	_	_	0	_	_	_
+2	fields	_	_	_	_	0	_	_	_
+3	to	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	***category***	category	NOUN	SG-NOM	Number=Sing	8	compound	_	_
+6	and	_	_	_	_	0	_	_	_
+7	series	_	_	_	_	0	_	_	_
+8	areas	area	NOUN	PL-NOM	Number=Plur	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***These***	this	DET	DEM-PL	Number=Plur|PronType=Dem	2	det	_	_
+2	series	series	NOUN	PL-NOM	Number=Sing	0	_	_	_
+3	are	_	_	_	_	0	_	_	_
+4	represented	_	_	_	_	0	_	_	_
+5	by	_	_	_	_	0	_	_	_
+6	colored	_	_	_	_	0	_	_	_
+7	data	_	_	_	_	0	_	_	_
+8	markers	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	their	_	_	_	_	0	_	_	_
+12	names	_	_	_	_	0	_	_	_
+13	appear	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	chart	_	_	_	_	0	_	_	_
+17	legend	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	These	_	_	_	_	0	_	_	_
+2	series	_	_	_	_	0	_	_	_
+3	are	_	_	_	_	0	_	_	_
+4	represented	_	_	_	_	0	_	_	_
+5	by	_	_	_	_	0	_	_	_
+6	colored	_	_	_	_	0	_	_	_
+7	***data***	data	NOUN	PL-NOM	Number=Sing	8	compound	_	_
+8	markers	marker	NOUN	PL-NOM	Number=Plur	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	their	_	_	_	_	0	_	_	_
+12	names	_	_	_	_	0	_	_	_
+13	appear	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	chart	_	_	_	_	0	_	_	_
+17	legend	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***Category***	category	NOUN	SG-NOM	Number=Sing	2	compound	_	_
+2	labels	label	NOUN	PL-NOM	Number=Plur	0	_	_	_
+3	usually	_	_	_	_	0	_	_	_
+4	appear	_	_	_	_	0	_	_	_
+5	across	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	x	_	_	_	_	0	_	_	_
+8	axis	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	chart	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	although	_	_	_	_	0	_	_	_
+14	this	_	_	_	_	0	_	_	_
+15	can	_	_	_	_	0	_	_	_
+16	vary	_	_	_	_	0	_	_	_
+17	depending	_	_	_	_	0	_	_	_
+18	on	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	type	_	_	_	_	0	_	_	_
+21	of	_	_	_	_	0	_	_	_
+22	chart	_	_	_	_	0	_	_	_
+23	you	_	_	_	_	0	_	_	_
+24	are	_	_	_	_	0	_	_	_
+25	using	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	4	_	_	_	_	0	_	_	_
+2	***Data***	data	NOUN	PL-NOM	Number=Sing	3	compound	_	_
+3	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***Data***	data	NOUN	PL-NOM	Number=Sing	2	compound	_	_
+2	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
+3	provide	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	values	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	be	_	_	_	_	0	_	_	_
+8	summarized	_	_	_	_	0	_	_	_
+9	in	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	chart	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Moving	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	***category***	category	NOUN	SG-NOM	Number=Sing	6	compound	_	_
+4	or	_	_	_	_	0	_	_	_
+5	series	_	_	_	_	0	_	_	_
+6	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	inner	_	_	_	_	0	_	_	_
+9	or	_	_	_	_	0	_	_	_
+10	outer	_	_	_	_	0	_	_	_
+11	levels	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	a	_	_	_	_	0	_	_	_
+3	chart	_	_	_	_	0	_	_	_
+4	contains	_	_	_	_	0	_	_	_
+5	multiple	_	_	_	_	0	_	_	_
+6	series	_	_	_	_	0	_	_	_
+7	or	_	_	_	_	0	_	_	_
+8	***category***	category	NOUN	SG-NOM	Number=Sing	9	compound	_	_
+9	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	fields	_	_	_	_	0	_	_	_
+13	that	_	_	_	_	0	_	_	_
+14	are	_	_	_	_	0	_	_	_
+15	closest	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	data	_	_	_	_	0	_	_	_
+19	are	_	_	_	_	0	_	_	_
+20	referred	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	as	_	_	_	_	0	_	_	_
+23	inner	_	_	_	_	0	_	_	_
+24	fields	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	a	_	_	_	_	0	_	_	_
+3	chart	_	_	_	_	0	_	_	_
+4	contains	_	_	_	_	0	_	_	_
+5	multiple	_	_	_	_	0	_	_	_
+6	series	series	NOUN	PL-NOM	Number=Sing	0	_	_	_
+7	or	_	_	_	_	0	_	_	_
+8	category	_	_	_	_	0	_	_	_
+9	***fields***	field	NOUN	PL-NOM	Number=Plur	6	conj	_	SpaceAfter=No
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	fields	_	_	_	_	0	_	_	_
+13	that	_	_	_	_	0	_	_	_
+14	are	_	_	_	_	0	_	_	_
+15	closest	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	data	_	_	_	_	0	_	_	_
+19	are	_	_	_	_	0	_	_	_
+20	referred	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	as	_	_	_	_	0	_	_	_
+23	inner	_	_	_	_	0	_	_	_
+24	fields	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	***This***	this	DET	DEM-SG	Number=Sing|PronType=Dem	2	det	_	_
+2	type	type	NOUN	SG-NOM	Number=Sing	0	_	_	_
+3	of	_	_	_	_	0	_	_	_
+4	drop	_	_	_	_	0	_	_	_
+5	area	_	_	_	_	0	_	_	_
+6	is	_	_	_	_	0	_	_	_
+7	not	_	_	_	_	0	_	_	_
+8	displayed	_	_	_	_	0	_	_	_
+9	for	_	_	_	_	0	_	_	_
+10	single	_	_	_	_	0	_	_	_
+11	charts	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Moving	_	_	_	_	0	_	_	_
+2	fields	_	_	_	_	0	_	_	_
+3	to	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	category	category	NOUN	SG-NOM	Number=Sing	0	_	_	_
+6	and	_	_	_	_	0	_	_	_
+7	***series***	series	NOUN	SG-NOM	Number=Sing	5	conj	_	_
+8	areas	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Moving	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	category	category	NOUN	SG-NOM	Number=Sing	0	_	_	_
+4	or	_	_	_	_	0	_	_	_
+5	***series***	series	NOUN	SG-NOM	Number=Sing	3	conj	_	_
+6	fields	_	_	_	_	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	inner	_	_	_	_	0	_	_	_
+9	or	_	_	_	_	0	_	_	_
+10	outer	_	_	_	_	0	_	_	_
+11	levels	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	move	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	field	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	***series***	series	NOUN	SG-NOM	Number=Sing	9	compound	_	_
+9	area	area	NOUN	SG-NOM	Number=Sing	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	unique	_	_	_	_	0	_	_	_
+13	items	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	data	_	_	_	_	0	_	_	_
+16	within	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	field	_	_	_	_	0	_	_	_
+19	are	_	_	_	_	0	_	_	_
+20	displayed	_	_	_	_	0	_	_	_
+21	as	_	_	_	_	0	_	_	_
+22	data	_	_	_	_	0	_	_	_
+23	series	_	_	_	_	0	_	_	_
+24	in	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	chart	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Each	_	_	_	_	0	_	_	_
+2	category	_	_	_	_	0	_	_	_
+3	consists	_	_	_	_	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	one	_	_	_	_	0	_	_	_
+6	point	_	_	_	_	0	_	_	_
+7	from	_	_	_	_	0	_	_	_
+8	each	_	_	_	_	0	_	_	_
+9	***data***	data	NOUN	PL-NOM	Number=Sing	10	compound	_	_
+10	series	series	NOUN	SG-NOM	Number=Sing	0	_	_	_
+11	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	move	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	field	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	series	_	_	_	_	0	_	_	_
+9	area	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	unique	_	_	_	_	0	_	_	_
+13	items	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	data	_	_	_	_	0	_	_	_
+16	within	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	field	_	_	_	_	0	_	_	_
+19	are	_	_	_	_	0	_	_	_
+20	displayed	_	_	_	_	0	_	_	_
+21	as	_	_	_	_	0	_	_	_
+22	***data***	data	NOUN	PL-NOM	Number=Sing	23	compound	_	_
+23	series	series	NOUN	PL-NOM	Number=Sing	0	_	_	_
+24	in	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	chart	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	These	_	_	_	_	0	_	_	_
+2	series	_	_	_	_	0	_	_	_
+3	are	_	_	_	_	0	_	_	_
+4	represented	_	_	_	_	0	_	_	_
+5	by	_	_	_	_	0	_	_	_
+6	colored	_	_	_	_	0	_	_	_
+7	data	_	_	_	_	0	_	_	_
+8	markers	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	their	_	_	_	_	0	_	_	_
+12	names	_	_	_	_	0	_	_	_
+13	appear	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	***chart***	chart	NOUN	SG-NOM	Number=Sing	17	compound	_	_
+17	legend	legend	NOUN	SG-NOM	Number=Sing	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	move	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	field	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	***category***	category	NOUN	SG-NOM	Number=Sing	9	compound	_	_
+9	area	area	NOUN	SG-NOM	Number=Sing	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	unique	_	_	_	_	0	_	_	_
+13	items	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	data	_	_	_	_	0	_	_	_
+16	are	_	_	_	_	0	_	_	_
+17	displayed	_	_	_	_	0	_	_	_
+18	as	_	_	_	_	0	_	_	_
+19	categories	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	or	_	_	_	_	0	_	_	_
+22	related	_	_	_	_	0	_	_	_
+23	groups	_	_	_	_	0	_	_	_
+24	of	_	_	_	_	0	_	_	_
+25	data	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	you	_	_	_	_	0	_	_	_
+3	move	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	field	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	category	_	_	_	_	0	_	_	_
+9	area	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	unique	_	_	_	_	0	_	_	_
+13	items	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	data	_	_	_	_	0	_	_	_
+16	are	_	_	_	_	0	_	_	_
+17	displayed	_	_	_	_	0	_	_	_
+18	as	_	_	_	_	0	_	_	_
+19	categories	category	NOUN	PL-NOM	Number=Plur	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	or	_	_	_	_	0	_	_	_
+22	related	_	_	_	_	0	_	_	_
+23	***groups***	group	NOUN	PL-NOM	Number=Plur	19	conj	_	_
+24	of	_	_	_	_	0	_	_	_
+25	data	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Category	_	_	_	_	0	_	_	_
+2	labels	_	_	_	_	0	_	_	_
+3	usually	_	_	_	_	0	_	_	_
+4	appear	_	_	_	_	0	_	_	_
+5	across	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	***x***	x	NOUN	SG-NOM	Number=Sing	8	compound	_	_
+8	axis	axis	NOUN	SG-NOM	Number=Sing	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	chart	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	although	_	_	_	_	0	_	_	_
+14	this	_	_	_	_	0	_	_	_
+15	can	_	_	_	_	0	_	_	_
+16	vary	_	_	_	_	0	_	_	_
+17	depending	_	_	_	_	0	_	_	_
+18	on	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	type	_	_	_	_	0	_	_	_
+21	of	_	_	_	_	0	_	_	_
+22	chart	_	_	_	_	0	_	_	_
+23	you	_	_	_	_	0	_	_	_
+24	are	_	_	_	_	0	_	_	_
+25	using	_	_	_	_	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
+</ul><br><br><br>
 
 
 <!-- support for embedded visualizations -->

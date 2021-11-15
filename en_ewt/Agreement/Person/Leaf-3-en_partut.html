@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,8 +137,171 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_partut </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <h5> No examples found </h5><h4> Counter Examples </h4><h5> No examples found </h5></ul><br><br><br>
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">head of ***-marked token is also the head of= complement for auxiliary <br>
+dependent's lemma is= i <br>
+</td><td style="text-align:center"> - </td>
+</tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:head of ***-marked token is also the head of= complement for auxiliary;dependent's lemma is= i; Not Active:"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Mr	_	_	_	_	0	_	_	_
+2	President	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	I	_	_	_	_	0	_	_	_
+5	would	_	_	_	_	0	_	_	_
+6	very	_	_	_	_	0	_	_	_
+7	much	_	_	_	_	0	_	_	_
+8	like	_	_	_	_	0	_	_	_
+9	to	_	_	_	_	0	_	_	_
+10	thank	_	_	_	_	0	_	_	_
+11	Mrs	_	_	_	_	0	_	_	_
+12	Schroedter	_	_	_	_	0	_	_	_
+13	for	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	work	_	_	_	_	0	_	_	_
+16	she	_	_	_	_	0	_	_	_
+17	has	_	_	_	_	0	_	_	_
+18	done	_	_	_	_	0	_	_	_
+19	on	_	_	_	_	0	_	_	_
+20	this	_	_	_	_	0	_	_	_
+21	and	_	_	_	_	0	_	_	_
+22	to	_	_	_	_	0	_	_	_
+23	explain	_	_	_	_	0	_	_	_
+24	to	_	_	_	_	0	_	_	_
+25	colleagues	_	_	_	_	0	_	_	_
+26	that	_	_	_	_	0	_	_	_
+27	***I***	I	PRON	PE	Number=Sing|Person=1|PronType=Prs	28	subj	_	_
+28	am	be	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+29	speaking	speak	VERB	V	VerbForm=Ger	28	comp:aux	_	_
+30	for	for	ADP	E	_	28	udep	_	_
+31	my	_	_	_	_	0	_	_	_
+32	colleague	_	_	_	_	0	_	_	_
+33	,	_	_	_	_	0	_	_	_
+34	Mrs	_	_	_	_	0	_	_	_
+35	Flautre	_	_	_	_	0	_	_	_
+36	,	_	_	_	_	0	_	_	_
+37	who	_	_	_	_	0	_	_	_
+38	followed	_	_	_	_	0	_	_	_
+39	this	_	_	_	_	0	_	_	_
+40	for	_	_	_	_	0	_	_	_
+41	the	_	_	_	_	0	_	_	_
+42	Committee	_	_	_	_	0	_	_	_
+43	on	_	_	_	_	0	_	_	_
+44	Employment	_	_	_	_	0	_	_	_
+45	and	_	_	_	_	0	_	_	_
+46	Social	_	_	_	_	0	_	_	_
+47	Affairs	_	_	_	_	0	_	_	_
+48	but	_	_	_	_	0	_	_	_
+49	who	_	_	_	_	0	_	_	_
+50	is	_	_	_	_	0	_	_	_
+51	unfortunately	_	_	_	_	0	_	_	_
+52	ill	_	_	_	_	0	_	_	_
+53	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	has	_	_	_	_	0	_	_	_
+3	been	_	_	_	_	0	_	_	_
+4	an	_	_	_	_	0	_	_	_
+5	ongoing	_	_	_	_	0	_	_	_
+6	concern	_	_	_	_	0	_	_	_
+7	for	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	five	_	_	_	_	0	_	_	_
+10	years	_	_	_	_	0	_	_	_
+11	that	_	_	_	_	0	_	_	_
+12	I	_	_	_	_	0	_	_	_
+13	have	_	_	_	_	0	_	_	_
+14	been	_	_	_	_	0	_	_	_
+15	a	_	_	_	_	0	_	_	_
+16	Member	_	_	_	_	0	_	_	_
+17	of	_	_	_	_	0	_	_	_
+18	this	_	_	_	_	0	_	_	_
+19	Parliament	_	_	_	_	0	_	_	_
+20	,	,	PUNCT	FF	_	23	punct	_	_
+21	and	and	CCONJ	CC	_	23	cc	_	_
+22	***I***	I	PRON	PE	Number=Sing|Person=1|PronType=Prs	23	subj	_	_
+23	have	have	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+24	raised	raise	VERB	V	Tense=Past|VerbForm=Part	23	comp:aux	_	_
+25	the	_	_	_	_	0	_	_	_
+26	issue	_	_	_	_	0	_	_	_
+27	time	time	NOUN	S	Number=Sing	23	udep	_	_
+28	and	_	_	_	_	0	_	_	_
+29	time	_	_	_	_	0	_	_	_
+30	again	_	_	_	_	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	***I***	I	PRON	PE	Number=Sing|Person=1|PronType=Prs	2	subj	_	_
+2	would	will	AUX	VM	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	ask	ask	VERB	V	VerbForm=Inf	2	comp:aux	_	_
+4	that	_	_	_	_	0	_	_	_
+5	they	_	_	_	_	0	_	_	_
+6	reconsider	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	since	_	_	_	_	0	_	_	_
+9	this	_	_	_	_	0	_	_	_
+10	is	_	_	_	_	0	_	_	_
+11	not	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	case	_	_	_	_	0	_	_	_
+14	.	.	PUNCT	FS	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mr	mister	NOUN	S	Gender=Masc|Number=Sing	6	vocative	_	_
+2	President	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	***I***	I	PRON	PE	Number=Sing|Person=1|PronType=Prs	6	subj	_	_
+5	too	too	ADV	B	_	6	mod	_	_
+6	would	will	AUX	VM	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+7	like	like	VERB	V	VerbForm=Inf	6	comp:aux	_	_
+8	to	_	_	_	_	0	_	_	_
+9	congratulate	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	rapporteur	_	_	_	_	0	_	_	_
+12	on	_	_	_	_	0	_	_	_
+13	her	_	_	_	_	0	_	_	_
+14	excellent	_	_	_	_	0	_	_	_
+15	work	_	_	_	_	0	_	_	_
+16	.	.	PUNCT	FS	_	6	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***I***	I	PRON	PE	Number=Sing|Person=1|PronType=Prs	2	subj	_	_
+2	can	can	AUX	VM	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	live	live	VERB	V	VerbForm=Inf	2	comp:aux	_	_
+4	with	with	ADP	E	_	2	udep	_	_
+5	these	_	_	_	_	0	_	_	_
+6	minimum	_	_	_	_	0	_	_	_
+7	standards	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	but	_	_	_	_	0	_	_	_
+10	I	_	_	_	_	0	_	_	_
+11	would	will	AUX	VM	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+12	ask	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	Commission	_	_	_	_	0	_	_	_
+15	to	_	_	_	_	0	_	_	_
+16	monitor	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	situation	_	_	_	_	0	_	_	_
+19	very	_	_	_	_	0	_	_	_
+20	carefully	_	_	_	_	0	_	_	_
+21	.	.	PUNCT	FS	_	2	punct	_	_
+
+</code></pre>
+
+</div>
+</ul><br><br><br>
 
 
 <!-- support for embedded visualizations -->

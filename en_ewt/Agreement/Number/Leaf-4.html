@@ -137,8 +137,384 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> Agreement in <b>Number</b>, dependent is denoted by *** </h3><h4> Rules ACTIVE for this Leaf: </h4><ul><li> the  is also the head of= determiner </li><li> the  is also the head of= DET </li><li> dependent's head is a= NOUN </li></ul><h4> Rules NOT ACTIVE for this Leaf: </h4><ul><li> dependent is not a= DET </li></ul><h4> Examples </h4><pre><code class="language-conllu">
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent's head is a= NOUN <br>
+</td><td style="text-align:center">dependent's lemma is= we <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent's head is a= NOUN; Not Active:dependent's lemma is= we;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	(	_	_	_	_	0	_	_	_
+2	Kut	_	_	_	_	0	_	_	_
+3	is	_	_	_	_	0	_	_	_
+4	in	_	_	_	_	0	_	_	_
+5	southeastern	_	_	_	_	0	_	_	_
+6	Iraq	_	_	_	_	0	_	_	_
+7	and	_	_	_	_	0	_	_	_
+8	has	_	_	_	_	0	_	_	_
+9	an	_	_	_	_	0	_	_	_
+10	overwhelmingly	_	_	_	_	0	_	_	_
+11	Shiite	_	_	_	_	0	_	_	_
+12	population	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	who	_	_	_	_	0	_	_	_
+15	are	_	_	_	_	0	_	_	_
+16	on	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	lookout	_	_	_	_	0	_	_	_
+19	for	_	_	_	_	0	_	_	_
+20	***Baathist***	Baathist	PROPN	NNP	Number=Sing	21	compound	_	_
+21	saboteurs	saboteur	NOUN	NNS	Number=Plur	0	_	_	_
+22	and	_	_	_	_	0	_	_	_
+23	willingly	_	_	_	_	0	_	_	_
+24	turn	_	_	_	_	0	_	_	_
+25	them	_	_	_	_	0	_	_	_
+26	in	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	dramatic	_	_	_	_	0	_	_	_
+3	increase	_	_	_	_	0	_	_	_
+4	in	_	_	_	_	0	_	_	_
+5	radiation	_	_	_	_	0	_	_	_
+6	-	_	_	_	_	0	_	_	_
+7	induced	_	_	_	_	0	_	_	_
+8	***thyroid***	thyroid	NOUN	NN	Number=Sing	9	compound	_	_
+9	cancers	cancer	NOUN	NNS	Number=Plur	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	children	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	adolescents	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
+15	Belarus	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	Russia	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	and	_	_	_	_	0	_	_	_
+20	Ukraine	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	which	_	_	_	_	0	_	_	_
+23	have	_	_	_	_	0	_	_	_
+24	been	_	_	_	_	0	_	_	_
+25	observed	_	_	_	_	0	_	_	_
+26	since	_	_	_	_	0	_	_	_
+27	1991	_	_	_	_	0	_	_	_
+28	,	_	_	_	_	0	_	_	_
+29	continues	_	_	_	_	0	_	_	_
+30	to	_	_	_	_	0	_	_	_
+31	this	_	_	_	_	0	_	_	_
+32	day	_	_	_	_	0	_	_	_
+33	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Because	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	US	_	_	_	_	0	_	_	_
+4	and	_	_	_	_	0	_	_	_
+5	Pakistan	_	_	_	_	0	_	_	_
+6	have	_	_	_	_	0	_	_	_
+7	managed	_	_	_	_	0	_	_	_
+8	to	_	_	_	_	0	_	_	_
+9	capture	_	_	_	_	0	_	_	_
+10	or	_	_	_	_	0	_	_	_
+11	kill	_	_	_	_	0	_	_	_
+12	about	_	_	_	_	0	_	_	_
+13	2	_	_	_	_	0	_	_	_
+14	/	_	_	_	_	0	_	_	_
+15	3s	_	_	_	_	0	_	_	_
+16	of	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	top	_	_	_	_	0	_	_	_
+19	25	_	_	_	_	0	_	_	_
+20	al	_	_	_	_	0	_	_	_
+21	-	_	_	_	_	0	_	_	_
+22	***Qaeda***	Qaeda	PROPN	NNP	Number=Sing	23	compound	_	_
+23	commanders	commander	NOUN	NNS	Number=Plur	0	_	_	_
+24	,	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	middle	_	_	_	_	0	_	_	_
+27	managers	_	_	_	_	0	_	_	_
+28	are	_	_	_	_	0	_	_	_
+29	not	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	close	_	_	_	_	0	_	_	_
+32	contact	_	_	_	_	0	_	_	_
+33	with	_	_	_	_	0	_	_	_
+34	al	_	_	_	_	0	_	_	_
+35	-	_	_	_	_	0	_	_	_
+36	Zawahiri	_	_	_	_	0	_	_	_
+37	and	_	_	_	_	0	_	_	_
+38	Bin	_	_	_	_	0	_	_	_
+39	Laden	_	_	_	_	0	_	_	_
+40	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	thing	_	_	_	_	0	_	_	_
+3	to	_	_	_	_	0	_	_	_
+4	keep	_	_	_	_	0	_	_	_
+5	in	_	_	_	_	0	_	_	_
+6	mind	_	_	_	_	0	_	_	_
+7	is	_	_	_	_	0	_	_	_
+8	that	_	_	_	_	0	_	_	_
+9	Sunni	_	_	_	_	0	_	_	_
+10	Arab	_	_	_	_	0	_	_	_
+11	nationalists	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	Baathists	_	_	_	_	0	_	_	_
+14	and	_	_	_	_	0	_	_	_
+15	local	_	_	_	_	0	_	_	_
+16	Sunni	_	_	_	_	0	_	_	_
+17	radicals	_	_	_	_	0	_	_	_
+18	are	_	_	_	_	0	_	_	_
+19	likely	_	_	_	_	0	_	_	_
+20	to	_	_	_	_	0	_	_	_
+21	remain	_	_	_	_	0	_	_	_
+22	far	_	_	_	_	0	_	_	_
+23	more	_	_	_	_	0	_	_	_
+24	dangerous	_	_	_	_	0	_	_	_
+25	to	_	_	_	_	0	_	_	_
+26	the	_	_	_	_	0	_	_	_
+27	US	_	_	_	_	0	_	_	_
+28	in	_	_	_	_	0	_	_	_
+29	Iraq	_	_	_	_	0	_	_	_
+30	than	_	_	_	_	0	_	_	_
+31	al	_	_	_	_	0	_	_	_
+32	-	_	_	_	_	0	_	_	_
+33	***Qaeda***	Qaeda	PROPN	NNP	Number=Sing	34	compound	_	_
+34	infiltrators	infiltrator	NOUN	NNS	Number=Plur	0	_	_	_
+35	,	_	_	_	_	0	_	_	_
+36	and	_	_	_	_	0	_	_	_
+37	it	_	_	_	_	0	_	_	_
+38	would	_	_	_	_	0	_	_	_
+39	be	_	_	_	_	0	_	_	_
+40	dangerous	_	_	_	_	0	_	_	_
+41	to	_	_	_	_	0	_	_	_
+42	take	_	_	_	_	0	_	_	_
+43	one	_	_	_	_	0	_	_	_
+44	's	_	_	_	_	0	_	_	_
+45	eyes	_	_	_	_	0	_	_	_
+46	off	_	_	_	_	0	_	_	_
+47	the	_	_	_	_	0	_	_	_
+48	former	_	_	_	_	0	_	_	_
+49	ball	_	_	_	_	0	_	_	_
+50	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Texas	_	_	_	_	0	_	_	_
+2	Gov.	_	_	_	_	0	_	_	_
+3	George	_	_	_	_	0	_	_	_
+4	W.	_	_	_	_	0	_	_	_
+5	Bush	_	_	_	_	0	_	_	_
+6	is	_	_	_	_	0	_	_	_
+7	enduring	_	_	_	_	0	_	_	_
+8	sharp	_	_	_	_	0	_	_	_
+9	criticism	_	_	_	_	0	_	_	_
+10	for	_	_	_	_	0	_	_	_
+11	being	_	_	_	_	0	_	_	_
+12	unable	_	_	_	_	0	_	_	_
+13	to	_	_	_	_	0	_	_	_
+14	name	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	leaders	_	_	_	_	0	_	_	_
+17	of	_	_	_	_	0	_	_	_
+18	four	_	_	_	_	0	_	_	_
+19	current	_	_	_	_	0	_	_	_
+20	***world***	world	NOUN	NN	Number=Sing	22	compound	_	_
+21	hot	_	_	_	_	0	_	_	_
+22	spots	spot	NOUN	NNS	Number=Plur	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	but	_	_	_	_	0	_	_	_
+25	President	_	_	_	_	0	_	_	_
+26	Bill	_	_	_	_	0	_	_	_
+27	Clinton	_	_	_	_	0	_	_	_
+28	says	_	_	_	_	0	_	_	_
+29	Bush	_	_	_	_	0	_	_	_
+30	"	_	_	_	_	0	_	_	_
+31	should	_	_	_	_	0	_	_	_
+32	,	_	_	_	_	0	_	_	_
+33	and	_	_	_	_	0	_	_	_
+34	probably	_	_	_	_	0	_	_	_
+35	will	_	_	_	_	0	_	_	_
+36	,	_	_	_	_	0	_	_	_
+37	pick	_	_	_	_	0	_	_	_
+38	up	_	_	_	_	0	_	_	_
+39	"	_	_	_	_	0	_	_	_
+40	those	_	_	_	_	0	_	_	_
+41	names	_	_	_	_	0	_	_	_
+42	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Secular	_	_	_	_	0	_	_	_
+2	Arab	_	_	_	_	0	_	_	_
+3	***nationalist***	nationalist	NOUN	NN	Number=Sing	4	compound	_	_
+4	groups	group	NOUN	NNS	Number=Plur	0	_	_	_
+5	also	_	_	_	_	0	_	_	_
+6	universally	_	_	_	_	0	_	_	_
+7	sympathize	_	_	_	_	0	_	_	_
+8	with	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	Palestinians	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	those	_	_	_	_	0	_	_	_
+14	in	_	_	_	_	0	_	_	_
+15	post-Saddam	_	_	_	_	0	_	_	_
+16	Iraq	_	_	_	_	0	_	_	_
+17	are	_	_	_	_	0	_	_	_
+18	no	_	_	_	_	0	_	_	_
+19	exception	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	promotion	_	_	_	_	0	_	_	_
+3	by	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	pro-Zionist	_	_	_	_	0	_	_	_
+6	right	_	_	_	_	0	_	_	_
+7	of	_	_	_	_	0	_	_	_
+8	***twin***	twin	NOUN	NN	Number=Sing	9	compound	_	_
+9	occupations	occupation	NOUN	NNS	Number=Plur	0	_	_	_
+10	-	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	West	_	_	_	_	0	_	_	_
+14	Bank	_	_	_	_	0	_	_	_
+15	and	_	_	_	_	0	_	_	_
+16	in	_	_	_	_	0	_	_	_
+17	Iraq	_	_	_	_	0	_	_	_
+18	-	_	_	_	_	0	_	_	_
+19	has	_	_	_	_	0	_	_	_
+20	profoundly	_	_	_	_	0	_	_	_
+21	weakened	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	not	_	_	_	_	0	_	_	_
+24	strengthened	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	Israeli	_	_	_	_	0	_	_	_
+27	security	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	Tigers	_	_	_	_	0	_	_	_
+3	'	_	_	_	_	0	_	_	_
+4	chief	_	_	_	_	0	_	_	_
+5	ideologue	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	Balasingham	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	sniffed	_	_	_	_	0	_	_	_
+10	at	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	proposal	_	_	_	_	0	_	_	_
+13	saying	_	_	_	_	0	_	_	_
+14	that	_	_	_	_	0	_	_	_
+15	"	_	_	_	_	0	_	_	_
+16	a	_	_	_	_	0	_	_	_
+17	solution	_	_	_	_	0	_	_	_
+18	to	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	ethnic	_	_	_	_	0	_	_	_
+21	conflict	_	_	_	_	0	_	_	_
+22	can	_	_	_	_	0	_	_	_
+23	not	_	_	_	_	0	_	_	_
+24	be	_	_	_	_	0	_	_	_
+25	predetermined	_	_	_	_	0	_	_	_
+26	by	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	resolutions	_	_	_	_	0	_	_	_
+29	or	_	_	_	_	0	_	_	_
+30	declarations	_	_	_	_	0	_	_	_
+31	of	_	_	_	_	0	_	_	_
+32	***donor***	donor	NOUN	NN	Number=Sing	33	compound	_	_
+33	conferences	conference	NOUN	NNS	Number=Plur	0	_	_	_
+34	,	_	_	_	_	0	_	_	_
+35	but	_	_	_	_	0	_	_	_
+36	has	_	_	_	_	0	_	_	_
+37	to	_	_	_	_	0	_	_	_
+38	be	_	_	_	_	0	_	_	_
+39	negotiated	_	_	_	_	0	_	_	_
+40	by	_	_	_	_	0	_	_	_
+41	the	_	_	_	_	0	_	_	_
+42	parties	_	_	_	_	0	_	_	_
+43	in	_	_	_	_	0	_	_	_
+44	conflict	_	_	_	_	0	_	_	_
+45	without	_	_	_	_	0	_	_	_
+46	the	_	_	_	_	0	_	_	_
+47	constraints	_	_	_	_	0	_	_	_
+48	of	_	_	_	_	0	_	_	_
+49	external	_	_	_	_	0	_	_	_
+50	forces	_	_	_	_	0	_	_	_
+51	.	_	_	_	_	0	_	_	_
+52	"	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	"	_	_	_	_	0	_	_	_
+2	Tamils	_	_	_	_	0	_	_	_
+3	feel	_	_	_	_	0	_	_	_
+4	that	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	proposed	_	_	_	_	0	_	_	_
+7	defense	_	_	_	_	0	_	_	_
+8	agreement	_	_	_	_	0	_	_	_
+9	between	_	_	_	_	0	_	_	_
+10	India	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	Sri	_	_	_	_	0	_	_	_
+13	Lanka	_	_	_	_	0	_	_	_
+14	would	_	_	_	_	0	_	_	_
+15	encourage	_	_	_	_	0	_	_	_
+16	***Sinhala***	Sinhala	PROPN	NNP	Number=Sing	17	compound	_	_
+17	rulers	ruler	NOUN	NNS	Number=Plur	0	_	_	_
+18	to	_	_	_	_	0	_	_	_
+19	prepare	_	_	_	_	0	_	_	_
+20	for	_	_	_	_	0	_	_	_
+21	another	_	_	_	_	0	_	_	_
+22	war	_	_	_	_	0	_	_	_
+23	abandoning	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	current	_	_	_	_	0	_	_	_
+26	peace	_	_	_	_	0	_	_	_
+27	process	_	_	_	_	0	_	_	_
+28	,	_	_	_	_	0	_	_	_
+29	"	_	_	_	_	0	_	_	_
+30	TNA	_	_	_	_	0	_	_	_
+31	member	_	_	_	_	0	_	_	_
+32	of	_	_	_	_	0	_	_	_
+33	parliament	_	_	_	_	0	_	_	_
+34	P	_	_	_	_	0	_	_	_
+35	Sithamparanathan	_	_	_	_	0	_	_	_
+36	was	_	_	_	_	0	_	_	_
+37	quoted	_	_	_	_	0	_	_	_
+38	as	_	_	_	_	0	_	_	_
+39	saying	_	_	_	_	0	_	_	_
+40	in	_	_	_	_	0	_	_	_
+41	a	_	_	_	_	0	_	_	_
+42	statement	_	_	_	_	0	_	_	_
+43	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
 1	Unreported	_	_	_	_	0	_	_	_
 2	by	_	_	_	_	0	_	_	_
 3	the	_	_	_	_	0	_	_	_
@@ -166,13 +542,13 @@ span.displaynone { display: none; }
 25	the	_	_	_	_	0	_	_	_
 26	valley	_	_	_	_	0	_	_	_
 27	of	_	_	_	_	0	_	_	_
-28	almost	almost	ADV	RB	_	32	mod	_	_
-29	all	all	DET	PDT	_	32	det@predet	_	_
-30	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
+28	almost	_	_	_	_	0	_	_	_
+29	all	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
 31	***Hindu***	Hindu	PROPN	NNP	Number=Sing	32	compound	_	_
 32	families	family	NOUN	NNS	Number=Plur	0	_	_	_
 33	who	_	_	_	_	0	_	_	_
-34	have	have	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	32	mod@relcl	_	_
+34	have	_	_	_	_	0	_	_	_
 35	been	_	_	_	_	0	_	_	_
 36	living	_	_	_	_	0	_	_	_
 37	there	_	_	_	_	0	_	_	_
@@ -186,785 +562,102 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	And	_	_	_	_	0	_	_	_
-2	of	_	_	_	_	0	_	_	_
-3	all	all	DET	PDT	_	5	det@predet	_	_
-4	the	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
-5	people	people	NOUN	NNS	Number=Plur	0	_	_	_
-6	who	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	county	_	_	_	_	0	_	_	_
-9	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	mod@relcl	_	_
-10	getting	_	_	_	_	0	_	_	_
-11	to	_	_	_	_	0	_	_	_
-12	find	_	_	_	_	0	_	_	_
-13	a	_	_	_	_	0	_	_	_
-14	replacement	_	_	_	_	0	_	_	_
-15	...	_	_	_	_	0	_	_	_
-16	is	_	_	_	_	0	_	_	_
-17	none	_	_	_	_	0	_	_	_
-18	other	_	_	_	_	0	_	_	_
-19	than	_	_	_	_	0	_	_	_
-20	Lee	_	_	_	_	0	_	_	_
-21	Brown	_	_	_	_	0	_	_	_
-22	,	_	_	_	_	0	_	_	_
-23	the	_	_	_	_	0	_	_	_
-24	original	_	_	_	_	0	_	_	_
-25	supervisor	_	_	_	_	0	_	_	_
-26	of	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	Atlanta	_	_	_	_	0	_	_	_
-29	PD	_	_	_	_	0	_	_	_
-30	,	_	_	_	_	0	_	_	_
-31	who	_	_	_	_	0	_	_	_
-32	was	_	_	_	_	0	_	_	_
-33	in	_	_	_	_	0	_	_	_
-34	office	_	_	_	_	0	_	_	_
-35	during	_	_	_	_	0	_	_	_
-36	the	_	_	_	_	0	_	_	_
-37	murders	_	_	_	_	0	_	_	_
-38	and	_	_	_	_	0	_	_	_
-39	the	_	_	_	_	0	_	_	_
-40	subsequent	_	_	_	_	0	_	_	_
-41	investigation	_	_	_	_	0	_	_	_
-42	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	What	_	_	_	_	0	_	_	_
-2	's	_	_	_	_	0	_	_	_
-3	a	_	_	_	_	0	_	_	_
-4	few	_	_	_	_	0	_	_	_
-5	dead	_	_	_	_	0	_	_	_
-6	soldiers	_	_	_	_	0	_	_	_
-7	in	_	_	_	_	0	_	_	_
-8	comparison	_	_	_	_	0	_	_	_
-9	to	_	_	_	_	0	_	_	_
-10	keeping	_	_	_	_	0	_	_	_
-11	all	all	DET	PDT	_	14	det@predet	_	_
-12	those	those	DET	DT	Number=Plur|PronType=Dem	14	det	_	_
-13	***defense***	defense	NOUN	NN	Number=Sing	14	compound	_	_
-14	contractors	contractor	NOUN	NNS	Number=Plur	0	_	_	_
-15	awash	_	_	_	_	0	_	_	_
-16	in	_	_	_	_	0	_	_	_
-17	all	_	_	_	_	0	_	_	_
-18	that	_	_	_	_	0	_	_	_
-19	tax	_	_	_	_	0	_	_	_
-20	cash	_	_	_	_	0	_	_	_
-21	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	These	_	_	_	_	0	_	_	_
-2	22	_	_	_	_	0	_	_	_
-3	countries	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	with	_	_	_	_	0	_	_	_
-6	all	all	DET	PDT	_	8	det@predet	_	_
-7	***their***	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	8	mod@poss	_	_
-8	oil	oil	NOUN	NN	Number=Sing	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	natural	_	_	_	_	0	_	_	_
-11	resources	resource	NOUN	NNS	Number=Plur	8	conj	_	SpaceAfter=No
-12	,	_	_	_	_	0	_	_	_
-13	have	_	_	_	_	0	_	_	_
-14	a	_	_	_	_	0	_	_	_
-15	combined	_	_	_	_	0	_	_	_
-16	GDP	_	_	_	_	0	_	_	_
-17	smaller	_	_	_	_	0	_	_	_
-18	than	_	_	_	_	0	_	_	_
-19	that	_	_	_	_	0	_	_	_
-20	of	_	_	_	_	0	_	_	_
-21	Netherlands	_	_	_	_	0	_	_	_
-22	plus	_	_	_	_	0	_	_	_
-23	Belgium	_	_	_	_	0	_	_	_
-24	and	_	_	_	_	0	_	_	_
-25	equal	_	_	_	_	0	_	_	_
-26	to	_	_	_	_	0	_	_	_
-27	half	_	_	_	_	0	_	_	_
-28	of	_	_	_	_	0	_	_	_
-29	the	_	_	_	_	0	_	_	_
-30	GDP	_	_	_	_	0	_	_	_
-31	of	_	_	_	_	0	_	_	_
-32	California	_	_	_	_	0	_	_	_
-33	alone	_	_	_	_	0	_	_	_
-34	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	These	_	_	_	_	0	_	_	_
-2	22	_	_	_	_	0	_	_	_
-3	countries	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	with	_	_	_	_	0	_	_	_
-6	all	all	DET	PDT	_	8	det@predet	_	_
-7	their	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	8	mod@poss	_	_
-8	oil	oil	NOUN	NN	Number=Sing	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	natural	_	_	_	_	0	_	_	_
-11	***resources***	resource	NOUN	NNS	Number=Plur	8	conj	_	SpaceAfter=No
-12	,	_	_	_	_	0	_	_	_
-13	have	_	_	_	_	0	_	_	_
-14	a	_	_	_	_	0	_	_	_
-15	combined	_	_	_	_	0	_	_	_
-16	GDP	_	_	_	_	0	_	_	_
-17	smaller	_	_	_	_	0	_	_	_
-18	than	_	_	_	_	0	_	_	_
-19	that	_	_	_	_	0	_	_	_
-20	of	_	_	_	_	0	_	_	_
-21	Netherlands	_	_	_	_	0	_	_	_
-22	plus	_	_	_	_	0	_	_	_
-23	Belgium	_	_	_	_	0	_	_	_
-24	and	_	_	_	_	0	_	_	_
-25	equal	_	_	_	_	0	_	_	_
-26	to	_	_	_	_	0	_	_	_
-27	half	_	_	_	_	0	_	_	_
-28	of	_	_	_	_	0	_	_	_
-29	the	_	_	_	_	0	_	_	_
-30	GDP	_	_	_	_	0	_	_	_
-31	of	_	_	_	_	0	_	_	_
-32	California	_	_	_	_	0	_	_	_
-33	alone	_	_	_	_	0	_	_	_
-34	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Perhaps	_	_	_	_	0	_	_	_
-2	something	_	_	_	_	0	_	_	_
-3	got	_	_	_	_	0	_	_	_
-4	lost	_	_	_	_	0	_	_	_
-5	in	_	_	_	_	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	translation	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	but	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	phrase	_	_	_	_	0	_	_	_
-12	"	_	_	_	_	0	_	_	_
-13	Chemical	_	_	_	_	0	_	_	_
-14	Wire	_	_	_	_	0	_	_	_
-15	Group	_	_	_	_	0	_	_	_
-16	"	_	_	_	_	0	_	_	_
-17	has	_	_	_	_	0	_	_	_
-18	appeared	_	_	_	_	0	_	_	_
-19	in	_	_	_	_	0	_	_	_
-20	all	all	DET	PDT	_	26	det@predet	_	_
-21	the	the	DET	DT	Definite=Def|PronType=Art	26	det	_	_
-22	english	english	PROPN	JJ	Degree=Pos	26	mod	_	_
-23	***Pakistan***	Pakistan	PROPN	NNP	Number=Sing	26	compound	_	_
-24	and	_	_	_	_	0	_	_	_
-25	India	_	_	_	_	0	_	_	_
-26	papers	papers	NOUN	NNS	Number=Plur	0	_	_	_
-27	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Adding	_	_	_	_	0	_	_	_
-2	all	all	DET	PDT	_	7	det@predet	_	_
-3	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
-4	***Enron***	Enron	PROPN	NNP	Number=Sing	7	compound	_	_
-5	"	"	PUNCT	``	_	7	punct	_	SpaceAfter=No
-6	Specified	specify	VERB	VBN	Tense=Past|VerbForm=Part	7	mod	_	_
-7	Entities	entity	NOUN	NNS	Number=Plur	0	_	_	_
-8	"	"	PUNCT	''	_	7	punct	_	_
-9	would	_	_	_	_	0	_	_	_
-10	only	_	_	_	_	0	_	_	_
-11	make	_	_	_	_	0	_	_	_
-12	a	_	_	_	_	0	_	_	_
-13	default	_	_	_	_	0	_	_	_
-14	under	_	_	_	_	0	_	_	_
-15	a	_	_	_	_	0	_	_	_
-16	financial	_	_	_	_	0	_	_	_
-17	transaction	_	_	_	_	0	_	_	_
-18	with	_	_	_	_	0	_	_	_
-19	those	_	_	_	_	0	_	_	_
-20	other	_	_	_	_	0	_	_	_
-21	Enron	_	_	_	_	0	_	_	_
-22	entities	_	_	_	_	0	_	_	_
-23	a	_	_	_	_	0	_	_	_
-24	default	_	_	_	_	0	_	_	_
-25	under	_	_	_	_	0	_	_	_
-26	this	_	_	_	_	0	_	_	_
-27	agreement	_	_	_	_	0	_	_	_
-28	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	With	_	_	_	_	0	_	_	_
-2	respect	_	_	_	_	0	_	_	_
-3	to	_	_	_	_	0	_	_	_
-4	Deutsche	_	_	_	_	0	_	_	_
-5	Bank	_	_	_	_	0	_	_	_
-6	(	_	_	_	_	0	_	_	_
-7	""	_	_	_	_	0	_	_	_
-8	DB	_	_	_	_	0	_	_	_
-9	"	_	_	_	_	0	_	_	_
-10	)	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	we	_	_	_	_	0	_	_	_
-13	have	_	_	_	_	0	_	_	_
-14	one	_	_	_	_	0	_	_	_
-15	credit	_	_	_	_	0	_	_	_
-16	issue	_	_	_	_	0	_	_	_
-17	remaining	_	_	_	_	0	_	_	_
-18	,	_	_	_	_	0	_	_	_
-19	DB	_	_	_	_	0	_	_	_
-20	would	_	_	_	_	0	_	_	_
-21	like	_	_	_	_	0	_	_	_
-22	us	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	add	_	_	_	_	0	_	_	_
-25	all	all	DET	PDT	_	29	det@predet	_	_
-26	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
-27	***Enron***	Enron	PROPN	NNP	Number=Sing	29	compound	_	_
-28	trading	trading	NOUN	NN	Number=Sing	29	compound	_	_
-29	entities	entity	NOUN	NNS	Number=Plur	0	_	_	_
-30	DB	_	_	_	_	0	_	_	_
-31	trades	trade	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	mod@relcl	_	_
-32	with	_	_	_	_	0	_	_	_
-33	as	_	_	_	_	0	_	_	_
-34	Specified	_	_	_	_	0	_	_	_
-35	Entities	_	_	_	_	0	_	_	_
-36	under	_	_	_	_	0	_	_	_
-37	the	_	_	_	_	0	_	_	_
-38	ISDA	_	_	_	_	0	_	_	_
-39	Master	_	_	_	_	0	_	_	_
-40	Agreement	_	_	_	_	0	_	_	_
-41	and	_	_	_	_	0	_	_	_
-42	we	_	_	_	_	0	_	_	_
-43	are	_	_	_	_	0	_	_	_
-44	somewhat	_	_	_	_	0	_	_	_
-45	hesitant	_	_	_	_	0	_	_	_
-46	to	_	_	_	_	0	_	_	_
-47	do	_	_	_	_	0	_	_	_
-48	so	_	_	_	_	0	_	_	_
-49	,	_	_	_	_	0	_	_	_
-50	as	_	_	_	_	0	_	_	_
-51	this	_	_	_	_	0	_	_	_
-52	could	_	_	_	_	0	_	_	_
-53	potentially	_	_	_	_	0	_	_	_
-54	roll	_	_	_	_	0	_	_	_
-55	up	_	_	_	_	0	_	_	_
-56	swaps	_	_	_	_	0	_	_	_
-57	under	_	_	_	_	0	_	_	_
-58	structured	_	_	_	_	0	_	_	_
-59	loan	_	_	_	_	0	_	_	_
-60	transactions	_	_	_	_	0	_	_	_
-61	into	_	_	_	_	0	_	_	_
-62	a	_	_	_	_	0	_	_	_
-63	default	_	_	_	_	0	_	_	_
-64	under	_	_	_	_	0	_	_	_
-65	the	_	_	_	_	0	_	_	_
-66	ISDA	_	_	_	_	0	_	_	_
-67	Agreement	_	_	_	_	0	_	_	_
-68	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	With	_	_	_	_	0	_	_	_
-2	respect	_	_	_	_	0	_	_	_
-3	to	_	_	_	_	0	_	_	_
-4	Deutsche	_	_	_	_	0	_	_	_
-5	Bank	_	_	_	_	0	_	_	_
-6	(	_	_	_	_	0	_	_	_
-7	""	_	_	_	_	0	_	_	_
-8	DB	_	_	_	_	0	_	_	_
-9	"	_	_	_	_	0	_	_	_
-10	)	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	we	_	_	_	_	0	_	_	_
-13	have	_	_	_	_	0	_	_	_
-14	one	_	_	_	_	0	_	_	_
-15	credit	_	_	_	_	0	_	_	_
-16	issue	_	_	_	_	0	_	_	_
-17	remaining	_	_	_	_	0	_	_	_
-18	,	_	_	_	_	0	_	_	_
-19	DB	_	_	_	_	0	_	_	_
-20	would	_	_	_	_	0	_	_	_
-21	like	_	_	_	_	0	_	_	_
-22	us	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	add	_	_	_	_	0	_	_	_
-25	all	all	DET	PDT	_	29	det@predet	_	_
-26	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
-27	Enron	Enron	PROPN	NNP	Number=Sing	29	compound	_	_
-28	***trading***	trading	NOUN	NN	Number=Sing	29	compound	_	_
-29	entities	entity	NOUN	NNS	Number=Plur	0	_	_	_
-30	DB	_	_	_	_	0	_	_	_
-31	trades	trade	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	mod@relcl	_	_
-32	with	_	_	_	_	0	_	_	_
-33	as	_	_	_	_	0	_	_	_
-34	Specified	_	_	_	_	0	_	_	_
-35	Entities	_	_	_	_	0	_	_	_
-36	under	_	_	_	_	0	_	_	_
-37	the	_	_	_	_	0	_	_	_
-38	ISDA	_	_	_	_	0	_	_	_
-39	Master	_	_	_	_	0	_	_	_
-40	Agreement	_	_	_	_	0	_	_	_
-41	and	_	_	_	_	0	_	_	_
-42	we	_	_	_	_	0	_	_	_
-43	are	_	_	_	_	0	_	_	_
-44	somewhat	_	_	_	_	0	_	_	_
-45	hesitant	_	_	_	_	0	_	_	_
-46	to	_	_	_	_	0	_	_	_
-47	do	_	_	_	_	0	_	_	_
-48	so	_	_	_	_	0	_	_	_
-49	,	_	_	_	_	0	_	_	_
-50	as	_	_	_	_	0	_	_	_
-51	this	_	_	_	_	0	_	_	_
-52	could	_	_	_	_	0	_	_	_
-53	potentially	_	_	_	_	0	_	_	_
-54	roll	_	_	_	_	0	_	_	_
-55	up	_	_	_	_	0	_	_	_
-56	swaps	_	_	_	_	0	_	_	_
-57	under	_	_	_	_	0	_	_	_
-58	structured	_	_	_	_	0	_	_	_
-59	loan	_	_	_	_	0	_	_	_
-60	transactions	_	_	_	_	0	_	_	_
-61	into	_	_	_	_	0	_	_	_
-62	a	_	_	_	_	0	_	_	_
-63	default	_	_	_	_	0	_	_	_
-64	under	_	_	_	_	0	_	_	_
-65	the	_	_	_	_	0	_	_	_
-66	ISDA	_	_	_	_	0	_	_	_
-67	Agreement	_	_	_	_	0	_	_	_
-68	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	With	_	_	_	_	0	_	_	_
-2	respect	_	_	_	_	0	_	_	_
-3	to	_	_	_	_	0	_	_	_
-4	Deutsche	_	_	_	_	0	_	_	_
-5	Bank	_	_	_	_	0	_	_	_
-6	(	_	_	_	_	0	_	_	_
-7	""	_	_	_	_	0	_	_	_
-8	DB	_	_	_	_	0	_	_	_
-9	"	_	_	_	_	0	_	_	_
-10	)	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	we	_	_	_	_	0	_	_	_
-13	have	_	_	_	_	0	_	_	_
-14	one	_	_	_	_	0	_	_	_
-15	credit	_	_	_	_	0	_	_	_
-16	issue	_	_	_	_	0	_	_	_
-17	remaining	_	_	_	_	0	_	_	_
-18	,	_	_	_	_	0	_	_	_
-19	DB	_	_	_	_	0	_	_	_
-20	would	_	_	_	_	0	_	_	_
-21	like	_	_	_	_	0	_	_	_
-22	us	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	add	_	_	_	_	0	_	_	_
-25	all	all	DET	PDT	_	29	det@predet	_	_
-26	the	the	DET	DT	Definite=Def|PronType=Art	29	det	_	_
-27	Enron	Enron	PROPN	NNP	Number=Sing	29	compound	_	_
-28	trading	trading	NOUN	NN	Number=Sing	29	compound	_	_
-29	entities	entity	NOUN	NNS	Number=Plur	0	_	_	_
-30	DB	_	_	_	_	0	_	_	_
-31	***trades***	trade	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	mod@relcl	_	_
-32	with	_	_	_	_	0	_	_	_
-33	as	_	_	_	_	0	_	_	_
-34	Specified	_	_	_	_	0	_	_	_
-35	Entities	_	_	_	_	0	_	_	_
-36	under	_	_	_	_	0	_	_	_
-37	the	_	_	_	_	0	_	_	_
-38	ISDA	_	_	_	_	0	_	_	_
-39	Master	_	_	_	_	0	_	_	_
-40	Agreement	_	_	_	_	0	_	_	_
-41	and	_	_	_	_	0	_	_	_
-42	we	_	_	_	_	0	_	_	_
-43	are	_	_	_	_	0	_	_	_
-44	somewhat	_	_	_	_	0	_	_	_
-45	hesitant	_	_	_	_	0	_	_	_
-46	to	_	_	_	_	0	_	_	_
-47	do	_	_	_	_	0	_	_	_
-48	so	_	_	_	_	0	_	_	_
-49	,	_	_	_	_	0	_	_	_
-50	as	_	_	_	_	0	_	_	_
-51	this	_	_	_	_	0	_	_	_
-52	could	_	_	_	_	0	_	_	_
-53	potentially	_	_	_	_	0	_	_	_
-54	roll	_	_	_	_	0	_	_	_
-55	up	_	_	_	_	0	_	_	_
-56	swaps	_	_	_	_	0	_	_	_
-57	under	_	_	_	_	0	_	_	_
-58	structured	_	_	_	_	0	_	_	_
-59	loan	_	_	_	_	0	_	_	_
-60	transactions	_	_	_	_	0	_	_	_
-61	into	_	_	_	_	0	_	_	_
-62	a	_	_	_	_	0	_	_	_
-63	default	_	_	_	_	0	_	_	_
-64	under	_	_	_	_	0	_	_	_
-65	the	_	_	_	_	0	_	_	_
-66	ISDA	_	_	_	_	0	_	_	_
-67	Agreement	_	_	_	_	0	_	_	_
-68	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	There	_	_	_	_	0	_	_	_
-2	is	_	_	_	_	0	_	_	_
-3	no	_	_	_	_	0	_	_	_
-4	doubt	_	_	_	_	0	_	_	_
-5	that	_	_	_	_	0	_	_	_
-6	many	_	_	_	_	0	_	_	_
-7	Iraqis	_	_	_	_	0	_	_	_
-8	regard	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	date	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	30	_	_	_	_	0	_	_	_
-13	January	_	_	_	_	0	_	_	_
-14	as	_	_	_	_	0	_	_	_
-15	a	_	_	_	_	0	_	_	_
-16	day	_	_	_	_	0	_	_	_
-17	of	_	_	_	_	0	_	_	_
-18	renewed	_	_	_	_	0	_	_	_
-19	hope	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	one	_	_	_	_	0	_	_	_
-22	they	_	_	_	_	0	_	_	_
-23	have	_	_	_	_	0	_	_	_
-24	been	_	_	_	_	0	_	_	_
-25	awaiting	_	_	_	_	0	_	_	_
-26	all	all	DET	PDT	_	28	det@predet	_	_
-27	***their***	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	28	mod@poss	_	_
-28	lives	life	NOUN	NNS	Number=Plur	0	_	_	_
-29	,	_	_	_	_	0	_	_	_
-30	but	_	_	_	_	0	_	_	_
-31	at	_	_	_	_	0	_	_	_
-32	the	_	_	_	_	0	_	_	_
-33	same	_	_	_	_	0	_	_	_
-34	time	_	_	_	_	0	_	_	_
-35	,	_	_	_	_	0	_	_	_
-36	many	_	_	_	_	0	_	_	_
-37	others	_	_	_	_	0	_	_	_
-38	are	_	_	_	_	0	_	_	_
-39	already	_	_	_	_	0	_	_	_
-40	dreading	_	_	_	_	0	_	_	_
-41	it	_	_	_	_	0	_	_	_
-42	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	“	_	_	_	_	0	_	_	_
-2	The	_	_	_	_	0	_	_	_
-3	elections	_	_	_	_	0	_	_	_
-4	should	_	_	_	_	0	_	_	_
-5	be	_	_	_	_	0	_	_	_
-6	a	_	_	_	_	0	_	_	_
-7	reassurance	_	_	_	_	0	_	_	_
-8	to	_	_	_	_	0	_	_	_
-9	all	all	DET	PDT	_	11	det@predet	_	_
-10	***our***	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	mod@poss	_	_
-11	neighbours	neighbour	NOUN	NNS	Number=Plur	0	_	_	_
-12	that	_	_	_	_	0	_	_	_
-13	a	_	_	_	_	0	_	_	_
-14	stable	_	_	_	_	0	_	_	_
-15	Afghanistan	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	a	_	_	_	_	0	_	_	_
-18	peaceful	_	_	_	_	0	_	_	_
-19	Afghanistan	_	_	_	_	0	_	_	_
-20	is	_	_	_	_	0	_	_	_
-21	good	_	_	_	_	0	_	_	_
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Middle	_	_	_	_	0	_	_	_
+2	Office	_	_	_	_	0	_	_	_
+3	have	_	_	_	_	0	_	_	_
+4	instigated	_	_	_	_	0	_	_	_
+5	a	_	_	_	_	0	_	_	_
+6	new	_	_	_	_	0	_	_	_
+7	daily	_	_	_	_	0	_	_	_
+8	working	_	_	_	_	0	_	_	_
+9	capital	_	_	_	_	0	_	_	_
+10	report	_	_	_	_	0	_	_	_
+11	process	_	_	_	_	0	_	_	_
+12	tracking	_	_	_	_	0	_	_	_
+13	cash	_	_	_	_	0	_	_	_
+14	settlement	_	_	_	_	0	_	_	_
+15	/	_	_	_	_	0	_	_	_
+16	funding	_	_	_	_	0	_	_	_
+17	data	_	_	_	_	0	_	_	_
+18	to	_	_	_	_	0	_	_	_
+19	working	_	_	_	_	0	_	_	_
+20	capital	_	_	_	_	0	_	_	_
+21	components	_	_	_	_	0	_	_	_
 22	for	_	_	_	_	0	_	_	_
 23	all	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
+24	***Metals***	Metals	PROPN	NNPS	Number=Plur	25	compound	_	_
+25	businesses	business	NOUN	NNS	Number=Plur	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	What	_	_	_	_	0	_	_	_
-2	's	_	_	_	_	0	_	_	_
-3	a	_	_	_	_	0	_	_	_
-4	few	_	_	_	_	0	_	_	_
-5	dead	_	_	_	_	0	_	_	_
-6	soldiers	_	_	_	_	0	_	_	_
-7	in	_	_	_	_	0	_	_	_
-8	comparison	_	_	_	_	0	_	_	_
+1	***Kids***	kid	NOUN	NNS	Number=Plur	3	compound	_	_
+2	fun	_	_	_	_	0	_	_	_
+3	games	game	NOUN	NNS	Number=Plur	0	_	_	_
+4	and	_	_	_	_	0	_	_	_
+5	video	_	_	_	_	0	_	_	_
+6	shows	_	_	_	_	0	_	_	_
+7	are	_	_	_	_	0	_	_	_
+8	added	_	_	_	_	0	_	_	_
 9	to	_	_	_	_	0	_	_	_
-10	keeping	_	_	_	_	0	_	_	_
-11	all	_	_	_	_	0	_	_	_
-12	those	_	_	_	_	0	_	_	_
-13	defense	_	_	_	_	0	_	_	_
-14	contractors	_	_	_	_	0	_	_	_
-15	awash	_	_	_	_	0	_	_	_
-16	in	_	_	_	_	0	_	_	_
-17	all	all	DET	PDT	_	20	det@predet	_	_
-18	that	that	DET	DT	Number=Sing|PronType=Dem	20	det	_	_
-19	***tax***	tax	NOUN	NN	Number=Sing	20	compound	_	_
-20	cash	cash	NOUN	NN	Number=Sing	0	_	_	_
-21	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Jared	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	Ruth	_	_	_	_	0	_	_	_
-4	and	_	_	_	_	0	_	_	_
-5	I	_	_	_	_	0	_	_	_
-6	are	_	_	_	_	0	_	_	_
-7	going	_	_	_	_	0	_	_	_
-8	to	_	_	_	_	0	_	_	_
-9	go	_	_	_	_	0	_	_	_
-10	over	_	_	_	_	0	_	_	_
-11	all	all	DET	PDT	_	14	det@predet	_	_
-12	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
-13	***Florida***	Florida	PROPN	NNP	Number=Sing	14	compound	_	_
-14	activity	activity	NOUN	NN	Number=Sing	0	_	_	_
-15	tomorrow	_	_	_	_	0	_	_	_
-16	morning	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Jared	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	Ruth	_	_	_	_	0	_	_	_
-4	and	_	_	_	_	0	_	_	_
-5	I	_	_	_	_	0	_	_	_
-6	are	_	_	_	_	0	_	_	_
-7	going	_	_	_	_	0	_	_	_
-8	to	_	_	_	_	0	_	_	_
-9	go	_	_	_	_	0	_	_	_
-10	over	_	_	_	_	0	_	_	_
-11	all	all	DET	PDT	_	14	det@predet	_	_
-12	the	the	DET	DT	Definite=Def|PronType=Art	14	det	_	_
-13	***Florida***	Florida	PROPN	NNP	Number=Sing	14	compound	_	_
-14	activity	activity	NOUN	NN	Number=Sing	0	_	_	_
-15	tomorrow	_	_	_	_	0	_	_	_
-16	morning	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	agree	_	_	_	_	0	_	_	_
-3	also	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	but	_	_	_	_	0	_	_	_
-6	I	_	_	_	_	0	_	_	_
-7	do	_	_	_	_	0	_	_	_
-8	n't	_	_	_	_	0	_	_	_
-9	know	_	_	_	_	0	_	_	_
-10	all	all	DET	PDT	_	12	det@predet	_	_
-11	the	the	DET	DT	Definite=Def|PronType=Art	12	det	_	_
-12	parties	party	NOUN	NNS	Number=Plur	0	_	_	_
-13	or	_	_	_	_	0	_	_	_
-14	***complications***	complication	NOUN	NNS	Number=Plur	12	conj	_	_
-15	involved	involved	ADJ	JJ	Degree=Pos	12	mod	_	SpaceAfter=No
-16	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Exercises	_	_	_	_	0	_	_	_
-2	all	all	DET	PDT	_	4	det@predet	_	_
-3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
-4	glands	gland	NOUN	NNS	Number=Plur	0	_	_	_
-5	and	_	_	_	_	0	_	_	_
-6	***limbs***	limb	NOUN	NNS	Number=Plur	4	conj	_	_
-7	from	from	ADP	IN	_	4	udep	_	_
-8	head	_	_	_	_	0	_	_	_
-9	to	to	ADP	IN	_	4	udep	_	_
-10	toes	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	"	_	_	_	_	0	_	_	_
-2	Commander	_	_	_	_	0	_	_	_
-3	In	_	_	_	_	0	_	_	_
-4	Chief	_	_	_	_	0	_	_	_
-5	"	_	_	_	_	0	_	_	_
-6	does	_	_	_	_	0	_	_	_
-7	n't	_	_	_	_	0	_	_	_
-8	mean	_	_	_	_	0	_	_	_
-9	that	_	_	_	_	0	_	_	_
-10	he	_	_	_	_	0	_	_	_
-11	is	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	boss	_	_	_	_	0	_	_	_
-14	of	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	Military	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	merely	_	_	_	_	0	_	_	_
-19	that	_	_	_	_	0	_	_	_
-20	he	_	_	_	_	0	_	_	_
-21	is	_	_	_	_	0	_	_	_
-22	the	_	_	_	_	0	_	_	_
-23	Administrator	_	_	_	_	0	_	_	_
-24	,	_	_	_	_	0	_	_	_
-25	just	_	_	_	_	0	_	_	_
-26	as	_	_	_	_	0	_	_	_
-27	he	_	_	_	_	0	_	_	_
-28	is	_	_	_	_	0	_	_	_
-29	the	_	_	_	_	0	_	_	_
-30	Administrator	_	_	_	_	0	_	_	_
-31	of	_	_	_	_	0	_	_	_
-32	the	_	_	_	_	0	_	_	_
-33	Executive	_	_	_	_	0	_	_	_
-34	Branch	_	_	_	_	0	_	_	_
-35	,	_	_	_	_	0	_	_	_
-36	charged	_	_	_	_	0	_	_	_
-37	with	_	_	_	_	0	_	_	_
-38	"	_	_	_	_	0	_	_	_
-39	executing	_	_	_	_	0	_	_	_
-40	faithfully	_	_	_	_	0	_	_	_
-41	"	_	_	_	_	0	_	_	_
-42	all	all	DET	PDT	_	44	det@predet	_	_
-43	the	the	DET	DT	Definite=Def|PronType=Art	44	det	_	_
-44	laws	law	NOUN	NNS	Number=Plur	0	_	_	_
-45	passed	pass	VERB	VBN	Tense=Past|VerbForm=Part	44	mod	_	_
-46	by	_	_	_	_	0	_	_	_
-47	Congress	_	_	_	_	0	_	_	_
-48	and	_	_	_	_	0	_	_	_
-49	all	_	_	_	_	0	_	_	_
-50	the	_	_	_	_	0	_	_	_
-51	***Decisions***	decision	NOUN	NNS	Number=Plur	44	conj	_	_
-52	rendered	_	_	_	_	0	_	_	_
-53	by	_	_	_	_	0	_	_	_
-54	the	_	_	_	_	0	_	_	_
-55	Supreme	_	_	_	_	0	_	_	_
-56	Court	_	_	_	_	0	_	_	_
-57	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Paul	_	_	_	_	0	_	_	_
-2	has	_	_	_	_	0	_	_	_
-3	such	such	DET	PDT	_	7	det@predet	_	_
-4	a	a	DET	DT	Definite=Ind|PronType=Art	7	det	_	_
-5	big	big	ADJ	JJ	Degree=Pos	7	mod	_	_
-6	***inferiority***	inferiority	NOUN	NN	Number=Sing	7	compound	_	_
-7	complex	complex	NOUN	NN	Number=Sing	0	_	_	_
-8	as	as	ADP	IN	_	7	udep	_	_
-9	a	_	_	_	_	0	_	_	_
-10	man	_	_	_	_	0	_	_	_
-11	,	,	PUNCT	,	_	7	punct	_	_
-12	due	due	ADP	IN	_	7	udep	_	_
-13	to	_	_	_	_	0	_	_	_
-14	his	_	_	_	_	0	_	_	_
-15	effeminate	_	_	_	_	0	_	_	_
-16	face	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	body	_	_	_	_	0	_	_	_
-19	and	_	_	_	_	0	_	_	_
-20	personality	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	due	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	his	_	_	_	_	0	_	_	_
-25	repressed	_	_	_	_	0	_	_	_
-26	homosexuality	_	_	_	_	0	_	_	_
-27	,	,	PUNCT	,	_	7	punct	_	_
-28	that	_	_	_	_	0	_	_	_
-29	he	_	_	_	_	0	_	_	_
-30	found	_	_	_	_	0	_	_	_
-31	himself	_	_	_	_	0	_	_	_
-32	a	_	_	_	_	0	_	_	_
-33	handicapped	_	_	_	_	0	_	_	_
-34	woman	_	_	_	_	0	_	_	_
-35	with	_	_	_	_	0	_	_	_
-36	only	_	_	_	_	0	_	_	_
-37	one	_	_	_	_	0	_	_	_
-38	leg	_	_	_	_	0	_	_	_
-39	,	_	_	_	_	0	_	_	_
-40	so	_	_	_	_	0	_	_	_
-41	that	_	_	_	_	0	_	_	_
-42	he	_	_	_	_	0	_	_	_
-43	could	_	_	_	_	0	_	_	_
-44	stand	_	_	_	_	0	_	_	_
-45	out	_	_	_	_	0	_	_	_
-46	,	_	_	_	_	0	_	_	_
-47	being	_	_	_	_	0	_	_	_
-48	very	_	_	_	_	0	_	_	_
-49	conscious	_	_	_	_	0	_	_	_
-50	that	_	_	_	_	0	_	_	_
-51	a	_	_	_	_	0	_	_	_
-52	full	_	_	_	_	0	_	_	_
-53	woman	_	_	_	_	0	_	_	_
-54	would	_	_	_	_	0	_	_	_
-55	make	_	_	_	_	0	_	_	_
-56	him	_	_	_	_	0	_	_	_
-57	feel	_	_	_	_	0	_	_	_
-58	the	_	_	_	_	0	_	_	_
-59	superiority	_	_	_	_	0	_	_	_
-60	of	_	_	_	_	0	_	_	_
-61	virile	_	_	_	_	0	_	_	_
-62	men	_	_	_	_	0	_	_	_
-63	again	_	_	_	_	0	_	_	_
-64	,	_	_	_	_	0	_	_	_
-65	as	_	_	_	_	0	_	_	_
-66	Jane	_	_	_	_	0	_	_	_
-67	and	_	_	_	_	0	_	_	_
-68	Linda	_	_	_	_	0	_	_	_
-69	did	_	_	_	_	0	_	_	_
-70	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	When	_	_	_	_	0	_	_	_
-2	you	_	_	_	_	0	_	_	_
-3	get	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	tank	_	_	_	_	0	_	_	_
-6	make	_	_	_	_	0	_	_	_
-7	sure	_	_	_	_	0	_	_	_
-8	you	_	_	_	_	0	_	_	_
-9	wash	_	_	_	_	0	_	_	_
 10	the	_	_	_	_	0	_	_	_
-11	inside	_	_	_	_	0	_	_	_
-12	(	_	_	_	_	0	_	_	_
-13	with	_	_	_	_	0	_	_	_
-14	plain	_	_	_	_	0	_	_	_
-15	water	_	_	_	_	0	_	_	_
-16	)	_	_	_	_	0	_	_	_
-17	then	_	_	_	_	0	_	_	_
-18	you	_	_	_	_	0	_	_	_
-19	wash	_	_	_	_	0	_	_	_
-20	the	_	_	_	_	0	_	_	_
-21	gravel	_	_	_	_	0	_	_	_
-22	(	_	_	_	_	0	_	_	_
-23	with	_	_	_	_	0	_	_	_
-24	only	_	_	_	_	0	_	_	_
-25	water	_	_	_	_	0	_	_	_
-26	too	_	_	_	_	0	_	_	_
-27	)	_	_	_	_	0	_	_	_
-28	take	_	_	_	_	0	_	_	_
-29	out	_	_	_	_	0	_	_	_
-30	all	all	DET	PDT	_	32	det@predet	_	_
-31	the	the	DET	DT	Definite=Def|PronType=Art	32	det	_	_
-32	stuff	stuff	NOUN	NN	Number=Sing	0	_	_	_
-33	that	_	_	_	_	0	_	_	_
-34	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	mod@relcl	_	_
-35	floating	_	_	_	_	0	_	_	_
-36	on	_	_	_	_	0	_	_	_
-37	top	_	_	_	_	0	_	_	_
-38	.	_	_	_	_	0	_	_	_
+11	other	_	_	_	_	0	_	_	_
+12	facilities	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	As	_	_	_	_	0	_	_	_
+2	I	_	_	_	_	0	_	_	_
+3	have	_	_	_	_	0	_	_	_
+4	gone	_	_	_	_	0	_	_	_
+5	through	_	_	_	_	0	_	_	_
+6	many	_	_	_	_	0	_	_	_
+7	***reviews***	review	NOUN	NNS	Number=Plur	8	compound	_	_
+8	sites	site	NOUN	NNS	Number=Plur	0	_	_	_
+9	to	_	_	_	_	0	_	_	_
+10	see	_	_	_	_	0	_	_	_
+11	if	_	_	_	_	0	_	_	_
+12	any	_	_	_	_	0	_	_	_
+13	provider	_	_	_	_	0	_	_	_
+14	is	_	_	_	_	0	_	_	_
+15	providing	_	_	_	_	0	_	_	_
+16	better	_	_	_	_	0	_	_	_
+17	services	_	_	_	_	0	_	_	_
+18	or	_	_	_	_	0	_	_	_
+19	not	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	and	_	_	_	_	0	_	_	_
+22	I	_	_	_	_	0	_	_	_
+23	have	_	_	_	_	0	_	_	_
+24	realized	_	_	_	_	0	_	_	_
+25	that	_	_	_	_	0	_	_	_
+26	there	_	_	_	_	0	_	_	_
+27	were	_	_	_	_	0	_	_	_
+28	many	_	_	_	_	0	_	_	_
+29	good	_	_	_	_	0	_	_	_
+30	reviews	_	_	_	_	0	_	_	_
+31	about	_	_	_	_	0	_	_	_
+32	Liquidweb	_	_	_	_	0	_	_	_
+33	also	_	_	_	_	0	_	_	_
+34	Steven	_	_	_	_	0	_	_	_
+35	never	_	_	_	_	0	_	_	_
+36	faced	_	_	_	_	0	_	_	_
+37	any	_	_	_	_	0	_	_	_
+38	server	_	_	_	_	0	_	_	_
+39	issues	_	_	_	_	0	_	_	_
+40	in	_	_	_	_	0	_	_	_
+41	his	_	_	_	_	0	_	_	_
+42	whole	_	_	_	_	0	_	_	_
+43	hosting	_	_	_	_	0	_	_	_
+44	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

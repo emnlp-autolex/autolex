@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,334 +137,276 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_gum </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	Jespersen	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">the head of the dependent has semantic class= creative work <br>
+the head agrees with its head on= Number <br>
+dependent is the= compound <br>
+</td><td style="text-align:center">dependent is the= object <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:the head of the dependent has semantic class= creative work;the head agrees with its head on= Number;dependent is the= compound; Not Active:dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	While	_	_	_	_	0	_	_	_
 2	in	_	_	_	_	0	_	_	_
-3	this	_	_	_	_	0	_	_	_
-4	theory	_	_	_	_	0	_	_	_
-5	of	_	_	_	_	0	_	_	_
-6	ranks	_	_	_	_	0	_	_	_
-7	removes	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	parts	_	_	_	_	0	_	_	_
-10	of	_	_	_	_	0	_	_	_
-11	speech	_	_	_	_	0	_	_	_
-12	from	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	syntax	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	and	_	_	_	_	0	_	_	_
-17	differentiates	_	_	_	_	0	_	_	_
-18	between	_	_	_	_	0	_	_	_
-19	primaries	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	secondaries	_	_	_	_	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	United	_	_	_	_	0	_	_	_
+5	States	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	Dvořák	_	_	_	_	0	_	_	_
+8	wrote	_	_	_	_	0	_	_	_
+9	his	_	_	_	_	0	_	_	_
+10	two	_	_	_	_	0	_	_	_
+11	most	_	_	_	_	0	_	_	_
+12	successful	_	_	_	_	0	_	_	_
+13	orchestral	_	_	_	_	0	_	_	_
+14	works	_	_	_	_	0	_	_	_
+15	:	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	Symphony	Symphony	PROPN	NNP	Number=Sing	0	_	_	_
+18	From	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	New	_	_	_	_	0	_	_	_
+21	World	_	_	_	_	0	_	_	_
 22	,	_	_	_	_	0	_	_	_
-23	and	_	_	_	_	0	_	_	_
-24	tertiaries	_	_	_	_	0	_	_	_
-25	;	_	_	_	_	0	_	_	_
-26	e.g.	_	_	_	_	0	_	_	_
-27	in	_	_	_	_	0	_	_	_
-28	"	_	_	_	_	0	_	_	_
-29	well	_	_	_	_	0	_	_	_
-30	honed	_	_	_	_	0	_	_	_
-31	phrase	_	_	_	_	0	_	_	_
-32	,	_	_	_	_	0	_	_	_
-33	"	_	_	_	_	0	_	_	_
-34	"	_	_	_	_	0	_	_	_
-35	phrase	_	_	_	_	0	_	_	_
-36	"	_	_	_	_	0	_	_	_
-37	is	_	_	_	_	0	_	_	_
-38	a	_	_	_	_	0	_	_	_
-39	primary	_	_	_	_	0	_	_	_
-40	,	_	_	_	_	0	_	_	_
-41	this	_	_	_	_	0	_	_	_
-42	being	_	_	_	_	0	_	_	_
-43	defined	_	_	_	_	0	_	_	_
-44	by	_	_	_	_	0	_	_	_
-45	a	a	DET	DT	Definite=Ind|PronType=Art	46	det	_	_
-46	secondary	secondary	NOUN	NN	Number=Sing	0	_	_	_
-47	,	_	_	_	_	0	_	_	_
-48	"	_	_	_	_	0	_	_	_
-49	honed	hone	VERB	VBN	Tense=Past|VerbForm=Part	46	appos	_	SpaceAfter=No
-50	"	_	_	_	_	0	_	_	_
-51	,	_	_	_	_	0	_	_	_
-52	which	_	_	_	_	0	_	_	_
-53	again	_	_	_	_	0	_	_	_
-54	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	mod@relcl	_	_
-55	defined	_	_	_	_	0	_	_	_
-56	by	_	_	_	_	0	_	_	_
-57	a	_	_	_	_	0	_	_	_
-58	tertiary	_	_	_	_	0	_	_	_
-59	"	_	_	_	_	0	_	_	_
-60	well	_	_	_	_	0	_	_	_
-61	"	_	_	_	_	0	_	_	_
-62	.	_	_	_	_	0	_	_	_
+23	which	_	_	_	_	0	_	_	_
+24	spread	_	_	_	_	0	_	_	_
+25	his	_	_	_	_	0	_	_	_
+26	reputation	_	_	_	_	0	_	_	_
+27	worldwide	_	_	_	_	0	_	_	_
+28	,	_	_	_	_	0	_	_	_
+29	[	_	_	_	_	0	_	_	_
+30	4	_	_	_	_	0	_	_	_
+31	]	_	_	_	_	0	_	_	_
+32	and	_	_	_	_	0	_	_	_
+33	his	_	_	_	_	0	_	_	_
+34	***Cello***	Cello	PROPN	NNP	Number=Sing	35	compound	_	_
+35	Concerto	Concerto	PROPN	NNP	Number=Sing	17	conj	_	SpaceAfter=No
+36	,	_	_	_	_	0	_	_	_
+37	one	_	_	_	_	0	_	_	_
+38	of	_	_	_	_	0	_	_	_
+39	the	_	_	_	_	0	_	_	_
+40	most	_	_	_	_	0	_	_	_
+41	highly	_	_	_	_	0	_	_	_
+42	regarded	_	_	_	_	0	_	_	_
+43	of	_	_	_	_	0	_	_	_
+44	all	_	_	_	_	0	_	_	_
+45	cello	_	_	_	_	0	_	_	_
+46	concerti	_	_	_	_	0	_	_	_
+47	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	term	_	_	_	_	0	_	_	_
-3	is	_	_	_	_	0	_	_	_
-4	qualified	_	_	_	_	0	_	_	_
-5	by	_	_	_	_	0	_	_	_
-6	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
-7	further	further	ADJ	JJR	Degree=Cmp	8	mod	_	_
-8	concept	concept	NOUN	NN	Number=Sing	0	_	_	_
-9	called	call	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	8	mod@relcl	_	_
-10	a	_	_	_	_	0	_	_	_
-11	junction	_	_	_	_	0	_	_	_
-12	which	_	_	_	_	0	_	_	_
-13	***represents***	represent	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	mod@relcl	_	_
-14	one	_	_	_	_	0	_	_	_
-15	idea	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	expressed	_	_	_	_	0	_	_	_
-18	by	_	_	_	_	0	_	_	_
-19	means	_	_	_	_	0	_	_	_
-20	of	_	_	_	_	0	_	_	_
-21	two	_	_	_	_	0	_	_	_
-22	or	_	_	_	_	0	_	_	_
-23	more	_	_	_	_	0	_	_	_
-24	elements	_	_	_	_	0	_	_	_
-25	,	_	_	_	_	0	_	_	_
-26	whereas	_	_	_	_	0	_	_	_
-27	a	_	_	_	_	0	_	_	_
-28	nexus	_	_	_	_	0	_	_	_
-29	combines	_	_	_	_	0	_	_	_
-30	two	_	_	_	_	0	_	_	_
-31	ideas	_	_	_	_	0	_	_	_
+1	Jespersen	_	_	_	_	0	_	_	_
+2	received	_	_	_	_	0	_	_	_
+3	honorary	_	_	_	_	0	_	_	_
+4	degrees	_	_	_	_	0	_	_	_
+5	from	_	_	_	_	0	_	_	_
+6	Columbia	_	_	_	_	0	_	_	_
+7	University	_	_	_	_	0	_	_	_
+8	in	_	_	_	_	0	_	_	_
+9	New	_	_	_	_	0	_	_	_
+10	York	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	1910	_	_	_	_	0	_	_	_
+13	)	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	***St.***	St.	PROPN	NNP	Number=Sing	16	compound	_	_
+16	Andrews	Andrews	PROPN	NNP	Number=Sing	17	compound	_	_
+17	University	University	PROPN	NNP	Number=Sing	0	_	_	_
+18	in	_	_	_	_	0	_	_	_
+19	Scotland	_	_	_	_	0	_	_	_
+20	(	_	_	_	_	0	_	_	_
+21	1925	_	_	_	_	0	_	_	_
+22	)	_	_	_	_	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	and	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	Sorbonne	_	_	_	_	0	_	_	_
+27	in	_	_	_	_	0	_	_	_
+28	Paris	_	_	_	_	0	_	_	_
+29	(	_	_	_	_	0	_	_	_
+30	1927	_	_	_	_	0	_	_	_
+31	)	_	_	_	_	0	_	_	_
 32	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	“	_	_	_	_	0	_	_	_
-2	Is	_	_	_	_	0	_	_	_
-3	there	_	_	_	_	0	_	_	_
-4	really	_	_	_	_	0	_	_	_
-5	much	_	_	_	_	0	_	_	_
-6	more	_	_	_	_	0	_	_	_
-7	logic	_	_	_	_	0	_	_	_
+1	Jespersen	_	_	_	_	0	_	_	_
+2	received	_	_	_	_	0	_	_	_
+3	honorary	_	_	_	_	0	_	_	_
+4	degrees	_	_	_	_	0	_	_	_
+5	from	_	_	_	_	0	_	_	_
+6	Columbia	_	_	_	_	0	_	_	_
+7	University	University	PROPN	NNP	Number=Sing	0	_	_	_
 8	in	_	_	_	_	0	_	_	_
-9	the	the	DET	DT	Definite=Def|PronType=Art	11	det	_	_
-10	opposite	opposite	ADJ	JJ	Degree=Pos	11	mod	_	_
-11	extreme	extreme	NOUN	NN	Number=Sing	0	_	_	_
-12	which	_	_	_	_	0	_	_	_
-13	***denies***	deny	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	mod@relcl	_	_
-14	any	_	_	_	_	0	_	_	_
-15	kind	_	_	_	_	0	_	_	_
-16	of	_	_	_	_	0	_	_	_
-17	sound	_	_	_	_	0	_	_	_
-18	symbolism	_	_	_	_	0	_	_	_
-19	(	_	_	_	_	0	_	_	_
-20	apart	_	_	_	_	0	_	_	_
-21	from	_	_	_	_	0	_	_	_
-22	the	_	_	_	_	0	_	_	_
-23	small	_	_	_	_	0	_	_	_
-24	class	_	_	_	_	0	_	_	_
-25	of	_	_	_	_	0	_	_	_
-26	evident	_	_	_	_	0	_	_	_
-27	echoisms	_	_	_	_	0	_	_	_
-28	and	_	_	_	_	0	_	_	_
-29	‘	_	_	_	_	0	_	_	_
-30	onomatopoeia	_	_	_	_	0	_	_	_
-31	’	_	_	_	_	0	_	_	_
-32	)	_	_	_	_	0	_	_	_
-33	and	_	_	_	_	0	_	_	_
-34	sees	_	_	_	_	0	_	_	_
-35	in	_	_	_	_	0	_	_	_
-36	our	_	_	_	_	0	_	_	_
-37	words	_	_	_	_	0	_	_	_
-38	only	_	_	_	_	0	_	_	_
-39	a	_	_	_	_	0	_	_	_
-40	collection	_	_	_	_	0	_	_	_
-41	of	_	_	_	_	0	_	_	_
-42	accidental	_	_	_	_	0	_	_	_
-43	and	_	_	_	_	0	_	_	_
-44	irrational	_	_	_	_	0	_	_	_
-45	associations	_	_	_	_	0	_	_	_
-46	of	_	_	_	_	0	_	_	_
-47	sound	_	_	_	_	0	_	_	_
-48	and	_	_	_	_	0	_	_	_
-49	meaning	_	_	_	_	0	_	_	_
-50	?	_	_	_	_	0	_	_	_
-51	...	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	What	_	_	_	_	0	_	_	_
-2	are	_	_	_	_	0	_	_	_
-3	your	_	_	_	_	0	_	_	_
-4	thoughts	_	_	_	_	0	_	_	_
-5	on	_	_	_	_	0	_	_	_
-6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
-7	job	job	NOUN	NN	Number=Sing	0	_	_	_
-8	Barack	_	_	_	_	0	_	_	_
-9	Obama	_	_	_	_	0	_	_	_
-10	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	mod@relcl	_	_
-11	done	_	_	_	_	0	_	_	_
-12	as	_	_	_	_	0	_	_	_
-13	president	_	_	_	_	0	_	_	_
-14	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	What	_	_	_	_	0	_	_	_
-2	are	_	_	_	_	0	_	_	_
-3	your	_	_	_	_	0	_	_	_
-4	thoughts	_	_	_	_	0	_	_	_
-5	on	_	_	_	_	0	_	_	_
-6	the	the	DET	DT	Definite=Def|PronType=Art	7	det	_	_
-7	job	job	NOUN	NN	Number=Sing	0	_	_	_
-8	Bob	_	_	_	_	0	_	_	_
-9	McDonnell	_	_	_	_	0	_	_	_
-10	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	mod@relcl	_	_
-11	done	_	_	_	_	0	_	_	_
-12	as	_	_	_	_	0	_	_	_
-13	Governor	_	_	_	_	0	_	_	_
-14	of	_	_	_	_	0	_	_	_
-15	Virginia	_	_	_	_	0	_	_	_
-16	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	President	_	_	_	_	0	_	_	_
-2	Obama	_	_	_	_	0	_	_	_
-3	has	_	_	_	_	0	_	_	_
-4	an	a	DET	DT	Definite=Ind|PronType=Art	5	det	_	_
-5	agenda	agenda	NOUN	NN	Number=Sing	0	_	_	_
-6	that	_	_	_	_	0	_	_	_
-7	***represents***	represent	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	mod@relcl	_	_
-8	the	_	_	_	_	0	_	_	_
-9	far	_	_	_	_	0	_	_	_
-10	left	_	_	_	_	0	_	_	_
-11	wing	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	his	_	_	_	_	0	_	_	_
-14	party	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Implementing	_	_	_	_	0	_	_	_
-2	a	a	DET	DT	Definite=Ind|PronType=Art	4	det	_	_
-3	Tax	tax	NOUN	NN	Number=Sing	4	compound	_	_
-4	System	system	NOUN	NN	Number=Sing	0	_	_	_
-5	that	_	_	_	_	0	_	_	_
-6	***allows***	allow	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	mod@relcl	_	_
-7	working	_	_	_	_	0	_	_	_
-8	Americans	_	_	_	_	0	_	_	_
-9	making	_	_	_	_	0	_	_	_
-10	under	_	_	_	_	0	_	_	_
-11	$	_	_	_	_	0	_	_	_
-12	250,000	_	_	_	_	0	_	_	_
-13	to	_	_	_	_	0	_	_	_
-14	keep	_	_	_	_	0	_	_	_
-15	all	_	_	_	_	0	_	_	_
-16	of	_	_	_	_	0	_	_	_
-17	their	_	_	_	_	0	_	_	_
-18	money	_	_	_	_	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Closing	_	_	_	_	0	_	_	_
-2	Loopholes	_	_	_	_	0	_	_	_
-3	and	_	_	_	_	0	_	_	_
-4	putting	_	_	_	_	0	_	_	_
-5	in	_	_	_	_	0	_	_	_
-6	place	_	_	_	_	0	_	_	_
-7	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
-8	system	system	NOUN	NN	Number=Sing	0	_	_	_
-9	that	_	_	_	_	0	_	_	_
-10	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	mod@relcl	_	_
-11	transparent	_	_	_	_	0	_	_	_
-12	and	_	_	_	_	0	_	_	_
-13	works	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	With	_	_	_	_	0	_	_	_
-2	Wikinews	_	_	_	_	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	Sarvis	_	_	_	_	0	_	_	_
-5	discusses	_	_	_	_	0	_	_	_
-6	his	_	_	_	_	0	_	_	_
-7	background	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	views	_	_	_	_	0	_	_	_
-10	on	_	_	_	_	0	_	_	_
-11	McDonnell	_	_	_	_	0	_	_	_
-12	's	_	_	_	_	0	_	_	_
-13	tenure	_	_	_	_	0	_	_	_
+9	New	_	_	_	_	0	_	_	_
+10	York	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	1910	_	_	_	_	0	_	_	_
+13	)	_	_	_	_	0	_	_	_
 14	,	_	_	_	_	0	_	_	_
-15	keys	_	_	_	_	0	_	_	_
+15	St.	_	_	_	_	0	_	_	_
+16	***Andrews***	Andrews	PROPN	NNP	Number=Sing	17	compound	_	_
+17	University	University	PROPN	NNP	Number=Sing	7	conj	_	_
+18	in	_	_	_	_	0	_	_	_
+19	Scotland	_	_	_	_	0	_	_	_
+20	(	_	_	_	_	0	_	_	_
+21	1925	_	_	_	_	0	_	_	_
+22	)	_	_	_	_	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	and	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	Sorbonne	_	_	_	_	0	_	_	_
+27	in	_	_	_	_	0	_	_	_
+28	Paris	_	_	_	_	0	_	_	_
+29	(	_	_	_	_	0	_	_	_
+30	1927	_	_	_	_	0	_	_	_
+31	)	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Ubisoft	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	Microsoft	Microsoft	PROPN	NNP	Number=Sing	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	***PlayStation***	PlayStation	PROPN	NNP	Number=Sing	7	compound	_	_
+7	VR	VR	PROPN	NNP	Number=Sing	3	conj	_	_
+8	all	_	_	_	_	0	_	_	_
+9	had	_	_	_	_	0	_	_	_
+10	large	_	_	_	_	0	_	_	_
+11	areas	_	_	_	_	0	_	_	_
+12	set	_	_	_	_	0	_	_	_
+13	up	_	_	_	_	0	_	_	_
+14	for	_	_	_	_	0	_	_	_
+15	attendees	_	_	_	_	0	_	_	_
 16	to	_	_	_	_	0	_	_	_
-17	campaign	_	_	_	_	0	_	_	_
-18	success	_	_	_	_	0	_	_	_
-19	,	_	_	_	_	0	_	_	_
-20	plan	_	_	_	_	0	_	_	_
-21	to	_	_	_	_	0	_	_	_
-22	implement	_	_	_	_	0	_	_	_
-23	his	_	_	_	_	0	_	_	_
-24	agenda	_	_	_	_	0	_	_	_
-25	,	,	PUNCT	,	_	30	punct	_	_
-26	and	and	CCONJ	CC	_	30	cc	_	_
-27	the	the	DET	DT	Definite=Def|PronType=Art	30	det	_	_
-28	former	former	ADJ	JJ	Degree=Pos	30	mod	_	_
-29	Virginia	Virginia	PROPN	NNP	Number=Sing	30	compound	_	_
-30	governor	governor	NOUN	NN	Number=Sing	0	_	_	_
-31	he	_	_	_	_	0	_	_	_
-32	most	_	_	_	_	0	_	_	_
-33	***admires***	admire	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	mod@relcl	_	SpaceAfter=No
+17	try	_	_	_	_	0	_	_	_
+18	their	_	_	_	_	0	_	_	_
+19	latest	_	_	_	_	0	_	_	_
+20	games	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	20-minute	_	_	_	_	0	_	_	_
+4	PlayStation	_	_	_	_	0	_	_	_
+5	VR	_	_	_	_	0	_	_	_
+6	demonstration	demonstration	NOUN	NN	Number=Sing	0	_	_	_
+7	of	_	_	_	_	0	_	_	_
+8	Batman	_	_	_	_	0	_	_	_
+9	:	_	_	_	_	0	_	_	_
+10	***Arkham***	Arkham	PROPN	NNP	Number=Sing	11	compound	_	_
+11	VR	VR	PROPN	NNP	Number=Sing	6	unk	_	SpaceAfter=No
+12	,	_	_	_	_	0	_	_	_
+13	players	_	_	_	_	0	_	_	_
+14	are	_	_	_	_	0	_	_	_
+15	dropped	_	_	_	_	0	_	_	_
+16	down	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	secret	_	_	_	_	0	_	_	_
+19	elevator	_	_	_	_	0	_	_	_
+20	in	_	_	_	_	0	_	_	_
+21	Bruce	_	_	_	_	0	_	_	_
+22	Wayne	_	_	_	_	0	_	_	_
+23	's	_	_	_	_	0	_	_	_
+24	manor	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	to	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	Bat	_	_	_	_	0	_	_	_
+29	Cave	_	_	_	_	0	_	_	_
+30	,	_	_	_	_	0	_	_	_
+31	to	_	_	_	_	0	_	_	_
+32	suit	_	_	_	_	0	_	_	_
+33	up	_	_	_	_	0	_	_	_
 34	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	am	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	only	_	_	_	_	0	_	_	_
-5	candidate	_	_	_	_	0	_	_	_
-6	born	_	_	_	_	0	_	_	_
+1	The	_	_	_	_	0	_	_	_
+2	finals	_	_	_	_	0	_	_	_
+3	saw	_	_	_	_	0	_	_	_
+4	US	_	_	_	_	0	_	_	_
+5	team	_	_	_	_	0	_	_	_
+6	Cloud9	_	_	_	_	0	_	_	_
 7	and	_	_	_	_	0	_	_	_
-8	raised	_	_	_	_	0	_	_	_
-9	in	_	_	_	_	0	_	_	_
-10	Virginia	_	_	_	_	0	_	_	_
-11	,	,	PUNCT	,	_	16	punct	_	_
-12	but	but	CCONJ	CC	_	16	cc	_	_
-13	also	also	ADV	RB	_	16	mod	_	_
-14	the	the	DET	DT	Definite=Def|PronType=Art	16	det	_	_
-15	only	only	ADJ	JJ	Degree=Pos	16	mod	_	_
-16	candidate	candidate	NOUN	NN	Number=Sing	0	_	_	_
-17	who	_	_	_	_	0	_	_	_
-18	***embodies***	embody	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	mod@relcl	_	_
-19	both	_	_	_	_	0	_	_	_
-20	physically	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	philosophically	_	_	_	_	0	_	_	_
-23	the	_	_	_	_	0	_	_	_
-24	growing	_	_	_	_	0	_	_	_
-25	diversity	_	_	_	_	0	_	_	_
-26	of	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	commonwealth	_	_	_	_	0	_	_	_
-29	.	_	_	_	_	0	_	_	_
+8	Immortals	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	from	_	_	_	_	0	_	_	_
+11	Brazil	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	face	_	_	_	_	0	_	_	_
+14	off	_	_	_	_	0	_	_	_
+15	in	_	_	_	_	0	_	_	_
+16	Counter-Strike	Counter-Strike	PROPN	NNP	Number=Sing	0	_	_	_
+17	:	_	_	_	_	0	_	_	_
+18	***Global***	global	PROPN	NNP	Number=Sing	19	compound	_	_
+19	Offensive	offensive	PROPN	NNP	Number=Sing	16	unk	_	SpaceAfter=No
+20	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4><h5> No examples found </h5></ul><br><br><br>
+<pre><code class="language-conllu">
+1	Volunteer	_	_	_	_	0	_	_	_
+2	***organization***	organization	NOUN	NN	Number=Sing	4	compound	_	_
+3	Comic	comic	PROPN	NNP	Number=Sing	0	_	_	_
+4	Corps	Corps	PROPN	NNP	Number=Sing	3	flat	_	_
+5	of	_	_	_	_	0	_	_	_
+6	Canada	_	_	_	_	0	_	_	_
+7	collects	_	_	_	_	0	_	_	_
+8	donations	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	comics	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	distribute	_	_	_	_	0	_	_	_
+14	to	_	_	_	_	0	_	_	_
+15	children	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	youth	_	_	_	_	0	_	_	_
+18	in	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	hospital	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Other	_	_	_	_	0	_	_	_
+2	charitable	_	_	_	_	0	_	_	_
+3	fan-based	_	_	_	_	0	_	_	_
+4	groups	_	_	_	_	0	_	_	_
+5	included	_	_	_	_	0	_	_	_
+6	The	_	_	_	_	0	_	_	_
+7	Ontario	_	_	_	_	0	_	_	_
+8	Ghostbusters	Ghostbusters	PROPN	NNP	Number=Sing	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	***Doctor***	Doctor	PROPN	NNP	Number=Sing	12	compound	_	_
+11	Who	_	_	_	_	0	_	_	_
+12	Society	Society	PROPN	NNP	Number=Sing	8	conj	_	_
+13	of	_	_	_	_	0	_	_	_
+14	Canada	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	Klingon	_	_	_	_	0	_	_	_
+18	Assault	_	_	_	_	0	_	_	_
+19	Group	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
+</ul><br><br><br>
 
 
 <!-- support for embedded visualizations -->

@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,337 +137,560 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_gum </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	Eegimaa	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	a	_	_	_	_	0	_	_	_
-4	***Jóola***	Jóola	PROPN	NNP	Number=Sing	5	compound	_	_
-5	language	language	NOUN	NN	Number=Sing	2	comp:pred	_	_
-6	spoken	_	_	_	_	0	_	_	_
-7	in	_	_	_	_	0	_	_	_
-8	the	_	_	_	_	0	_	_	_
-9	Basse	_	_	_	_	0	_	_	_
-10	Casamance	_	_	_	_	0	_	_	_
-11	area	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	Southern	_	_	_	_	0	_	_	_
-14	Senegal	_	_	_	_	0	_	_	_
-15	by	_	_	_	_	0	_	_	_
-16	a	_	_	_	_	0	_	_	_
-17	population	_	_	_	_	0	_	_	_
-18	estimated	_	_	_	_	0	_	_	_
-19	to	_	_	_	_	0	_	_	_
-20	be	_	_	_	_	0	_	_	_
-21	between	_	_	_	_	0	_	_	_
-22	7,000	_	_	_	_	0	_	_	_
-23	(	_	_	_	_	0	_	_	_
-24	Bassène	_	_	_	_	0	_	_	_
-25	,	_	_	_	_	0	_	_	_
-26	2007	_	_	_	_	0	_	_	_
-27	)	_	_	_	_	0	_	_	_
-28	and	_	_	_	_	0	_	_	_
-29	11,200	_	_	_	_	0	_	_	_
-30	speakers	_	_	_	_	0	_	_	_
-31	(	_	_	_	_	0	_	_	_
-32	Lewis	_	_	_	_	0	_	_	_
-33	,	_	_	_	_	0	_	_	_
-34	Simons	_	_	_	_	0	_	_	_
-35	,	_	_	_	_	0	_	_	_
-36	&	_	_	_	_	0	_	_	_
-37	Fennig	_	_	_	_	0	_	_	_
-38	,	_	_	_	_	0	_	_	_
-39	2014	_	_	_	_	0	_	_	_
-40	)	_	_	_	_	0	_	_	_
-41	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	For	_	_	_	_	0	_	_	_
-2	example	_	_	_	_	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	name	_	_	_	_	0	_	_	_
-6	Kusiilay	_	_	_	_	0	_	_	_
-7	1	_	_	_	_	0	_	_	_
-8	‘	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	language	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	Essil	_	_	_	_	0	_	_	_
-13	’	_	_	_	_	0	_	_	_
-14	,	_	_	_	_	0	_	_	_
-15	is	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	name	_	_	_	_	0	_	_	_
-18	given	_	_	_	_	0	_	_	_
-19	by	_	_	_	_	0	_	_	_
-20	speakers	_	_	_	_	0	_	_	_
-21	of	_	_	_	_	0	_	_	_
-22	Kujireray	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	the	_	_	_	_	0	_	_	_
-25	Eegimaa	_	_	_	_	0	_	_	_
-26	language	_	_	_	_	0	_	_	_
-27	,	_	_	_	_	0	_	_	_
-28	because	_	_	_	_	0	_	_	_
-29	Essil	_	_	_	_	0	_	_	_
-30	,	_	_	_	_	0	_	_	_
-31	of	_	_	_	_	0	_	_	_
-32	which	_	_	_	_	0	_	_	_
-33	Bajjat	_	_	_	_	0	_	_	_
-34	was	_	_	_	_	0	_	_	_
-35	a	_	_	_	_	0	_	_	_
-36	district	_	_	_	_	0	_	_	_
-37	,	_	_	_	_	0	_	_	_
-38	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-39	the	_	_	_	_	0	_	_	_
-40	village	village	NOUN	NN	Number=Sing	38	comp:pred	_	_
-41	which	_	_	_	_	0	_	_	_
-42	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	mod@relcl	_	_
-43	a	_	_	_	_	0	_	_	_
-44	border	_	_	_	_	0	_	_	_
-45	with	_	_	_	_	0	_	_	_
-46	their	_	_	_	_	0	_	_	_
-47	village	_	_	_	_	0	_	_	_
-48	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Eegimaa	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	an	_	_	_	_	0	_	_	_
-4	endangered	_	_	_	_	0	_	_	_
-5	language	language	NOUN	NN	Number=Sing	2	comp:pred	_	_
-6	whose	_	_	_	_	0	_	_	_
-7	transmission	_	_	_	_	0	_	_	_
-8	to	_	_	_	_	0	_	_	_
-9	new	_	_	_	_	0	_	_	_
-10	generations	_	_	_	_	0	_	_	_
-11	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	mod@relcl	_	_
-12	been	_	_	_	_	0	_	_	_
-13	declining	_	_	_	_	0	_	_	_
-14	significantly	_	_	_	_	0	_	_	_
-15	in	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	last	_	_	_	_	0	_	_	_
-18	decades	_	_	_	_	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Dvořák	_	_	_	_	0	_	_	_
-2	displayed	_	_	_	_	0	_	_	_
-3	his	_	_	_	_	0	_	_	_
-4	musical	_	_	_	_	0	_	_	_
-5	gifts	_	_	_	_	0	_	_	_
-6	at	_	_	_	_	0	_	_	_
-7	an	_	_	_	_	0	_	_	_
-8	early	_	_	_	_	0	_	_	_
-9	age	_	_	_	_	0	_	_	_
-10	,	_	_	_	_	0	_	_	_
-11	being	be	AUX	VBG	VerbForm=Ger	0	_	_	_
-12	an	_	_	_	_	0	_	_	_
-13	apt	_	_	_	_	0	_	_	_
-14	***violin***	violin	NOUN	NN	Number=Sing	15	compound	_	_
-15	student	student	NOUN	NN	Number=Sing	11	comp:pred	_	_
-16	from	_	_	_	_	0	_	_	_
-17	age	_	_	_	_	0	_	_	_
-18	six	_	_	_	_	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent is the= compound <br>
+</td><td style="text-align:center">the head agrees with its head on= Number <br>
+dependent is the= object <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent is the= compound; Not Active:the head agrees with its head on= Number;dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	My	_	_	_	_	0	_	_	_
+2	Presidential	_	_	_	_	0	_	_	_
+3	qualifications	_	_	_	_	0	_	_	_
+4	are	_	_	_	_	0	_	_	_
+5	rooted	_	_	_	_	0	_	_	_
+6	in	_	_	_	_	0	_	_	_
+7	my	_	_	_	_	0	_	_	_
+8	service	_	_	_	_	0	_	_	_
+9	as	_	_	_	_	0	_	_	_
+10	an	_	_	_	_	0	_	_	_
+11	Officer	_	_	_	_	0	_	_	_
+12	in	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	United	_	_	_	_	0	_	_	_
+15	***States***	State	PROPN	NNPS	Number=Plur	17	compound	_	_
+16	Air	_	_	_	_	0	_	_	_
+17	Force	Force	PROPN	NNP	Number=Sing	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	I	_	_	_	_	0	_	_	_
-2	volunteered	_	_	_	_	0	_	_	_
-3	for	_	_	_	_	0	_	_	_
-4	that	_	_	_	_	0	_	_	_
-5	program	_	_	_	_	0	_	_	_
-6	because	_	_	_	_	0	_	_	_
-7	I	_	_	_	_	0	_	_	_
-8	knew	_	_	_	_	0	_	_	_
-9	I	_	_	_	_	0	_	_	_
-10	wanted	_	_	_	_	0	_	_	_
-11	to	_	_	_	_	0	_	_	_
-12	be	be	AUX	VB	VerbForm=Inf	0	_	_	_
-13	a	_	_	_	_	0	_	_	_
-14	***Fighter***	fighter	NOUN	NN	Number=Sing	15	compound	_	_
-15	Pilot	pilot	NOUN	NN	Number=Sing	12	comp:pred	_	_
-16	and	_	_	_	_	0	_	_	_
-17	at	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	"	_	_	_	_	0	_	_	_
-20	Top	_	_	_	_	0	_	_	_
-21	of	_	_	_	_	0	_	_	_
-22	the	_	_	_	_	0	_	_	_
-23	Spear	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-25	"	_	_	_	_	0	_	_	_
+2	hope	_	_	_	_	0	_	_	_
+3	to	_	_	_	_	0	_	_	_
+4	lead	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	Republican	_	_	_	_	0	_	_	_
+7	party	_	_	_	_	0	_	_	_
+8	in	_	_	_	_	0	_	_	_
+9	a	_	_	_	_	0	_	_	_
+10	new	_	_	_	_	0	_	_	_
+11	direction	_	_	_	_	0	_	_	_
+12	for	_	_	_	_	0	_	_	_
+13	working	_	_	_	_	0	_	_	_
+14	***class***	class	NOUN	NN	Number=Sing	15	compound	_	_
+15	Americans	Americans	PROPN	NNPS	Number=Plur	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	volunteered	_	_	_	_	0	_	_	_
-3	for	_	_	_	_	0	_	_	_
-4	that	_	_	_	_	0	_	_	_
-5	program	_	_	_	_	0	_	_	_
-6	because	_	_	_	_	0	_	_	_
-7	I	_	_	_	_	0	_	_	_
-8	knew	_	_	_	_	0	_	_	_
-9	I	_	_	_	_	0	_	_	_
-10	wanted	_	_	_	_	0	_	_	_
-11	to	_	_	_	_	0	_	_	_
-12	be	be	AUX	VB	VerbForm=Inf	0	_	_	_
-13	a	_	_	_	_	0	_	_	_
-14	Fighter	_	_	_	_	0	_	_	_
-15	Pilot	pilot	NOUN	NN	Number=Sing	12	comp:pred	_	_
-16	and	_	_	_	_	0	_	_	_
-17	at	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	"	_	_	_	_	0	_	_	_
-20	***Top***	top	PROPN	NNP	Number=Sing	15	conj	_	_
-21	of	_	_	_	_	0	_	_	_
-22	the	_	_	_	_	0	_	_	_
-23	Spear	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-25	"	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	an	_	_	_	_	0	_	_	_
-4	effort	effort	NOUN	NN	Number=Sing	2	comp:pred	_	_
-5	that	_	_	_	_	0	_	_	_
-6	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	mod@relcl	_	_
-7	underway	_	_	_	_	0	_	_	_
-8	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	only	_	_	_	_	0	_	_	_
-5	candidate	candidate	NOUN	NN	Number=Sing	2	comp:pred	_	_
-6	who	_	_	_	_	0	_	_	_
-7	has	_	_	_	_	0	_	_	_
-8	studied	_	_	_	_	0	_	_	_
-9	both	_	_	_	_	0	_	_	_
-10	economics	_	_	_	_	0	_	_	_
-11	and	_	_	_	_	0	_	_	_
-12	law	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	and	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	only	_	_	_	_	0	_	_	_
-17	***candidate***	candidate	NOUN	NN	Number=Sing	5	conj	_	_
-18	with	_	_	_	_	0	_	_	_
-19	a	_	_	_	_	0	_	_	_
-20	background	_	_	_	_	0	_	_	_
-21	in	_	_	_	_	0	_	_	_
-22	technology	_	_	_	_	0	_	_	_
-23	entrepreneurship	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	only	_	_	_	_	0	_	_	_
-5	candidate	candidate	NOUN	NN	Number=Sing	2	comp:pred	_	_
-6	born	_	_	_	_	0	_	_	_
-7	and	_	_	_	_	0	_	_	_
-8	raised	_	_	_	_	0	_	_	_
-9	in	_	_	_	_	0	_	_	_
-10	Virginia	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	but	_	_	_	_	0	_	_	_
-13	also	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	only	_	_	_	_	0	_	_	_
-16	***candidate***	candidate	NOUN	NN	Number=Sing	5	conj	_	_
-17	who	_	_	_	_	0	_	_	_
-18	embodies	_	_	_	_	0	_	_	_
-19	both	_	_	_	_	0	_	_	_
-20	physically	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	philosophically	_	_	_	_	0	_	_	_
-23	the	_	_	_	_	0	_	_	_
-24	growing	_	_	_	_	0	_	_	_
-25	diversity	_	_	_	_	0	_	_	_
-26	of	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	commonwealth	_	_	_	_	0	_	_	_
-29	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	only	_	_	_	_	0	_	_	_
-5	candidate	candidate	NOUN	NN	Number=Sing	2	comp:pred	_	_
-6	who	_	_	_	_	0	_	_	_
-7	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	mod@relcl	_	_
-8	studied	_	_	_	_	0	_	_	_
-9	both	_	_	_	_	0	_	_	_
-10	economics	_	_	_	_	0	_	_	_
-11	and	_	_	_	_	0	_	_	_
-12	law	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	and	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	only	_	_	_	_	0	_	_	_
-17	candidate	_	_	_	_	0	_	_	_
-18	with	_	_	_	_	0	_	_	_
-19	a	_	_	_	_	0	_	_	_
-20	background	_	_	_	_	0	_	_	_
-21	in	_	_	_	_	0	_	_	_
-22	technology	_	_	_	_	0	_	_	_
-23	entrepreneurship	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	We	_	_	_	_	0	_	_	_
-2	were	be	AUX	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	0	_	_	_
-3	all	_	_	_	_	0	_	_	_
-4	friends	friend	NOUN	NNS	Number=Plur	2	comp:pred	_	SpaceAfter=No
-5	,	_	_	_	_	0	_	_	_
-6	a	_	_	_	_	0	_	_	_
-7	***group***	group	NOUN	NN	Number=Sing	4	appos	_	_
-8	bonded	_	_	_	_	0	_	_	_
-9	by	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	common	_	_	_	_	0	_	_	_
-12	experience	_	_	_	_	0	_	_	_
+1	Besides	_	_	_	_	0	_	_	_
+2	works	_	_	_	_	0	_	_	_
+3	whose	_	_	_	_	0	_	_	_
+4	copyright	_	_	_	_	0	_	_	_
+5	has	_	_	_	_	0	_	_	_
+6	expired	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	there	_	_	_	_	0	_	_	_
+9	is	_	_	_	_	0	_	_	_
+10	an	_	_	_	_	0	_	_	_
+11	increasing	_	_	_	_	0	_	_	_
+12	number	_	_	_	_	0	_	_	_
 13	of	_	_	_	_	0	_	_	_
-14	being	_	_	_	_	0	_	_	_
-15	able	_	_	_	_	0	_	_	_
-16	to	_	_	_	_	0	_	_	_
-17	see	_	_	_	_	0	_	_	_
-18	our	_	_	_	_	0	_	_	_
-19	teeth	_	_	_	_	0	_	_	_
-20	on	_	_	_	_	0	_	_	_
-21	Steven	_	_	_	_	0	_	_	_
-22	’s	_	_	_	_	0	_	_	_
-23	shelf	_	_	_	_	0	_	_	_
+14	modern	_	_	_	_	0	_	_	_
+15	books	_	_	_	_	0	_	_	_
+16	available	_	_	_	_	0	_	_	_
+17	under	_	_	_	_	0	_	_	_
+18	***Creative***	Creative	PROPN	NNP	Number=Sing	19	compound	_	_
+19	Commons	Commons	PROPN	NNPS	Number=Plur	0	_	_	_
+20	and	_	_	_	_	0	_	_	_
+21	similar	_	_	_	_	0	_	_	_
+22	licenses	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Hamill	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	schedule	_	_	_	_	0	_	_	_
+4	included	_	_	_	_	0	_	_	_
+5	a	_	_	_	_	0	_	_	_
+6	panel	_	_	_	_	0	_	_	_
+7	with	_	_	_	_	0	_	_	_
+8	Kevin	_	_	_	_	0	_	_	_
+9	Conroy	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	voice	_	_	_	_	0	_	_	_
+13	of	_	_	_	_	0	_	_	_
+14	Batman	_	_	_	_	0	_	_	_
+15	in	_	_	_	_	0	_	_	_
+16	Batman	_	_	_	_	0	_	_	_
+17	:	_	_	_	_	0	_	_	_
+18	The	_	_	_	_	0	_	_	_
+19	Animated	_	_	_	_	0	_	_	_
+20	Series	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	in	_	_	_	_	0	_	_	_
+23	which	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	***Star***	Star	PROPN	NNP	Number=Sing	26	compound	_	_
+26	Wars	Wars	PROPN	NNPS	Number=Plur	0	_	_	_
+27	lead	_	_	_	_	0	_	_	_
+28	played	_	_	_	_	0	_	_	_
+29	the	_	_	_	_	0	_	_	_
+30	Joker	_	_	_	_	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	Northern	_	_	_	_	0	_	_	_
+3	Arena	_	_	_	_	0	_	_	_
+4	***Esports***	Esports	PROPN	NNPS	Number=Plur	5	compound	_	_
+5	Championship	Championship	PROPN	NNP	Number=Sing	0	_	_	_
+6	ran	_	_	_	_	0	_	_	_
+7	throughout	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	weekend	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	facing	_	_	_	_	0	_	_	_
+12	off	_	_	_	_	0	_	_	_
+13	teams	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	video	_	_	_	_	0	_	_	_
+16	gamers	_	_	_	_	0	_	_	_
+17	in	_	_	_	_	0	_	_	_
+18	a	_	_	_	_	0	_	_	_
+19	packed	_	_	_	_	0	_	_	_
+20	hall	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	"	_	_	_	_	0	_	_	_
+2	Like	_	_	_	_	0	_	_	_
+3	many	_	_	_	_	0	_	_	_
+4	Texans	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	I	_	_	_	_	0	_	_	_
+7	am	_	_	_	_	0	_	_	_
+8	disappointed	_	_	_	_	0	_	_	_
+9	with	_	_	_	_	0	_	_	_
+10	NASA	_	_	_	_	0	_	_	_
+11	's	_	_	_	_	0	_	_	_
+12	decision	_	_	_	_	0	_	_	_
+13	to	_	_	_	_	0	_	_	_
+14	slight	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	Johnson	_	_	_	_	0	_	_	_
+17	Space	_	_	_	_	0	_	_	_
+18	Center	_	_	_	_	0	_	_	_
+19	as	_	_	_	_	0	_	_	_
+20	a	_	_	_	_	0	_	_	_
+21	permanent	_	_	_	_	0	_	_	_
+22	home	_	_	_	_	0	_	_	_
+23	for	_	_	_	_	0	_	_	_
+24	one	_	_	_	_	0	_	_	_
+25	of	_	_	_	_	0	_	_	_
+26	the	_	_	_	_	0	_	_	_
+27	Space	_	_	_	_	0	_	_	_
+28	***Shuttle***	shuttle	PROPN	NNP	Number=Sing	29	compound	_	_
+29	Orbiters	orbiter	PROPN	NNPS	Number=Plur	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	May	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	Maxime	_	_	_	_	0	_	_	_
+5	Bernier	_	_	_	_	0	_	_	_
+6	was	_	_	_	_	0	_	_	_
+7	forced	_	_	_	_	0	_	_	_
+8	to	_	_	_	_	0	_	_	_
+9	resign	_	_	_	_	0	_	_	_
+10	as	_	_	_	_	0	_	_	_
+11	***Foreign***	Foreign	PROPN	NNP	Number=Sing	12	compound	_	_
+12	Affairs	Affairs	PROPN	NNPS	Number=Plur	0	_	_	_
+13	minister	_	_	_	_	0	_	_	_
+14	after	_	_	_	_	0	_	_	_
+15	it	_	_	_	_	0	_	_	_
+16	became	_	_	_	_	0	_	_	_
+17	known	_	_	_	_	0	_	_	_
+18	that	_	_	_	_	0	_	_	_
+19	he	_	_	_	_	0	_	_	_
+20	left	_	_	_	_	0	_	_	_
+21	sensitive	_	_	_	_	0	_	_	_
+22	documents	_	_	_	_	0	_	_	_
+23	at	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	apartment	_	_	_	_	0	_	_	_
+26	of	_	_	_	_	0	_	_	_
+27	his	_	_	_	_	0	_	_	_
+28	then-girlfriend	_	_	_	_	0	_	_	_
+29	Julie	_	_	_	_	0	_	_	_
+30	Couillard	_	_	_	_	0	_	_	_
+31	who	_	_	_	_	0	_	_	_
+32	had	_	_	_	_	0	_	_	_
+33	ties	_	_	_	_	0	_	_	_
+34	to	_	_	_	_	0	_	_	_
+35	the	_	_	_	_	0	_	_	_
+36	Hells	_	_	_	_	0	_	_	_
+37	Angels	_	_	_	_	0	_	_	_
+38	biker	_	_	_	_	0	_	_	_
+39	gang	_	_	_	_	0	_	_	_
+40	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Uptown	_	_	_	_	0	_	_	_
+2	also	_	_	_	_	0	_	_	_
+3	has	_	_	_	_	0	_	_	_
+4	some	_	_	_	_	0	_	_	_
+5	of	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	best	_	_	_	_	0	_	_	_
+8	in	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	city	_	_	_	_	0	_	_	_
+11	's	_	_	_	_	0	_	_	_
+12	vintage	_	_	_	_	0	_	_	_
+13	architecture	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	like	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	Gothic	_	_	_	_	0	_	_	_
+18	Revival	_	_	_	_	0	_	_	_
+19	Cathedral	_	_	_	_	0	_	_	_
+20	Building	_	_	_	_	0	_	_	_
+21	and	_	_	_	_	0	_	_	_
+22	the	_	_	_	_	0	_	_	_
+23	Art	_	_	_	_	0	_	_	_
+24	Deco	_	_	_	_	0	_	_	_
+25	Fox	_	_	_	_	0	_	_	_
+26	and	_	_	_	_	0	_	_	_
+27	***Paramount***	Paramount	PROPN	NNP	Number=Sing	28	compound	_	_
+28	Theaters	theater	PROPN	NNPS	Number=Plur	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	as	_	_	_	_	0	_	_	_
+31	well	_	_	_	_	0	_	_	_
+32	as	_	_	_	_	0	_	_	_
+33	several	_	_	_	_	0	_	_	_
+34	restaurants	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	2.	_	_	_	_	0	_	_	_
+2	***GUJJOLAAY***	Gujjolaay	PROPN	NNP	Number=Sing	3	compound	_	_
+3	EEGIMAA	Eegimaa	PROPN	NNP	Number=Sing	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	ITS	_	_	_	_	0	_	_	_
+6	SPEAKERS	_	_	_	_	0	_	_	_
+7	AND	_	_	_	_	0	_	_	_
+8	THEIR	_	_	_	_	0	_	_	_
+9	NEIGHBOURS	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	They	_	_	_	_	0	_	_	_
+2	are	_	_	_	_	0	_	_	_
+3	located	_	_	_	_	0	_	_	_
+4	north	_	_	_	_	0	_	_	_
+5	of	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	***Casamance***	Casamance	PROPN	NNP	Number=Sing	8	compound	_	_
+8	River	River	PROPN	NNP	Number=Sing	0	_	_	_
+9	in	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	Jóola	_	_	_	_	0	_	_	_
+12	Búluf	_	_	_	_	0	_	_	_
+13	area	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mof-Ávvi	_	_	_	_	0	_	_	_
+2	is	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	peninsula	_	_	_	_	0	_	_	_
+5	bordered	_	_	_	_	0	_	_	_
+6	by	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	***Casamance***	Casamance	PROPN	NNP	Number=Sing	9	compound	_	_
+9	River	River	PROPN	NNP	Number=Sing	0	_	_	_
+10	to	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	north	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	which	_	_	_	_	0	_	_	_
+15	separates	_	_	_	_	0	_	_	_
+16	it	_	_	_	_	0	_	_	_
+17	from	_	_	_	_	0	_	_	_
+18	the	_	_	_	_	0	_	_	_
+19	Jóola	_	_	_	_	0	_	_	_
+20	Búluf	_	_	_	_	0	_	_	_
+21	and	_	_	_	_	0	_	_	_
+22	Jóola	_	_	_	_	0	_	_	_
+23	Fogny	_	_	_	_	0	_	_	_
+24	areas	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	and	_	_	_	_	0	_	_	_
+27	to	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	east	_	_	_	_	0	_	_	_
+30	by	_	_	_	_	0	_	_	_
+31	the	_	_	_	_	0	_	_	_
+32	villages	_	_	_	_	0	_	_	_
+33	Brin	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	Djibonker	_	_	_	_	0	_	_	_
+36	,	_	_	_	_	0	_	_	_
+37	where	_	_	_	_	0	_	_	_
+38	the	_	_	_	_	0	_	_	_
+39	speakers	_	_	_	_	0	_	_	_
+40	of	_	_	_	_	0	_	_	_
+41	Kujireray	_	_	_	_	0	_	_	_
+42	and	_	_	_	_	0	_	_	_
+43	Baïnounk	_	_	_	_	0	_	_	_
+44	Gubëeher	_	_	_	_	0	_	_	_
+45	live	_	_	_	_	0	_	_	_
+46	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Gútaamay	_	_	_	_	0	_	_	_
+2	(	_	_	_	_	0	_	_	_
+3	from	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	village	_	_	_	_	0	_	_	_
+6	of	_	_	_	_	0	_	_	_
+7	Butam	_	_	_	_	0	_	_	_
+8	)	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	Gulapaoray	_	_	_	_	0	_	_	_
+11	(	_	_	_	_	0	_	_	_
+12	from	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	village	_	_	_	_	0	_	_	_
+15	Djilapaor	_	_	_	_	0	_	_	_
+16	)	_	_	_	_	0	_	_	_
+17	and	_	_	_	_	0	_	_	_
+18	Gusiilay	_	_	_	_	0	_	_	_
+19	(	_	_	_	_	0	_	_	_
+20	ISO	_	_	_	_	0	_	_	_
+21	639-3	_	_	_	_	0	_	_	_
+22	:	_	_	_	_	0	_	_	_
+23	bsl	_	_	_	_	0	_	_	_
+24	)	_	_	_	_	0	_	_	_
+25	from	_	_	_	_	0	_	_	_
+26	the	_	_	_	_	0	_	_	_
+27	village	_	_	_	_	0	_	_	_
+28	of	_	_	_	_	0	_	_	_
+29	***Thionk***	Thionk	PROPN	NNP	Number=Sing	30	compound	_	_
+30	Essil	Essil	PROPN	NNP	Number=Sing	0	_	_	_
+31	are	_	_	_	_	0	_	_	_
+32	also	_	_	_	_	0	_	_	_
+33	other	_	_	_	_	0	_	_	_
+34	languages	_	_	_	_	0	_	_	_
+35	related	_	_	_	_	0	_	_	_
+36	to	_	_	_	_	0	_	_	_
+37	Eegimaa	_	_	_	_	0	_	_	_
+38	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	1874	_	_	_	_	0	_	_	_
+3	he	_	_	_	_	0	_	_	_
+4	made	_	_	_	_	0	_	_	_
+5	a	_	_	_	_	0	_	_	_
+6	submission	_	_	_	_	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	Austrian	_	_	_	_	0	_	_	_
+10	***State***	State	PROPN	NNP	Number=Sing	11	compound	_	_
+11	Prize	Prize	PROPN	NNP	Number=Sing	0	_	_	_
+12	for	_	_	_	_	0	_	_	_
+13	Composition	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	including	_	_	_	_	0	_	_	_
+16	scores	_	_	_	_	0	_	_	_
+17	of	_	_	_	_	0	_	_	_
+18	two	_	_	_	_	0	_	_	_
+19	further	_	_	_	_	0	_	_	_
+20	symphonies	_	_	_	_	0	_	_	_
+21	and	_	_	_	_	0	_	_	_
+22	other	_	_	_	_	0	_	_	_
+23	works	_	_	_	_	0	_	_	_
 24	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	1891	_	_	_	_	0	_	_	_
+3	Dvořák	_	_	_	_	0	_	_	_
+4	was	_	_	_	_	0	_	_	_
+5	appointed	_	_	_	_	0	_	_	_
+6	as	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	professor	_	_	_	_	0	_	_	_
+9	at	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	***Prague***	Prague	PROPN	NNP	Number=Sing	12	compound	_	_
+12	Conservatory	Conservatory	PROPN	NNP	Number=Sing	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	1890	_	_	_	_	0	_	_	_
+3	–	_	_	_	_	0	_	_	_
+4	91	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	he	_	_	_	_	0	_	_	_
+7	wrote	_	_	_	_	0	_	_	_
+8	his	_	_	_	_	0	_	_	_
+9	***Dumky***	Dumky	PROPN	NNP	Number=Sing	10	compound	_	_
+10	Trio	Trio	PROPN	NNP	Number=Sing	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	one	_	_	_	_	0	_	_	_
+13	of	_	_	_	_	0	_	_	_
+14	his	_	_	_	_	0	_	_	_
+15	most	_	_	_	_	0	_	_	_
+16	successful	_	_	_	_	0	_	_	_
+17	chamber	_	_	_	_	0	_	_	_
+18	music	_	_	_	_	0	_	_	_
+19	pieces	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	1892	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	Dvořák	_	_	_	_	0	_	_	_
+5	moved	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	United	_	_	_	_	0	_	_	_
+9	States	_	_	_	_	0	_	_	_
+10	and	_	_	_	_	0	_	_	_
+11	became	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	director	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	National	_	_	_	_	0	_	_	_
+17	Conservatory	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	Music	_	_	_	_	0	_	_	_
+20	of	_	_	_	_	0	_	_	_
+21	America	_	_	_	_	0	_	_	_
+22	in	_	_	_	_	0	_	_	_
+23	***New***	New	PROPN	NNP	Number=Sing	25	compound	_	_
+24	York	_	_	_	_	0	_	_	_
+25	City	City	PROPN	NNP	Number=Sing	0	_	_	_
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	prototype	_	_	_	_	0	_	_	_
+3	orbiter	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	Space	_	_	_	_	0	_	_	_
+6	Shuttle	_	_	_	_	0	_	_	_
+7	Enterprise	_	_	_	_	0	_	_	_
+8	would	_	_	_	_	0	_	_	_
+9	be	_	_	_	_	0	_	_	_
+10	relocated	_	_	_	_	0	_	_	_
+11	from	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	Smithsonian	_	_	_	_	0	_	_	_
+14	's	_	_	_	_	0	_	_	_
+15	National	_	_	_	_	0	_	_	_
+16	Air	_	_	_	_	0	_	_	_
+17	and	_	_	_	_	0	_	_	_
+18	Space	_	_	_	_	0	_	_	_
+19	Museum	_	_	_	_	0	_	_	_
+20	Steven	_	_	_	_	0	_	_	_
+21	F.	_	_	_	_	0	_	_	_
+22	Udvar-Hazy	_	_	_	_	0	_	_	_
+23	Center	_	_	_	_	0	_	_	_
+24	at	_	_	_	_	0	_	_	_
+25	Washington	_	_	_	_	0	_	_	_
+26	Dulles	_	_	_	_	0	_	_	_
+27	International	_	_	_	_	0	_	_	_
+28	Airport	_	_	_	_	0	_	_	_
+29	to	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Intrepid	_	_	_	_	0	_	_	_
+32	Sea-Air-Space	_	_	_	_	0	_	_	_
+33	Museum	_	_	_	_	0	_	_	_
+34	in	_	_	_	_	0	_	_	_
+35	***New***	New	PROPN	NNP	Number=Sing	37	compound	_	_
+36	York	_	_	_	_	0	_	_	_
+37	City	City	PROPN	NNP	Number=Sing	0	_	_	_
+38	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	1887	_	_	_	_	0	_	_	_
+3	–	_	_	_	_	0	_	_	_
+4	1888	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	he	_	_	_	_	0	_	_	_
+7	traveled	_	_	_	_	0	_	_	_
+8	to	_	_	_	_	0	_	_	_
+9	England	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	Germany	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	France	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	meeting	_	_	_	_	0	_	_	_
+16	linguists	_	_	_	_	0	_	_	_
+17	like	_	_	_	_	0	_	_	_
+18	Henry	_	_	_	_	0	_	_	_
+19	Sweet	_	_	_	_	0	_	_	_
+20	and	_	_	_	_	0	_	_	_
+21	Paul	_	_	_	_	0	_	_	_
+22	Passy	_	_	_	_	0	_	_	_
+23	and	_	_	_	_	0	_	_	_
+24	attending	_	_	_	_	0	_	_	_
+25	lectures	_	_	_	_	0	_	_	_
+26	at	_	_	_	_	0	_	_	_
+27	institutions	_	_	_	_	0	_	_	_
+28	like	_	_	_	_	0	_	_	_
+29	***Oxford***	Oxford	PROPN	NNP	Number=Sing	30	compound	_	_
+30	University	University	PROPN	NNP	Number=Sing	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

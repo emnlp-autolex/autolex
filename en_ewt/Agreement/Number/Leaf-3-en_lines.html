@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,243 +137,123 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_lines </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	Moving	_	_	_	_	0	_	_	_
-2	fields	_	_	_	_	0	_	_	_
-3	to	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	category	category	NOUN	SG-NOM	Number=Sing	8	compound	_	_
-6	and	_	_	_	_	0	_	_	_
-7	***series***	series	NOUN	SG-NOM	Number=Sing	5	conj	_	_
-8	areas	area	NOUN	PL-NOM	Number=Plur	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">in the neighborhood of the dependent= be <br>
+dependent is the= object <br>
+</td><td style="text-align:center">in the neighborhood of the dependent= a <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:in the neighborhood of the dependent= be;dependent is the= object; Not Active:in the neighborhood of the dependent= a;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	And	_	_	_	_	0	_	_	_
+2	this	_	_	_	_	0	_	_	_
+3	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	what	_	_	_	_	0	_	_	_
+5	America	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	bubbling	_	_	_	_	0	_	_	_
+8	with	_	_	_	_	0	_	_	_
+9	political	_	_	_	_	0	_	_	_
+10	illusions	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	***is***	be	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
+13	up	_	_	_	_	0	_	_	_
+14	against	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Moving	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	category	category	NOUN	SG-NOM	Number=Sing	6	compound	_	_
-4	or	_	_	_	_	0	_	_	_
-5	***series***	series	NOUN	SG-NOM	Number=Sing	3	conj	_	_
-6	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
-7	to	_	_	_	_	0	_	_	_
-8	inner	_	_	_	_	0	_	_	_
-9	or	_	_	_	_	0	_	_	_
-10	outer	_	_	_	_	0	_	_	_
-11	levels	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	means	_	_	_	_	0	_	_	_
-3	that	_	_	_	_	0	_	_	_
-4	when	_	_	_	_	0	_	_	_
-5	you	_	_	_	_	0	_	_	_
-6	move	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	series	series	NOUN	SG-NOM	Number=Sing	11	compound	_	_
-9	or	_	_	_	_	0	_	_	_
-10	***category***	category	NOUN	SG-NOM	Number=Sing	8	conj	_	_
-11	field	field	NOUN	SG-NOM	Number=Sing	0	_	_	_
-12	to	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	filter	_	_	_	_	0	_	_	_
-15	area	_	_	_	_	0	_	_	_
-16	and	_	_	_	_	0	_	_	_
-17	back	_	_	_	_	0	_	_	_
-18	,	_	_	_	_	0	_	_	_
-19	previously	_	_	_	_	0	_	_	_
-20	hidden	_	_	_	_	0	_	_	_
-21	items	_	_	_	_	0	_	_	_
-22	are	_	_	_	_	0	_	_	_
-23	again	_	_	_	_	0	_	_	_
-24	hidden	_	_	_	_	0	_	_	_
-25	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***Data***	data	NOUN	PL-NOM	Number=Sing	2	compound	_	_
-2	access	access	NOUN	SG-NOM	Number=Sing	3	compound	_	_
-3	page	page	NOUN	SG-NOM	Number=Sing	0	_	_	_
-4	with	_	_	_	_	0	_	_	_
-5	two	_	_	_	_	0	_	_	_
-6	group	_	_	_	_	0	_	_	_
-7	levels	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	data	_	_	_	_	0	_	_	_
-3	outline	_	_	_	_	0	_	_	_
-4	displays	_	_	_	_	0	_	_	_
-5	a	_	_	_	_	0	_	_	_
-6	tree	_	_	_	_	0	_	_	_
-7	view	_	_	_	_	0	_	_	_
-8	of	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	data	_	_	_	_	0	_	_	_
-11	model	_	_	_	_	0	_	_	_
+1	Aunt	_	_	_	_	0	_	_	_
+2	Dorothy	_	_	_	_	0	_	_	_
+3	says	say	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	her	_	_	_	_	0	_	_	_
+5	secretary	_	_	_	_	0	_	_	_
+6	***'s***	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
+7	been	_	_	_	_	0	_	_	_
+8	trying	_	_	_	_	0	_	_	_
+9	to	_	_	_	_	0	_	_	_
+10	get	_	_	_	_	0	_	_	_
+11	hold	_	_	_	_	0	_	_	_
 12	of	_	_	_	_	0	_	_	_
-13	a	_	_	_	_	0	_	_	_
-14	***data***	data	NOUN	PL-NOM	Number=Sing	15	compound	_	_
-15	access	access	NOUN	SG-NOM	Number=Sing	16	compound	_	_
-16	page	page	NOUN	SG-NOM	Number=Sing	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
+13	you	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	You	_	_	_	_	0	_	_	_
-2	can	_	_	_	_	0	_	_	_
-3	specify	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	start	start	NOUN	SG-NOM	Number=Sing	8	compound	_	_
-6	and	_	_	_	_	0	_	_	_
-7	***end***	end	NOUN	SG-NOM	Number=Sing	5	conj	_	_
-8	values	value	NOUN	PL-NOM	Number=Plur	0	_	_	_
-9	for	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	grouping	_	_	_	_	0	_	_	_
-12	range	_	_	_	_	0	_	_	_
-13	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	You	_	_	_	_	0	_	_	_
-2	can	_	_	_	_	0	_	_	_
-3	randomly	_	_	_	_	0	_	_	_
-4	select	_	_	_	_	0	_	_	_
-5	items	_	_	_	_	0	_	_	_
-6	from	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	row	row	NOUN	SG-NOM	Number=Sing	11	compound	_	_
-9	or	_	_	_	_	0	_	_	_
-10	***column***	column	NOUN	SG-NOM	Number=Sing	8	conj	_	_
-11	field	field	NOUN	SG-NOM	Number=Sing	0	_	_	_
-12	and	_	_	_	_	0	_	_	_
-13	group	_	_	_	_	0	_	_	_
-14	them	_	_	_	_	0	_	_	_
-15	into	_	_	_	_	0	_	_	_
-16	higher-level	_	_	_	_	0	_	_	_
-17	groups	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	When	_	_	_	_	0	_	_	_
-2	you	_	_	_	_	0	_	_	_
-3	move	_	_	_	_	0	_	_	_
-4	the	_	_	_	_	0	_	_	_
-5	field	_	_	_	_	0	_	_	_
-6	back	_	_	_	_	0	_	_	_
-7	to	_	_	_	_	0	_	_	_
-8	a	_	_	_	_	0	_	_	_
-9	row	row	NOUN	SG-NOM	Number=Sing	12	compound	_	_
-10	or	_	_	_	_	0	_	_	_
-11	***column***	column	NOUN	SG-NOM	Number=Sing	9	conj	_	_
-12	area	area	NOUN	SG-NOM	Number=Sing	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	custom	_	_	_	_	0	_	_	_
-16	group	_	_	_	_	0	_	_	_
-17	fields	_	_	_	_	0	_	_	_
-18	will	_	_	_	_	0	_	_	_
-19	appear	_	_	_	_	0	_	_	_
-20	again	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Creating	_	_	_	_	0	_	_	_
-2	and	_	_	_	_	0	_	_	_
-3	deleting	_	_	_	_	0	_	_	_
-4	custom	_	_	_	_	0	_	_	_
-5	groups	_	_	_	_	0	_	_	_
-6	and	_	_	_	_	0	_	_	_
-7	***custom***	custom	NOUN	SG-NOM	Number=Sing	8	compound	_	_
-8	group	group	NOUN	SG-NOM	Number=Sing	9	compound	_	_
-9	fields	field	NOUN	PL-NOM	Number=Plur	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Moving	_	_	_	_	0	_	_	_
-2	a	_	_	_	_	0	_	_	_
-3	field	_	_	_	_	0	_	_	_
-4	whose	_	_	_	_	0	_	_	_
-5	parent	_	_	_	_	0	_	_	_
-6	is	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	***custom***	custom	NOUN	SG-NOM	Number=Sing	9	compound	_	_
-9	group	group	NOUN	SG-NOM	Number=Sing	10	compound	_	_
-10	field	field	NOUN	SG-NOM	Number=Sing	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	You	_	_	_	_	0	_	_	_
-2	can	_	_	_	_	0	_	_	_
-3	also	_	_	_	_	0	_	_	_
-4	select	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	objects	_	_	_	_	0	_	_	_
-7	displayed	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	data	_	_	_	_	0	_	_	_
-11	outline	_	_	_	_	0	_	_	_
+1	Denis	_	_	_	_	0	_	_	_
+2	thinks	think	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	your	_	_	_	_	0	_	_	_
+4	angle	_	_	_	_	0	_	_	_
+5	lamp	_	_	_	_	0	_	_	_
+6	***'s***	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
+7	been	_	_	_	_	0	_	_	_
+8	left	_	_	_	_	0	_	_	_
+9	at	_	_	_	_	0	_	_	_
+10	Government	_	_	_	_	0	_	_	_
+11	House	_	_	_	_	0	_	_	_
 12	,	_	_	_	_	0	_	_	_
-13	set	_	_	_	_	0	_	_	_
-14	their	_	_	_	_	0	_	_	_
-15	properties	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	define	_	_	_	_	0	_	_	_
-18	and	_	_	_	_	0	_	_	_
-19	edit	_	_	_	_	0	_	_	_
-20	relationships	_	_	_	_	0	_	_	_
-21	between	_	_	_	_	0	_	_	_
-22	record	_	_	_	_	0	_	_	_
-23	sources	_	_	_	_	0	_	_	_
-24	,	_	_	_	_	0	_	_	_
-25	and	_	_	_	_	0	_	_	_
-26	delete	_	_	_	_	0	_	_	_
-27	fields	field	NOUN	PL-NOM	Number=Plur	30	compound	_	_
-28	and	_	_	_	_	0	_	_	_
-29	***record***	record	NOUN	SG-NOM	Number=Sing	27	conj	_	_
-30	sources	source	NOUN	PL-NOM	Number=Plur	0	_	_	_
-31	.	_	_	_	_	0	_	_	_
+13	did	_	_	_	_	0	_	_	_
+14	he	_	_	_	_	0	_	_	_
+15	tell	_	_	_	_	0	_	_	_
+16	you	_	_	_	_	0	_	_	_
+17	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	At	_	_	_	_	0	_	_	_
-2	the	_	_	_	_	0	_	_	_
-3	same	_	_	_	_	0	_	_	_
-4	time	_	_	_	_	0	_	_	_
-5	it	_	_	_	_	0	_	_	_
-6	could	_	_	_	_	0	_	_	_
-7	result	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	job	_	_	_	_	0	_	_	_
-10	losses	_	_	_	_	0	_	_	_
-11	in	_	_	_	_	0	_	_	_
-12	the	_	_	_	_	0	_	_	_
-13	labour	_	_	_	_	0	_	_	_
-14	intensive	_	_	_	_	0	_	_	_
-15	***repair***	repair	NOUN	SG-NOM	Number=Sing	16	compound	_	_
-16	services	service	NOUN	PL-NOM	Number=Plur	17	compound	_	_
-17	sector	sector	NOUN	SG-NOM	Number=Sing	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
+1	He	_	_	_	_	0	_	_	_
+2	sat	_	_	_	_	0	_	_	_
+3	down	_	_	_	_	0	_	_	_
+4	in	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	only	_	_	_	_	0	_	_	_
+7	remaining	_	_	_	_	0	_	_	_
+8	chair	_	_	_	_	0	_	_	_
+9	but	_	_	_	_	0	_	_	_
+10	leapt	_	_	_	_	0	_	_	_
+11	up	_	_	_	_	0	_	_	_
+12	again	_	_	_	_	0	_	_	_
+13	almost	_	_	_	_	0	_	_	_
+14	immediately	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	pulling	_	_	_	_	0	_	_	_
+17	from	_	_	_	_	0	_	_	_
+18	underneath	_	_	_	_	0	_	_	_
+19	him	_	_	_	_	0	_	_	_
+20	a	_	_	_	_	0	_	_	_
+21	moulting	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	grey	_	_	_	_	0	_	_	_
+24	feather	_	_	_	_	0	_	_	_
+25	duster	_	_	_	_	0	_	_	_
+26	–	_	_	_	_	0	_	_	_
+27	at	_	_	_	_	0	_	_	_
+28	least	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	***that***	that	PRON	DEM-SG	Number=Sing|PronType=Dem	31	comp:obj	_	_
+31	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+32	what	_	_	_	_	0	_	_	_
+33	Harry	_	_	_	_	0	_	_	_
+34	thought	_	_	_	_	0	_	_	_
+35	it	_	_	_	_	0	_	_	_
+36	was	_	_	_	_	0	_	_	_
+37	,	_	_	_	_	0	_	_	_
+38	until	_	_	_	_	0	_	_	_
+39	he	_	_	_	_	0	_	_	_
+40	saw	_	_	_	_	0	_	_	_
+41	that	_	_	_	_	0	_	_	_
+42	it	_	_	_	_	0	_	_	_
+43	was	_	_	_	_	0	_	_	_
+44	breathing	_	_	_	_	0	_	_	_
+45	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<h5> No examples found </h5>
+</div>
 </ul><br><br><br>
 
 

@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,278 +137,493 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_lines </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	Israel	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	which	_	_	_	_	0	_	_	_
-4	receives	receive	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	***us***	we	PRON	PERS-P1PL-ACC	Case=Acc|Number=Plur|Person=1|PronType=Prs	4	comp:obj	_	_
-6	impartially	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	is	_	_	_	_	0	_	_	_
-9	accustomed	_	_	_	_	0	_	_	_
-10	to	_	_	_	_	0	_	_	_
-11	strange	_	_	_	_	0	_	_	_
-12	arrivals	_	_	_	_	0	_	_	_
-13	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><input type="hidden" id="rules_text" name="rules_text" value="Active: Not Active:dependent's head is a= PRON;in the neighborhood of the dependent= other;dependent is the= compound;dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	***type***	type	NOUN	SG-NOM	Number=Sing	6	subj@pass	_	_
+3	of	_	_	_	_	0	_	_	_
+4	drop	_	_	_	_	0	_	_	_
+5	area	_	_	_	_	0	_	_	_
+6	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	not	_	_	_	_	0	_	_	_
+8	displayed	_	_	_	_	0	_	_	_
+9	for	_	_	_	_	0	_	_	_
+10	single	_	_	_	_	0	_	_	_
+11	charts	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Mayor	_	_	_	_	0	_	_	_
-2	Teddy	_	_	_	_	0	_	_	_
-3	Kollek	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	irrepressible	_	_	_	_	0	_	_	_
-6	organizer	_	_	_	_	0	_	_	_
-7	of	_	_	_	_	0	_	_	_
-8	wonderful	_	_	_	_	0	_	_	_
-9	events	_	_	_	_	0	_	_	_
-10	(	_	_	_	_	0	_	_	_
-11	some	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	them	_	_	_	_	0	_	_	_
-14	too	_	_	_	_	0	_	_	_
-15	rich	_	_	_	_	0	_	_	_
-16	for	_	_	_	_	0	_	_	_
-17	my	_	_	_	_	0	_	_	_
-18	blood	_	_	_	_	0	_	_	_
-19	)	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	takes	take	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-22	***us***	we	PRON	PERS-P1PL-ACC	Case=Acc|Number=Plur|Person=1|PronType=Prs	21	comp:obj	_	_
-23	to	_	_	_	_	0	_	_	_
-24	dinner	_	_	_	_	0	_	_	_
-25	with	_	_	_	_	0	_	_	_
-26	one	_	_	_	_	0	_	_	_
-27	of	_	_	_	_	0	_	_	_
-28	the	_	_	_	_	0	_	_	_
-29	Armenian	_	_	_	_	0	_	_	_
-30	Archbishops	_	_	_	_	0	_	_	_
-31	in	_	_	_	_	0	_	_	_
-32	the	_	_	_	_	0	_	_	_
-33	Old	_	_	_	_	0	_	_	_
-34	City	_	_	_	_	0	_	_	_
-35	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Dobby	_	_	_	_	0	_	_	_
-2	has	have	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***them***	they	PRON	PERS-P3PL-ACC	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	comp:obj	_	_
-4	here	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	sir	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	said	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	elf	_	_	_	_	0	_	_	_
+1	Each	_	_	_	_	0	_	_	_
+2	***category***	category	NOUN	SG-NOM	Number=Sing	3	subj	_	_
+3	consists	consist	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	one	_	_	_	_	0	_	_	_
+6	point	_	_	_	_	0	_	_	_
+7	from	_	_	_	_	0	_	_	_
+8	each	_	_	_	_	0	_	_	_
+9	data	_	_	_	_	0	_	_	_
+10	series	_	_	_	_	0	_	_	_
 11	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	He	_	_	_	_	0	_	_	_
-2	hires	hire	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***someone***	someone	PRON	IND-SG-NOM	Number=Sing	2	comp:obj	_	_
-4	to	_	_	_	_	0	_	_	_
-5	translate	_	_	_	_	0	_	_	_
-6	it	_	_	_	_	0	_	_	_
-7	for	_	_	_	_	0	_	_	_
-8	him	_	_	_	_	0	_	_	_
-9	into	_	_	_	_	0	_	_	_
-10	Spanish	_	_	_	_	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
+<pre><code class="language-conllu">
+1	Moving	_	_	_	_	0	_	_	_
+2	a	_	_	_	_	0	_	_	_
+3	field	_	_	_	_	0	_	_	_
+4	whose	_	_	_	_	0	_	_	_
+5	parent	_	_	_	_	0	_	_	_
+6	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	custom	_	_	_	_	0	_	_	_
+9	group	_	_	_	_	0	_	_	_
+10	***field***	field	NOUN	SG-NOM	Number=Sing	6	comp:pred	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	and	_	_	_	_	0	_	_	_
-2	thereafter	_	_	_	_	0	_	_	_
-3	he	_	_	_	_	0	_	_	_
-4	presents	present	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	***himself***	he	PRON	RFL-P3SG	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	comp:obj	_	_
-6	as	_	_	_	_	0	_	_	_
-7	no	_	_	_	_	0	_	_	_
-8	more	_	_	_	_	0	_	_	_
-9	than	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	editor	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	translation	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
+1	A	_	_	_	_	0	_	_	_
+2	filter	_	_	_	_	0	_	_	_
+3	***field***	field	NOUN	SG-NOM	Number=Sing	4	subj	_	_
+4	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	similar	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	page	_	_	_	_	0	_	_	_
+9	field	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	a	_	_	_	_	0	_	_	_
+12	Microsoft	_	_	_	_	0	_	_	_
+13	Excel	_	_	_	_	0	_	_	_
+14	PivotTable	_	_	_	_	0	_	_	_
+15	report	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Seeking	_	_	_	_	0	_	_	_
-2	common	_	_	_	_	0	_	_	_
-3	ground	_	_	_	_	0	_	_	_
-4	with	_	_	_	_	0	_	_	_
-5	my	_	_	_	_	0	_	_	_
-6	wife	_	_	_	_	0	_	_	_
-7	(	_	_	_	_	0	_	_	_
-8	a	_	_	_	_	0	_	_	_
-9	laudable	_	_	_	_	0	_	_	_
-10	desire	_	_	_	_	0	_	_	_
-11	)	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	he	_	_	_	_	0	_	_	_
-14	tells	tell	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-15	***her***	she	PRON	PERS-P3SG-ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	comp:obj	_	_
-16	that	_	_	_	_	0	_	_	_
-17	he	_	_	_	_	0	_	_	_
-18	too	_	_	_	_	0	_	_	_
-19	is	_	_	_	_	0	_	_	_
-20	Rumanian	_	_	_	_	0	_	_	_
-21	by	_	_	_	_	0	_	_	_
-22	origin	_	_	_	_	0	_	_	_
-23	.	_	_	_	_	0	_	_	_
+1	A	_	_	_	_	0	_	_	_
+2	filter	_	_	_	_	0	_	_	_
+3	field	_	_	_	_	0	_	_	_
+4	is	_	_	_	_	0	_	_	_
+5	similar	_	_	_	_	0	_	_	_
+6	to	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	page	_	_	_	_	0	_	_	_
+9	field	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	a	_	_	_	_	0	_	_	_
+12	Microsoft	Microsoft	PROPN	SG-NOM	Number=Sing	0	_	_	_
+13	***Excel***	Excel	PROPN	SG-NOM	Number=Sing	12	flat	_	_
+14	PivotTable	_	_	_	_	0	_	_	_
+15	report	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	But	_	_	_	_	0	_	_	_
-2	I	_	_	_	_	0	_	_	_
-3	can	_	_	_	_	0	_	_	_
-4	see	_	_	_	_	0	_	_	_
-5	that	_	_	_	_	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	Archbishop	_	_	_	_	0	_	_	_
-8	gives	give	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-9	***him***	he	PRON	PERS-P3SG-ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	comp:obl	_	_
-10	bad	_	_	_	_	0	_	_	_
-11	marks	_	_	_	_	0	_	_	_
-12	for	_	_	_	_	0	_	_	_
-13	lighting	_	_	_	_	0	_	_	_
-14	up	_	_	_	_	0	_	_	_
-15	after	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	main	_	_	_	_	0	_	_	_
-18	course	_	_	_	_	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
+1	For	_	_	_	_	0	_	_	_
+2	example	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	if	_	_	_	_	0	_	_	_
+5	you	_	_	_	_	0	_	_	_
+6	move	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	Salesperson	_	_	_	_	0	_	_	_
+9	field	_	_	_	_	0	_	_	_
+10	to	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	MultiChart	_	_	_	_	0	_	_	_
+13	area	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	a	_	_	_	_	0	_	_	_
+16	***chart***	chart	NOUN	SG-NOM	Number=Sing	17	subj@pass	_	_
+17	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+18	created	_	_	_	_	0	_	_	_
+19	based	_	_	_	_	0	_	_	_
+20	on	_	_	_	_	0	_	_	_
+21	data	_	_	_	_	0	_	_	_
+22	for	_	_	_	_	0	_	_	_
+23	each	_	_	_	_	0	_	_	_
+24	salesperson	_	_	_	_	0	_	_	_
+25	in	_	_	_	_	0	_	_	_
+26	that	_	_	_	_	0	_	_	_
+27	field	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Or	_	_	_	_	0	_	_	_
-2	of	_	_	_	_	0	_	_	_
-3	Lenin	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	as	_	_	_	_	0	_	_	_
-6	Navrozov	_	_	_	_	0	_	_	_
-7	accurately	_	_	_	_	0	_	_	_
-8	characterizes	characterize	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-9	***him***	he	PRON	PERS-P3SG-ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	comp:obj	_	SpaceAfter=No
-10	.	_	_	_	_	0	_	_	_
+1	That	_	_	_	_	0	_	_	_
+2	's	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	all	_	_	_	_	0	_	_	_
+4	right	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	officer	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	this	_	_	_	_	0	_	_	_
+9	***is***	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+10	Colonel	_	_	_	_	0	_	_	_
+11	Bray	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	So	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	my	_	_	_	_	0	_	_	_
+4	question	_	_	_	_	0	_	_	_
+5	is	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	this	_	_	_	_	0	_	_	_
+7	:	_	_	_	_	0	_	_	_
+8	who	_	_	_	_	0	_	_	_
+9	***is***	be	AUX	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	parataxis	_	_
+10	Cid	_	_	_	_	0	_	_	_
+11	Hamete	_	_	_	_	0	_	_	_
+12	Benengali	_	_	_	_	0	_	_	_
+13	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	In	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	following	_	_	_	_	0	_	_	_
+4	example	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	Salesperson	_	_	_	_	0	_	_	_
+8	field	_	_	_	_	0	_	_	_
+9	is	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	MultiChart	_	_	_	_	0	_	_	_
+13	area	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	but	_	_	_	_	0	_	_	_
+16	it	_	_	_	_	0	_	_	_
+17	's	_	_	_	_	0	_	_	_
+18	filtered	_	_	_	_	0	_	_	_
+19	so	_	_	_	_	0	_	_	_
+20	it	_	_	_	_	0	_	_	_
+21	displays	_	_	_	_	0	_	_	_
+22	individual	_	_	_	_	0	_	_	_
+23	charts	_	_	_	_	0	_	_	_
+24	for	_	_	_	_	0	_	_	_
+25	Buchanan	Buchanan	PROPN	SG-NOM	Number=Sing	0	_	_	_
+26	and	_	_	_	_	0	_	_	_
+27	***Davolio***	Davolio	PROPN	SG-NOM	Number=Sing	25	conj	_	SpaceAfter=No
+28	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
 2	a	_	_	_	_	0	_	_	_
-3	very	_	_	_	_	0	_	_	_
-4	few	_	_	_	_	0	_	_	_
-5	hours	_	_	_	_	0	_	_	_
-6	I	_	_	_	_	0	_	_	_
-7	arrived	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	a	_	_	_	_	0	_	_	_
-10	city	_	_	_	_	0	_	_	_
-11	that	_	_	_	_	0	_	_	_
-12	always	_	_	_	_	0	_	_	_
-13	makes	make	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-14	***me***	I	PRON	PERS-P1SG-ACC	Case=Acc|Number=Sing|Person=1|PronType=Prs	13	comp:obj	_	_
-15	think	_	_	_	_	0	_	_	_
-16	of	_	_	_	_	0	_	_	_
-17	a	_	_	_	_	0	_	_	_
-18	whited	_	_	_	_	0	_	_	_
-19	sepulcher	_	_	_	_	0	_	_	_
+3	***chart***	chart	NOUN	SG-NOM	Number=Sing	4	subj	_	_
+4	contains	contain	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	multiple	_	_	_	_	0	_	_	_
+6	series	_	_	_	_	0	_	_	_
+7	or	_	_	_	_	0	_	_	_
+8	category	_	_	_	_	0	_	_	_
+9	fields	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	fields	_	_	_	_	0	_	_	_
+13	that	_	_	_	_	0	_	_	_
+14	are	_	_	_	_	0	_	_	_
+15	closest	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	data	_	_	_	_	0	_	_	_
+19	are	_	_	_	_	0	_	_	_
+20	referred	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	as	_	_	_	_	0	_	_	_
+23	inner	_	_	_	_	0	_	_	_
+24	fields	_	_	_	_	0	_	_	_
+25	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	Microsoft	_	_	_	_	0	_	_	_
+4	SQL	_	_	_	_	0	_	_	_
+5	Server	_	_	_	_	0	_	_	_
+6	2000	_	_	_	_	0	_	_	_
+7	Desktop	_	_	_	_	0	_	_	_
+8	Engine	_	_	_	_	0	_	_	_
+9	(	_	_	_	_	0	_	_	_
+10	formerly	_	_	_	_	0	_	_	_
+11	called	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	Microsoft	_	_	_	_	0	_	_	_
+14	Database	_	_	_	_	0	_	_	_
+15	Engine	_	_	_	_	0	_	_	_
+16	or	_	_	_	_	0	_	_	_
+17	MSDE	_	_	_	_	0	_	_	_
+18	)	_	_	_	_	0	_	_	_
+19	is	be	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+20	installed	_	_	_	_	0	_	_	_
+21	on	_	_	_	_	0	_	_	_
+22	Microsoft	_	_	_	_	0	_	_	_
+23	Windows	_	_	_	_	0	_	_	_
+24	NT	_	_	_	_	0	_	_	_
+25	***computers***	computer	NOUN	PL-NOM	Number=Plur	19	udep	_	SpaceAfter=No
+26	,	_	_	_	_	0	_	_	_
+27	it	_	_	_	_	0	_	_	_
+28	is	_	_	_	_	0	_	_	_
+29	installed	_	_	_	_	0	_	_	_
+30	with	_	_	_	_	0	_	_	_
+31	Windows	_	_	_	_	0	_	_	_
+32	NT	_	_	_	_	0	_	_	_
+33	Authentication	_	_	_	_	0	_	_	_
+34	implemented	_	_	_	_	0	_	_	_
+35	(	_	_	_	_	0	_	_	_
+36	this	_	_	_	_	0	_	_	_
+37	feature	_	_	_	_	0	_	_	_
+38	is	_	_	_	_	0	_	_	_
+39	also	_	_	_	_	0	_	_	_
+40	known	_	_	_	_	0	_	_	_
+41	as	_	_	_	_	0	_	_	_
+42	integrated	_	_	_	_	0	_	_	_
+43	security	_	_	_	_	0	_	_	_
+44	)	_	_	_	_	0	_	_	_
+45	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	First	_	_	_	_	0	_	_	_
+2	two	_	_	_	_	0	_	_	_
+3	***times***	time	NOUN	PL-NOM	Number=Plur	7	udep	_	_
+4	up	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	Kingsman	_	_	_	_	0	_	_	_
+7	hits	hit	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	solo	_	_	_	_	0	_	_	_
+9	shots	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	he	_	_	_	_	0	_	_	_
+12	said	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+14	Boom	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	boom	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
+18	Big	_	_	_	_	0	_	_	_
+19	mothers	_	_	_	_	0	_	_	_
+20	–	_	_	_	_	0	_	_	_
+21	all	_	_	_	_	0	_	_	_
+22	the	_	_	_	_	0	_	_	_
+23	way	_	_	_	_	0	_	_	_
+24	to	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	moon	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	We	_	_	_	_	0	_	_	_
+2	are	_	_	_	_	0	_	_	_
+3	staying	_	_	_	_	0	_	_	_
+4	in	_	_	_	_	0	_	_	_
+5	Jerusalem	_	_	_	_	0	_	_	_
+6	as	_	_	_	_	0	_	_	_
+7	guests	_	_	_	_	0	_	_	_
+8	of	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	Mishkenot	Mishkenot	PROPN	PL-NOM-FGN	Number=Plur	0	_	_	_
+11	***Sha'ananim***	Sha'ananim	PROPN	SG-GEN-FGN	Number=Sing	10	flat	_	SpaceAfter=No
+12	,	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	dwellings	_	_	_	_	0	_	_	_
+15	of	_	_	_	_	0	_	_	_
+16	serenity	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	We	_	_	_	_	0	_	_	_
+2	are	_	_	_	_	0	_	_	_
+3	staying	_	_	_	_	0	_	_	_
+4	in	_	_	_	_	0	_	_	_
+5	Jerusalem	_	_	_	_	0	_	_	_
+6	as	_	_	_	_	0	_	_	_
+7	guests	_	_	_	_	0	_	_	_
+8	of	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	Mishkenot	_	_	_	_	0	_	_	_
+11	Sha'ananim	Sha'ananim	PROPN	SG-GEN-FGN	Number=Sing	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	***dwellings***	dwelling	NOUN	PL-NOM	Number=Plur	11	appos	_	_
+15	of	_	_	_	_	0	_	_	_
+16	serenity	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	He	_	_	_	_	0	_	_	_
+2	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+3	five	_	_	_	_	0	_	_	_
+4	***feet***	foot	NOUN	PL-NOM	Number=Plur	2	comp:pred	_	_
+5	six	_	_	_	_	0	_	_	_
+6	,	_	_	_	_	0	_	_	_
+7	I	_	_	_	_	0	_	_	_
+8	should	_	_	_	_	0	_	_	_
+9	judge	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	and	_	_	_	_	0	_	_	_
+12	had	_	_	_	_	0	_	_	_
+13	his	_	_	_	_	0	_	_	_
+14	grip	_	_	_	_	0	_	_	_
+15	on	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	handle-end	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	ever	_	_	_	_	0	_	_	_
+20	so	_	_	_	_	0	_	_	_
+21	many	_	_	_	_	0	_	_	_
+22	millions	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mr	_	_	_	_	0	_	_	_
+2	President	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	***ladies***	lady	NOUN	PL-NOM	Number=Plur	10	vocative	_	_
+5	and	_	_	_	_	0	_	_	_
+6	gentlemen	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	Mr	_	_	_	_	0	_	_	_
+9	Needle	_	_	_	_	0	_	_	_
+10	has	have	AUX	PRES-AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+11	gone	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	great	_	_	_	_	0	_	_	_
+14	trouble	_	_	_	_	0	_	_	_
+15	with	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	hearing	_	_	_	_	0	_	_	_
+18	in	_	_	_	_	0	_	_	_
+19	committee	_	_	_	_	0	_	_	_
 20	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	To	_	_	_	_	0	_	_	_
-2	a	_	_	_	_	0	_	_	_
-3	certain	_	_	_	_	0	_	_	_
-4	extent	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	this	_	_	_	_	0	_	_	_
-7	reminds	remind	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-8	***me***	I	PRON	PERS-P1SG-ACC	Case=Acc|Number=Sing|Person=1|PronType=Prs	7	comp:obj	_	_
-9	of	_	_	_	_	0	_	_	_
-10	my	_	_	_	_	0	_	_	_
-11	previous	_	_	_	_	0	_	_	_
-12	activity	_	_	_	_	0	_	_	_
-13	in	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	Committee	_	_	_	_	0	_	_	_
-16	on	_	_	_	_	0	_	_	_
-17	Budgets	_	_	_	_	0	_	_	_
-18	and	_	_	_	_	0	_	_	_
-19	in	_	_	_	_	0	_	_	_
-20	the	_	_	_	_	0	_	_	_
-21	Committee	_	_	_	_	0	_	_	_
-22	on	_	_	_	_	0	_	_	_
-23	Budgetary	_	_	_	_	0	_	_	_
-24	Control	_	_	_	_	0	_	_	_
-25	.	_	_	_	_	0	_	_	_
+1	The	_	_	_	_	0	_	_	_
+2	United	United	PROPN	SG-NOM	Number=Sing	0	_	_	_
+3	***States***	States	PROPN	SG-NOM	Number=Plur	2	unk@fixed	_	_
+4	has	_	_	_	_	0	_	_	_
+5	shown	_	_	_	_	0	_	_	_
+6	that	_	_	_	_	0	_	_	_
+7	it	_	_	_	_	0	_	_	_
+8	holds	_	_	_	_	0	_	_	_
+9	negotiations	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	contempt	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	She	_	_	_	_	0	_	_	_
-2	says	say	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***that***	that	PRON	DEM-SG	Number=Sing|PronType=Dem	2	comp:obj	_	_
-4	about	_	_	_	_	0	_	_	_
-5	me	_	_	_	_	0	_	_	_
+1	Mrs.	_	_	_	_	0	_	_	_
+2	Indira	_	_	_	_	0	_	_	_
+3	Gandhi	_	_	_	_	0	_	_	_
+4	arrives	_	_	_	_	0	_	_	_
+5	this	_	_	_	_	0	_	_	_
+6	afternoon	_	_	_	_	0	_	_	_
+7	and	_	_	_	_	0	_	_	_
+8	yesterday	_	_	_	_	0	_	_	_
+9	it	_	_	_	_	0	_	_	_
+10	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+11	United	_	_	_	_	0	_	_	_
+12	***Nations***	nation	NOUN	PL-NOM	Number=Plur	10	comp:pred	_	_
+13	and	_	_	_	_	0	_	_	_
+14	Sekou	_	_	_	_	0	_	_	_
+15	Toure	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Advertisement	_	_	_	_	0	_	_	_
+2	hoardings	_	_	_	_	0	_	_	_
+3	had	_	_	_	_	0	_	_	_
+4	gone	_	_	_	_	0	_	_	_
+5	up	_	_	_	_	0	_	_	_
 6	,	_	_	_	_	0	_	_	_
-7	to	_	_	_	_	0	_	_	_
-8	my	_	_	_	_	0	_	_	_
-9	mother	_	_	_	_	0	_	_	_
+7	there	_	_	_	_	0	_	_	_
+8	was	be	VERB	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+9	a	_	_	_	_	0	_	_	_
+10	cement	_	_	_	_	0	_	_	_
+11	***works***	work	NOUN	PL-NOM	Number=Plur	8	subj	_	SpaceAfter=No
+12	,	_	_	_	_	0	_	_	_
+13	smart	_	_	_	_	0	_	_	_
+14	factories	_	_	_	_	0	_	_	_
+15	put	_	_	_	_	0	_	_	_
+16	together	_	_	_	_	0	_	_	_
+17	out	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	jutting	_	_	_	_	0	_	_	_
+20	glassy	_	_	_	_	0	_	_	_
+21	sections	_	_	_	_	0	_	_	_
+22	and	_	_	_	_	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	in	_	_	_	_	0	_	_	_
+25	between	_	_	_	_	0	_	_	_
+26	,	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	patches	_	_	_	_	0	_	_	_
+29	scratched	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	the	_	_	_	_	0	_	_	_
+32	bush	_	_	_	_	0	_	_	_
+33	where	_	_	_	_	0	_	_	_
+34	women	_	_	_	_	0	_	_	_
+35	and	_	_	_	_	0	_	_	_
+36	children	_	_	_	_	0	_	_	_
+37	were	_	_	_	_	0	_	_	_
+38	hoeing	_	_	_	_	0	_	_	_
+39	crooked	_	_	_	_	0	_	_	_
+40	rows	_	_	_	_	0	_	_	_
+41	of	_	_	_	_	0	_	_	_
+42	beans	_	_	_	_	0	_	_	_
+43	and	_	_	_	_	0	_	_	_
+44	maize	_	_	_	_	0	_	_	_
+45	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***They***	they	PRON	PERS-PL-NOM	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	subj	_	_
+2	lets	let	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	Dobby	_	_	_	_	0	_	_	_
+4	get	_	_	_	_	0	_	_	_
+5	on	_	_	_	_	0	_	_	_
+6	with	_	_	_	_	0	_	_	_
+7	it	_	_	_	_	0	_	_	_
+8	,	_	_	_	_	0	_	_	_
+9	sir	_	_	_	_	0	_	_	_
 10	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	Well	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	job	_	_	_	_	0	_	_	_
-5	is	_	_	_	_	0	_	_	_
-6	done	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	one	_	_	_	_	0	_	_	_
-9	asks	ask	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-10	***nothing***	nothing	PRON	NEG-SG	Number=Sing	9	comp:obj	_	_
-11	more	_	_	_	_	0	_	_	_
-12	but	_	_	_	_	0	_	_	_
-13	to	_	_	_	_	0	_	_	_
-14	fold	_	_	_	_	0	_	_	_
-15	one	_	_	_	_	0	_	_	_
-16	's	_	_	_	_	0	_	_	_
-17	tents	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***That***	that	PRON	DEM-SG	Number=Sing|PronType=Dem	2	subj@pass	_	_
-2	was	be	VERB	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
-3	what	_	_	_	_	0	_	_	_
-4	surprised	_	_	_	_	0	_	_	_
-5	me	_	_	_	_	0	_	_	_
-6	most	_	_	_	_	0	_	_	_
-7	of	_	_	_	_	0	_	_	_
-8	all	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
+</div>
 </ul><br><br><br>
 
 

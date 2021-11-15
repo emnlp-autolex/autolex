@@ -137,392 +137,135 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to English-EWT page</a></li>
-<h3> Agreement in <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
-<td style="text-align:center"> - </td>
-<td style="text-align:center">dependent is the= object <br>
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent is the= passive nominal subject <br>
+dependent's lemma is= i <br>
+</td><td style="text-align:center">head of ***-marked token is also the head of= complement for auxiliary <br>
 </td></tr></table></div>
-<input type="hidden" id="rules_text" name="rules_text" value="Active: Not Active:dependent is the= object;"><div id="examples">
-<h4> Examples: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
-1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	drinking	_	_	_	_	0	_	_	_
-4	.	_	_	_	_	0	_	_	_
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent is the= passive nominal subject;dependent's lemma is= i; Not Active:head of ***-marked token is also the head of= complement for auxiliary;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	Am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+2	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	1	subj@pass	_	_
+3	scheduled	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	attend	_	_	_	_	0	_	_	_
+6	?	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	SpaceAfter=No
-2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	dropping	_	_	_	_	0	_	_	_
-4	we	_	_	_	_	0	_	_	_
+1	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj@pass	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+3	amazed	_	_	_	_	0	_	_	_
+4	at	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	spiel	_	_	_	_	0	_	_	_
+7	they	_	_	_	_	0	_	_	_
+8	delivered	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Lynda	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	professional	_	_	_	_	0	_	_	_
-4	and	_	_	_	_	0	_	_	_
-5	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-6	great	_	_	_	_	0	_	_	_
-7	compassion	_	_	_	_	0	_	_	_
-8	for	_	_	_	_	0	_	_	_
-9	animals	_	_	_	_	0	_	_	_
-10	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	It	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	Oct.	_	_	_	_	0	_	_	_
-4	6	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	and	_	_	_	_	0	_	_	_
-7	not	_	_	_	_	0	_	_	_
-8	one	_	_	_	_	0	_	_	_
-9	family	_	_	_	_	0	_	_	_
-10	member	_	_	_	_	0	_	_	_
-11	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-12	been	_	_	_	_	0	_	_	_
-13	located	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	it	_	_	_	_	0	_	_	_
-2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	not	_	_	_	_	0	_	_	_
-4	me	_	_	_	_	0	_	_	_
-5	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
-6	it	_	_	_	_	0	_	_	_
-7	!?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	It	_	_	_	_	0	_	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	incredible	_	_	_	_	0	_	_	_
-4	what	_	_	_	_	0	_	_	_
-5	a	_	_	_	_	0	_	_	_
-6	good	_	_	_	_	0	_	_	_
-7	player	_	_	_	_	0	_	_	_
-8	Alena	_	_	_	_	0	_	_	_
-9	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	subj	_	SpaceAfter=No
-10	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	That	_	_	_	_	0	_	_	_
-2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	comp:pred	_	SpaceAfter=No
-4	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	spectacular	_	_	_	_	0	_	_	_
-4	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	1	_	_	_	_	0	_	_	_
-2	)	_	_	_	_	0	_	_	_
-3	When	_	_	_	_	0	_	_	_
-4	you	_	_	_	_	0	_	_	_
-5	get	_	_	_	_	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	bird	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	place	_	_	_	_	0	_	_	_
-10	him	he	PRON	PRP	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	_	_	_
-11	or	_	_	_	_	0	_	_	_
-12	***her***	she	PRON	PRP	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	10	conj	_	_
-13	or	_	_	_	_	0	_	_	_
-14	them	_	_	_	_	0	_	_	_
-15	in	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	cage	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	If	_	_	_	_	0	_	_	_
-2	he	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	_	_	_
-3	or	_	_	_	_	0	_	_	_
-4	***she***	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	conj	_	_
-5	did	_	_	_	_	0	_	_	_
-6	not	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	then	_	_	_	_	0	_	_	_
-9	they	_	_	_	_	0	_	_	_
-10	should	_	_	_	_	0	_	_	_
-11	have	_	_	_	_	0	_	_	_
-12	all	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	same	_	_	_	_	0	_	_	_
-15	rights	_	_	_	_	0	_	_	_
-16	as	_	_	_	_	0	_	_	_
-17	other	_	_	_	_	0	_	_	_
-18	Iraqis	_	_	_	_	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4>
-<pre><code class="language-conllu">
-1	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	aware	_	_	_	_	0	_	_	_
-4	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	shocked	_	_	_	_	0	_	_	_
-4	!!	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	They	_	_	_	_	0	_	_	_
-2	trust	_	_	_	_	0	_	_	_
-3	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	0	_	_	_
-4	and	_	_	_	_	0	_	_	_
-5	***me***	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	conj	_	_
-6	to	_	_	_	_	0	_	_	_
-7	be	_	_	_	_	0	_	_	_
-8	befuddled	_	_	_	_	0	_	_	_
-9	by	_	_	_	_	0	_	_	_
-10	their	_	_	_	_	0	_	_	_
-11	actions	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	while	_	_	_	_	0	_	_	_
-14	they	_	_	_	_	0	_	_	_
-15	"	_	_	_	_	0	_	_	_
-16	do	_	_	_	_	0	_	_	_
-17	as	_	_	_	_	0	_	_	_
-18	they	_	_	_	_	0	_	_	_
-19	wilt	_	_	_	_	0	_	_	_
-20	"	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	They	_	_	_	_	0	_	_	_
-2	trust	_	_	_	_	0	_	_	_
-3	you	you	PRON	PRP	Case=Acc|Person=2|PronType=Prs	0	_	_	_
-4	and	_	_	_	_	0	_	_	_
-5	***me***	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	conj	_	_
-6	to	_	_	_	_	0	_	_	_
-7	be	_	_	_	_	0	_	_	_
-8	befuddled	_	_	_	_	0	_	_	_
-9	by	_	_	_	_	0	_	_	_
-10	their	_	_	_	_	0	_	_	_
-11	actions	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	while	_	_	_	_	0	_	_	_
-14	they	_	_	_	_	0	_	_	_
-15	"	_	_	_	_	0	_	_	_
-16	do	_	_	_	_	0	_	_	_
-17	as	_	_	_	_	0	_	_	_
-18	they	_	_	_	_	0	_	_	_
-19	wilt	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
-21	"	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Meagan	_	_	_	_	0	_	_	_
-2	does	_	_	_	_	0	_	_	_
-3	have	_	_	_	_	0	_	_	_
-4	a	_	_	_	_	0	_	_	_
-5	couple	_	_	_	_	0	_	_	_
-6	of	_	_	_	_	0	_	_	_
-7	big	_	_	_	_	0	_	_	_
-8	things	_	_	_	_	0	_	_	_
-9	on	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	weekend	_	_	_	_	0	_	_	_
-12	in	_	_	_	_	0	_	_	_
-13	January	_	_	_	_	0	_	_	_
-14	--	_	_	_	_	0	_	_	_
-15	National	_	_	_	_	0	_	_	_
-16	Charity	_	_	_	_	0	_	_	_
-17	League	_	_	_	_	0	_	_	_
-18	Senior	_	_	_	_	0	_	_	_
-19	Presentation	_	_	_	_	0	_	_	_
-20	(	_	_	_	_	0	_	_	_
-21	big	_	_	_	_	0	_	_	_
-22	dance	_	_	_	_	0	_	_	_
-23	that	_	_	_	_	0	_	_	_
-24	she	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	0	_	_	_
-25	and	_	_	_	_	0	_	_	_
-26	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	conj	_	_
-27	are	_	_	_	_	0	_	_	_
-28	committed	_	_	_	_	0	_	_	_
-29	to	_	_	_	_	0	_	_	_
-30	help	_	_	_	_	0	_	_	_
-31	with	_	_	_	_	0	_	_	_
-32	)	_	_	_	_	0	_	_	_
-33	,	_	_	_	_	0	_	_	_
-34	the	_	_	_	_	0	_	_	_
-35	Bearkadette	_	_	_	_	0	_	_	_
-36	Ball	_	_	_	_	0	_	_	_
-37	and	_	_	_	_	0	_	_	_
-38	a	_	_	_	_	0	_	_	_
-39	winter	_	_	_	_	0	_	_	_
-40	party	_	_	_	_	0	_	_	_
-41	for	_	_	_	_	0	_	_	_
-42	Cotillion	_	_	_	_	0	_	_	_
-43	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	sorry	_	_	_	_	0	_	_	_
-4	for	_	_	_	_	0	_	_	_
-5	him	_	_	_	_	0	_	_	_
-6	,	_	_	_	_	0	_	_	_
-7	he	_	_	_	_	0	_	_	_
-8	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
-9	a	_	_	_	_	0	_	_	_
-10	good	_	_	_	_	0	_	_	_
-11	dad	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	now	_	_	_	_	0	_	_	_
-4	more	_	_	_	_	0	_	_	_
-5	at	_	_	_	_	0	_	_	_
-6	peace	_	_	_	_	0	_	_	_
-7	and	_	_	_	_	0	_	_	_
-8	my	_	_	_	_	0	_	_	_
-9	food	_	_	_	_	0	_	_	_
-10	craving	_	_	_	_	0	_	_	_
-11	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-12	about	_	_	_	_	0	_	_	_
-13	99	_	_	_	_	0	_	_	_
-14	%	_	_	_	_	0	_	_	_
-15	gone	_	_	_	_	0	_	_	_
-16	after	_	_	_	_	0	_	_	_
-17	only	_	_	_	_	0	_	_	_
-18	3	_	_	_	_	0	_	_	_
-19	treatments	_	_	_	_	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	think	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	first	_	_	_	_	0	_	_	_
-5	step	_	_	_	_	0	_	_	_
-6	is	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	call	_	_	_	_	0	_	_	_
-9	between	_	_	_	_	0	_	_	_
-10	yourself	yourself	PRON	PRP	Case=Acc|Number=Sing|Person=2|PronType=Prs|Reflex=Yes	0	_	_	_
-11	,	_	_	_	_	0	_	_	_
-12	***me***	I	PRON	PRP	Case=Acc|Number=Sing|Person=1|PronType=Prs	10	conj	_	SpaceAfter=No
-13	,	_	_	_	_	0	_	_	_
-14	Mark	_	_	_	_	0	_	_	_
-15	Stubley	_	_	_	_	0	_	_	_
-16	and	_	_	_	_	0	_	_	_
-17	Mike	_	_	_	_	0	_	_	_
-18	Indivero	_	_	_	_	0	_	_	_
-19	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Joe	_	_	_	_	0	_	_	_
-2	asked	_	_	_	_	0	_	_	_
-3	that	_	_	_	_	0	_	_	_
-4	you	_	_	_	_	0	_	_	_
-5	fax	_	_	_	_	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	revised	_	_	_	_	0	_	_	_
-8	gtee	_	_	_	_	0	_	_	_
-9	wording	_	_	_	_	0	_	_	_
-10	that	_	_	_	_	0	_	_	_
-11	has	_	_	_	_	0	_	_	_
-12	been	_	_	_	_	0	_	_	_
-13	agreed	_	_	_	_	0	_	_	_
-14	(	_	_	_	_	0	_	_	_
-15	I	_	_	_	_	0	_	_	_
-16	believe	_	_	_	_	0	_	_	_
-17	it	_	_	_	_	0	_	_	_
-18	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-19	***our***	we	PRON	PRP$	Number=Plur|Person=1|Poss=Yes|PronType=Prs	18	subj	_	_
-20	agreeing	_	_	_	_	0	_	_	_
-21	to	_	_	_	_	0	_	_	_
-22	reduce	_	_	_	_	0	_	_	_
-23	the	_	_	_	_	0	_	_	_
-24	claim	_	_	_	_	0	_	_	_
-25	period	_	_	_	_	0	_	_	_
-26	from	_	_	_	_	0	_	_	_
-27	15	_	_	_	_	0	_	_	_
-28	days	_	_	_	_	0	_	_	_
-29	down	_	_	_	_	0	_	_	_
+1	As	_	_	_	_	0	_	_	_
+2	i	_	_	_	_	0	_	_	_
+3	asked	_	_	_	_	0	_	_	_
+4	in	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	previous	_	_	_	_	0	_	_	_
+7	questions	_	_	_	_	0	_	_	_
+8	he	_	_	_	_	0	_	_	_
+9	was	_	_	_	_	0	_	_	_
+10	jumping	_	_	_	_	0	_	_	_
+11	up	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	sides	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	cage	_	_	_	_	0	_	_	_
+17	but	_	_	_	_	0	_	_	_
+18	***i***	i	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	subj@pass	_	_
+19	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+20	told	_	_	_	_	0	_	_	_
+21	is	_	_	_	_	0	_	_	_
+22	just	_	_	_	_	0	_	_	_
+23	becouse	_	_	_	_	0	_	_	_
+24	he	_	_	_	_	0	_	_	_
+25	is	_	_	_	_	0	_	_	_
+26	panicking	_	_	_	_	0	_	_	_
+27	and	_	_	_	_	0	_	_	_
+28	he	_	_	_	_	0	_	_	_
+29	wants	_	_	_	_	0	_	_	_
 30	to	_	_	_	_	0	_	_	_
-31	5	_	_	_	_	0	_	_	_
-32	)	_	_	_	_	0	_	_	_
-33	and	_	_	_	_	0	_	_	_
-34	the	_	_	_	_	0	_	_	_
-35	new	_	_	_	_	0	_	_	_
-36	l/c	_	_	_	_	0	_	_	_
-37	wording	_	_	_	_	0	_	_	_
-38	(	_	_	_	_	0	_	_	_
-39	drops	_	_	_	_	0	_	_	_
-40	the	_	_	_	_	0	_	_	_
-41	2	_	_	_	_	0	_	_	_
-42	day	_	_	_	_	0	_	_	_
-43	period	_	_	_	_	0	_	_	_
-44	to	_	_	_	_	0	_	_	_
-45	replace	_	_	_	_	0	_	_	_
-46	an	_	_	_	_	0	_	_	_
-47	l/c	_	_	_	_	0	_	_	_
-48	with	_	_	_	_	0	_	_	_
-49	a	_	_	_	_	0	_	_	_
-50	different	_	_	_	_	0	_	_	_
-51	bank	_	_	_	_	0	_	_	_
-52	if	_	_	_	_	0	_	_	_
-53	the	_	_	_	_	0	_	_	_
-54	first	_	_	_	_	0	_	_	_
-55	refuses	_	_	_	_	0	_	_	_
-56	to	_	_	_	_	0	_	_	_
-57	pay	_	_	_	_	0	_	_	_
-58	)	_	_	_	_	0	_	_	_
-59	.	_	_	_	_	0	_	_	_
+31	escape	_	_	_	_	0	_	_	_
+32	but	_	_	_	_	0	_	_	_
+33	he	_	_	_	_	0	_	_	_
+34	is	_	_	_	_	0	_	_	_
+35	ok	_	_	_	_	0	_	_	_
+36	now	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	Hi	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	i	_	_	_	_	0	_	_	_
+4	bought	_	_	_	_	0	_	_	_
+5	my	_	_	_	_	0	_	_	_
+6	Syrian	_	_	_	_	0	_	_	_
+7	Hamster	_	_	_	_	0	_	_	_
+8	(	_	_	_	_	0	_	_	_
+9	Fernando	_	_	_	_	0	_	_	_
+10	)	_	_	_	_	0	_	_	_
+11	just	_	_	_	_	0	_	_	_
+12	yesterday	_	_	_	_	0	_	_	_
+13	and	_	_	_	_	0	_	_	_
+14	as	_	_	_	_	0	_	_	_
+15	***i***	i	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	subj@pass	_	_
+16	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+17	told	_	_	_	_	0	_	_	_
+18	to	_	_	_	_	0	_	_	_
+19	leave	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	it	_	_	_	_	0	_	_	_
-2	s	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	definitely	_	_	_	_	0	_	_	_
-4	not	_	_	_	_	0	_	_	_
-5	***you***	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	2	comp:pred	_	SpaceAfter=No
-6	.	_	_	_	_	0	_	_	_
+1	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj@pass	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	booked	_	_	_	_	0	_	_	_
+4	for	_	_	_	_	0	_	_	_
+5	2	_	_	_	_	0	_	_	_
+6	nights	_	_	_	_	0	_	_	_
+7	at	_	_	_	_	0	_	_	_
+8	this	_	_	_	_	0	_	_	_
+9	hotel	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	Oct	_	_	_	_	0	_	_	_
+12	2007	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj@pass	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	saddened	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	see	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	reviews	_	_	_	_	0	_	_	_
+8	that	_	_	_	_	0	_	_	_
+9	claimed	_	_	_	_	0	_	_	_
+10	World	_	_	_	_	0	_	_	_
+11	Hats	_	_	_	_	0	_	_	_
+12	Mart	_	_	_	_	0	_	_	_
+13	has	_	_	_	_	0	_	_	_
+14	poor	_	_	_	_	0	_	_	_
+15	service	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

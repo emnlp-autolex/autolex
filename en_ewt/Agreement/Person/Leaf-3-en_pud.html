@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,135 +137,50 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_pud </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	"	_	_	_	_	0	_	_	_
-2	This	_	_	_	_	0	_	_	_
-3	strain	_	_	_	_	0	_	_	_
-4	helps	help	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">head of ***-marked token is also the head of= complement for auxiliary <br>
+dependent's lemma is= i <br>
+</td><td style="text-align:center"> - </td>
+</tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:head of ***-marked token is also the head of= complement for auxiliary;dependent's lemma is= i; Not Active:"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	I	_	_	_	_	0	_	_	_
+2	love	_	_	_	_	0	_	_	_
+3	to	_	_	_	_	0	_	_	_
+4	play	_	_	_	_	0	_	_	_
 5	with	_	_	_	_	0	_	_	_
-6	back	_	_	_	_	0	_	_	_
-7	pain	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	this	_	_	_	_	0	_	_	_
-10	strain	_	_	_	_	0	_	_	_
-11	helps	_	_	_	_	0	_	_	_
-12	with	_	_	_	_	0	_	_	_
-13	nausea	_	_	_	_	0	_	_	_
-14	,	_	_	_	_	0	_	_	_
-15	this	_	_	_	_	0	_	_	_
-16	product	_	_	_	_	0	_	_	_
-17	makes	_	_	_	_	0	_	_	_
-18	you	_	_	_	_	0	_	_	_
-19	sleep	_	_	_	_	0	_	_	_
-20	at	_	_	_	_	0	_	_	_
-21	night	_	_	_	_	0	_	_	_
-22	,	_	_	_	_	0	_	_	_
-23	"	_	_	_	_	0	_	_	_
-24	***says***	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	_
-25	Dietrich	_	_	_	_	0	_	_	_
-26	from	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	company	_	_	_	_	0	_	_	_
-29	's	_	_	_	_	0	_	_	_
-30	headquarters	_	_	_	_	0	_	_	_
-31	in	_	_	_	_	0	_	_	_
-32	Denver	_	_	_	_	0	_	_	_
-33	,	_	_	_	_	0	_	_	_
-34	Colorado	_	_	_	_	0	_	_	_
-35	,	_	_	_	_	0	_	_	_
-36	where	_	_	_	_	0	_	_	_
-37	pot	_	_	_	_	0	_	_	_
-38	is	_	_	_	_	0	_	_	_
-39	sold	_	_	_	_	0	_	_	_
-40	legally	_	_	_	_	0	_	_	_
-41	.	_	_	_	_	0	_	_	_
+6	that	_	_	_	_	0	_	_	_
+7	and	and	CCONJ	CC	_	9	cc	_	_
+8	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	subj	_	_
+9	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+10	always	_	_	_	_	0	_	_	_
+11	looking	look	VERB	VBG	Tense=Pres|VerbForm=Part	9	comp:aux	_	_
+12	for	for	ADP	IN	_	9	udep	_	_
+13	muses	_	_	_	_	0	_	_	_
+14	that	_	_	_	_	0	_	_	_
+15	fit	_	_	_	_	0	_	_	_
+16	that	_	_	_	_	0	_	_	_
+17	bill	_	_	_	_	0	_	_	_
+18	because	because	SCONJ	IN	_	9	mod	_	_
+19	it	_	_	_	_	0	_	_	_
+20	is	_	_	_	_	0	_	_	_
+21	so	_	_	_	_	0	_	_	_
+22	interesting	_	_	_	_	0	_	_	_
+23	making	_	_	_	_	0	_	_	_
+24	a	_	_	_	_	0	_	_	_
+25	collection	_	_	_	_	0	_	_	_
+26	when	_	_	_	_	0	_	_	_
+27	I	_	_	_	_	0	_	_	_
+28	find	_	_	_	_	0	_	_	_
+29	one	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<pre><code class="language-conllu">
-1	“	_	_	_	_	0	_	_	_
-2	Beijing	_	_	_	_	0	_	_	_
-3	believes	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	its	_	_	_	_	0	_	_	_
-5	intervention	_	_	_	_	0	_	_	_
-6	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
-7	necessary	_	_	_	_	0	_	_	_
-8	to	_	_	_	_	0	_	_	_
-9	prevent	_	_	_	_	0	_	_	_
-10	a	_	_	_	_	0	_	_	_
-11	continued	_	_	_	_	0	_	_	_
-12	legislative	_	_	_	_	0	_	_	_
-13	paralysis	_	_	_	_	0	_	_	_
-14	in	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	city	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	”	_	_	_	_	0	_	_	_
-19	he	_	_	_	_	0	_	_	_
-20	said	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	In	_	_	_	_	0	_	_	_
-2	China	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	hair	_	_	_	_	0	_	_	_
-5	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	comp:obj	_	_
-6	typically	_	_	_	_	0	_	_	_
-7	put	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	a	_	_	_	_	0	_	_	_
-10	chemical	_	_	_	_	0	_	_	_
-11	bath	_	_	_	_	0	_	_	_
-12	to	_	_	_	_	0	_	_	_
-13	remove	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	cuticle	_	_	_	_	0	_	_	_
-16	completely	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	Tarlo	_	_	_	_	0	_	_	_
-19	explains	explain	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	association	_	_	_	_	0	_	_	_
-3	that	_	_	_	_	0	_	_	_
-4	represents	_	_	_	_	0	_	_	_
-5	real	_	_	_	_	0	_	_	_
-6	estate	_	_	_	_	0	_	_	_
-7	agents	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	Ontario	_	_	_	_	0	_	_	_
-10	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	more	_	_	_	_	0	_	_	_
-12	***needs***	need	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	comp:obj	_	_
-13	to	_	_	_	_	0	_	_	_
-14	be	_	_	_	_	0	_	_	_
-15	done	_	_	_	_	0	_	_	_
-16	to	_	_	_	_	0	_	_	_
-17	protect	_	_	_	_	0	_	_	_
-18	consumers	_	_	_	_	0	_	_	_
-19	and	_	_	_	_	0	_	_	_
-20	punish	_	_	_	_	0	_	_	_
-21	agents	_	_	_	_	0	_	_	_
-22	found	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	have	_	_	_	_	0	_	_	_
-25	engaged	_	_	_	_	0	_	_	_
-26	in	_	_	_	_	0	_	_	_
-27	unethical	_	_	_	_	0	_	_	_
-28	behaviour	_	_	_	_	0	_	_	_
-29	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><h5> No examples found </h5></ul><br><br><br>
+<h5> No examples found </h5>
+</div>
+</ul><br><br><br>
 
 
 <!-- support for embedded visualizations -->

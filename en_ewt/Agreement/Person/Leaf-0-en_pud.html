@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,137 +137,254 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_pud </b> </h3><h3>There is required-agreement between the syntactic head and its dependent when </h3> <div id="examples">
-<h4> Examples: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
-1	In	_	_	_	_	0	_	_	_
-2	China	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	hair	_	_	_	_	0	_	_	_
-5	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	comp:obj	_	_
-6	typically	_	_	_	_	0	_	_	_
-7	put	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	a	_	_	_	_	0	_	_	_
-10	chemical	_	_	_	_	0	_	_	_
-11	bath	_	_	_	_	0	_	_	_
-12	to	_	_	_	_	0	_	_	_
-13	remove	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	cuticle	_	_	_	_	0	_	_	_
-16	completely	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	Tarlo	_	_	_	_	0	_	_	_
-19	explains	explain	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-20	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><input type="hidden" id="rules_text" name="rules_text" value="Active: Not Active:dependent's lemma is= i;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	***She***	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	84	_	_	_	_	0	_	_	_
+4	years	_	_	_	_	0	_	_	_
+5	old	_	_	_	_	0	_	_	_
+6	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	association	_	_	_	_	0	_	_	_
-3	that	_	_	_	_	0	_	_	_
-4	represents	_	_	_	_	0	_	_	_
-5	real	_	_	_	_	0	_	_	_
-6	estate	_	_	_	_	0	_	_	_
-7	agents	_	_	_	_	0	_	_	_
-8	in	_	_	_	_	0	_	_	_
-9	Ontario	_	_	_	_	0	_	_	_
-10	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	more	_	_	_	_	0	_	_	_
-12	***needs***	need	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	comp:obj	_	_
-13	to	_	_	_	_	0	_	_	_
-14	be	_	_	_	_	0	_	_	_
-15	done	_	_	_	_	0	_	_	_
-16	to	_	_	_	_	0	_	_	_
-17	protect	_	_	_	_	0	_	_	_
-18	consumers	_	_	_	_	0	_	_	_
-19	and	_	_	_	_	0	_	_	_
-20	punish	_	_	_	_	0	_	_	_
-21	agents	_	_	_	_	0	_	_	_
-22	found	_	_	_	_	0	_	_	_
-23	to	_	_	_	_	0	_	_	_
-24	have	_	_	_	_	0	_	_	_
-25	engaged	_	_	_	_	0	_	_	_
-26	in	_	_	_	_	0	_	_	_
-27	unethical	_	_	_	_	0	_	_	_
-28	behaviour	_	_	_	_	0	_	_	_
-29	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	"	_	_	_	_	0	_	_	_
-2	This	_	_	_	_	0	_	_	_
-3	strain	_	_	_	_	0	_	_	_
-4	helps	help	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	with	_	_	_	_	0	_	_	_
-6	back	_	_	_	_	0	_	_	_
-7	pain	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	this	_	_	_	_	0	_	_	_
-10	strain	_	_	_	_	0	_	_	_
-11	helps	_	_	_	_	0	_	_	_
-12	with	_	_	_	_	0	_	_	_
-13	nausea	_	_	_	_	0	_	_	_
+1	What	_	_	_	_	0	_	_	_
+2	she	_	_	_	_	0	_	_	_
+3	’s	_	_	_	_	0	_	_	_
+4	saying	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	what	_	_	_	_	0	_	_	_
+7	***she***	she	PRON	PRP	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	8	subj	_	SpaceAfter=No
+8	’s	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	doing	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	it	_	_	_	_	0	_	_	_
+12	—	_	_	_	_	0	_	_	_
+13	actually	_	_	_	_	0	_	_	_
 14	,	_	_	_	_	0	_	_	_
-15	this	_	_	_	_	0	_	_	_
-16	product	_	_	_	_	0	_	_	_
-17	makes	_	_	_	_	0	_	_	_
-18	you	_	_	_	_	0	_	_	_
-19	sleep	_	_	_	_	0	_	_	_
-20	at	_	_	_	_	0	_	_	_
-21	night	_	_	_	_	0	_	_	_
-22	,	_	_	_	_	0	_	_	_
-23	"	_	_	_	_	0	_	_	_
-24	***says***	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	_
-25	Dietrich	_	_	_	_	0	_	_	_
-26	from	_	_	_	_	0	_	_	_
-27	the	_	_	_	_	0	_	_	_
-28	company	_	_	_	_	0	_	_	_
-29	's	_	_	_	_	0	_	_	_
-30	headquarters	_	_	_	_	0	_	_	_
-31	in	_	_	_	_	0	_	_	_
-32	Denver	_	_	_	_	0	_	_	_
-33	,	_	_	_	_	0	_	_	_
-34	Colorado	_	_	_	_	0	_	_	_
-35	,	_	_	_	_	0	_	_	_
-36	where	_	_	_	_	0	_	_	_
-37	pot	_	_	_	_	0	_	_	_
-38	is	_	_	_	_	0	_	_	_
-39	sold	_	_	_	_	0	_	_	_
-40	legally	_	_	_	_	0	_	_	_
-41	.	_	_	_	_	0	_	_	_
+15	it	_	_	_	_	0	_	_	_
+16	’s	_	_	_	_	0	_	_	_
+17	unbelievable	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	“	_	_	_	_	0	_	_	_
-2	Beijing	_	_	_	_	0	_	_	_
-3	believes	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	its	_	_	_	_	0	_	_	_
-5	intervention	_	_	_	_	0	_	_	_
-6	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
-7	necessary	_	_	_	_	0	_	_	_
-8	to	_	_	_	_	0	_	_	_
-9	prevent	_	_	_	_	0	_	_	_
-10	a	_	_	_	_	0	_	_	_
-11	continued	_	_	_	_	0	_	_	_
-12	legislative	_	_	_	_	0	_	_	_
-13	paralysis	_	_	_	_	0	_	_	_
-14	in	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	city	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	”	_	_	_	_	0	_	_	_
-19	he	_	_	_	_	0	_	_	_
-20	said	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
+1	However	_	_	_	_	0	_	_	_
+2	this	_	_	_	_	0	_	_	_
+3	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+4	reversed	_	_	_	_	0	_	_	_
+5	when	_	_	_	_	0	_	_	_
+6	Julian	_	_	_	_	0	_	_	_
+7	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	mod	_	_
+8	killed	_	_	_	_	0	_	_	_
+9	in	_	_	_	_	0	_	_	_
+10	battle	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	363	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4>
-<h5> No examples found </h5>
+<pre><code class="language-conllu">
+1	It	_	_	_	_	0	_	_	_
+2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	most	_	_	_	_	0	_	_	_
+4	obvious	_	_	_	_	0	_	_	_
+5	when	_	_	_	_	0	_	_	_
+6	a	_	_	_	_	0	_	_	_
+7	celebrity	_	_	_	_	0	_	_	_
+8	's	_	_	_	_	0	_	_	_
+9	name	_	_	_	_	0	_	_	_
+10	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	mod	_	_
+11	initially	_	_	_	_	0	_	_	_
+12	quite	_	_	_	_	0	_	_	_
+13	rare	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	she	_	_	_	_	0	_	_	_
+3	’s	_	_	_	_	0	_	_	_
+4	saying	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	what	_	_	_	_	0	_	_	_
+7	she	_	_	_	_	0	_	_	_
+8	’s	_	_	_	_	0	_	_	_
+9	doing	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	reparandum	_	_
+12	—	_	_	_	_	0	_	_	_
+13	actually	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	it	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	0	_	_	_
+16	’s	_	_	_	_	0	_	_	_
+17	unbelievable	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj	_	SpaceAfter=No
+2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	like	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	super	_	_	_	_	0	_	_	_
+6	power	_	_	_	_	0	_	_	_
+7	sometimes	_	_	_	_	0	_	_	_
+8	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj@pass	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	declared	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	wildlife	_	_	_	_	0	_	_	_
+6	sanctuary	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	1975	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Since	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	1960s	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	South	_	_	_	_	0	_	_	_
+7	Korean	_	_	_	_	0	_	_	_
+8	economy	_	_	_	_	0	_	_	_
+9	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+10	grown	_	_	_	_	0	_	_	_
+11	enormously	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	economic	_	_	_	_	0	_	_	_
+15	structure	_	_	_	_	0	_	_	_
+16	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	conj	_	_
+17	radically	_	_	_	_	0	_	_	_
+18	transformed	_	_	_	_	0	_	_	_
+19	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	That	_	_	_	_	0	_	_	_
+2	share	_	_	_	_	0	_	_	_
+3	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	been	_	_	_	_	0	_	_	_
+5	rising	_	_	_	_	0	_	_	_
+6	steadily	_	_	_	_	0	_	_	_
+7	over	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	years	_	_	_	_	0	_	_	_
+10	—	_	_	_	_	0	_	_	_
+11	only	_	_	_	_	0	_	_	_
+12	11	_	_	_	_	0	_	_	_
+13	percent	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	total	_	_	_	_	0	_	_	_
+17	vote	_	_	_	_	0	_	_	_
+18	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	parataxis	_	_
+19	cast	_	_	_	_	0	_	_	_
+20	before	_	_	_	_	0	_	_	_
+21	Election	_	_	_	_	0	_	_	_
+22	Day	_	_	_	_	0	_	_	_
+23	in	_	_	_	_	0	_	_	_
+24	1996	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	according	_	_	_	_	0	_	_	_
+27	to	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	Census	_	_	_	_	0	_	_	_
+30	Bureau	_	_	_	_	0	_	_	_
+31	--	_	_	_	_	0	_	_	_
+32	and	_	_	_	_	0	_	_	_
+33	seems	_	_	_	_	0	_	_	_
+34	likely	_	_	_	_	0	_	_	_
+35	to	_	_	_	_	0	_	_	_
+36	jump	_	_	_	_	0	_	_	_
+37	again	_	_	_	_	0	_	_	_
+38	this	_	_	_	_	0	_	_	_
+39	year	_	_	_	_	0	_	_	_
+40	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	That	_	_	_	_	0	_	_	_
+2	share	_	_	_	_	0	_	_	_
+3	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	been	_	_	_	_	0	_	_	_
+5	rising	_	_	_	_	0	_	_	_
+6	steadily	_	_	_	_	0	_	_	_
+7	over	_	_	_	_	0	_	_	_
+8	the	_	_	_	_	0	_	_	_
+9	years	_	_	_	_	0	_	_	_
+10	—	_	_	_	_	0	_	_	_
+11	only	_	_	_	_	0	_	_	_
+12	11	_	_	_	_	0	_	_	_
+13	percent	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	total	_	_	_	_	0	_	_	_
+17	vote	_	_	_	_	0	_	_	_
+18	was	_	_	_	_	0	_	_	_
+19	cast	_	_	_	_	0	_	_	_
+20	before	_	_	_	_	0	_	_	_
+21	Election	_	_	_	_	0	_	_	_
+22	Day	_	_	_	_	0	_	_	_
+23	in	_	_	_	_	0	_	_	_
+24	1996	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	according	_	_	_	_	0	_	_	_
+27	to	_	_	_	_	0	_	_	_
+28	the	_	_	_	_	0	_	_	_
+29	Census	_	_	_	_	0	_	_	_
+30	Bureau	_	_	_	_	0	_	_	_
+31	--	_	_	_	_	0	_	_	_
+32	and	_	_	_	_	0	_	_	_
+33	***seems***	seem	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+34	likely	_	_	_	_	0	_	_	_
+35	to	_	_	_	_	0	_	_	_
+36	jump	_	_	_	_	0	_	_	_
+37	again	_	_	_	_	0	_	_	_
+38	this	_	_	_	_	0	_	_	_
+39	year	_	_	_	_	0	_	_	_
+40	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	He	_	_	_	_	0	_	_	_
+2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+3	utterly	_	_	_	_	0	_	_	_
+4	gracious	_	_	_	_	0	_	_	_
+5	and	_	_	_	_	0	_	_	_
+6	took	_	_	_	_	0	_	_	_
+7	it	_	_	_	_	0	_	_	_
+8	like	_	_	_	_	0	_	_	_
+9	a	_	_	_	_	0	_	_	_
+10	man	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	I	_	_	_	_	0	_	_	_
+13	***am***	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+14	beyond	_	_	_	_	0	_	_	_
+15	furious	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
 </div>
 </ul><br><br><br>
 

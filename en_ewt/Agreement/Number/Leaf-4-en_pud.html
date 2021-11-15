@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,87 +137,679 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_pud </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	They	_	_	_	_	0	_	_	_
-2	did	_	_	_	_	0	_	_	_
-3	n’t	_	_	_	_	0	_	_	_
-4	have	_	_	_	_	0	_	_	_
-5	them	_	_	_	_	0	_	_	_
-6	in	_	_	_	_	0	_	_	_
-7	our	_	_	_	_	0	_	_	_
-8	day	_	_	_	_	0	_	_	_
-9	,	_	_	_	_	0	_	_	_
-10	and	_	_	_	_	0	_	_	_
-11	people	_	_	_	_	0	_	_	_
-12	without	_	_	_	_	0	_	_	_
-13	children	_	_	_	_	0	_	_	_
-14	express	_	_	_	_	0	_	_	_
-15	through	_	_	_	_	0	_	_	_
-16	their	_	_	_	_	0	_	_	_
-17	disapproval	_	_	_	_	0	_	_	_
-18	all	all	DET	PDT	_	20	det@predet	_	_
-19	***their***	they	PRON	PRP$	Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	mod@poss	_	_
-20	hatred	hatred	NOUN	NN	Number=Sing	0	_	_	_
-21	of	of	ADP	IN	_	20	udep	_	_
-22	modern	_	_	_	_	0	_	_	_
-23	parenting	_	_	_	_	0	_	_	_
-24	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Where	_	_	_	_	0	_	_	_
-2	does	_	_	_	_	0	_	_	_
-3	all	all	DET	PDT	_	5	det@predet	_	_
-4	***her***	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	mod@poss	_	_
-5	energy	energy	NOUN	NN	Number=Sing	0	_	_	_
-6	come	_	_	_	_	0	_	_	_
-7	from	_	_	_	_	0	_	_	_
-8	?	_	_	_	_	0	_	_	_
-9	Or	_	_	_	_	0	_	_	_
-10	that	_	_	_	_	0	_	_	_
-11	voice	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	which	_	_	_	_	0	_	_	_
-14	can	_	_	_	_	0	_	_	_
-15	blast	_	_	_	_	0	_	_	_
-16	out	_	_	_	_	0	_	_	_
-17	with	_	_	_	_	0	_	_	_
-18	a	_	_	_	_	0	_	_	_
-19	force	_	_	_	_	0	_	_	_
-20	to	_	_	_	_	0	_	_	_
-21	induce	_	_	_	_	0	_	_	_
-22	shockwaves	_	_	_	_	0	_	_	_
-23	?	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent's head is a= NOUN <br>
+</td><td style="text-align:center">dependent's lemma is= we <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent's head is a= NOUN; Not Active:dependent's lemma is= we;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	For	_	_	_	_	0	_	_	_
+2	those	_	_	_	_	0	_	_	_
+3	who	_	_	_	_	0	_	_	_
+4	follow	_	_	_	_	0	_	_	_
+5	social	_	_	_	_	0	_	_	_
+6	***media***	media	NOUN	NN	Number=Sing	7	compound	_	_
+7	transitions	transition	NOUN	NNS	Number=Plur	0	_	_	_
+8	on	_	_	_	_	0	_	_	_
+9	Capitol	_	_	_	_	0	_	_	_
+10	Hill	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	this	_	_	_	_	0	_	_	_
+13	will	_	_	_	_	0	_	_	_
+14	be	_	_	_	_	0	_	_	_
+15	a	_	_	_	_	0	_	_	_
+16	little	_	_	_	_	0	_	_	_
+17	different	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	For	_	_	_	_	0	_	_	_
-2	anyone	_	_	_	_	0	_	_	_
-3	who	_	_	_	_	0	_	_	_
-4	wants	_	_	_	_	0	_	_	_
+1	“	_	_	_	_	0	_	_	_
+2	So	_	_	_	_	0	_	_	_
+3	I	_	_	_	_	0	_	_	_
+4	hate	_	_	_	_	0	_	_	_
 5	to	_	_	_	_	0	_	_	_
-6	see	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	capital	_	_	_	_	0	_	_	_
-9	in	_	_	_	_	0	_	_	_
-10	all	all	DET	PDT	_	12	det@predet	_	_
-11	***its***	its	PRON	PRP$	Gender=Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	mod@poss	_	_
-12	glory	glory	NOUN	NN	Number=Sing	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	November	_	_	_	_	0	_	_	_
-15	's	_	_	_	_	0	_	_	_
-16	a	_	_	_	_	0	_	_	_
-17	great	_	_	_	_	0	_	_	_
-18	time	_	_	_	_	0	_	_	_
-19	to	_	_	_	_	0	_	_	_
-20	go	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
+6	put	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	little	_	_	_	_	0	_	_	_
+9	pressure	_	_	_	_	0	_	_	_
+10	on	_	_	_	_	0	_	_	_
+11	you	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	but	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	fate	_	_	_	_	0	_	_	_
+16	of	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	republic	_	_	_	_	0	_	_	_
+19	rests	_	_	_	_	0	_	_	_
+20	on	_	_	_	_	0	_	_	_
+21	your	_	_	_	_	0	_	_	_
+22	shoulders	_	_	_	_	0	_	_	_
+23	,	_	_	_	_	0	_	_	_
+24	”	_	_	_	_	0	_	_	_
+25	he	_	_	_	_	0	_	_	_
+26	told	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	crowd	_	_	_	_	0	_	_	_
+29	gathered	_	_	_	_	0	_	_	_
+30	on	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	***sports***	sport	NOUN	NNS	Number=Plur	33	compound	_	_
+33	field	field	NOUN	NN	Number=Sing	0	_	_	_
+34	at	_	_	_	_	0	_	_	_
+35	the	_	_	_	_	0	_	_	_
+36	University	_	_	_	_	0	_	_	_
+37	of	_	_	_	_	0	_	_	_
+38	North	_	_	_	_	0	_	_	_
+39	Carolina	_	_	_	_	0	_	_	_
+40	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	early	_	_	_	_	0	_	_	_
+3	October	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	transition	_	_	_	_	0	_	_	_
+7	team	_	_	_	_	0	_	_	_
+8	used	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	same	_	_	_	_	0	_	_	_
+11	venue	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	meet	_	_	_	_	0	_	_	_
+14	with	_	_	_	_	0	_	_	_
+15	***technology***	technology	NOUN	NN	Number=Sing	16	compound	_	_
+16	lobbyists	lobbyist	NOUN	NNS	Number=Plur	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	inviting	_	_	_	_	0	_	_	_
+19	representatives	_	_	_	_	0	_	_	_
+20	from	_	_	_	_	0	_	_	_
+21	Uber	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Motion	_	_	_	_	0	_	_	_
+25	Picture	_	_	_	_	0	_	_	_
+26	Association	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	America	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Consumer	_	_	_	_	0	_	_	_
+32	Technology	_	_	_	_	0	_	_	_
+33	Association	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	other	_	_	_	_	0	_	_	_
+36	groups	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	early	_	_	_	_	0	_	_	_
+3	October	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	transition	_	_	_	_	0	_	_	_
+7	team	_	_	_	_	0	_	_	_
+8	used	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	same	_	_	_	_	0	_	_	_
+11	venue	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	meet	_	_	_	_	0	_	_	_
+14	with	_	_	_	_	0	_	_	_
+15	technology	_	_	_	_	0	_	_	_
+16	lobbyists	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	inviting	_	_	_	_	0	_	_	_
+19	representatives	_	_	_	_	0	_	_	_
+20	from	_	_	_	_	0	_	_	_
+21	Uber	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Motion	_	_	_	_	0	_	_	_
+25	Picture	_	_	_	_	0	_	_	_
+26	Association	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	America	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Consumer	_	_	_	_	0	_	_	_
+32	Technology	_	_	_	_	0	_	_	_
+33	Association	association	NOUN	NN	Number=Sing	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	other	_	_	_	_	0	_	_	_
+36	***groups***	group	NOUN	NNS	Number=Plur	33	conj	_	SpaceAfter=No
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	First	_	_	_	_	0	_	_	_
+2	one	_	_	_	_	0	_	_	_
+3	of	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	***Yazidi***	Yazidi	PROPN	NNP	Number=Sing	6	compound	_	_
+6	women	woman	NOUN	NNS	Number=Plur	0	_	_	_
+7	started	_	_	_	_	0	_	_	_
+8	crying	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	then	_	_	_	_	0	_	_	_
+11	one	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	her	_	_	_	_	0	_	_	_
+14	friends	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	First	_	_	_	_	0	_	_	_
+2	one	_	_	_	_	0	_	_	_
+3	of	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	Yazidi	_	_	_	_	0	_	_	_
+6	women	_	_	_	_	0	_	_	_
+7	started	_	_	_	_	0	_	_	_
+8	crying	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	then	_	_	_	_	0	_	_	_
+11	one	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	***her***	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	mod@poss	_	_
+14	friends	friend	NOUN	NNS	Number=Plur	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Students	_	_	_	_	0	_	_	_
+2	like	_	_	_	_	0	_	_	_
+3	Rai	_	_	_	_	0	_	_	_
+4	have	_	_	_	_	0	_	_	_
+5	been	_	_	_	_	0	_	_	_
+6	meeting	_	_	_	_	0	_	_	_
+7	with	_	_	_	_	0	_	_	_
+8	counsellors	_	_	_	_	0	_	_	_
+9	at	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	school	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	talk	_	_	_	_	0	_	_	_
+14	about	_	_	_	_	0	_	_	_
+15	what	_	_	_	_	0	_	_	_
+16	happened	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	but	_	_	_	_	0	_	_	_
+19	she	_	_	_	_	0	_	_	_
+20	said	_	_	_	_	0	_	_	_
+21	the	_	_	_	_	0	_	_	_
+22	biggest	_	_	_	_	0	_	_	_
+23	comfort	_	_	_	_	0	_	_	_
+24	has	_	_	_	_	0	_	_	_
+25	come	_	_	_	_	0	_	_	_
+26	from	_	_	_	_	0	_	_	_
+27	seeing	_	_	_	_	0	_	_	_
+28	***her***	she	PRON	PRP$	Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs	29	mod@poss	_	_
+29	friends	friend	NOUN	NNS	Number=Plur	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Mr	_	_	_	_	0	_	_	_
+2	Osborne	_	_	_	_	0	_	_	_
+3	signed	_	_	_	_	0	_	_	_
+4	up	_	_	_	_	0	_	_	_
+5	with	_	_	_	_	0	_	_	_
+6	a	_	_	_	_	0	_	_	_
+7	US	_	_	_	_	0	_	_	_
+8	***speakers***	speaker	NOUN	NNS	Number=Plur	9	compound	_	_
+9	agency	agency	NOUN	NN	Number=Sing	0	_	_	_
+10	after	_	_	_	_	0	_	_	_
+11	being	_	_	_	_	0	_	_	_
+12	sacked	_	_	_	_	0	_	_	_
+13	in	_	_	_	_	0	_	_	_
+14	July	_	_	_	_	0	_	_	_
+15	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	promise	_	_	_	_	0	_	_	_
+3	of	_	_	_	_	0	_	_	_
+4	new	_	_	_	_	0	_	_	_
+5	Royal	_	_	_	_	0	_	_	_
+6	***Navy***	navy	NOUN	NN	Number=Sing	7	compound	_	_
+7	orders	order	NOUN	NNS	Number=Plur	0	_	_	_
+8	to	_	_	_	_	0	_	_	_
+9	secure	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	Clyde	_	_	_	_	0	_	_	_
+12	shipbuilding	_	_	_	_	0	_	_	_
+13	industry	_	_	_	_	0	_	_	_
+14	was	_	_	_	_	0	_	_	_
+15	made	_	_	_	_	0	_	_	_
+16	before	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	Scottish	_	_	_	_	0	_	_	_
+19	independence	_	_	_	_	0	_	_	_
+20	referendum	_	_	_	_	0	_	_	_
+21	in	_	_	_	_	0	_	_	_
+22	2014	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	***Mate***	mate	PROPN	NN	Number=Sing	4	compound	_	_
+3	9	_	_	_	_	0	_	_	_
+4	phones	phone	NOUN	NNS	Number=Plur	0	_	_	_
+5	lack	_	_	_	_	0	_	_	_
+6	an	_	_	_	_	0	_	_	_
+7	artificial	_	_	_	_	0	_	_	_
+8	intelligence	_	_	_	_	0	_	_	_
+9	interface	_	_	_	_	0	_	_	_
+10	,	_	_	_	_	0	_	_	_
+11	like	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	Google	_	_	_	_	0	_	_	_
+14	Assistant	_	_	_	_	0	_	_	_
+15	or	_	_	_	_	0	_	_	_
+16	Apple	_	_	_	_	0	_	_	_
+17	's	_	_	_	_	0	_	_	_
+18	Siri	_	_	_	_	0	_	_	_
+19	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	While	_	_	_	_	0	_	_	_
+3	much	_	_	_	_	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	digital	_	_	_	_	0	_	_	_
+7	transition	_	_	_	_	0	_	_	_
+8	is	_	_	_	_	0	_	_	_
+9	unprecedented	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	United	_	_	_	_	0	_	_	_
+13	States	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	peaceful	_	_	_	_	0	_	_	_
+17	transition	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	power	_	_	_	_	0	_	_	_
+20	is	_	_	_	_	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	”	_	_	_	_	0	_	_	_
+24	***Obama***	Obama	PROPN	NNP	Number=Sing	26	compound	_	_
+25	special	_	_	_	_	0	_	_	_
+26	assistant	assistant	NOUN	NN	Number=Sing	0	_	_	_
+27	Kori	_	_	_	_	0	_	_	_
+28	Schulman	_	_	_	_	0	_	_	_
+29	wrote	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	blog	_	_	_	_	0	_	_	_
+33	post	_	_	_	_	0	_	_	_
+34	Monday	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	While	_	_	_	_	0	_	_	_
+3	much	_	_	_	_	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	digital	_	_	_	_	0	_	_	_
+7	transition	_	_	_	_	0	_	_	_
+8	is	_	_	_	_	0	_	_	_
+9	unprecedented	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	United	_	_	_	_	0	_	_	_
+13	States	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	peaceful	_	_	_	_	0	_	_	_
+17	transition	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	power	_	_	_	_	0	_	_	_
+20	is	_	_	_	_	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	”	_	_	_	_	0	_	_	_
+24	Obama	_	_	_	_	0	_	_	_
+25	special	_	_	_	_	0	_	_	_
+26	assistant	assistant	NOUN	NN	Number=Sing	0	_	_	_
+27	***Kori***	Kori	PROPN	NNP	Number=Sing	26	flat	_	_
+28	Schulman	_	_	_	_	0	_	_	_
+29	wrote	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	blog	_	_	_	_	0	_	_	_
+33	post	_	_	_	_	0	_	_	_
+34	Monday	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	While	_	_	_	_	0	_	_	_
+3	much	_	_	_	_	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	digital	_	_	_	_	0	_	_	_
+7	transition	_	_	_	_	0	_	_	_
+8	is	_	_	_	_	0	_	_	_
+9	unprecedented	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	United	_	_	_	_	0	_	_	_
+13	States	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	peaceful	_	_	_	_	0	_	_	_
+17	transition	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	power	_	_	_	_	0	_	_	_
+20	is	_	_	_	_	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	”	_	_	_	_	0	_	_	_
+24	Obama	_	_	_	_	0	_	_	_
+25	special	_	_	_	_	0	_	_	_
+26	assistant	assistant	NOUN	NN	Number=Sing	0	_	_	_
+27	Kori	_	_	_	_	0	_	_	_
+28	***Schulman***	Schulman	PROPN	NNP	Number=Sing	26	flat	_	_
+29	wrote	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	blog	_	_	_	_	0	_	_	_
+33	post	_	_	_	_	0	_	_	_
+34	Monday	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	While	_	_	_	_	0	_	_	_
+3	much	_	_	_	_	0	_	_	_
+4	of	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	digital	_	_	_	_	0	_	_	_
+7	transition	_	_	_	_	0	_	_	_
+8	is	_	_	_	_	0	_	_	_
+9	unprecedented	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	the	_	_	_	_	0	_	_	_
+12	United	_	_	_	_	0	_	_	_
+13	States	_	_	_	_	0	_	_	_
+14	,	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	peaceful	_	_	_	_	0	_	_	_
+17	transition	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	power	_	_	_	_	0	_	_	_
+20	is	_	_	_	_	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	”	_	_	_	_	0	_	_	_
+24	Obama	_	_	_	_	0	_	_	_
+25	special	_	_	_	_	0	_	_	_
+26	assistant	_	_	_	_	0	_	_	_
+27	Kori	_	_	_	_	0	_	_	_
+28	Schulman	_	_	_	_	0	_	_	_
+29	wrote	_	_	_	_	0	_	_	_
+30	in	_	_	_	_	0	_	_	_
+31	a	_	_	_	_	0	_	_	_
+32	***blog***	blog	NOUN	NN	Number=Sing	33	compound	_	_
+33	post	post	NOUN	NN	Number=Sing	0	_	_	_
+34	Monday	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	But	_	_	_	_	0	_	_	_
+2	in	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	break	_	_	_	_	0	_	_	_
+5	from	_	_	_	_	0	_	_	_
+6	***his***	he	PRON	PRP$	Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	mod@poss	_	_
+7	past	_	_	_	_	0	_	_	_
+8	rhetoric	rhetoric	NOUN	NN	Number=Sing	0	_	_	_
+9	about	_	_	_	_	0	_	_	_
+10	curtailing	_	_	_	_	0	_	_	_
+11	immigration	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	GOP	_	_	_	_	0	_	_	_
+15	nominee	_	_	_	_	0	_	_	_
+16	proclaimed	_	_	_	_	0	_	_	_
+17	that	_	_	_	_	0	_	_	_
+18	as	_	_	_	_	0	_	_	_
+19	president	_	_	_	_	0	_	_	_
+20	he	_	_	_	_	0	_	_	_
+21	would	_	_	_	_	0	_	_	_
+22	allow	_	_	_	_	0	_	_	_
+23	“	_	_	_	_	0	_	_	_
+24	tremendous	_	_	_	_	0	_	_	_
+25	numbers	_	_	_	_	0	_	_	_
+26	”	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	legal	_	_	_	_	0	_	_	_
+29	immigrants	_	_	_	_	0	_	_	_
+30	based	_	_	_	_	0	_	_	_
+31	on	_	_	_	_	0	_	_	_
+32	a	_	_	_	_	0	_	_	_
+33	“	_	_	_	_	0	_	_	_
+34	merit	_	_	_	_	0	_	_	_
+35	system	_	_	_	_	0	_	_	_
+36	.	_	_	_	_	0	_	_	_
+37	”	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	But	_	_	_	_	0	_	_	_
+2	in	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	break	_	_	_	_	0	_	_	_
+5	from	_	_	_	_	0	_	_	_
+6	his	_	_	_	_	0	_	_	_
+7	past	_	_	_	_	0	_	_	_
+8	rhetoric	_	_	_	_	0	_	_	_
+9	about	_	_	_	_	0	_	_	_
+10	curtailing	_	_	_	_	0	_	_	_
+11	immigration	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	***GOP***	GOP	PROPN	NNP	Number=Sing	15	compound	_	_
+15	nominee	nominee	NOUN	NN	Number=Sing	0	_	_	_
+16	proclaimed	_	_	_	_	0	_	_	_
+17	that	_	_	_	_	0	_	_	_
+18	as	_	_	_	_	0	_	_	_
+19	president	_	_	_	_	0	_	_	_
+20	he	_	_	_	_	0	_	_	_
+21	would	_	_	_	_	0	_	_	_
+22	allow	_	_	_	_	0	_	_	_
+23	“	_	_	_	_	0	_	_	_
+24	tremendous	_	_	_	_	0	_	_	_
+25	numbers	_	_	_	_	0	_	_	_
+26	”	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	legal	_	_	_	_	0	_	_	_
+29	immigrants	_	_	_	_	0	_	_	_
+30	based	_	_	_	_	0	_	_	_
+31	on	_	_	_	_	0	_	_	_
+32	a	_	_	_	_	0	_	_	_
+33	“	_	_	_	_	0	_	_	_
+34	merit	_	_	_	_	0	_	_	_
+35	system	_	_	_	_	0	_	_	_
+36	.	_	_	_	_	0	_	_	_
+37	”	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	But	_	_	_	_	0	_	_	_
+2	in	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	break	_	_	_	_	0	_	_	_
+5	from	_	_	_	_	0	_	_	_
+6	his	_	_	_	_	0	_	_	_
+7	past	_	_	_	_	0	_	_	_
+8	rhetoric	_	_	_	_	0	_	_	_
+9	about	_	_	_	_	0	_	_	_
+10	curtailing	_	_	_	_	0	_	_	_
+11	immigration	_	_	_	_	0	_	_	_
+12	,	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	GOP	_	_	_	_	0	_	_	_
+15	nominee	_	_	_	_	0	_	_	_
+16	proclaimed	_	_	_	_	0	_	_	_
+17	that	_	_	_	_	0	_	_	_
+18	as	_	_	_	_	0	_	_	_
+19	president	_	_	_	_	0	_	_	_
+20	he	_	_	_	_	0	_	_	_
+21	would	_	_	_	_	0	_	_	_
+22	allow	_	_	_	_	0	_	_	_
+23	“	_	_	_	_	0	_	_	_
+24	tremendous	_	_	_	_	0	_	_	_
+25	numbers	_	_	_	_	0	_	_	_
+26	”	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	legal	_	_	_	_	0	_	_	_
+29	immigrants	_	_	_	_	0	_	_	_
+30	based	_	_	_	_	0	_	_	_
+31	on	_	_	_	_	0	_	_	_
+32	a	_	_	_	_	0	_	_	_
+33	“	_	_	_	_	0	_	_	_
+34	***merit***	merit	NOUN	NN	Number=Sing	35	compound	_	_
+35	system	system	NOUN	NN	Number=Sing	0	_	_	_
+36	.	_	_	_	_	0	_	_	_
+37	”	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	new	_	_	_	_	0	_	_	_
+3	spending	_	_	_	_	0	_	_	_
+4	is	_	_	_	_	0	_	_	_
+5	fueled	_	_	_	_	0	_	_	_
+6	by	_	_	_	_	0	_	_	_
+7	Clinton	_	_	_	_	0	_	_	_
+8	’s	_	_	_	_	0	_	_	_
+9	large	_	_	_	_	0	_	_	_
+10	***bank***	bank	NOUN	NN	Number=Sing	11	compound	_	_
+11	account	account	NOUN	NN	Number=Sing	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	early	_	_	_	_	0	_	_	_
+3	October	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	***transition***	transition	NOUN	NN	Number=Sing	7	compound	_	_
+7	team	team	NOUN	NN	Number=Sing	0	_	_	_
+8	used	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	same	_	_	_	_	0	_	_	_
+11	venue	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	meet	_	_	_	_	0	_	_	_
+14	with	_	_	_	_	0	_	_	_
+15	technology	_	_	_	_	0	_	_	_
+16	lobbyists	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	inviting	_	_	_	_	0	_	_	_
+19	representatives	_	_	_	_	0	_	_	_
+20	from	_	_	_	_	0	_	_	_
+21	Uber	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Motion	_	_	_	_	0	_	_	_
+25	Picture	_	_	_	_	0	_	_	_
+26	Association	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	America	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Consumer	_	_	_	_	0	_	_	_
+32	Technology	_	_	_	_	0	_	_	_
+33	Association	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	other	_	_	_	_	0	_	_	_
+36	groups	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	early	_	_	_	_	0	_	_	_
+3	October	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	transition	_	_	_	_	0	_	_	_
+7	team	_	_	_	_	0	_	_	_
+8	used	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	same	_	_	_	_	0	_	_	_
+11	venue	_	_	_	_	0	_	_	_
+12	to	_	_	_	_	0	_	_	_
+13	meet	_	_	_	_	0	_	_	_
+14	with	_	_	_	_	0	_	_	_
+15	technology	_	_	_	_	0	_	_	_
+16	lobbyists	_	_	_	_	0	_	_	_
+17	,	_	_	_	_	0	_	_	_
+18	inviting	_	_	_	_	0	_	_	_
+19	representatives	_	_	_	_	0	_	_	_
+20	from	_	_	_	_	0	_	_	_
+21	Uber	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	***Motion***	motion	NOUN	NN	Number=Sing	25	compound	_	_
+25	Picture	picture	NOUN	NN	Number=Sing	0	_	_	_
+26	Association	_	_	_	_	0	_	_	_
+27	of	_	_	_	_	0	_	_	_
+28	America	_	_	_	_	0	_	_	_
+29	,	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Consumer	_	_	_	_	0	_	_	_
+32	Technology	_	_	_	_	0	_	_	_
+33	Association	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	other	_	_	_	_	0	_	_	_
+36	groups	_	_	_	_	0	_	_	_
+37	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

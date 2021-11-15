@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,65 +137,14 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_lines </b> </h3><h3>There is required-agreement between the syntactic head and its dependent when </h3> <div id="examples">
-<h4> Examples: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
-1	Israel	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	which	_	_	_	_	0	_	_	_
-4	receives	receive	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	***us***	we	PRON	PERS-P1PL-ACC	Case=Acc|Number=Plur|Person=1|PronType=Prs	4	comp:obj	_	_
-6	impartially	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	is	_	_	_	_	0	_	_	_
-9	accustomed	_	_	_	_	0	_	_	_
-10	to	_	_	_	_	0	_	_	_
-11	strange	_	_	_	_	0	_	_	_
-12	arrivals	_	_	_	_	0	_	_	_
-13	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Mayor	_	_	_	_	0	_	_	_
-2	Teddy	_	_	_	_	0	_	_	_
-3	Kollek	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	irrepressible	_	_	_	_	0	_	_	_
-6	organizer	_	_	_	_	0	_	_	_
-7	of	_	_	_	_	0	_	_	_
-8	wonderful	_	_	_	_	0	_	_	_
-9	events	_	_	_	_	0	_	_	_
-10	(	_	_	_	_	0	_	_	_
-11	some	_	_	_	_	0	_	_	_
-12	of	_	_	_	_	0	_	_	_
-13	them	_	_	_	_	0	_	_	_
-14	too	_	_	_	_	0	_	_	_
-15	rich	_	_	_	_	0	_	_	_
-16	for	_	_	_	_	0	_	_	_
-17	my	_	_	_	_	0	_	_	_
-18	blood	_	_	_	_	0	_	_	_
-19	)	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	takes	take	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-22	***us***	we	PRON	PERS-P1PL-ACC	Case=Acc|Number=Plur|Person=1|PronType=Prs	21	comp:obj	_	_
-23	to	_	_	_	_	0	_	_	_
-24	dinner	_	_	_	_	0	_	_	_
-25	with	_	_	_	_	0	_	_	_
-26	one	_	_	_	_	0	_	_	_
-27	of	_	_	_	_	0	_	_	_
-28	the	_	_	_	_	0	_	_	_
-29	Armenian	_	_	_	_	0	_	_	_
-30	Archbishops	_	_	_	_	0	_	_	_
-31	in	_	_	_	_	0	_	_	_
-32	the	_	_	_	_	0	_	_	_
-33	Old	_	_	_	_	0	_	_	_
-34	City	_	_	_	_	0	_	_	_
-35	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> NO required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">dependent's lemma is= i <br>
+</td><td style="text-align:center">dependent is the= passive nominal subject <br>
+head of ***-marked token is also the head of= complement for auxiliary <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:dependent's lemma is= i; Not Active:dependent is the= passive nominal subject;head of ***-marked token is also the head of= complement for auxiliary;"><div id="examples">
+<h4> Examples that do not agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
 1	In	_	_	_	_	0	_	_	_
 2	a	_	_	_	_	0	_	_	_
 3	very	_	_	_	_	0	_	_	_
@@ -248,79 +197,53 @@ span.displaynone { display: none; }
 
 </code></pre>
 
-<h4> Counter Examples </h4>
 <pre><code class="language-conllu">
-1	and	_	_	_	_	0	_	_	_
-2	thereafter	_	_	_	_	0	_	_	_
-3	he	_	_	_	_	0	_	_	_
-4	presents	present	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	***himself***	he	PRON	RFL-P3SG	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	4	comp:obj	_	_
-6	as	_	_	_	_	0	_	_	_
-7	no	_	_	_	_	0	_	_	_
-8	more	_	_	_	_	0	_	_	_
-9	than	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	editor	_	_	_	_	0	_	_	_
+1	She	she	PRON	PERS-SG-NOM	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	0	_	_	_
+2	and	_	_	_	_	0	_	_	_
+3	***I***	I	PRON	PERS-P1SG-NOM	Case=Nom|Number=Sing|Person=1|PronType=Prs	1	conj	_	_
+4	would	_	_	_	_	0	_	_	_
+5	be	_	_	_	_	0	_	_	_
+6	approaching	_	_	_	_	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	place	_	_	_	_	0	_	_	_
+9	from	_	_	_	_	0	_	_	_
+10	opposite	_	_	_	_	0	_	_	_
+11	ends	_	_	_	_	0	_	_	_
 12	of	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	translation	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
+13	town	_	_	_	_	0	_	_	_
+14	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that agree: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	"	_	_	_	_	0	_	_	_
+2	I	I	PRON	PERS-P1SG-NOM	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	_	_	_
+3	***myself***	I	PRON	RFL-P1SG	Case=Acc|Number=Sing|Person=1|PronType=Prs|Reflex=Yes	2	mod	_	_
+4	had	_	_	_	_	0	_	_	_
+5	absolute	_	_	_	_	0	_	_	_
+6	authority	_	_	_	_	0	_	_	_
+7	to	_	_	_	_	0	_	_	_
+8	kill	_	_	_	_	0	_	_	_
+9	anyone	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	my	_	_	_	_	0	_	_	_
+12	command	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Seeking	_	_	_	_	0	_	_	_
-2	common	_	_	_	_	0	_	_	_
-3	ground	_	_	_	_	0	_	_	_
-4	with	_	_	_	_	0	_	_	_
-5	my	_	_	_	_	0	_	_	_
-6	wife	_	_	_	_	0	_	_	_
-7	(	_	_	_	_	0	_	_	_
-8	a	_	_	_	_	0	_	_	_
-9	laudable	_	_	_	_	0	_	_	_
-10	desire	_	_	_	_	0	_	_	_
-11	)	_	_	_	_	0	_	_	_
-12	,	_	_	_	_	0	_	_	_
-13	he	_	_	_	_	0	_	_	_
-14	tells	tell	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-15	***her***	she	PRON	PERS-P3SG-ACC	Case=Acc|Gender=Fem|Number=Sing|Person=3|PronType=Prs	14	comp:obj	_	_
-16	that	_	_	_	_	0	_	_	_
-17	he	_	_	_	_	0	_	_	_
-18	too	_	_	_	_	0	_	_	_
-19	is	_	_	_	_	0	_	_	_
-20	Rumanian	_	_	_	_	0	_	_	_
-21	by	_	_	_	_	0	_	_	_
-22	origin	_	_	_	_	0	_	_	_
-23	.	_	_	_	_	0	_	_	_
+1	***I***	I	PRON	PERS-P1SG-NOM	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	_
+2	was	be	VERB	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+3	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Or	_	_	_	_	0	_	_	_
-2	of	_	_	_	_	0	_	_	_
-3	Lenin	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	as	_	_	_	_	0	_	_	_
-6	Navrozov	_	_	_	_	0	_	_	_
-7	accurately	_	_	_	_	0	_	_	_
-8	characterizes	characterize	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-9	***him***	he	PRON	PERS-P3SG-ACC	Case=Acc|Gender=Masc|Number=Sing|Person=3|PronType=Prs	8	comp:obj	_	SpaceAfter=No
-10	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Dobby	_	_	_	_	0	_	_	_
-2	has	have	VERB	PRES	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***them***	they	PRON	PERS-P3PL-ACC	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	comp:obj	_	_
-4	here	_	_	_	_	0	_	_	_
-5	,	_	_	_	_	0	_	_	_
-6	sir	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	said	_	_	_	_	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	elf	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
+1	***I***	I	PRON	PERS-P1SG-NOM	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	_
+2	was	be	AUX	PAST	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	0	_	_	_
+3	thunderstruck	_	_	_	_	0	_	_	_
+4	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 

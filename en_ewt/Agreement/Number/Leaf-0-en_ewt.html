@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,167 +137,340 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_ewt </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	(	_	_	_	_	0	_	_	_
-2	And	_	_	_	_	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	by	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	way	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-9	***anybody***	anybody	PRON	NN	Number=Sing	8	subj	_	_
-10	else	_	_	_	_	0	_	_	_
-11	just	_	_	_	_	0	_	_	_
-12	a	_	_	_	_	0	_	_	_
-13	little	_	_	_	_	0	_	_	_
-14	nostalgic	_	_	_	_	0	_	_	_
-15	for	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	days	_	_	_	_	0	_	_	_
-18	when	_	_	_	_	0	_	_	_
-19	that	_	_	_	_	0	_	_	_
-20	was	_	_	_	_	0	_	_	_
-21	a	_	_	_	_	0	_	_	_
-22	good	_	_	_	_	0	_	_	_
-23	thing	_	_	_	_	0	_	_	_
-24	?	_	_	_	_	0	_	_	_
-25	)	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">in the neighborhood of the dependent= a <br>
+dependent is the= object <br>
+</td><td style="text-align:center">dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:in the neighborhood of the dependent= a;dependent is the= object; Not Active:dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	One	_	_	_	_	0	_	_	_
+2	of	_	_	_	_	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	pictures	_	_	_	_	0	_	_	_
+5	shows	show	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	a	_	_	_	_	0	_	_	_
+7	***flag***	flag	NOUN	NN	Number=Sing	5	comp:obj	_	_
+8	that	_	_	_	_	0	_	_	_
+9	was	_	_	_	_	0	_	_	_
+10	found	_	_	_	_	0	_	_	_
+11	in	_	_	_	_	0	_	_	_
+12	Fallujah	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***That***	that	PRON	DT	Number=Sing|PronType=Dem	2	subj	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	Flat	_	_	_	_	0	_	_	_
-4	Top	_	_	_	_	0	_	_	_
-5	Grill	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-2	***that***	that	PRON	DT	Number=Sing|PronType=Dem	1	subj	_	_
-3	a	_	_	_	_	0	_	_	_
-4	money	_	_	_	_	0	_	_	_
-5	maker	_	_	_	_	0	_	_	_
-6	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	BuzzMachine	_	_	_	_	0	_	_	_
-3	***post***	post	NOUN	NN	Number=Sing	4	subj	_	_
-4	argues	argue	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	that	_	_	_	_	0	_	_	_
-6	Google	_	_	_	_	0	_	_	_
-7	's	_	_	_	_	0	_	_	_
-8	rush	_	_	_	_	0	_	_	_
-9	toward	_	_	_	_	0	_	_	_
-10	ubiquity	_	_	_	_	0	_	_	_
-11	might	_	_	_	_	0	_	_	_
-12	backfire	_	_	_	_	0	_	_	_
-13	--	_	_	_	_	0	_	_	_
+1	Let	_	_	_	_	0	_	_	_
+2	me	_	_	_	_	0	_	_	_
+3	join	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	chorus	_	_	_	_	0	_	_	_
+6	of	_	_	_	_	0	_	_	_
+7	annoyance	_	_	_	_	0	_	_	_
+8	over	_	_	_	_	0	_	_	_
+9	Google	_	_	_	_	0	_	_	_
+10	's	_	_	_	_	0	_	_	_
+11	new	_	_	_	_	0	_	_	_
+12	toolbar	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
 14	which	_	_	_	_	0	_	_	_
-15	we	_	_	_	_	0	_	_	_
-16	've	_	_	_	_	0	_	_	_
-17	all	_	_	_	_	0	_	_	_
-18	heard	_	_	_	_	0	_	_	_
-19	before	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	but	_	_	_	_	0	_	_	_
-22	it	_	_	_	_	0	_	_	_
-23	's	_	_	_	_	0	_	_	_
-24	particularly	_	_	_	_	0	_	_	_
-25	well	_	_	_	_	0	_	_	_
-26	-	_	_	_	_	0	_	_	_
-27	put	_	_	_	_	0	_	_	_
-28	in	_	_	_	_	0	_	_	_
-29	this	_	_	_	_	0	_	_	_
-30	post	_	_	_	_	0	_	_	_
-31	.	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	as	_	_	_	_	0	_	_	_
+17	noted	_	_	_	_	0	_	_	_
+18	in	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	linked	_	_	_	_	0	_	_	_
+21	article	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	commits	commit	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+24	just	_	_	_	_	0	_	_	_
+25	about	_	_	_	_	0	_	_	_
+26	every	_	_	_	_	0	_	_	_
+27	***sin***	sin	NOUN	NN	Number=Sing	23	comp:obj	_	_
+28	an	_	_	_	_	0	_	_	_
+29	online	_	_	_	_	0	_	_	_
+30	marketer	_	_	_	_	0	_	_	_
+31	could	_	_	_	_	0	_	_	_
+32	commit	_	_	_	_	0	_	_	_
+33	,	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	makes	_	_	_	_	0	_	_	_
+36	up	_	_	_	_	0	_	_	_
+37	a	_	_	_	_	0	_	_	_
+38	few	_	_	_	_	0	_	_	_
+39	new	_	_	_	_	0	_	_	_
+40	ones	_	_	_	_	0	_	_	_
+41	besides	_	_	_	_	0	_	_	_
+42	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***Google***	Google	PROPN	NNP	Number=Sing	2	subj	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	a	_	_	_	_	0	_	_	_
-4	nice	_	_	_	_	0	_	_	_
-5	search	_	_	_	_	0	_	_	_
-6	engine	_	_	_	_	0	_	_	_
-7	.	_	_	_	_	0	_	_	_
+1	They	_	_	_	_	0	_	_	_
+2	know	_	_	_	_	0	_	_	_
+3	that	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	American	_	_	_	_	0	_	_	_
+6	advent	_	_	_	_	0	_	_	_
+7	implies	imply	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	for	_	_	_	_	0	_	_	_
+9	them	_	_	_	_	0	_	_	_
+10	a	_	_	_	_	0	_	_	_
+11	***demotion***	demotion	NOUN	NN	Number=Sing	7	comp:obj	_	SpaceAfter=No
+12	,	_	_	_	_	0	_	_	_
+13	and	_	_	_	_	0	_	_	_
+14	an	_	_	_	_	0	_	_	_
+15	elevation	_	_	_	_	0	_	_	_
+16	of	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	Shiites	_	_	_	_	0	_	_	_
+19	and	_	_	_	_	0	_	_	_
+20	Kurds	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	and	_	_	_	_	0	_	_	_
+23	they	_	_	_	_	0	_	_	_
+24	refuse	_	_	_	_	0	_	_	_
+25	to	_	_	_	_	0	_	_	_
+26	go	_	_	_	_	0	_	_	_
+27	quietly	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***Google***	Google	PROPN	NNP	Number=Sing	2	subj	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	probably	_	_	_	_	0	_	_	_
-4	making	_	_	_	_	0	_	_	_
-5	this	_	_	_	_	0	_	_	_
-6	move	_	_	_	_	0	_	_	_
-7	to	_	_	_	_	0	_	_	_
-8	counter	_	_	_	_	0	_	_	_
-9	Microsoft	_	_	_	_	0	_	_	_
-10	Search	_	_	_	_	0	_	_	_
-11	using	_	_	_	_	0	_	_	_
-12	Encarta	_	_	_	_	0	_	_	_
-13	(	_	_	_	_	0	_	_	_
-14	it's	_	_	_	_	0	_	_	_
-15	online	_	_	_	_	0	_	_	_
-16	dictionary	_	_	_	_	0	_	_	_
-17	)	_	_	_	_	0	_	_	_
-18	.	_	_	_	_	0	_	_	_
+1	em	_	_	_	_	0	_	_	_
+2	...	_	_	_	_	0	_	_	_
+3	no	_	_	_	_	0	_	_	_
+4	...	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	Gates	_	_	_	_	0	_	_	_
+7	foundation	_	_	_	_	0	_	_	_
+8	mainly	_	_	_	_	0	_	_	_
+9	invests	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	medical	_	_	_	_	0	_	_	_
+12	research	_	_	_	_	0	_	_	_
+13	and	_	_	_	_	0	_	_	_
+14	education	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	that	_	_	_	_	0	_	_	_
+17	means	mean	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+18	donating	_	_	_	_	0	_	_	_
+19	now	_	_	_	_	0	_	_	_
+20	***adds***	add	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	comp:obj	_	_
+21	a	_	_	_	_	0	_	_	_
+22	tremendous	_	_	_	_	0	_	_	_
+23	value	_	_	_	_	0	_	_	_
+24	compared	_	_	_	_	0	_	_	_
+25	to	_	_	_	_	0	_	_	_
+26	donating	_	_	_	_	0	_	_	_
+27	in	_	_	_	_	0	_	_	_
+28	ten	_	_	_	_	0	_	_	_
+29	years	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Does	do	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-2	***anybody***	anybody	PRON	NN	Number=Sing	1	subj	_	_
-3	use	_	_	_	_	0	_	_	_
-4	it	_	_	_	_	0	_	_	_
-5	for	_	_	_	_	0	_	_	_
-6	anything	_	_	_	_	0	_	_	_
-7	else	_	_	_	_	0	_	_	_
-8	?	_	_	_	_	0	_	_	_
+1	em	_	_	_	_	0	_	_	_
+2	...	_	_	_	_	0	_	_	_
+3	no	_	_	_	_	0	_	_	_
+4	...	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	Gates	_	_	_	_	0	_	_	_
+7	foundation	_	_	_	_	0	_	_	_
+8	mainly	_	_	_	_	0	_	_	_
+9	invests	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	medical	_	_	_	_	0	_	_	_
+12	research	_	_	_	_	0	_	_	_
+13	and	_	_	_	_	0	_	_	_
+14	education	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	that	_	_	_	_	0	_	_	_
+17	means	_	_	_	_	0	_	_	_
+18	donating	_	_	_	_	0	_	_	_
+19	now	_	_	_	_	0	_	_	_
+20	adds	add	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+21	a	_	_	_	_	0	_	_	_
+22	tremendous	_	_	_	_	0	_	_	_
+23	***value***	value	NOUN	NN	Number=Sing	20	comp:obj	_	_
+24	compared	_	_	_	_	0	_	_	_
+25	to	_	_	_	_	0	_	_	_
+26	donating	_	_	_	_	0	_	_	_
+27	in	_	_	_	_	0	_	_	_
+28	ten	_	_	_	_	0	_	_	_
+29	years	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***John***	John	PROPN	NNP	Number=Sing	5	subj	_	_
-2	Donovan	_	_	_	_	0	_	_	_
-3	from	_	_	_	_	0	_	_	_
-4	Argghhh!	_	_	_	_	0	_	_	_
-5	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-6	put	_	_	_	_	0	_	_	_
-7	out	_	_	_	_	0	_	_	_
-8	a	_	_	_	_	0	_	_	_
+1	Bill	_	_	_	_	0	_	_	_
+2	over	_	_	_	_	0	_	_	_
+3	at	_	_	_	_	0	_	_	_
+4	The	_	_	_	_	0	_	_	_
+5	Fourth	_	_	_	_	0	_	_	_
+6	Rail	_	_	_	_	0	_	_	_
+7	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	an	_	_	_	_	0	_	_	_
 9	excellent	_	_	_	_	0	_	_	_
-10	slide	_	_	_	_	0	_	_	_
-11	show	_	_	_	_	0	_	_	_
-12	on	_	_	_	_	0	_	_	_
-13	what	_	_	_	_	0	_	_	_
-14	was	_	_	_	_	0	_	_	_
-15	actually	_	_	_	_	0	_	_	_
-16	found	_	_	_	_	0	_	_	_
-17	and	_	_	_	_	0	_	_	_
-18	fought	_	_	_	_	0	_	_	_
-19	for	_	_	_	_	0	_	_	_
-20	in	_	_	_	_	0	_	_	_
-21	Fallujah	_	_	_	_	0	_	_	_
-22	.	_	_	_	_	0	_	_	_
+10	***essay***	essay	NOUN	NN	Number=Sing	7	comp:obj	_	_
+11	on	_	_	_	_	0	_	_	_
+12	how	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	MSM	_	_	_	_	0	_	_	_
+15	and	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	UN	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	even	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	leftist	_	_	_	_	0	_	_	_
+22	countries	_	_	_	_	0	_	_	_
+23	in	_	_	_	_	0	_	_	_
+24	Europe	_	_	_	_	0	_	_	_
+25	,	_	_	_	_	0	_	_	_
+26	are	_	_	_	_	0	_	_	_
+27	basically	_	_	_	_	0	_	_	_
+28	accepting	_	_	_	_	0	_	_	_
+29	terrorist	_	_	_	_	0	_	_	_
+30	organizations	_	_	_	_	0	_	_	_
+31	as	_	_	_	_	0	_	_	_
+32	legitimate	_	_	_	_	0	_	_	_
+33	forms	_	_	_	_	0	_	_	_
+34	of	_	_	_	_	0	_	_	_
+35	a	_	_	_	_	0	_	_	_
+36	political	_	_	_	_	0	_	_	_
+37	party	_	_	_	_	0	_	_	_
+38	:	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+1	And	_	_	_	_	0	_	_	_
+2	if	_	_	_	_	0	_	_	_
+3	you	_	_	_	_	0	_	_	_
+4	have	_	_	_	_	0	_	_	_
+5	n't	_	_	_	_	0	_	_	_
+6	heard	_	_	_	_	0	_	_	_
+7	by	_	_	_	_	0	_	_	_
+8	now	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	roster	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	suspected	_	_	_	_	0	_	_	_
+14	terrorists	_	_	_	_	0	_	_	_
+15	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+16	not	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	***Tom***	Tom	PROPN	NNP	Number=Sing	15	comp:obj	_	SpaceAfter=No
+19	,	_	_	_	_	0	_	_	_
+20	Dick	_	_	_	_	0	_	_	_
+21	or	_	_	_	_	0	_	_	_
+22	Harry	_	_	_	_	0	_	_	_
+23	among	_	_	_	_	0	_	_	_
+24	them	_	_	_	_	0	_	_	_
+25	:	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	i	_	_	_	_	0	_	_	_
+2	was	_	_	_	_	0	_	_	_
+3	thinking	_	_	_	_	0	_	_	_
+4	somewhere	_	_	_	_	0	_	_	_
+5	that	_	_	_	_	0	_	_	_
+6	requires	require	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	***jacket***	jacket	NOUN	NN	Number=Sing	6	comp:obj	_	SpaceAfter=No
+9	,	_	_	_	_	0	_	_	_
+10	like	_	_	_	_	0	_	_	_
+11	tony	_	_	_	_	0	_	_	_
+12	's	_	_	_	_	0	_	_	_
+13	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	I	_	_	_	_	0	_	_	_
+2	thought	_	_	_	_	0	_	_	_
+3	that	_	_	_	_	0	_	_	_
+4	since	_	_	_	_	0	_	_	_
+5	Chonawee	_	_	_	_	0	_	_	_
+6	has	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	an	_	_	_	_	0	_	_	_
+8	optimization	_	_	_	_	0	_	_	_
+9	***background***	background	NOUN	NN	Number=Sing	6	comp:obj	_	SpaceAfter=No
+10	,	_	_	_	_	0	_	_	_
+11	he	_	_	_	_	0	_	_	_
+12	would	_	_	_	_	0	_	_	_
+13	be	_	_	_	_	0	_	_	_
+14	good	_	_	_	_	0	_	_	_
+15	to	_	_	_	_	0	_	_	_
+16	have	_	_	_	_	0	_	_	_
+17	him	_	_	_	_	0	_	_	_
+18	go	_	_	_	_	0	_	_	_
+19	to	_	_	_	_	0	_	_	_
+20	dinner	_	_	_	_	0	_	_	_
+21	with	_	_	_	_	0	_	_	_
+22	Dr.	_	_	_	_	0	_	_	_
+23	Lasdon	_	_	_	_	0	_	_	_
+24	on	_	_	_	_	0	_	_	_
+25	Thrusday	_	_	_	_	0	_	_	_
+26	as	_	_	_	_	0	_	_	_
+27	well	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	"	_	_	_	_	0	_	_	_
+2	Our	_	_	_	_	0	_	_	_
+3	new	_	_	_	_	0	_	_	_
+4	lunar	_	_	_	_	0	_	_	_
+5	transportation	_	_	_	_	0	_	_	_
+6	system	_	_	_	_	0	_	_	_
+7	utilizes	utilize	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	a	_	_	_	_	0	_	_	_
+9	unique	_	_	_	_	0	_	_	_
+10	***architecture***	architecture	NOUN	NN	Number=Sing	7	comp:obj	_	_
+11	that	_	_	_	_	0	_	_	_
+12	will	_	_	_	_	0	_	_	_
+13	establish	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	equivalent	_	_	_	_	0	_	_	_
+16	of	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	two	_	_	_	_	0	_	_	_
+19	-	_	_	_	_	0	_	_	_
+20	way	_	_	_	_	0	_	_	_
+21	highway	_	_	_	_	0	_	_	_
+22	between	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	Earth	_	_	_	_	0	_	_	_
+25	and	_	_	_	_	0	_	_	_
+26	the	_	_	_	_	0	_	_	_
+27	Moon	_	_	_	_	0	_	_	_
+28	,	_	_	_	_	0	_	_	_
+29	"	_	_	_	_	0	_	_	_
+30	Kistler	_	_	_	_	0	_	_	_
+31	told	_	_	_	_	0	_	_	_
+32	SPACE.com	_	_	_	_	0	_	_	_
+33	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	He	_	_	_	_	0	_	_	_
 2	makes	make	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
 3	some	_	_	_	_	0	_	_	_
 4	good	_	_	_	_	0	_	_	_
-5	observations	_	_	_	_	0	_	_	_
+5	***observations***	observation	NOUN	NNS	Number=Plur	2	comp:obj	_	_
 6	on	_	_	_	_	0	_	_	_
 7	a	_	_	_	_	0	_	_	_
 8	few	_	_	_	_	0	_	_	_
@@ -309,121 +482,52 @@ span.displaynone { display: none; }
 </code></pre>
 
 <pre><code class="language-conllu">
-1	I	_	_	_	_	0	_	_	_
-2	'm	_	_	_	_	0	_	_	_
-3	not	_	_	_	_	0	_	_	_
-4	fond	_	_	_	_	0	_	_	_
-5	of	_	_	_	_	0	_	_	_
-6	the	_	_	_	_	0	_	_	_
-7	***Google***	Google	PROPN	NNP	Number=Sing	9	subj	_	SpaceAfter=No
-8	-	_	_	_	_	0	_	_	_
-9	hates	hate	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-10	-	_	_	_	_	0	_	_	_
-11	privacy	_	_	_	_	0	_	_	_
-12	argument	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	***results***	result	NOUN	NNS	Number=Plur	8	subj	_	_
-3	of	_	_	_	_	0	_	_	_
+1	Let	_	_	_	_	0	_	_	_
+2	me	_	_	_	_	0	_	_	_
+3	join	_	_	_	_	0	_	_	_
 4	the	_	_	_	_	0	_	_	_
-5	February	_	_	_	_	0	_	_	_
-6	26th	_	_	_	_	0	_	_	_
-7	test	_	_	_	_	0	_	_	_
-8	reduces	reduce	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-9	the	_	_	_	_	0	_	_	_
-10	working	_	_	_	_	0	_	_	_
-11	gas	_	_	_	_	0	_	_	_
-12	by	_	_	_	_	0	_	_	_
-13	398,487	_	_	_	_	0	_	_	_
-14	MMBTU	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	i	_	_	_	_	0	_	_	_
-2	always	_	_	_	_	0	_	_	_
-3	thought	_	_	_	_	0	_	_	_
-4	there	_	_	_	_	0	_	_	_
-5	s	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-6	no	_	_	_	_	0	_	_	_
-7	custom	_	_	_	_	0	_	_	_
-8	***charges***	charge	NOUN	NNS	Number=Plur	5	subj	_	_
-9	for	_	_	_	_	0	_	_	_
-10	gifts	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-2	there	_	_	_	_	0	_	_	_
-3	any	_	_	_	_	0	_	_	_
-4	good	_	_	_	_	0	_	_	_
-5	***places***	place	NOUN	NNS	Number=Plur	1	subj	_	_
-6	to	_	_	_	_	0	_	_	_
-7	get	_	_	_	_	0	_	_	_
-8	an	_	_	_	_	0	_	_	_
-9	ice	_	_	_	_	0	_	_	_
-10	-	_	_	_	_	0	_	_	_
-11	cream	_	_	_	_	0	_	_	_
-12	sundae	_	_	_	_	0	_	_	_
-13	from	_	_	_	_	0	_	_	_
-14	in	_	_	_	_	0	_	_	_
-15	Invercargill	_	_	_	_	0	_	_	_
-16	New	_	_	_	_	0	_	_	_
-17	Zealand	_	_	_	_	0	_	_	_
-18	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	so	_	_	_	_	0	_	_	_
-2	i	_	_	_	_	0	_	_	_
-3	m	_	_	_	_	0	_	_	_
-4	a	_	_	_	_	0	_	_	_
-5	little	_	_	_	_	0	_	_	_
-6	confused	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	why	_	_	_	_	0	_	_	_
-9	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-10	there	_	_	_	_	0	_	_	_
-11	two	_	_	_	_	0	_	_	_
-12	***statues***	statue	NOUN	NNS	Number=Plur	9	subj	_	_
-13	of	_	_	_	_	0	_	_	_
-14	David	_	_	_	_	0	_	_	_
-15	?	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Overpriced	_	_	_	_	0	_	_	_
-2	and	_	_	_	_	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	doctor	_	_	_	_	0	_	_	_
-5	acted	_	_	_	_	0	_	_	_
-6	arrogant	_	_	_	_	0	_	_	_
-7	and	_	_	_	_	0	_	_	_
-8	rushed	_	_	_	_	0	_	_	_
-9	at	_	_	_	_	0	_	_	_
-10	a	_	_	_	_	0	_	_	_
-11	time	_	_	_	_	0	_	_	_
-12	when	_	_	_	_	0	_	_	_
-13	there	_	_	_	_	0	_	_	_
-14	was	be	VERB	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-15	very	_	_	_	_	0	_	_	_
-16	few	_	_	_	_	0	_	_	_
-17	***clients***	client	NOUN	NNS	Number=Plur	14	subj	_	_
+5	chorus	_	_	_	_	0	_	_	_
+6	of	_	_	_	_	0	_	_	_
+7	annoyance	_	_	_	_	0	_	_	_
+8	over	_	_	_	_	0	_	_	_
+9	Google	_	_	_	_	0	_	_	_
+10	's	_	_	_	_	0	_	_	_
+11	new	_	_	_	_	0	_	_	_
+12	toolbar	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	which	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	as	_	_	_	_	0	_	_	_
+17	noted	_	_	_	_	0	_	_	_
 18	in	_	_	_	_	0	_	_	_
 19	the	_	_	_	_	0	_	_	_
-20	facility	_	_	_	_	0	_	_	_
-21	.	_	_	_	_	0	_	_	_
+20	linked	_	_	_	_	0	_	_	_
+21	article	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	commits	_	_	_	_	0	_	_	_
+24	just	_	_	_	_	0	_	_	_
+25	about	_	_	_	_	0	_	_	_
+26	every	_	_	_	_	0	_	_	_
+27	sin	_	_	_	_	0	_	_	_
+28	an	_	_	_	_	0	_	_	_
+29	online	_	_	_	_	0	_	_	_
+30	marketer	_	_	_	_	0	_	_	_
+31	could	_	_	_	_	0	_	_	_
+32	commit	_	_	_	_	0	_	_	_
+33	,	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	makes	make	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+36	up	_	_	_	_	0	_	_	_
+37	a	_	_	_	_	0	_	_	_
+38	few	_	_	_	_	0	_	_	_
+39	new	_	_	_	_	0	_	_	_
+40	***ones***	one	NOUN	NNS	Number=Plur	35	comp:obj	_	_
+41	besides	_	_	_	_	0	_	_	_
+42	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+</div>
 </ul><br><br><br>
 
 

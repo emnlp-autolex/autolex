@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,9 +137,157 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_ewt </b> </h3><h3>There is required-agreement between the syntactic head and its dependent when </h3> <div id="examples">
-<h4> Examples: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><input type="hidden" id="rules_text" name="rules_text" value="Active: Not Active:dependent's lemma is= i;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj	_	SpaceAfter=No
+2	s	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	good	_	_	_	_	0	_	_	_
+4	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj	_	SpaceAfter=No
+2	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	just	_	_	_	_	0	_	_	_
+4	disappointing	_	_	_	_	0	_	_	_
+5	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	BuzzMachine	_	_	_	_	0	_	_	_
+3	post	_	_	_	_	0	_	_	_
+4	argues	argue	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	that	_	_	_	_	0	_	_	_
+6	Google	_	_	_	_	0	_	_	_
+7	's	_	_	_	_	0	_	_	_
+8	rush	_	_	_	_	0	_	_	_
+9	toward	_	_	_	_	0	_	_	_
+10	ubiquity	_	_	_	_	0	_	_	_
+11	might	_	_	_	_	0	_	_	_
+12	backfire	_	_	_	_	0	_	_	_
+13	--	_	_	_	_	0	_	_	_
+14	which	_	_	_	_	0	_	_	_
+15	we	_	_	_	_	0	_	_	_
+16	've	_	_	_	_	0	_	_	_
+17	all	_	_	_	_	0	_	_	_
+18	heard	_	_	_	_	0	_	_	_
+19	before	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	but	_	_	_	_	0	_	_	_
+22	it	_	_	_	_	0	_	_	_
+23	***'s***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+24	particularly	_	_	_	_	0	_	_	_
+25	well	_	_	_	_	0	_	_	_
+26	-	_	_	_	_	0	_	_	_
+27	put	_	_	_	_	0	_	_	_
+28	in	_	_	_	_	0	_	_	_
+29	this	_	_	_	_	0	_	_	_
+30	post	_	_	_	_	0	_	_	_
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	makes	make	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	some	_	_	_	_	0	_	_	_
+4	good	_	_	_	_	0	_	_	_
+5	observations	_	_	_	_	0	_	_	_
+6	on	_	_	_	_	0	_	_	_
+7	a	_	_	_	_	0	_	_	_
+8	few	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	the	_	_	_	_	0	_	_	_
+11	pic's	_	_	_	_	0	_	_	_
+12	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Let	_	_	_	_	0	_	_	_
+2	me	_	_	_	_	0	_	_	_
+3	join	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	chorus	_	_	_	_	0	_	_	_
+6	of	_	_	_	_	0	_	_	_
+7	annoyance	_	_	_	_	0	_	_	_
+8	over	_	_	_	_	0	_	_	_
+9	Google	_	_	_	_	0	_	_	_
+10	's	_	_	_	_	0	_	_	_
+11	new	_	_	_	_	0	_	_	_
+12	toolbar	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	which	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	as	_	_	_	_	0	_	_	_
+17	noted	_	_	_	_	0	_	_	_
+18	in	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	linked	_	_	_	_	0	_	_	_
+21	article	_	_	_	_	0	_	_	_
+22	,	_	_	_	_	0	_	_	_
+23	commits	commit	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+24	just	_	_	_	_	0	_	_	_
+25	about	_	_	_	_	0	_	_	_
+26	every	_	_	_	_	0	_	_	_
+27	sin	_	_	_	_	0	_	_	_
+28	an	_	_	_	_	0	_	_	_
+29	online	_	_	_	_	0	_	_	_
+30	marketer	_	_	_	_	0	_	_	_
+31	could	_	_	_	_	0	_	_	_
+32	commit	_	_	_	_	0	_	_	_
+33	,	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	***makes***	make	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
+36	up	_	_	_	_	0	_	_	_
+37	a	_	_	_	_	0	_	_	_
+38	few	_	_	_	_	0	_	_	_
+39	new	_	_	_	_	0	_	_	_
+40	ones	_	_	_	_	0	_	_	_
+41	besides	_	_	_	_	0	_	_	_
+42	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	On	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	other	_	_	_	_	0	_	_	_
+4	hand	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	subj	_	_
+7	looks	look	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	pretty	_	_	_	_	0	_	_	_
+9	cool	_	_	_	_	0	_	_	_
+10	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	***It***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	looks	look	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	like	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	war	_	_	_	_	0	_	_	_
+6	between	_	_	_	_	0	_	_	_
+7	Microsoft	_	_	_	_	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	Google	_	_	_	_	0	_	_	_
+10	is	_	_	_	_	0	_	_	_
+11	quickly	_	_	_	_	0	_	_	_
+12	brewing	_	_	_	_	0	_	_	_
+13	on	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	horizon	_	_	_	_	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
 1	Iran	_	_	_	_	0	_	_	_
 2	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
 3	it	_	_	_	_	0	_	_	_
@@ -156,90 +304,111 @@ span.displaynone { display: none; }
 </code></pre>
 
 <pre><code class="language-conllu">
-1	em	_	_	_	_	0	_	_	_
-2	...	_	_	_	_	0	_	_	_
-3	no	_	_	_	_	0	_	_	_
-4	...	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	Gates	_	_	_	_	0	_	_	_
-7	foundation	_	_	_	_	0	_	_	_
-8	mainly	_	_	_	_	0	_	_	_
-9	invests	_	_	_	_	0	_	_	_
-10	in	_	_	_	_	0	_	_	_
-11	medical	_	_	_	_	0	_	_	_
-12	research	_	_	_	_	0	_	_	_
-13	and	_	_	_	_	0	_	_	_
-14	education	_	_	_	_	0	_	_	_
-15	,	_	_	_	_	0	_	_	_
-16	that	_	_	_	_	0	_	_	_
-17	means	mean	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-18	donating	_	_	_	_	0	_	_	_
-19	now	_	_	_	_	0	_	_	_
-20	***adds***	add	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	comp:obj	_	_
-21	a	_	_	_	_	0	_	_	_
-22	tremendous	_	_	_	_	0	_	_	_
-23	value	_	_	_	_	0	_	_	_
-24	compared	_	_	_	_	0	_	_	_
-25	to	_	_	_	_	0	_	_	_
-26	donating	_	_	_	_	0	_	_	_
-27	in	_	_	_	_	0	_	_	_
-28	ten	_	_	_	_	0	_	_	_
-29	years	_	_	_	_	0	_	_	_
-30	.	_	_	_	_	0	_	_	_
+1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	denied	_	_	_	_	0	_	_	_
+4	this	_	_	_	_	0	_	_	_
+5	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	When	_	_	_	_	0	_	_	_
-2	nacho	_	_	_	_	0	_	_	_
-3	is	_	_	_	_	0	_	_	_
-4	driving	_	_	_	_	0	_	_	_
-5	to	_	_	_	_	0	_	_	_
-6	cure	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	influenza	_	_	_	_	0	_	_	_
-9	guy	_	_	_	_	0	_	_	_
-10	does	_	_	_	_	0	_	_	_
-11	he	_	_	_	_	0	_	_	_
-12	say	_	_	_	_	0	_	_	_
-13	to	_	_	_	_	0	_	_	_
-14	the	_	_	_	_	0	_	_	_
-15	man	_	_	_	_	0	_	_	_
-16	with	_	_	_	_	0	_	_	_
-17	the	_	_	_	_	0	_	_	_
-18	cow	_	_	_	_	0	_	_	_
-19	i	_	_	_	_	0	_	_	_
-20	like	_	_	_	_	0	_	_	_
-21	your	_	_	_	_	0	_	_	_
-22	blouse	_	_	_	_	0	_	_	_
-23	or	_	_	_	_	0	_	_	_
-24	I	_	_	_	_	0	_	_	_
-25	like	_	_	_	_	0	_	_	_
-26	your	_	_	_	_	0	_	_	_
-27	cow	_	_	_	_	0	_	_	_
-28	because	_	_	_	_	0	_	_	_
-29	my	_	_	_	_	0	_	_	_
-30	friend	_	_	_	_	0	_	_	_
-31	thinks	think	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-32	he	_	_	_	_	0	_	_	_
-33	***says***	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	comp:obj	_	_
-34	I	_	_	_	_	0	_	_	_
-35	like	_	_	_	_	0	_	_	_
-36	your	_	_	_	_	0	_	_	_
-37	blouse	_	_	_	_	0	_	_	_
-38	,	_	_	_	_	0	_	_	_
-39	but	_	_	_	_	0	_	_	_
-40	that	_	_	_	_	0	_	_	_
-41	would	_	_	_	_	0	_	_	_
-42	n't	_	_	_	_	0	_	_	_
-43	make	_	_	_	_	0	_	_	_
-44	sense	_	_	_	_	0	_	_	_
-45	.	_	_	_	_	0	_	_	_
+1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	has	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	maintained	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	good	_	_	_	_	0	_	_	_
+6	relationship	_	_	_	_	0	_	_	_
+7	with	_	_	_	_	0	_	_	_
+8	Mulva	_	_	_	_	0	_	_	_
+9	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4>
-<h5> No examples found </h5>
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	thing	_	_	_	_	0	_	_	_
+3	about	_	_	_	_	0	_	_	_
+4	The	_	_	_	_	0	_	_	_
+5	Script	_	_	_	_	0	_	_	_
+6	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+7	they	_	_	_	_	0	_	_	_
+8	do	_	_	_	_	0	_	_	_
+9	not	_	_	_	_	0	_	_	_
+10	sound	_	_	_	_	0	_	_	_
+11	that	_	_	_	_	0	_	_	_
+12	Irish	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	I	_	_	_	_	0	_	_	_
+15	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	6	parataxis	_	_
+16	surprised	_	_	_	_	0	_	_	_
+17	to	_	_	_	_	0	_	_	_
+18	hear	_	_	_	_	0	_	_	_
+19	they	_	_	_	_	0	_	_	_
+20	were	_	_	_	_	0	_	_	_
+21	from	_	_	_	_	0	_	_	_
+22	Dublin	_	_	_	_	0	_	_	_
+23	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	She	_	_	_	_	0	_	_	_
+2	really	_	_	_	_	0	_	_	_
+3	listens	listen	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	what	_	_	_	_	0	_	_	_
+6	it	_	_	_	_	0	_	_	_
+7	is	_	_	_	_	0	_	_	_
+8	you	_	_	_	_	0	_	_	_
+9	would	_	_	_	_	0	_	_	_
+10	like	_	_	_	_	0	_	_	_
+11	to	_	_	_	_	0	_	_	_
+12	achieve	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	and	_	_	_	_	0	_	_	_
+15	I	_	_	_	_	0	_	_	_
+16	***am***	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	conj	_	_
+17	very	_	_	_	_	0	_	_	_
+18	happy	_	_	_	_	0	_	_	_
+19	with	_	_	_	_	0	_	_	_
+20	my	_	_	_	_	0	_	_	_
+21	results	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	this	_	_	_	_	0	_	_	_
+2	dentist	_	_	_	_	0	_	_	_
+3	want	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	pull	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	tooth	_	_	_	_	0	_	_	_
+8	out	_	_	_	_	0	_	_	_
+9	always	_	_	_	_	0	_	_	_
+10	..	_	_	_	_	0	_	_	_
+11	always	_	_	_	_	0	_	_	_
+12	wants	_	_	_	_	0	_	_	_
+13	to	_	_	_	_	0	_	_	_
+14	do	_	_	_	_	0	_	_	_
+15	the	_	_	_	_	0	_	_	_
+16	cheapest	_	_	_	_	0	_	_	_
+17	for	_	_	_	_	0	_	_	_
+18	his	_	_	_	_	0	_	_	_
+19	benefit	_	_	_	_	0	_	_	_
+20	..	_	_	_	_	0	_	_	_
+21	not	_	_	_	_	0	_	_	_
+22	unless	_	_	_	_	0	_	_	_
+23	he	_	_	_	_	0	_	_	_
+24	knows	know	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+25	***you***	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	24	comp:obj	_	SpaceAfter=No
+26	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
 </div>
 </ul><br><br><br>
 

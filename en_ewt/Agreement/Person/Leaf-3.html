@@ -137,297 +137,278 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> Agreement in <b>Person</b>, dependent is denoted by *** </h3><h4> Rules ACTIVE for this Leaf: </h4><ul><li> dependent is the= object </li><li> dependent's head with Tense= Pres </li><li> dependent with Number= Sing </li></ul><h4> Rules NOT ACTIVE for this Leaf: </h4><ul><li> dependent is not a= PRON </li></ul><h4> Examples </h4><pre><code class="language-conllu">
-1	India	_	_	_	_	0	_	_	_
-2	keeps	keep	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	what	_	_	_	_	0	_	_	_
-4	it	_	_	_	_	0	_	_	_
-5	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
-6	while	_	_	_	_	0	_	_	_
-7	Pakistan	_	_	_	_	0	_	_	_
-8	and	_	_	_	_	0	_	_	_
-9	China	_	_	_	_	0	_	_	_
-10	(	_	_	_	_	0	_	_	_
-11	which	_	_	_	_	0	_	_	_
-12	was	_	_	_	_	0	_	_	_
-13	gifted	_	_	_	_	0	_	_	_
-14	a	_	_	_	_	0	_	_	_
-15	slice	_	_	_	_	0	_	_	_
-16	of	_	_	_	_	0	_	_	_
-17	the	_	_	_	_	0	_	_	_
-18	territory	_	_	_	_	0	_	_	_
-19	three	_	_	_	_	0	_	_	_
-20	decades	_	_	_	_	0	_	_	_
-21	ago	_	_	_	_	0	_	_	_
-22	)	_	_	_	_	0	_	_	_
-23	do	_	_	_	_	0	_	_	_
-24	likewise	_	_	_	_	0	_	_	_
-25	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Person.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Person</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">head of ***-marked token is also the head of= complement for auxiliary <br>
+dependent's lemma is= i <br>
+</td><td style="text-align:center"> - </td>
+</tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:head of ***-marked token is also the head of= complement for auxiliary;dependent's lemma is= i; Not Active:"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	what	_	_	_	_	0	_	_	_
+2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	_
+4	doing	do	VERB	VBG	Tense=Pres|VerbForm=Part	2	comp:aux	_	_
+5	wrong	wrong	ADV	RB	_	2	mod	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	She	_	_	_	_	0	_	_	_
-2	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	,	_	_	_	_	0	_	_	_
-4	***Is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
-5	that	_	_	_	_	0	_	_	_
-6	17th	_	_	_	_	0	_	_	_
-7	like	_	_	_	_	0	_	_	_
-8	over	_	_	_	_	0	_	_	_
-9	past	_	_	_	_	0	_	_	_
-10	broad	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
+1	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	_
+2	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	definitely	_	_	_	_	0	_	_	_
+4	going	go	VERB	VBG	Tense=Pres|VerbForm=Part	2	comp:aux	_	_
+5	back	back	ADV	RB	_	2	mod	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	I	_	_	_	_	0	_	_	_
+2	enjoyed	_	_	_	_	0	_	_	_
+3	my	_	_	_	_	0	_	_	_
+4	tour	_	_	_	_	0	_	_	_
+5	and	and	CCONJ	CC	_	7	cc	_	_
+6	***i***	i	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	subj	_	_
+7	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+8	looking	look	VERB	VBG	VerbForm=Ger	7	comp:aux	_	_
+9	for	for	ADP	IN	_	7	udep	_	_
+10	adventure	_	_	_	_	0	_	_	_
+11	tour	_	_	_	_	0	_	_	_
+12	and	_	_	_	_	0	_	_	_
+13	India	_	_	_	_	0	_	_	_
+14	heritage	_	_	_	_	0	_	_	_
+15	tours	_	_	_	_	0	_	_	_
+16	for	_	_	_	_	0	_	_	_
+17	valuable	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	(	_	_	_	_	0	_	_	_
-2	Her	_	_	_	_	0	_	_	_
-3	voice	_	_	_	_	0	_	_	_
-4	mail	_	_	_	_	0	_	_	_
-5	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-6	she	_	_	_	_	0	_	_	_
-7	***'s***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	comp:obj	_	_
-8	out	_	_	_	_	0	_	_	_
-9	of	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	office	_	_	_	_	0	_	_	_
-12	until	_	_	_	_	0	_	_	_
-13	Monday	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
-15	)	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	‘’	_	_	_	_	0	_	_	_
-2	Pakistan	_	_	_	_	0	_	_	_
-3	now	_	_	_	_	0	_	_	_
-4	***has***	have	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	comp:obj	_	_
-5	a	_	_	_	_	0	_	_	_
-6	large	_	_	_	_	0	_	_	_
-7	force	_	_	_	_	0	_	_	_
-8	deployed	_	_	_	_	0	_	_	_
-9	in	_	_	_	_	0	_	_	_
-10	Baluchistan	_	_	_	_	0	_	_	_
-11	which	_	_	_	_	0	_	_	_
-12	was	_	_	_	_	0	_	_	_
-13	not	_	_	_	_	0	_	_	_
-14	there	_	_	_	_	0	_	_	_
-15	before	_	_	_	_	0	_	_	_
-16	,	_	_	_	_	0	_	_	_
-17	’’	_	_	_	_	0	_	_	_
-18	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-19	Lt.	_	_	_	_	0	_	_	_
-20	General	_	_	_	_	0	_	_	_
-21	David	_	_	_	_	0	_	_	_
-22	Barno	_	_	_	_	0	_	_	_
-23	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	So	_	_	_	_	0	_	_	_
-2	far	_	_	_	_	0	_	_	_
-3	what	_	_	_	_	0	_	_	_
-4	they	_	_	_	_	0	_	_	_
-5	have	_	_	_	_	0	_	_	_
-6	done	_	_	_	_	0	_	_	_
-7	together	_	_	_	_	0	_	_	_
-8	***has***	have	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	comp:obj	_	_
-9	been	_	_	_	_	0	_	_	_
-10	good	_	_	_	_	0	_	_	_
-11	for	_	_	_	_	0	_	_	_
-12	us	_	_	_	_	0	_	_	_
-13	and	_	_	_	_	0	_	_	_
-14	that	_	_	_	_	0	_	_	_
-15	’s	_	_	_	_	0	_	_	_
-16	how	_	_	_	_	0	_	_	_
-17	we	_	_	_	_	0	_	_	_
-18	would	_	_	_	_	0	_	_	_
-19	like	_	_	_	_	0	_	_	_
-20	to	_	_	_	_	0	_	_	_
-21	keep	_	_	_	_	0	_	_	_
-22	it	_	_	_	_	0	_	_	_
-23	’’	_	_	_	_	0	_	_	_
-24	,	_	_	_	_	0	_	_	_
-25	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-26	Karzai	_	_	_	_	0	_	_	_
-27	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	‘’	_	_	_	_	0	_	_	_
-2	There	_	_	_	_	0	_	_	_
-3	***is***	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	comp:obj	_	_
-4	much	_	_	_	_	0	_	_	_
-5	better	_	_	_	_	0	_	_	_
-6	tactical	_	_	_	_	0	_	_	_
-7	cooperation	_	_	_	_	0	_	_	_
-8	between	_	_	_	_	0	_	_	_
-9	our	_	_	_	_	0	_	_	_
-10	forces	_	_	_	_	0	_	_	_
-11	on	_	_	_	_	0	_	_	_
-12	both	_	_	_	_	0	_	_	_
-13	sides	_	_	_	_	0	_	_	_
-14	of	_	_	_	_	0	_	_	_
-15	the	_	_	_	_	0	_	_	_
-16	border	_	_	_	_	0	_	_	_
-17	,	_	_	_	_	0	_	_	_
-18	but	_	_	_	_	0	_	_	_
-19	the	_	_	_	_	0	_	_	_
-20	movement	_	_	_	_	0	_	_	_
-21	of	_	_	_	_	0	_	_	_
-22	Taliban	_	_	_	_	0	_	_	_
-23	still	_	_	_	_	0	_	_	_
-24	goes	_	_	_	_	0	_	_	_
-25	on	_	_	_	_	0	_	_	_
-26	both	_	_	_	_	0	_	_	_
-27	ways	_	_	_	_	0	_	_	_
-28	,	_	_	_	_	0	_	_	_
-29	’’	_	_	_	_	0	_	_	_
-30	he	_	_	_	_	0	_	_	_
-31	adds	add	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-32	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	However	_	_	_	_	0	_	_	_
-2	General	_	_	_	_	0	_	_	_
-3	Barno	_	_	_	_	0	_	_	_
-4	insists	insist	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	US	_	_	_	_	0	_	_	_
-7	presence	_	_	_	_	0	_	_	_
-8	***poses***	pose	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	_
-9	no	_	_	_	_	0	_	_	_
-10	threat	_	_	_	_	0	_	_	_
+2	Apart	_	_	_	_	0	_	_	_
+3	from	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	wire	_	_	_	_	0	_	_	_
+6	flooring	_	_	_	_	0	_	_	_
+7	which	_	_	_	_	0	_	_	_
+8	***i***	i	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	subj	_	_
+9	am	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	_	_	_
+10	going	go	VERB	VBG	Tense=Pres|VerbForm=Part	9	comp:aux	_	_
 11	to	_	_	_	_	0	_	_	_
-12	Iran	_	_	_	_	0	_	_	_
-13	.	_	_	_	_	0	_	_	_
+12	cover	_	_	_	_	0	_	_	_
+13	)	_	_	_	_	0	_	_	_
+14	Which	_	_	_	_	0	_	_	_
+15	of	_	_	_	_	0	_	_	_
+16	these	_	_	_	_	0	_	_	_
+17	two	_	_	_	_	0	_	_	_
+18	cages	_	_	_	_	0	_	_	_
+19	is	_	_	_	_	0	_	_	_
+20	better	_	_	_	_	0	_	_	_
+21	:	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
 <pre><code class="language-conllu">
-1	Sandi	_	_	_	_	0	_	_	_
-2	sez	sez	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	it	_	_	_	_	0	_	_	_
-4	***'s***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:obj	_	_
-5	actually	_	_	_	_	0	_	_	_
-6	happening	_	_	_	_	0	_	_	_
-7	at	_	_	_	_	0	_	_	_
-8	10	_	_	_	_	0	_	_	_
-9	AM	_	_	_	_	0	_	_	_
-10	and	_	_	_	_	0	_	_	_
-11	it	_	_	_	_	0	_	_	_
-12	's	_	_	_	_	0	_	_	_
-13	renewable	_	_	_	_	0	_	_	_
-14	-	_	_	_	_	0	_	_	_
-15	focused	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	"	_	_	_	_	0	_	_	_
-2	The	_	_	_	_	0	_	_	_
-3	governor	_	_	_	_	0	_	_	_
-4	believes	believe	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	it	_	_	_	_	0	_	_	_
-6	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	comp:obj	_	_
-7	the	_	_	_	_	0	_	_	_
-8	defining	_	_	_	_	0	_	_	_
-9	moment	_	_	_	_	0	_	_	_
-10	,	_	_	_	_	0	_	_	_
-11	when	_	_	_	_	0	_	_	_
-12	what	_	_	_	_	0	_	_	_
-13	was	_	_	_	_	0	_	_	_
-14	a	_	_	_	_	0	_	_	_
-15	mounting	_	_	_	_	0	_	_	_
-16	problem	_	_	_	_	0	_	_	_
-17	turned	_	_	_	_	0	_	_	_
-18	into	_	_	_	_	0	_	_	_
-19	an	_	_	_	_	0	_	_	_
-20	instant	_	_	_	_	0	_	_	_
-21	crisis	_	_	_	_	0	_	_	_
-22	,	_	_	_	_	0	_	_	_
-23	"	_	_	_	_	0	_	_	_
-24	Maviglio	_	_	_	_	0	_	_	_
-25	said	_	_	_	_	0	_	_	_
-26	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	This	_	_	_	_	0	_	_	_
-2	store	_	_	_	_	0	_	_	_
-3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	what	_	_	_	_	0	_	_	_
-5	Colorado	_	_	_	_	0	_	_	_
-6	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
-7	all	_	_	_	_	0	_	_	_
-8	about	_	_	_	_	0	_	_	_
-9	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Bending	_	_	_	_	0	_	_	_
-2	backward	_	_	_	_	0	_	_	_
-3	represents	represent	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-4	:	_	_	_	_	0	_	_	_
-5	"	_	_	_	_	0	_	_	_
+1	I	_	_	_	_	0	_	_	_
+2	am	_	_	_	_	0	_	_	_
+3	very	_	_	_	_	0	_	_	_
+4	artistic	_	_	_	_	0	_	_	_
+5	so	_	_	_	_	0	_	_	_
 6	I	_	_	_	_	0	_	_	_
-7	***am***	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
-8	ready	_	_	_	_	0	_	_	_
-9	to	_	_	_	_	0	_	_	_
-10	face	_	_	_	_	0	_	_	_
-11	all	_	_	_	_	0	_	_	_
-12	obstacles	_	_	_	_	0	_	_	_
-13	that	_	_	_	_	0	_	_	_
-14	may	_	_	_	_	0	_	_	_
-15	come	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
-17	"	_	_	_	_	0	_	_	_
+7	decided	_	_	_	_	0	_	_	_
+8	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	subj	_	_
+9	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+10	going	go	VERB	VBG	VerbForm=Ger	9	comp:aux	_	_
+11	to	_	_	_	_	0	_	_	_
+12	make	_	_	_	_	0	_	_	_
+13	her	_	_	_	_	0	_	_	_
+14	a	_	_	_	_	0	_	_	_
+15	giraffe	_	_	_	_	0	_	_	_
+16	sculpture	_	_	_	_	0	_	_	_
+17	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	So	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	therefore	_	_	_	_	0	_	_	_
-4	,	_	_	_	_	0	_	_	_
-5	now	_	_	_	_	0	_	_	_
-6	he	_	_	_	_	0	_	_	_
-7	says	say	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-8	i	_	_	_	_	0	_	_	_
-9	***am***	be	AUX	VBP	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	comp:obj	_	_
-10	inoperable	_	_	_	_	0	_	_	_
-11	(	_	_	_	_	0	_	_	_
-12	even	_	_	_	_	0	_	_	_
-13	though	_	_	_	_	0	_	_	_
-14	i	_	_	_	_	0	_	_	_
-15	am	_	_	_	_	0	_	_	_
-16	not	_	_	_	_	0	_	_	_
-17	100	_	_	_	_	0	_	_	_
-18	%	_	_	_	_	0	_	_	_
-19	inoperable	_	_	_	_	0	_	_	_
-20	)	_	_	_	_	0	_	_	_
-21	,	_	_	_	_	0	_	_	_
-22	and	_	_	_	_	0	_	_	_
-23	he	_	_	_	_	0	_	_	_
-24	is	_	_	_	_	0	_	_	_
-25	letting	_	_	_	_	0	_	_	_
-26	me	_	_	_	_	0	_	_	_
-27	die	_	_	_	_	0	_	_	_
-28	.	_	_	_	_	0	_	_	_
+1	I	_	_	_	_	0	_	_	_
+2	'm	_	_	_	_	0	_	_	_
+3	a	_	_	_	_	0	_	_	_
+4	soccer	_	_	_	_	0	_	_	_
+5	mom	_	_	_	_	0	_	_	_
+6	so	_	_	_	_	0	_	_	_
+7	I	_	_	_	_	0	_	_	_
+8	was	_	_	_	_	0	_	_	_
+9	n't	_	_	_	_	0	_	_	_
+10	sure	_	_	_	_	0	_	_	_
+11	what	_	_	_	_	0	_	_	_
+12	***I***	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	subj	_	_
+13	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+14	looking	look	VERB	VBG	VerbForm=Ger	13	comp:aux	_	_
+15	for	for	ADP	IN	_	13	udep	_	_
+16	when	when	ADV	WRB	PronType=Int	13	mod	_	_
+17	it	_	_	_	_	0	_	_	_
+18	comes	_	_	_	_	0	_	_	_
+19	to	_	_	_	_	0	_	_	_
+20	dancewear	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	I	_	_	_	_	0	_	_	_
+2	am	_	_	_	_	0	_	_	_
+3	making	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	christmas	_	_	_	_	0	_	_	_
+6	list	_	_	_	_	0	_	_	_
+7	for	_	_	_	_	0	_	_	_
+8	my	_	_	_	_	0	_	_	_
+9	parents	_	_	_	_	0	_	_	_
+10	and	and	CCONJ	CC	_	12	cc	_	_
+11	***i***	i	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	subj	_	_
+12	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+13	going	go	VERB	VBG	VerbForm=Ger	12	comp:aux	_	_
+14	to	_	_	_	_	0	_	_	_
+15	ask	_	_	_	_	0	_	_	_
+16	for	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	bird	_	_	_	_	0	_	_	_
+19	and	_	_	_	_	0	_	_	_
+20	these	_	_	_	_	0	_	_	_
+21	are	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	12	conj	_	_
+22	the	_	_	_	_	0	_	_	_
+23	affordable	_	_	_	_	0	_	_	_
+24	ones	_	_	_	_	0	_	_	_
+25	that	_	_	_	_	0	_	_	_
+26	i	_	_	_	_	0	_	_	_
+27	like	_	_	_	_	0	_	_	_
+28	,	_	_	_	_	0	_	_	_
+29	and	_	_	_	_	0	_	_	_
+30	i	_	_	_	_	0	_	_	_
+31	was	_	_	_	_	0	_	_	_
+32	wondering	_	_	_	_	0	_	_	_
+33	:	_	_	_	_	0	_	_	_
+34	which	_	_	_	_	0	_	_	_
+35	would	_	_	_	_	0	_	_	_
+36	not	_	_	_	_	0	_	_	_
+37	bite	_	_	_	_	0	_	_	_
+38	alot	_	_	_	_	0	_	_	_
+39	,	_	_	_	_	0	_	_	_
+40	and	_	_	_	_	0	_	_	_
+41	which	_	_	_	_	0	_	_	_
+42	are	_	_	_	_	0	_	_	_
+43	more	_	_	_	_	0	_	_	_
+44	fun	_	_	_	_	0	_	_	_
+45	to	_	_	_	_	0	_	_	_
+46	have	_	_	_	_	0	_	_	_
+47	as	_	_	_	_	0	_	_	_
+48	pets	_	_	_	_	0	_	_	_
+49	AND	_	_	_	_	0	_	_	_
+50	I	_	_	_	_	0	_	_	_
+51	NEED	_	_	_	_	0	_	_	_
+52	TO	_	_	_	_	0	_	_	_
+53	KNOW	_	_	_	_	0	_	_	_
+54	WHICH	_	_	_	_	0	_	_	_
+55	WOULD	_	_	_	_	0	_	_	_
+56	BE	_	_	_	_	0	_	_	_
+57	QUIETEST	_	_	_	_	0	_	_	_
+58	i	_	_	_	_	0	_	_	_
+59	honestly	_	_	_	_	0	_	_	_
+60	do	_	_	_	_	0	_	_	_
+61	nt	_	_	_	_	0	_	_	_
+62	care	_	_	_	_	0	_	_	_
+63	but	_	_	_	_	0	_	_	_
+64	my	_	_	_	_	0	_	_	_
+65	family	_	_	_	_	0	_	_	_
+66	does	_	_	_	_	0	_	_	_
+67	!	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	I	_	_	_	_	0	_	_	_
+2	'm	_	_	_	_	0	_	_	_
+3	getting	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	dwarf	_	_	_	_	0	_	_	_
+6	Hamster	_	_	_	_	0	_	_	_
+7	tomorrow	_	_	_	_	0	_	_	_
+8	And	and	CCONJ	CC	_	10	cc	_	_
+9	***i***	i	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	subj	_	_
+10	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+11	just	_	_	_	_	0	_	_	_
+12	talking	talk	VERB	VBG	VerbForm=Ger	10	comp:aux	_	_
+13	to	to	ADP	IN	_	10	udep	_	_
+14	my	_	_	_	_	0	_	_	_
+15	Mom	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	she	_	_	_	_	0	_	_	_
+18	said	say	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	10	conj	_	_
+19	that	_	_	_	_	0	_	_	_
+20	we	_	_	_	_	0	_	_	_
+21	have	_	_	_	_	0	_	_	_
+22	to	_	_	_	_	0	_	_	_
+23	take	_	_	_	_	0	_	_	_
+24	out	_	_	_	_	0	_	_	_
+25	the	_	_	_	_	0	_	_	_
+26	wheel	_	_	_	_	0	_	_	_
+27	at	_	_	_	_	0	_	_	_
+28	night	_	_	_	_	0	_	_	_
+29	because	_	_	_	_	0	_	_	_
+30	it	_	_	_	_	0	_	_	_
+31	would	_	_	_	_	0	_	_	_
+32	disturb	_	_	_	_	0	_	_	_
+33	her	_	_	_	_	0	_	_	_
+34	sleep	_	_	_	_	0	_	_	_
+35	But	_	_	_	_	0	_	_	_
+36	i	_	_	_	_	0	_	_	_
+37	told	_	_	_	_	0	_	_	_
+38	her	_	_	_	_	0	_	_	_
+39	no	_	_	_	_	0	_	_	_
+40	because	_	_	_	_	0	_	_	_
+41	i	_	_	_	_	0	_	_	_
+42	said	_	_	_	_	0	_	_	_
+43	thei	_	_	_	_	0	_	_	_
+44	r	_	_	_	_	0	_	_	_
+45	energetic	_	_	_	_	0	_	_	_
+46	at	_	_	_	_	0	_	_	_
+47	night	_	_	_	_	0	_	_	_
+48	at	_	_	_	_	0	_	_	_
+49	my	_	_	_	_	0	_	_	_
+50	room	_	_	_	_	0	_	_	_
+51	is	_	_	_	_	0	_	_	_
+52	right	_	_	_	_	0	_	_	_
+53	next	_	_	_	_	0	_	_	_
+54	door	_	_	_	_	0	_	_	_
+55	to	_	_	_	_	0	_	_	_
+56	hers	_	_	_	_	0	_	_	_
+57	But	_	_	_	_	0	_	_	_
+58	i	_	_	_	_	0	_	_	_
+59	heard	_	_	_	_	0	_	_	_
+60	their	_	_	_	_	0	_	_	_
+61	are	_	_	_	_	0	_	_	_
+62	wheels	_	_	_	_	0	_	_	_
+63	that	_	_	_	_	0	_	_	_
+64	do	_	_	_	_	0	_	_	_
+65	nt	_	_	_	_	0	_	_	_
+66	make	_	_	_	_	0	_	_	_
+67	noise	_	_	_	_	0	_	_	_
+68	at	_	_	_	_	0	_	_	_
+69	all	_	_	_	_	0	_	_	_
+70	what	_	_	_	_	0	_	_	_
+71	would	_	_	_	_	0	_	_	_
+72	be	_	_	_	_	0	_	_	_
+73	the	_	_	_	_	0	_	_	_
+74	price	_	_	_	_	0	_	_	_
+75	of	_	_	_	_	0	_	_	_
+76	it	_	_	_	_	0	_	_	_
+77	?	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 

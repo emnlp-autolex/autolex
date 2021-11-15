@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,219 +137,301 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_gum </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	The	_	_	_	_	0	_	_	_
-2	***Eegimaa***	Eegimaa	PROPN	NNP	Number=Sing	6	subj@pass	_	_
-3	spoken	_	_	_	_	0	_	_	_
-4	in	_	_	_	_	0	_	_	_
-5	Mof-Ávvi	_	_	_	_	0	_	_	_
-6	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-7	known	_	_	_	_	0	_	_	_
-8	by	_	_	_	_	0	_	_	_
-9	several	_	_	_	_	0	_	_	_
-10	names	_	_	_	_	0	_	_	_
-11	given	_	_	_	_	0	_	_	_
-12	by	_	_	_	_	0	_	_	_
-13	speakers	_	_	_	_	0	_	_	_
-14	of	_	_	_	_	0	_	_	_
-15	neighbouring	_	_	_	_	0	_	_	_
-16	languages	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><div id="rules"><table><col><colgroup span="2"></colgroup><tr><th colspan="2"	scope="colgroup" style="text-align:center">Features that make up this rule</th></tr><th rowspan="1" style="text-align:center">Active Features</th><th rowspan="1" style="text-align:center">Inactive Features</th></tr><tr>
+<td style="text-align:center">the head agrees with its head on= Number <br>
+dependent is the= compound <br>
+</td><td style="text-align:center">the head of the dependent has semantic class= creative work <br>
+dependent is the= object <br>
+dependent's head is a= NOUN <br>
+</td></tr></table></div>
+<input type="hidden" id="rules_text" name="rules_text" value="Active:the head agrees with its head on= Number;dependent is the= compound; Not Active:the head of the dependent has semantic class= creative work;dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	section	_	_	_	_	0	_	_	_
+3	briefly	_	_	_	_	0	_	_	_
+4	presents	present	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	***Gújjolaay***	Gújjolaay	PROPN	NNP	Number=Sing	7	compound	_	_
+7	Eegimaa	Eegimaa	PROPN	NNP	Number=Sing	4	comp:obj	_	_
+8	(	_	_	_	_	0	_	_	_
+9	Eegimaa	_	_	_	_	0	_	_	_
+10	for	_	_	_	_	0	_	_	_
+11	short	_	_	_	_	0	_	_	_
+12	;	_	_	_	_	0	_	_	_
+13	Ethnologue	_	_	_	_	0	_	_	_
+14	code	_	_	_	_	0	_	_	_
+15	:	_	_	_	_	0	_	_	_
+16	ISO	_	_	_	_	0	_	_	_
+17	639-3	_	_	_	_	0	_	_	_
+18	:	_	_	_	_	0	_	_	_
+19	bqj	_	_	_	_	0	_	_	_
+20	)	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	its	_	_	_	_	0	_	_	_
+23	speakers	_	_	_	_	0	_	_	_
+24	and	_	_	_	_	0	_	_	_
+25	its	_	_	_	_	0	_	_	_
+26	varieties	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	***Eegimaa***	Eegimaa	PROPN	NNP	Number=Sing	2	subj@pass	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	mainly	_	_	_	_	0	_	_	_
-4	spoken	_	_	_	_	0	_	_	_
-5	in	_	_	_	_	0	_	_	_
-6	Mof-Ávvi	_	_	_	_	0	_	_	_
-7	,	_	_	_	_	0	_	_	_
-8	a	_	_	_	_	0	_	_	_
-9	former	_	_	_	_	0	_	_	_
-10	kingdom	_	_	_	_	0	_	_	_
-11	of	_	_	_	_	0	_	_	_
-12	10	_	_	_	_	0	_	_	_
-13	villages	_	_	_	_	0	_	_	_
-14	located	_	_	_	_	0	_	_	_
-15	to	_	_	_	_	0	_	_	_
-16	the	_	_	_	_	0	_	_	_
-17	west	_	_	_	_	0	_	_	_
+1	Jóola	_	_	_	_	0	_	_	_
+2	languages	_	_	_	_	0	_	_	_
+3	are	_	_	_	_	0	_	_	_
+4	classified	_	_	_	_	0	_	_	_
+5	as	_	_	_	_	0	_	_	_
+6	members	_	_	_	_	0	_	_	_
+7	of	_	_	_	_	0	_	_	_
+8	Sapir	_	_	_	_	0	_	_	_
+9	’s	_	_	_	_	0	_	_	_
+10	(	_	_	_	_	0	_	_	_
+11	1971	_	_	_	_	0	_	_	_
+12	)	_	_	_	_	0	_	_	_
+13	BAK	_	_	_	_	0	_	_	_
+14	group	_	_	_	_	0	_	_	_
+15	of	_	_	_	_	0	_	_	_
+16	Atlantic	_	_	_	_	0	_	_	_
+17	languages	_	_	_	_	0	_	_	_
 18	of	_	_	_	_	0	_	_	_
-19	Ziguinchor	_	_	_	_	0	_	_	_
-20	,	_	_	_	_	0	_	_	_
-21	the	_	_	_	_	0	_	_	_
-22	capital	_	_	_	_	0	_	_	_
-23	city	_	_	_	_	0	_	_	_
-24	of	_	_	_	_	0	_	_	_
-25	the	_	_	_	_	0	_	_	_
-26	former	_	_	_	_	0	_	_	_
-27	administrative	_	_	_	_	0	_	_	_
-28	region	_	_	_	_	0	_	_	_
-29	of	_	_	_	_	0	_	_	_
-30	Casamance	_	_	_	_	0	_	_	_
-31	in	_	_	_	_	0	_	_	_
-32	the	_	_	_	_	0	_	_	_
-33	south	_	_	_	_	0	_	_	_
-34	of	_	_	_	_	0	_	_	_
-35	Senegal	_	_	_	_	0	_	_	_
-36	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Endungo	_	_	_	_	0	_	_	_
-2	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	the	_	_	_	_	0	_	_	_
-4	name	_	_	_	_	0	_	_	_
-5	given	_	_	_	_	0	_	_	_
-6	by	_	_	_	_	0	_	_	_
-7	Bayot	_	_	_	_	0	_	_	_
-8	speakers	_	_	_	_	0	_	_	_
-9	,	_	_	_	_	0	_	_	_
-10	but	_	_	_	_	0	_	_	_
-11	its	_	_	_	_	0	_	_	_
-12	meaning	_	_	_	_	0	_	_	_
-13	***is***	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
-14	not	_	_	_	_	0	_	_	_
-15	known	_	_	_	_	0	_	_	_
-16	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	He	_	_	_	_	0	_	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	incredibly	_	_	_	_	0	_	_	_
-4	learned	_	_	_	_	0	_	_	_
-5	and	_	_	_	_	0	_	_	_
-6	***was***	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
-7	a	_	_	_	_	0	_	_	_
-8	strong	_	_	_	_	0	_	_	_
-9	advocate	_	_	_	_	0	_	_	_
-10	for	_	_	_	_	0	_	_	_
-11	freedom	_	_	_	_	0	_	_	_
-12	and	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	rule	_	_	_	_	0	_	_	_
-15	of	_	_	_	_	0	_	_	_
-16	law	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Ronald	_	_	_	_	0	_	_	_
-2	McDonald	_	_	_	_	0	_	_	_
-3	showing	_	_	_	_	0	_	_	_
-4	how	_	_	_	_	0	_	_	_
-5	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	6	subj@pass	_	SpaceAfter=No
-6	's	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-7	done	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	Specifically	_	_	_	_	0	_	_	_
-2	,	_	_	_	_	0	_	_	_
-3	altering	_	_	_	_	0	_	_	_
-4	law	_	_	_	_	0	_	_	_
-5	once	_	_	_	_	0	_	_	_
-6	***it***	it	PRON	PRP	Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs	7	subj@pass	_	_
-7	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-8	passed	_	_	_	_	0	_	_	_
-9	to	_	_	_	_	0	_	_	_
-10	accommodate	_	_	_	_	0	_	_	_
-11	his	_	_	_	_	0	_	_	_
-12	voting	_	_	_	_	0	_	_	_
-13	blocs	_	_	_	_	0	_	_	_
-14	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj@pass	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	most	_	_	_	_	0	_	_	_
-4	widely	_	_	_	_	0	_	_	_
-5	recognized	_	_	_	_	0	_	_	_
-6	for	_	_	_	_	0	_	_	_
-7	some	_	_	_	_	0	_	_	_
-8	of	_	_	_	_	0	_	_	_
-9	his	_	_	_	_	0	_	_	_
-10	books	_	_	_	_	0	_	_	_
-11	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	***He***	he	PRON	PRP	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj@pass	_	_
-2	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-3	incredibly	_	_	_	_	0	_	_	_
-4	learned	_	_	_	_	0	_	_	_
-5	and	_	_	_	_	0	_	_	_
-6	was	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	strong	_	_	_	_	0	_	_	_
-9	advocate	_	_	_	_	0	_	_	_
-10	for	_	_	_	_	0	_	_	_
-11	freedom	_	_	_	_	0	_	_	_
-12	and	_	_	_	_	0	_	_	_
-13	the	_	_	_	_	0	_	_	_
-14	rule	_	_	_	_	0	_	_	_
-15	of	_	_	_	_	0	_	_	_
-16	law	_	_	_	_	0	_	_	_
-17	.	_	_	_	_	0	_	_	_
-
-</code></pre>
-
-<pre><code class="language-conllu">
-1	His	_	_	_	_	0	_	_	_
-2	Seventh	_	_	_	_	0	_	_	_
-3	***Symphony***	Symphony	PROPN	NNP	Number=Sing	4	subj@pass	_	_
-4	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-5	written	_	_	_	_	0	_	_	_
-6	for	_	_	_	_	0	_	_	_
-7	London	_	_	_	_	0	_	_	_
-8	.	_	_	_	_	0	_	_	_
+19	the	_	_	_	_	0	_	_	_
+20	***Niger***	Niger	PROPN	NNP	Number=Sing	21	compound	_	_
+21	Congo	Congo	PROPN	NNP	Number=Sing	23	compound	_	_
+22	language	_	_	_	_	0	_	_	_
+23	phylum	phylum	NOUN	NN	Number=Sing	0	_	_	_
+24	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
 1	In	_	_	_	_	0	_	_	_
-2	1891	_	_	_	_	0	_	_	_
-3	***Dvořák***	Dvořák	PROPN	NNP	Number=Sing	4	subj@pass	_	_
-4	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
-5	appointed	_	_	_	_	0	_	_	_
-6	as	_	_	_	_	0	_	_	_
-7	a	_	_	_	_	0	_	_	_
-8	professor	_	_	_	_	0	_	_	_
-9	at	_	_	_	_	0	_	_	_
-10	the	_	_	_	_	0	_	_	_
-11	Prague	_	_	_	_	0	_	_	_
-12	Conservatory	_	_	_	_	0	_	_	_
-13	.	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	south	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	river	_	_	_	_	0	_	_	_
+7	known	_	_	_	_	0	_	_	_
+8	as	_	_	_	_	0	_	_	_
+9	Kamobeul	_	_	_	_	0	_	_	_
+10	Bolon	_	_	_	_	0	_	_	_
+11	separates	_	_	_	_	0	_	_	_
+12	Mof-Ávvi	_	_	_	_	0	_	_	_
+13	from	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	Bayot	_	_	_	_	0	_	_	_
+16	speaking	_	_	_	_	0	_	_	_
+17	area	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	while	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	west	_	_	_	_	0	_	_	_
+22	side	_	_	_	_	0	_	_	_
+23	of	_	_	_	_	0	_	_	_
+24	Mof-Ávvi	_	_	_	_	0	_	_	_
+25	coincides	_	_	_	_	0	_	_	_
+26	with	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	homeland	_	_	_	_	0	_	_	_
+29	of	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Jóola	Jóola	PROPN	NNP	Number=Sing	0	_	_	_
+32	Kaasa	_	_	_	_	0	_	_	_
+33	Húluf	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	***Jóola***	Jóola	PROPN	NNP	Number=Sing	37	compound	_	_
+36	Kaasa	_	_	_	_	0	_	_	_
+37	Ésuulaaluʔ	Ésuulaaluʔ	PROPN	NNP	Number=Sing	31	conj	_	SpaceAfter=No
+38	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	My	_	_	_	_	0	_	_	_
-2	personal	_	_	_	_	0	_	_	_
-3	favourite	_	_	_	_	0	_	_	_
-4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-5	***Notes***	note	PROPN	NNPS	Number=Plur	4	comp:pred	_	_
-6	from	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	Underground	_	_	_	_	0	_	_	_
-9	(	_	_	_	_	0	_	_	_
-10	Dostoyevsky	_	_	_	_	0	_	_	_
-11	)	_	_	_	_	0	_	_	_
-12	.	_	_	_	_	0	_	_	_
+<pre><code class="language-conllu">
+1	In	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	south	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	river	_	_	_	_	0	_	_	_
+7	known	_	_	_	_	0	_	_	_
+8	as	_	_	_	_	0	_	_	_
+9	Kamobeul	_	_	_	_	0	_	_	_
+10	Bolon	_	_	_	_	0	_	_	_
+11	separates	_	_	_	_	0	_	_	_
+12	Mof-Ávvi	_	_	_	_	0	_	_	_
+13	from	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	Bayot	_	_	_	_	0	_	_	_
+16	speaking	_	_	_	_	0	_	_	_
+17	area	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	while	_	_	_	_	0	_	_	_
+20	the	_	_	_	_	0	_	_	_
+21	west	_	_	_	_	0	_	_	_
+22	side	_	_	_	_	0	_	_	_
+23	of	_	_	_	_	0	_	_	_
+24	Mof-Ávvi	_	_	_	_	0	_	_	_
+25	coincides	_	_	_	_	0	_	_	_
+26	with	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	homeland	_	_	_	_	0	_	_	_
+29	of	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	Jóola	Jóola	PROPN	NNP	Number=Sing	0	_	_	_
+32	Kaasa	_	_	_	_	0	_	_	_
+33	Húluf	_	_	_	_	0	_	_	_
+34	and	_	_	_	_	0	_	_	_
+35	Jóola	_	_	_	_	0	_	_	_
+36	***Kaasa***	Kaasa	PROPN	NNP	Number=Sing	37	compound	_	_
+37	Ésuulaaluʔ	Ésuulaaluʔ	PROPN	NNP	Number=Sing	31	conj	_	SpaceAfter=No
+38	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	He	_	_	_	_	0	_	_	_
+2	also	_	_	_	_	0	_	_	_
+3	wrote	_	_	_	_	0	_	_	_
+4	his	_	_	_	_	0	_	_	_
+5	most	_	_	_	_	0	_	_	_
+6	appreciated	_	_	_	_	0	_	_	_
+7	piece	piece	NOUN	NN	Number=Sing	0	_	_	_
+8	of	_	_	_	_	0	_	_	_
+9	chamber	_	_	_	_	0	_	_	_
+10	music	_	_	_	_	0	_	_	_
+11	,	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	American	_	_	_	_	0	_	_	_
+14	***String***	String	PROPN	NNP	Number=Sing	15	compound	_	_
+15	Quartet	Quartet	PROPN	NNP	Number=Sing	7	appos	_	SpaceAfter=No
+16	,	_	_	_	_	0	_	_	_
+17	during	_	_	_	_	0	_	_	_
+18	this	_	_	_	_	0	_	_	_
+19	time	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	he	_	_	_	_	0	_	_	_
+2	lectured	_	_	_	_	0	_	_	_
+3	at	_	_	_	_	0	_	_	_
+4	the	_	_	_	_	0	_	_	_
+5	Congress	_	_	_	_	0	_	_	_
+6	of	_	_	_	_	0	_	_	_
+7	Arts	_	_	_	_	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	Sciences	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
+11	St.	_	_	_	_	0	_	_	_
+12	Louis	_	_	_	_	0	_	_	_
+13	in	_	_	_	_	0	_	_	_
+14	1904	_	_	_	_	0	_	_	_
+15	,	_	_	_	_	0	_	_	_
+16	and	_	_	_	_	0	_	_	_
+17	in	_	_	_	_	0	_	_	_
+18	1909	_	_	_	_	0	_	_	_
+19	–	_	_	_	_	0	_	_	_
+20	1910	_	_	_	_	0	_	_	_
+21	he	_	_	_	_	0	_	_	_
+22	visited	_	_	_	_	0	_	_	_
+23	both	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	University	University	PROPN	NNP	Number=Sing	0	_	_	_
+26	of	_	_	_	_	0	_	_	_
+27	California	_	_	_	_	0	_	_	_
+28	and	_	_	_	_	0	_	_	_
+29	***Columbia***	Columbia	PROPN	NNP	Number=Sing	30	compound	_	_
+30	University	University	PROPN	NNP	Number=Sing	25	conj	_	SpaceAfter=No
+31	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	At	_	_	_	_	0	_	_	_
+2	the	_	_	_	_	0	_	_	_
+3	131st	_	_	_	_	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	below	_	_	_	_	0	_	_	_
+6	her	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	old	_	_	_	_	0	_	_	_
+11	***Stock***	Stock	PROPN	NNP	Number=Sing	12	compound	_	_
+12	Exchange	Exchange	PROPN	NNP	Number=Sing	8	subj	_	SpaceAfter=No
+13	,	_	_	_	_	0	_	_	_
+14	hung	_	_	_	_	0	_	_	_
+15	upside-down	_	_	_	_	0	_	_	_
+16	now	_	_	_	_	0	_	_	_
+17	as	_	_	_	_	0	_	_	_
+18	a	_	_	_	_	0	_	_	_
+19	hipster	_	_	_	_	0	_	_	_
+20	den	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	The	_	_	_	_	0	_	_	_
+3	***Free***	Free	PROPN	NNP	Number=Sing	4	compound	_	_
+4	Society	Society	PROPN	NNP	Number=Sing	5	subj	_	_
+5	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	fragile	_	_	_	_	0	_	_	_
+7	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Wikinews	_	_	_	_	0	_	_	_
+2	interviews	_	_	_	_	0	_	_	_
+3	Christopher	_	_	_	_	0	_	_	_
+4	Hill	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	***U.S.***	U.S.	PROPN	NNP	Number=Sing	8	compound	_	_
+7	Republican	_	_	_	_	0	_	_	_
+8	Party	Party	PROPN	NNP	Number=Sing	10	compound	_	_
+9	presidential	_	_	_	_	0	_	_	_
+10	candidate	candidate	NOUN	NN	Number=Sing	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	When	_	_	_	_	0	_	_	_
+2	I	_	_	_	_	0	_	_	_
+3	was	_	_	_	_	0	_	_	_
+4	a	_	_	_	_	0	_	_	_
+5	young	_	_	_	_	0	_	_	_
+6	man	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	***Air***	Air	PROPN	NNP	Number=Sing	9	compound	_	_
+9	Force	Force	PROPN	NNP	Number=Sing	10	compound	_	_
+10	ROTC	ROTC	PROPN	NNP	Number=Sing	0	_	_	_
+11	I	_	_	_	_	0	_	_	_
+12	was	_	_	_	_	0	_	_	_
+13	chosen	_	_	_	_	0	_	_	_
+14	to	_	_	_	_	0	_	_	_
+15	attend	_	_	_	_	0	_	_	_
+16	a	_	_	_	_	0	_	_	_
+17	unique	_	_	_	_	0	_	_	_
+18	Pilot	_	_	_	_	0	_	_	_
+19	Training	_	_	_	_	0	_	_	_
+20	Program	_	_	_	_	0	_	_	_
+21	called	_	_	_	_	0	_	_	_
+22	Euro-	_	_	_	_	0	_	_	_
+23	NATO	_	_	_	_	0	_	_	_
+24	Joint	_	_	_	_	0	_	_	_
+25	Jet	_	_	_	_	0	_	_	_
+26	Pilot	_	_	_	_	0	_	_	_
+27	Training	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h5> No examples found </h5>
+</div>
 </ul><br><br><br>
 
 

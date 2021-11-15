@@ -123,7 +123,7 @@ span.displaynone { display: none; }
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="../../..//main.css">
+<link rel="stylesheet" type="text/css" href="../../../main.css">
 
   </head>
   <body>
@@ -137,112 +137,635 @@ span.displaynone { display: none; }
 	    Please consider enabling Javascript for this page to see the visualizations.
 	  </div>
 	</noscript>
-<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="../Agreement.html">Back to English-EWT page</a></li>
-<h3> <b> Examples from test data of en_gum </b> </h3><h5> There is required-agreement between the syntactic head and its dependent when </h5> <pre><code class="language-conllu">
-1	it	_	_	_	_	0	_	_	_
-2	lets	let	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***them***	they	PRON	PRP	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	comp:obj	_	_
-4	hack	_	_	_	_	0	_	_	_
-5	the	_	_	_	_	0	_	_	_
-6	city	_	_	_	_	0	_	_	_
-7	’s	_	_	_	_	0	_	_	_
-8	person-recognition	_	_	_	_	0	_	_	_
-9	systems	_	_	_	_	0	_	_	_
-10	.	_	_	_	_	0	_	_	_
+<ul class="nav"><li class="nav"><a class="active" href="../../../index.html">Home</a></li><li class="nav"><a href="../../../introduction.html">Usage</a></li><li class="nav"><a href="../../../about.html">About Us</a></li></ul><br><li><a href="Number.html">Back to en_ewt page</a></li>
+<h3> There is <b> required-agreement </b> between the  head and its dependent for <b>Number</b> </h3><input type="hidden" id="rules_text" name="rules_text" value="Active: Not Active:dependent's head is a= PRON;in the neighborhood of the dependent= other;dependent is the= compound;dependent is the= object;dependent's head is a= NOUN;"><div id="examples">
+<h4> Examples that agree with label: <b>req-agree</b>: The <b>dependent</b> is denoted by *** </h4><pre><code class="language-conllu">
+1	What	_	_	_	_	0	_	_	_
+2	also	_	_	_	_	0	_	_	_
+3	should	_	_	_	_	0	_	_	_
+4	not	_	_	_	_	0	_	_	_
+5	be	_	_	_	_	0	_	_	_
+6	lost	_	_	_	_	0	_	_	_
+7	in	_	_	_	_	0	_	_	_
+8	discussion	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	discrimination	_	_	_	_	0	_	_	_
+11	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	growing	_	_	_	_	0	_	_	_
+14	***push***	push	NOUN	NN	Number=Sing	11	comp:pred	_	_
+15	to	_	_	_	_	0	_	_	_
+16	implement	_	_	_	_	0	_	_	_
+17	social	_	_	_	_	0	_	_	_
+18	policy	_	_	_	_	0	_	_	_
+19	aimed	_	_	_	_	0	_	_	_
+20	at	_	_	_	_	0	_	_	_
+21	reducing	_	_	_	_	0	_	_	_
+22	the	_	_	_	_	0	_	_	_
+23	occurrence	_	_	_	_	0	_	_	_
+24	of	_	_	_	_	0	_	_	_
+25	discriminatory	_	_	_	_	0	_	_	_
+26	practices	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
-<h4> Counter Examples </h4><pre><code class="language-conllu">
-1	Mof-Ávvi	_	_	_	_	0	_	_	_
-2	is	_	_	_	_	0	_	_	_
-3	a	_	_	_	_	0	_	_	_
-4	peninsula	_	_	_	_	0	_	_	_
-5	bordered	_	_	_	_	0	_	_	_
-6	by	_	_	_	_	0	_	_	_
-7	the	_	_	_	_	0	_	_	_
-8	Casamance	_	_	_	_	0	_	_	_
-9	River	_	_	_	_	0	_	_	_
-10	to	_	_	_	_	0	_	_	_
+<pre><code class="language-conllu">
+1	Indeed	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	***implementation***	implementation	NOUN	NN	Number=Sing	8	subj@pass	_	_
+5	of	_	_	_	_	0	_	_	_
+6	certain	_	_	_	_	0	_	_	_
+7	policies	_	_	_	_	0	_	_	_
+8	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	rooted	_	_	_	_	0	_	_	_
+10	in	_	_	_	_	0	_	_	_
 11	the	_	_	_	_	0	_	_	_
-12	north	_	_	_	_	0	_	_	_
-13	,	_	_	_	_	0	_	_	_
-14	which	_	_	_	_	0	_	_	_
-15	separates	separate	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-16	***it***	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	15	comp:obj	_	_
-17	from	_	_	_	_	0	_	_	_
-18	the	_	_	_	_	0	_	_	_
-19	Jóola	_	_	_	_	0	_	_	_
-20	Búluf	_	_	_	_	0	_	_	_
-21	and	_	_	_	_	0	_	_	_
-22	Jóola	_	_	_	_	0	_	_	_
-23	Fogny	_	_	_	_	0	_	_	_
-24	areas	_	_	_	_	0	_	_	_
+12	assumption	_	_	_	_	0	_	_	_
+13	that	_	_	_	_	0	_	_	_
+14	discrimination	_	_	_	_	0	_	_	_
+15	and	_	_	_	_	0	_	_	_
+16	biases	_	_	_	_	0	_	_	_
+17	are	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	at	_	_	_	_	0	_	_	_
+20	least	_	_	_	_	0	_	_	_
+21	to	_	_	_	_	0	_	_	_
+22	some	_	_	_	_	0	_	_	_
+23	appreciable	_	_	_	_	0	_	_	_
+24	amount	_	_	_	_	0	_	_	_
 25	,	_	_	_	_	0	_	_	_
-26	and	_	_	_	_	0	_	_	_
-27	to	_	_	_	_	0	_	_	_
-28	the	_	_	_	_	0	_	_	_
-29	east	_	_	_	_	0	_	_	_
-30	by	_	_	_	_	0	_	_	_
-31	the	_	_	_	_	0	_	_	_
-32	villages	_	_	_	_	0	_	_	_
-33	Brin	_	_	_	_	0	_	_	_
-34	and	_	_	_	_	0	_	_	_
-35	Djibonker	_	_	_	_	0	_	_	_
-36	,	_	_	_	_	0	_	_	_
-37	where	_	_	_	_	0	_	_	_
-38	the	_	_	_	_	0	_	_	_
-39	speakers	_	_	_	_	0	_	_	_
-40	of	_	_	_	_	0	_	_	_
-41	Kujireray	_	_	_	_	0	_	_	_
-42	and	_	_	_	_	0	_	_	_
-43	Baïnounk	_	_	_	_	0	_	_	_
-44	Gubëeher	_	_	_	_	0	_	_	_
-45	live	_	_	_	_	0	_	_	_
-46	.	_	_	_	_	0	_	_	_
+26	present	_	_	_	_	0	_	_	_
+27	in	_	_	_	_	0	_	_	_
+28	modern	_	_	_	_	0	_	_	_
+29	society	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	(	_	_	_	_	0	_	_	_
-2	A	_	_	_	_	0	_	_	_
-3	civic	_	_	_	_	0	_	_	_
-4	agent	_	_	_	_	0	_	_	_
-5	notices	_	_	_	_	0	_	_	_
-6	you	_	_	_	_	0	_	_	_
-7	noticing	_	_	_	_	0	_	_	_
-8	,	_	_	_	_	0	_	_	_
-9	and	_	_	_	_	0	_	_	_
-10	attaches	attach	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-11	***itself***	itself	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	10	comp:obj	_	_
-12	to	_	_	_	_	0	_	_	_
-13	your	_	_	_	_	0	_	_	_
-14	infospace	_	_	_	_	0	_	_	_
+1	The	_	_	_	_	0	_	_	_
+2	current	_	_	_	_	0	_	_	_
+3	***study***	study	NOUN	NN	Number=Sing	4	subj	_	_
+4	seeks	seek	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+5	to	_	_	_	_	0	_	_	_
+6	build	_	_	_	_	0	_	_	_
+7	on	_	_	_	_	0	_	_	_
+8	this	_	_	_	_	0	_	_	_
+9	research	_	_	_	_	0	_	_	_
+10	by	_	_	_	_	0	_	_	_
+11	estimating	_	_	_	_	0	_	_	_
+12	the	_	_	_	_	0	_	_	_
+13	prevalence	_	_	_	_	0	_	_	_
+14	of	_	_	_	_	0	_	_	_
+15	discrimination	_	_	_	_	0	_	_	_
+16	experiences	_	_	_	_	0	_	_	_
+17	among	_	_	_	_	0	_	_	_
+18	a	_	_	_	_	0	_	_	_
+19	large	_	_	_	_	0	_	_	_
+20	,	_	_	_	_	0	_	_	_
+21	nationally	_	_	_	_	0	_	_	_
+22	representative	_	_	_	_	0	_	_	_
+23	sample	_	_	_	_	0	_	_	_
+24	of	_	_	_	_	0	_	_	_
+25	adults	_	_	_	_	0	_	_	_
+26	from	_	_	_	_	0	_	_	_
+27	the	_	_	_	_	0	_	_	_
+28	United	_	_	_	_	0	_	_	_
+29	States	_	_	_	_	0	_	_	_
+30	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	What	_	_	_	_	0	_	_	_
+3	do	_	_	_	_	0	_	_	_
+4	you	_	_	_	_	0	_	_	_
+5	think	_	_	_	_	0	_	_	_
+6	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+7	the	_	_	_	_	0	_	_	_
+8	main	_	_	_	_	0	_	_	_
+9	***reason***	reason	NOUN	NN	Number=Sing	6	subj	_	_
+10	for	_	_	_	_	0	_	_	_
+11	these	_	_	_	_	0	_	_	_
+12	experiences	_	_	_	_	0	_	_	_
+13	?	_	_	_	_	0	_	_	_
+14	”	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Cornyn	_	_	_	_	0	_	_	_
+2	's	_	_	_	_	0	_	_	_
+3	statement	_	_	_	_	0	_	_	_
+4	added	_	_	_	_	0	_	_	_
+5	,	_	_	_	_	0	_	_	_
+6	"	_	_	_	_	0	_	_	_
+7	There	_	_	_	_	0	_	_	_
+8	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+9	no	_	_	_	_	0	_	_	_
+10	***question***	question	NOUN	NN	Number=Sing	8	subj	_	_
+11	Houston	_	_	_	_	0	_	_	_
+12	should	_	_	_	_	0	_	_	_
+13	have	_	_	_	_	0	_	_	_
+14	been	_	_	_	_	0	_	_	_
+15	selected	_	_	_	_	0	_	_	_
+16	as	_	_	_	_	0	_	_	_
+17	a	_	_	_	_	0	_	_	_
+18	final	_	_	_	_	0	_	_	_
+19	home	_	_	_	_	0	_	_	_
+20	for	_	_	_	_	0	_	_	_
+21	one	_	_	_	_	0	_	_	_
+22	of	_	_	_	_	0	_	_	_
+23	the	_	_	_	_	0	_	_	_
+24	orbiters	_	_	_	_	0	_	_	_
+25	—	_	_	_	_	0	_	_	_
+26	even	_	_	_	_	0	_	_	_
+27	Administrator	_	_	_	_	0	_	_	_
+28	Bolden	_	_	_	_	0	_	_	_
+29	stated	_	_	_	_	0	_	_	_
+30	as	_	_	_	_	0	_	_	_
+31	much	_	_	_	_	0	_	_	_
+32	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Additionally	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	because	_	_	_	_	0	_	_	_
+4	this	_	_	_	_	0	_	_	_
+5	***question***	question	NOUN	NN	Number=Sing	6	subj@pass	_	_
+6	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+7	only	_	_	_	_	0	_	_	_
+8	asked	_	_	_	_	0	_	_	_
+9	of	_	_	_	_	0	_	_	_
+10	respondents	_	_	_	_	0	_	_	_
+11	who	_	_	_	_	0	_	_	_
+12	reported	_	_	_	_	0	_	_	_
+13	prior	_	_	_	_	0	_	_	_
+14	discrimination	_	_	_	_	0	_	_	_
+15	experiences	_	_	_	_	0	_	_	_
+16	,	_	_	_	_	0	_	_	_
+17	the	_	_	_	_	0	_	_	_
+18	built-in	_	_	_	_	0	_	_	_
+19	skip	_	_	_	_	0	_	_	_
+20	pattern	_	_	_	_	0	_	_	_
+21	resulted	_	_	_	_	0	_	_	_
+22	in	_	_	_	_	0	_	_	_
+23	a	_	_	_	_	0	_	_	_
+24	large	_	_	_	_	0	_	_	_
+25	number	_	_	_	_	0	_	_	_
+26	of	_	_	_	_	0	_	_	_
+27	cases	_	_	_	_	0	_	_	_
+28	scored	_	_	_	_	0	_	_	_
+29	as	_	_	_	_	0	_	_	_
+30	missing	_	_	_	_	0	_	_	_
+31	(	_	_	_	_	0	_	_	_
+32	legitimate	_	_	_	_	0	_	_	_
+33	skip	_	_	_	_	0	_	_	_
+34	)	_	_	_	_	0	_	_	_
+35	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Because	_	_	_	_	0	_	_	_
+2	a	_	_	_	_	0	_	_	_
+3	race	_	_	_	_	0	_	_	_
+4	***variable***	variable	NOUN	NN	Number=Sing	5	subj	_	_
+5	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+6	not	_	_	_	_	0	_	_	_
+7	available	_	_	_	_	0	_	_	_
+8	from	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	Wave	_	_	_	_	0	_	_	_
+11	4	_	_	_	_	0	_	_	_
+12	interviews	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	we	_	_	_	_	0	_	_	_
+15	use	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	racial	_	_	_	_	0	_	_	_
+18	category	_	_	_	_	0	_	_	_
+19	reported	_	_	_	_	0	_	_	_
+20	by	_	_	_	_	0	_	_	_
+21	the	_	_	_	_	0	_	_	_
+22	respondent	_	_	_	_	0	_	_	_
+23	during	_	_	_	_	0	_	_	_
+24	the	_	_	_	_	0	_	_	_
+25	Wave	_	_	_	_	0	_	_	_
+26	1	_	_	_	_	0	_	_	_
+27	interview	_	_	_	_	0	_	_	_
+28	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Wave	_	_	_	_	0	_	_	_
+2	1	_	_	_	_	0	_	_	_
+3	***race***	race	NOUN	NN	Number=Sing	14	subj@pass	_	_
+4	—	_	_	_	_	0	_	_	_
+5	rather	_	_	_	_	0	_	_	_
+6	than	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	say	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	Wave	_	_	_	_	0	_	_	_
+11	3	_	_	_	_	0	_	_	_
+12	race	_	_	_	_	0	_	_	_
+13	—	_	_	_	_	0	_	_	_
+14	was	be	AUX	VBD	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	_	_	_
+15	used	_	_	_	_	0	_	_	_
+16	to	_	_	_	_	0	_	_	_
+17	preserve	_	_	_	_	0	_	_	_
+18	case	_	_	_	_	0	_	_	_
+19	counts	_	_	_	_	0	_	_	_
+20	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	The	_	_	_	_	0	_	_	_
+2	***logic***	logic	NOUN	NN	Number=Sing	3	subj	_	_
+3	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+4	that	_	_	_	_	0	_	_	_
+5	(	_	_	_	_	0	_	_	_
+6	nearly	_	_	_	_	0	_	_	_
+7	)	_	_	_	_	0	_	_	_
+8	all	_	_	_	_	0	_	_	_
+9	Wave	_	_	_	_	0	_	_	_
+10	4	_	_	_	_	0	_	_	_
+11	respondents	_	_	_	_	0	_	_	_
+12	appeared	_	_	_	_	0	_	_	_
+13	in	_	_	_	_	0	_	_	_
+14	the	_	_	_	_	0	_	_	_
+15	Wave	_	_	_	_	0	_	_	_
+16	1	_	_	_	_	0	_	_	_
+17	sample	_	_	_	_	0	_	_	_
+18	,	_	_	_	_	0	_	_	_
+19	but	_	_	_	_	0	_	_	_
+20	not	_	_	_	_	0	_	_	_
+21	all	_	_	_	_	0	_	_	_
+22	would	_	_	_	_	0	_	_	_
+23	have	_	_	_	_	0	_	_	_
+24	been	_	_	_	_	0	_	_	_
+25	interviewed	_	_	_	_	0	_	_	_
+26	at	_	_	_	_	0	_	_	_
+27	Wave	_	_	_	_	0	_	_	_
+28	3	_	_	_	_	0	_	_	_
+29	due	_	_	_	_	0	_	_	_
+30	to	_	_	_	_	0	_	_	_
+31	differential	_	_	_	_	0	_	_	_
+32	patterns	_	_	_	_	0	_	_	_
+33	of	_	_	_	_	0	_	_	_
+34	temporary	_	_	_	_	0	_	_	_
+35	attrition	_	_	_	_	0	_	_	_
+36	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	“	_	_	_	_	0	_	_	_
+2	Is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+3	there	_	_	_	_	0	_	_	_
+4	really	_	_	_	_	0	_	_	_
+5	much	_	_	_	_	0	_	_	_
+6	more	_	_	_	_	0	_	_	_
+7	***logic***	logic	NOUN	NN	Number=Sing	2	subj	_	_
+8	in	_	_	_	_	0	_	_	_
+9	the	_	_	_	_	0	_	_	_
+10	opposite	_	_	_	_	0	_	_	_
+11	extreme	_	_	_	_	0	_	_	_
+12	which	_	_	_	_	0	_	_	_
+13	denies	_	_	_	_	0	_	_	_
+14	any	_	_	_	_	0	_	_	_
+15	kind	_	_	_	_	0	_	_	_
+16	of	_	_	_	_	0	_	_	_
+17	sound	_	_	_	_	0	_	_	_
+18	symbolism	_	_	_	_	0	_	_	_
+19	(	_	_	_	_	0	_	_	_
+20	apart	_	_	_	_	0	_	_	_
+21	from	_	_	_	_	0	_	_	_
+22	the	_	_	_	_	0	_	_	_
+23	small	_	_	_	_	0	_	_	_
+24	class	_	_	_	_	0	_	_	_
+25	of	_	_	_	_	0	_	_	_
+26	evident	_	_	_	_	0	_	_	_
+27	echoisms	_	_	_	_	0	_	_	_
+28	and	_	_	_	_	0	_	_	_
+29	‘	_	_	_	_	0	_	_	_
+30	onomatopoeia	_	_	_	_	0	_	_	_
+31	’	_	_	_	_	0	_	_	_
+32	)	_	_	_	_	0	_	_	_
+33	and	_	_	_	_	0	_	_	_
+34	sees	_	_	_	_	0	_	_	_
+35	in	_	_	_	_	0	_	_	_
+36	our	_	_	_	_	0	_	_	_
+37	words	_	_	_	_	0	_	_	_
+38	only	_	_	_	_	0	_	_	_
+39	a	_	_	_	_	0	_	_	_
+40	collection	_	_	_	_	0	_	_	_
+41	of	_	_	_	_	0	_	_	_
+42	accidental	_	_	_	_	0	_	_	_
+43	and	_	_	_	_	0	_	_	_
+44	irrational	_	_	_	_	0	_	_	_
+45	associations	_	_	_	_	0	_	_	_
+46	of	_	_	_	_	0	_	_	_
+47	sound	_	_	_	_	0	_	_	_
+48	and	_	_	_	_	0	_	_	_
+49	meaning	_	_	_	_	0	_	_	_
+50	?	_	_	_	_	0	_	_	_
+51	...	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<h4> Examples that disagree with the label: <b>req-agree</b> </h4>
+<pre><code class="language-conllu">
+1	Even	_	_	_	_	0	_	_	_
+2	so	_	_	_	_	0	_	_	_
+3	,	_	_	_	_	0	_	_	_
+4	***estimates***	estimate	NOUN	NNS	Number=Plur	11	subj	_	_
+5	of	_	_	_	_	0	_	_	_
+6	the	_	_	_	_	0	_	_	_
+7	prevalence	_	_	_	_	0	_	_	_
+8	of	_	_	_	_	0	_	_	_
+9	perceived	_	_	_	_	0	_	_	_
+10	discrimination	_	_	_	_	0	_	_	_
+11	remains	remain	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
+12	rare	_	_	_	_	0	_	_	_
+13	(	_	_	_	_	0	_	_	_
+14	see	_	_	_	_	0	_	_	_
+15	[	_	_	_	_	0	_	_	_
+16	13	_	_	_	_	0	_	_	_
+17	–	_	_	_	_	0	_	_	_
+18	14	_	_	_	_	0	_	_	_
+19	]	_	_	_	_	0	_	_	_
+20	)	_	_	_	_	0	_	_	_
+21	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	At	_	_	_	_	0	_	_	_
+2	least	_	_	_	_	0	_	_	_
+3	one	_	_	_	_	0	_	_	_
+4	prior	_	_	_	_	0	_	_	_
+5	study	_	_	_	_	0	_	_	_
+6	by	_	_	_	_	0	_	_	_
+7	Kessler	Kessler	PROPN	NNP	Number=Sing	0	_	_	_
+8	and	_	_	_	_	0	_	_	_
+9	***colleagues***	colleague	NOUN	NNS	Number=Plur	7	conj	_	_
+10	[	_	_	_	_	0	_	_	_
+11	15	_	_	_	_	0	_	_	_
+12	]	_	_	_	_	0	_	_	_
+13	,	_	_	_	_	0	_	_	_
+14	however	_	_	_	_	0	_	_	_
 15	,	_	_	_	_	0	_	_	_
-16	whispering	_	_	_	_	0	_	_	_
-17	statistics	_	_	_	_	0	_	_	_
-18	—	_	_	_	_	0	_	_	_
+16	using	_	_	_	_	0	_	_	_
+17	measures	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	perceived	_	_	_	_	0	_	_	_
+20	discrimination	_	_	_	_	0	_	_	_
+21	in	_	_	_	_	0	_	_	_
+22	a	_	_	_	_	0	_	_	_
+23	large	_	_	_	_	0	_	_	_
+24	American	_	_	_	_	0	_	_	_
+25	sample	_	_	_	_	0	_	_	_
+26	,	_	_	_	_	0	_	_	_
+27	reported	_	_	_	_	0	_	_	_
+28	that	_	_	_	_	0	_	_	_
+29	approximately	_	_	_	_	0	_	_	_
+30	33	_	_	_	_	0	_	_	_
+31	%	_	_	_	_	0	_	_	_
+32	of	_	_	_	_	0	_	_	_
+33	respondents	_	_	_	_	0	_	_	_
+34	reported	_	_	_	_	0	_	_	_
+35	some	_	_	_	_	0	_	_	_
+36	form	_	_	_	_	0	_	_	_
+37	of	_	_	_	_	0	_	_	_
+38	discrimination	_	_	_	_	0	_	_	_
+39	(	_	_	_	_	0	_	_	_
+40	see	_	_	_	_	0	_	_	_
+41	also	_	_	_	_	0	_	_	_
+42	,	_	_	_	_	0	_	_	_
+43	Gibbons	_	_	_	_	0	_	_	_
+44	et	_	_	_	_	0	_	_	_
+45	al.	_	_	_	_	0	_	_	_
+46	[	_	_	_	_	0	_	_	_
+47	4	_	_	_	_	0	_	_	_
+48	]	_	_	_	_	0	_	_	_
+49	)	_	_	_	_	0	_	_	_
+50	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
 <pre><code class="language-conllu">
-1	Everyone	_	_	_	_	0	_	_	_
-2	tries	try	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	_	_	_
-3	***it***	it	PRON	PRP	Case=Acc|Gender=Neut|Number=Sing|Person=3|PronType=Prs	2	comp:obj	_	_
-4	once	_	_	_	_	0	_	_	_
-5	—	_	_	_	_	0	_	_	_
-6	Except	_	_	_	_	0	_	_	_
-7	that	_	_	_	_	0	_	_	_
-8	there	_	_	_	_	0	_	_	_
-9	are	_	_	_	_	0	_	_	_
-10	n’t	_	_	_	_	0	_	_	_
-11	any	_	_	_	_	0	_	_	_
-12	mites	_	_	_	_	0	_	_	_
-13	around	_	_	_	_	0	_	_	_
-14	her	_	_	_	_	0	_	_	_
-15	.	_	_	_	_	0	_	_	_
+1	Thus	_	_	_	_	0	_	_	_
+2	,	_	_	_	_	0	_	_	_
+3	all	_	_	_	_	0	_	_	_
+4	estimates	_	_	_	_	0	_	_	_
+5	reported	_	_	_	_	0	_	_	_
+6	here	_	_	_	_	0	_	_	_
+7	can	_	_	_	_	0	_	_	_
+8	be	_	_	_	_	0	_	_	_
+9	considered	_	_	_	_	0	_	_	_
+10	nationally	_	_	_	_	0	_	_	_
+11	representative	_	_	_	_	0	_	_	_
+12	of	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	***United***	United	PROPN	NNP	Number=Sing	15	mod	_	_
+15	States	State	PROPN	NNPS	Number=Plur	0	_	_	_
+16	.	_	_	_	_	0	_	_	_
 
 </code></pre>
 
+<pre><code class="language-conllu">
+1	My	_	_	_	_	0	_	_	_
+2	Presidential	_	_	_	_	0	_	_	_
+3	qualifications	_	_	_	_	0	_	_	_
+4	are	_	_	_	_	0	_	_	_
+5	rooted	_	_	_	_	0	_	_	_
+6	in	_	_	_	_	0	_	_	_
+7	my	_	_	_	_	0	_	_	_
+8	service	_	_	_	_	0	_	_	_
+9	as	_	_	_	_	0	_	_	_
+10	an	_	_	_	_	0	_	_	_
+11	Officer	_	_	_	_	0	_	_	_
+12	in	_	_	_	_	0	_	_	_
+13	the	_	_	_	_	0	_	_	_
+14	***United***	United	PROPN	NNP	Number=Sing	15	mod	_	_
+15	States	State	PROPN	NNPS	Number=Plur	0	_	_	_
+16	Air	_	_	_	_	0	_	_	_
+17	Force	_	_	_	_	0	_	_	_
+18	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	2.	_	_	_	_	0	_	_	_
+2	GUJJOLAAY	_	_	_	_	0	_	_	_
+3	EEGIMAA	Eegimaa	PROPN	NNP	Number=Sing	0	_	_	_
+4	,	_	_	_	_	0	_	_	_
+5	ITS	_	_	_	_	0	_	_	_
+6	***SPEAKERS***	speaker	NOUN	NNS	Number=Plur	3	conj	_	_
+7	AND	_	_	_	_	0	_	_	_
+8	THEIR	_	_	_	_	0	_	_	_
+9	NEIGHBOURS	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	This	_	_	_	_	0	_	_	_
+2	section	_	_	_	_	0	_	_	_
+3	briefly	_	_	_	_	0	_	_	_
+4	presents	_	_	_	_	0	_	_	_
+5	the	_	_	_	_	0	_	_	_
+6	Gújjolaay	_	_	_	_	0	_	_	_
+7	Eegimaa	Eegimaa	PROPN	NNP	Number=Sing	0	_	_	_
+8	(	_	_	_	_	0	_	_	_
+9	Eegimaa	_	_	_	_	0	_	_	_
+10	for	_	_	_	_	0	_	_	_
+11	short	_	_	_	_	0	_	_	_
+12	;	_	_	_	_	0	_	_	_
+13	Ethnologue	_	_	_	_	0	_	_	_
+14	code	_	_	_	_	0	_	_	_
+15	:	_	_	_	_	0	_	_	_
+16	ISO	_	_	_	_	0	_	_	_
+17	639-3	_	_	_	_	0	_	_	_
+18	:	_	_	_	_	0	_	_	_
+19	bqj	_	_	_	_	0	_	_	_
+20	)	_	_	_	_	0	_	_	_
+21	,	_	_	_	_	0	_	_	_
+22	its	_	_	_	_	0	_	_	_
+23	***speakers***	speaker	NOUN	NNS	Number=Plur	7	conj	_	_
+24	and	_	_	_	_	0	_	_	_
+25	its	_	_	_	_	0	_	_	_
+26	varieties	_	_	_	_	0	_	_	_
+27	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Jóola	_	_	_	_	0	_	_	_
+2	language	_	_	_	_	0	_	_	_
+3	varieties	_	_	_	_	0	_	_	_
+4	which	_	_	_	_	0	_	_	_
+5	are	_	_	_	_	0	_	_	_
+6	closely	_	_	_	_	0	_	_	_
+7	related	_	_	_	_	0	_	_	_
+8	to	_	_	_	_	0	_	_	_
+9	Eegimaa	_	_	_	_	0	_	_	_
+10	include	_	_	_	_	0	_	_	_
+11	Kujireray	_	_	_	_	0	_	_	_
+12	/	_	_	_	_	0	_	_	_
+13	Kuluunaay	_	_	_	_	0	_	_	_
+14	(	_	_	_	_	0	_	_	_
+15	from	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	village	_	_	_	_	0	_	_	_
+18	of	_	_	_	_	0	_	_	_
+19	Brin	_	_	_	_	0	_	_	_
+20	with	_	_	_	_	0	_	_	_
+21	76	_	_	_	_	0	_	_	_
+22	%	_	_	_	_	0	_	_	_
+23	lexical	_	_	_	_	0	_	_	_
+24	similarity	_	_	_	_	0	_	_	_
+25	)	_	_	_	_	0	_	_	_
+26	and	_	_	_	_	0	_	_	_
+27	Gufiñamay	_	_	_	_	0	_	_	_
+28	(	_	_	_	_	0	_	_	_
+29	from	_	_	_	_	0	_	_	_
+30	the	_	_	_	_	0	_	_	_
+31	village	_	_	_	_	0	_	_	_
+32	of	_	_	_	_	0	_	_	_
+33	Afiniam	_	_	_	_	0	_	_	_
+34	with	_	_	_	_	0	_	_	_
+35	74	_	_	_	_	0	_	_	_
+36	%	_	_	_	_	0	_	_	_
+37	lexical	_	_	_	_	0	_	_	_
+38	similarity	_	_	_	_	0	_	_	_
+39	(	_	_	_	_	0	_	_	_
+40	based	_	_	_	_	0	_	_	_
+41	on	_	_	_	_	0	_	_	_
+42	Lewis	Lewis	PROPN	NNP	Number=Sing	0	_	_	_
+43	et	_	_	_	_	0	_	_	_
+44	al.	_	_	_	_	0	_	_	_
+45	,	_	_	_	_	0	_	_	_
+46	2014	_	_	_	_	0	_	_	_
+47	***eds.***	eds.	NOUN	NNS	Number=Plur	42	appos	_	SpaceAfter=No
+48	)	_	_	_	_	0	_	_	_
+49	)	_	_	_	_	0	_	_	_
+50	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Brahms	_	_	_	_	0	_	_	_
+2	recommended	_	_	_	_	0	_	_	_
+3	Dvořák	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	his	_	_	_	_	0	_	_	_
+6	publisher	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	Simrock	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	who	_	_	_	_	0	_	_	_
+11	soon	_	_	_	_	0	_	_	_
+12	afterward	_	_	_	_	0	_	_	_
+13	commissioned	_	_	_	_	0	_	_	_
+14	what	_	_	_	_	0	_	_	_
+15	became	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	***Slavonic***	Slavonic	PROPN	NNP	Number=Sing	18	mod	_	_
+18	Dances	Dance	PROPN	NNPS	Number=Plur	0	_	_	_
+19	,	_	_	_	_	0	_	_	_
+20	Op.	_	_	_	_	0	_	_	_
+21	46	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Brahms	_	_	_	_	0	_	_	_
+2	recommended	_	_	_	_	0	_	_	_
+3	Dvořák	_	_	_	_	0	_	_	_
+4	to	_	_	_	_	0	_	_	_
+5	his	_	_	_	_	0	_	_	_
+6	publisher	_	_	_	_	0	_	_	_
+7	,	_	_	_	_	0	_	_	_
+8	Simrock	_	_	_	_	0	_	_	_
+9	,	_	_	_	_	0	_	_	_
+10	who	_	_	_	_	0	_	_	_
+11	soon	_	_	_	_	0	_	_	_
+12	afterward	_	_	_	_	0	_	_	_
+13	commissioned	_	_	_	_	0	_	_	_
+14	what	_	_	_	_	0	_	_	_
+15	became	_	_	_	_	0	_	_	_
+16	the	_	_	_	_	0	_	_	_
+17	Slavonic	_	_	_	_	0	_	_	_
+18	Dances	Dance	PROPN	NNPS	Number=Plur	0	_	_	_
+19	,	_	_	_	_	0	_	_	_
+20	***Op.***	Op.	PROPN	NNP	Number=Sing	18	appos	_	_
+21	46	_	_	_	_	0	_	_	_
+22	.	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu">
+1	Jespersen	_	_	_	_	0	_	_	_
+2	visited	_	_	_	_	0	_	_	_
+3	the	_	_	_	_	0	_	_	_
+4	***United***	United	PROPN	NNP	Number=Sing	5	mod	_	_
+5	States	States	PROPN	NNPS	Number=Plur	0	_	_	_
+6	twice	_	_	_	_	0	_	_	_
+7	:	_	_	_	_	0	_	_	_
+
+</code></pre>
+
+</div>
 </ul><br><br><br>
 
 
