@@ -1,0 +1,16 @@
+subj@pass,AUX,PRON	req-agree	req-agree
+conj,VERB,AUX	req-agree	NA
+subj,VERB,PRON	req-agree	req-agree
+conj,VERB,VERB	req-agree	req-agree
+subj,AUX,PRON	req-agree	NA
+comp:obj,VERB,AUX	req-agree	req-agree
+unk@expl,AUX,PRON	req-agree	req-agree
+comp:obj,VERB,PRON	NA	NA
+parataxis,AUX,VERB	req-agree	req-agree
+conj,AUX,VERB	req-agree	req-agree
+parataxis,VERB,VERB	req-agree	req-agree
+comp:obj,VERB,VERB	req-agree	req-agree
+unk@expl,VERB,PRON	req-agree	req-agree
+conj,AUX,AUX	req-agree	req-agree
+parataxis,AUX,AUX	req-agree	req-agree
+parataxis,VERB,AUX	req-agree	NA

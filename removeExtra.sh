@@ -16,6 +16,8 @@ do
 	rm -rf */CaseMarking/*/*freq */CaseMarking/*/*feats */CaseMarking/*/*txt
 
 	rm -rf */*txt
+	rm -rf */*feats
+	rm -rf */*freq
 	rm -rf */index_agreement.html */index_wordorder.html
 done
 
